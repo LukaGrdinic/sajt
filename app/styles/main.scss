@@ -46,7 +46,6 @@ body {
 /* Customize container */
 @media (min-width: 48em) {
   .container {
-    max-width: 46rem;
   }
 }
 .container-narrow > hr {
@@ -88,4 +87,15 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+/* Ovdje sam ja dodao sta me je interesovalo,kako bih prilagodio sajtu */
+.row {
+  margin-bottom: 1rem;
+}
+[class*="col-"] {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: 1px solid rgba(86,61,124,.2);
+  background-color: rgba(86,61,124,.15);
 }
