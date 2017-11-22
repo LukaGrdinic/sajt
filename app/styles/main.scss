@@ -11,7 +11,7 @@
 
 /* Space out content a bit */
 body {
-  padding-top: 2.0rem; /* Ovo je prilagodjeno sajtu */
+   /* Ovo je prilagodjeno sajtu */
   padding-bottom: 1.5rem;
 }
 
@@ -120,6 +120,7 @@ hr {
 
 .container h1 {
   font-weight: 100;
+  padding-top: 2rem;
 }
 
 .jumbotron {
@@ -139,4 +140,6 @@ footer {
   padding: 12px;
   border: 0px;
 }
+
+
 
