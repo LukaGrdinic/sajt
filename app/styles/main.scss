@@ -93,6 +93,7 @@ body {
 .row {
   margin-bottom: 1rem;
 }
+
 [class*="col-"] {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -141,7 +142,12 @@ footer {
   border: 0px;
 }
 
-#hidden {
-  display: block;
+.navbar {
+  [class*="col-"] {
+    background-color: transparent;
+    border: none;
+    }
+  a {
+      text-decoration: none;      
+    }
 }
-
