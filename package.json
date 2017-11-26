@@ -42,5 +42,26 @@
         "single"
       ]
     }
-  }
+  },
+  "name": "sajt",
+  "description": "no",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LukaGrdinic/sajt.git"
+  },
+  "author": "ja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LukaGrdinic/sajt/issues"
+  },
+  "homepage": "https://github.com/LukaGrdinic/sajt#readme"
 }
