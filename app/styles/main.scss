@@ -19,3 +19,25 @@
   align-self: flex-start;
 }
 
+
+.circle {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #fff;
+  line-height: 55px;
+  text-align: center;
+  background: #d9534f;
+}
+
+.circle-outline {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  color: #fff;
+  line-height: 55px;
+  text-align: center;
+  background: white;
+  border: solid #d9534f 1px;
+}
