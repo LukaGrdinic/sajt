@@ -37,4 +37,10 @@
 .flexed {
   flex: 1; }
 
+.flexed-2 {
+  flex: 2; }
+
+ul {
+  list-style: none; }
+
 /*# sourceMappingURL=main.css.map */
