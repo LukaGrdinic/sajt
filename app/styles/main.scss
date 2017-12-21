@@ -22,6 +22,8 @@ $fadedBorderDarker: #f7f7f7 * 0.8;
 
 // WRITE THIS IN TERMINAL TO MAKE SURE SASS IS COMPILED WITH RUBY
 
+// (C:\GitHub\sajt\app>) ------------ YOU MUST BE IN THIS DIRECTORY
+
 /* //----------------------------------------------------------
 
 sass --watch styles/main.scss:styles/main.css
@@ -140,25 +142,39 @@ ul {
     counter-reset: step;
 }
 
-.timeline li::before {
-    content: counter(step);
-    counter-increment: step;
-    width: 20px;
-    height: 20px;
-    border: solid black 1px;
-    display: block;
-    margin: 0 auto 10px;
-    text-align:center;
-    line-height: 20px;
-    border-radius: 50%;
-
+.timeline li {
+    &::before {
+        content: counter(step);
+        counter-increment: step;
+        width: 50px;
+        height: 50px;
+        border: solid black 1px;
+        display: block;
+        margin: 0px auto 15px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        background-color: red;
+    }
+    &.first::before{
+        margin: 0px 0px 15px;
+    }
+    &.last::before{
+        margin: 0px 0px 15px auto;
+    }
 }
 
-/* .timeline li::after {
+.timeline li::after {
     content: "";
     position: absolute;
     width: 100%;
-    height: 1px;
-    background-color: red;
+    height: 0px;
+    top: 25px;
+    border: solid $fadedBorderDarker 1px;
+    z-index: -1;
+    left: 0px;
+}
 
-} */
+.timeline li:first-child::after {
+    display: none;
+}

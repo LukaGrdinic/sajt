@@ -100,22 +100,31 @@ ul {
 .timeline li::before {
   content: counter(step);
   counter-increment: step;
-  width: 20px;
-  height: 20px;
+  width: 50px;
+  height: 50px;
   border: solid black 1px;
   display: block;
-  margin: 0 auto 10px;
+  margin: 0px auto 15px;
   text-align: center;
-  line-height: 20px;
-  border-radius: 50%; }
+  line-height: 50px;
+  border-radius: 50%;
+  background-color: red; }
+.timeline li.first::before {
+  margin: 0px 0px 15px; }
+.timeline li.last::before {
+  margin: 0px 0px 15px auto; }
 
-/* .timeline li::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background-color: red;
+.timeline li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  top: 25px;
+  border: solid #c6c6c6 1px;
+  z-index: -1;
+  left: 0px; }
 
-} */
+.timeline li:first-child::after {
+  display: none; }
 
 /*# sourceMappingURL=main.css.map */
