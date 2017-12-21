@@ -137,6 +137,7 @@ ul {
 }
 
 // TIMELINE SCSS
+// ---------------------------------------------
 
 .timeline {
     counter-reset: step;
@@ -148,19 +149,44 @@ ul {
         counter-increment: step;
         width: 50px;
         height: 50px;
-        border: solid black 1px;
+        line-height: 50px;
+        font-size: 30px;
         display: block;
         margin: 0px auto 15px;
+        border: solid #d9534f 1px;
+        border-radius: 50%;
+        text-align: center;
+        background-color: #d9534f;
+        color: white;
+    }
+
+    &.first::before {
+        margin: 0px 0px 15px;
+    }
+
+    &.last::before {
+        margin: 5px 0px 0px auto;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        display: inline-block;
+    }
+
+    &.last span::before { // NE ZNAM ZASTO OVO NE FUNKCIONISE
+        content: "";
+        width: 50px;
+        height: 50px;
+        border: solid #d9534f 1px;
+        display: block;
+        margin: -47.5px -2.5px 15px auto; // OVO TREBA DA REGULISEM!!!
         text-align: center;
         line-height: 50px;
         border-radius: 50%;
-        background-color: red;
-    }
-    &.first::before{
-        margin: 0px 0px 15px;
-    }
-    &.last::before{
-        margin: 0px 0px 15px auto;
+        background-color: transparent;
+        font-size: 30px;
+        color: white;
+        position: relative;
+        right: 0px;
     }
 }
 
@@ -173,8 +199,4 @@ ul {
     border: solid $fadedBorderDarker 1px;
     z-index: -1;
     left: 0px;
-}
-
-.timeline li:first-child::after {
-    display: none;
 }
