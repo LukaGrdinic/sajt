@@ -11,7 +11,24 @@
 
 // Up till here is just some bower/yeoman setup
 
-//THIS IS FOR TESTING PURPOSESS
+//VARIABLES
+//----------------------------------------------------------
+
+$fadedBorderLighter: #f7f7f7 * 0.9;
+$fadedBorderDarker: #f7f7f7 * 0.8;
+
+//STYLES
+//----------------------------------------------------------
+
+// WRITE THIS IN TERMINAL TO MAKE SURE SASS IS COMPILED WITH RUBY
+
+/* //----------------------------------------------------------
+
+sass --watch styles/main.scss:styles/main.css
+
+*/
+
+//----------------------------------------------------------
 
 body {
     font-family: sans-serif; /* Odje ce mozda ici serif */
@@ -83,7 +100,7 @@ ul {
 .inner, .side-info {
     p {
         color: #636c72 * 0.7;
-        font-size: 15px;
+        font-size: 14px;
     }
 }
 
@@ -95,7 +112,26 @@ ul {
     &:hover {
         background-color: transparent;
     }
+
     &:focus {
         background-color: transparent !important;
     }
 }
+
+.list-group-item:last-child {
+    margin-bottom: -1px;
+}
+
+.bb-dashed {
+    border-bottom: dashed $fadedBorderLighter 1px;
+}
+
+.br-dashed {
+    border-right: dashed $fadedBorderDarker 1px;
+}
+
+.bl-dashed {
+    border-left: dashed $fadedBorderDarker 1px;
+}
+
+// TIMELINE SCSS
