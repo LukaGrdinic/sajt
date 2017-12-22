@@ -94,178 +94,85 @@ ul {
 .bl-dashed {
   border-left: dashed #c6c6c6 1px; }
 
-/* 
+/*
 .timeline {
     counter-reset: step;
 }
 
 .timeline li {
-    &::before {
-        content: counter(step);
-        counter-increment: step;
-        width: 50px;
-        height: 50px;
-        line-height: 50px;
-        font-size: 30px;
-        display: block;
-        margin: 0px auto 15px;
-        border: solid #d9534f 1px;
-        border-radius: 50%;
-        text-align: center;
-        background-color: #d9534f;
-        color: white;
-    }
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    top: -50px;
 
-    &.first::before {
-        margin: 0px 0px 15px;
-    }
-
-    &.last::before {
-        margin: 5px 0px 0px auto;
-        width: 45px;
-        height: 45px;
-        line-height: 45px;
-        display: inline-block;
-    }
-
-    &.last span::before { // NE ZNAM ZASTO OVO NE FUNKCIONISE
-        content: "";
-        width: 50px;
-        height: 50px;
-        border: solid #d9534f 1px;
-        display: block;
-        margin: -47.5px -2.5px 15px auto; // OVO TREBA DA REGULISEM!!!
-        text-align: center;
-        line-height: 50px;
-        border-radius: 50%;
-        background-color: transparent;
-        font-size: 30px;
-        color: white;
-        position: relative;
-        right: 0px;
-    }
-}
-
-.timeline li::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 0px;
-    top: 25px;
-    border: solid $fadedBorderDarker 1px;
-    z-index: -1;
-    left: 0px;
-}
- */
-/* .timeline {
-    counter-reset: step;
-}
-
-.timeline li {
     &::before {
         content: counter(step);
         counter-increment: step;
         height: 40px;
         width: 40px;
-        border: solid #d9534f 1px;
-        border-radius: 50%;
         line-height: 40px;
         display: block;
+        border-radius: 50%;
+        background-color: #d9534f;
         text-align: center;
-        margin: 5px auto 0px;
-        background-color: #d9534f;
+        margin: 0px auto 10px;
         font-size: 30px;
-        color: white;
-
+        color:white;
     }
-
-    &:first-child::before {
-        margin: 0px auto 0px 0px;
-        height: 50px;
-        width: 50px;
-        line-height: 40px;
-
-        background-color: #d9534f;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        display: block;
+        background-color: $fadedBorderDarker;
+        top:20px;
+        left:0px;
+        z-index: -2;
     }
-
-    &:last-child::before {
-        margin: 5px 0px 0px auto;
-    }
-
     & span::before {
         content: "";
-        display: block;
-        margin: 0px auto 0px;
         height: 50px;
         width: 50px;
         line-height: 50px;
-        background-color: transparent;
+        display: block;
+        background-color: white;
         border: solid #d9534f 1px;
         border-radius: 50%;
         position: relative;
-        top: -45px;
+        top:-82px;
+        margin: 0px auto 0px;
+        z-index: -1;
     }
+
+    // FIRST CHILD 
+    &:first-child span::before {
+        background-color: #d9534f;
+        margin-left:0px;
+        left: -5px;
+    }
+    &:first-child::before {
+        margin-left:0px;
+    }
+
+    // LAST CHILD 
 
     &:last-child span::before {
-        margin-right: 0px;
-        position:relative;
+        margin-right:0px;
         right: -5px;
     }
+    &:last-child::before {
+        margin-right:0px;
+    }
 } */
-.timeline {
-  counter-reset: step; }
-
-.timeline li {
-  font-size: 18px;
-  font-weight: 600;
+.timeline-horizontal .timeline-horizontal-item::before {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #c6c6c6;
+  display: block;
   position: relative;
-  top: -50px; }
-  .timeline li::before {
-    content: counter(step);
-    counter-increment: step;
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
-    display: block;
-    border-radius: 50%;
-    background-color: #d9534f;
-    text-align: center;
-    margin: 0px auto 10px;
-    font-size: 30px;
-    color: white; }
-  .timeline li::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    display: block;
-    background-color: #c6c6c6;
-    top: 20px;
-    left: 0px;
-    z-index: -2; }
-  .timeline li span::before {
-    content: "";
-    height: 50px;
-    width: 50px;
-    line-height: 50px;
-    display: block;
-    background-color: white;
-    border: solid #d9534f 1px;
-    border-radius: 50%;
-    position: relative;
-    top: -55px;
-    margin: 0px auto 0px;
-    z-index: -1; }
-  .timeline li:first-child span::before {
-    background-color: #d9534f;
-    margin-left: 0px;
-    left: -5px; }
-  .timeline li:first-child::before {
-    margin-left: 0px; }
-  .timeline li:last-child span::before {
-    margin-right: 0px;
-    right: -5px; }
-  .timeline li:last-child::before {
-    margin-right: 0px; }
+  top: 27.5px;
+  z-index: -1; }
 
 /*# sourceMappingURL=main.css.map */
