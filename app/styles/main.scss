@@ -2,6 +2,8 @@
 @import "bower_components/bootstrap/scss/bootstrap.scss";
 // endbower */
 
+// THIS IS SOME BOWER / YEOMAN SETUP
+
 .browserupgrade {
     margin: 0.2em 0;
     background: #ccc;
@@ -9,7 +11,18 @@
     padding: 0.2em 0;
 }
 
-// Up till here is just some bower/yeoman setup
+// SASS CONFIG
+
+// (C:\GitHub\sajt\app>) ------------ YOU MUST BE IN THIS DIRECTORY
+
+// WRITE THIS IN TERMINAL TO MAKE SURE SASS IS COMPILED WITH RUBY
+//----------------------------------------------------------
+
+/* 
+
+sass --watch styles/main.scss:styles/main.css
+
+*/
 
 //VARIABLES
 //----------------------------------------------------------
@@ -20,34 +33,34 @@ $fadedBorderDarker: #f7f7f7 * 0.8;
 //STYLES
 //----------------------------------------------------------
 
-// WRITE THIS IN TERMINAL TO MAKE SURE SASS IS COMPILED WITH RUBY
-
-// (C:\GitHub\sajt\app>) ------------ YOU MUST BE IN THIS DIRECTORY
-
-/* //----------------------------------------------------------
-
-sass --watch styles/main.scss:styles/main.css
-
-*/
-
-//----------------------------------------------------------
-
 body {
     font-family: sans-serif; /* Odje ce mozda ici serif */
 }
 
-/* h4 {
-    font-family: serif;
-} */
-
 h4 {
     font-size: 18px;
     font-weight: 600;
+    // font-family: serif;
 }
 
 .navbar-toggler {
     position: relative;
     align-self: flex-start;
+}
+
+// MOJ NACIN IZRADE TIMELINE-A  // -------------------------USPJESNO !!
+//----------------------------------------------------------
+
+
+.timeline-horizontal .timeline-horizontal-item::before {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: $fadedBorderDarker;
+    display: block;
+    position: relative;
+    top: 27.5px;
+    z-index: -1;
 }
 
 .circle {
@@ -83,6 +96,11 @@ h4 {
     border: solid #d9534f 1px;
 }
 
+
+// FLEX KLASE - CUSTOM MADE
+//----------------------------------------------------------
+
+
 .list-inline {
     flex: 1;
 }
@@ -94,6 +112,10 @@ h4 {
 .flexed-2 {
     flex: 2;
 }
+
+
+// NESTO DRUGO
+//----------------------------------------------------------
 
 ul {
     list-style: none;
@@ -124,6 +146,8 @@ ul {
     margin-bottom: -1px;
 }
 
+// BORDER CLASSES - CUSTOM 
+
 .bb-dashed {
     border-bottom: dashed $fadedBorderLighter 1px;
 }
@@ -136,8 +160,7 @@ ul {
     border-left: dashed $fadedBorderDarker 1px;
 }
 
-// TIMELINE THIRD TIME (IT IS FUNCTIONAL AND LOOKS OK BUT NOT THE SOLUTION I HAVE CHOSEN FOR ) 
-
+// TIMELINE THIRD TIME (IT IS FUNCTIONAL AND LOOKS OK BUT NOT THE SOLUTION I HAVE CHOSEN FOR )
 
 /*
 .timeline {
@@ -191,6 +214,7 @@ ul {
     }
 
     // FIRST CHILD 
+
     &:first-child span::before {
         background-color: #d9534f;
         margin-left:0px;
@@ -211,17 +235,34 @@ ul {
     }
 } */
 
+// FEATURES KLASA ZA MOBILNE (FLEX)
+//----------------------------------------------------------
 
-// JEDAN POKUSAJ SA MOJIM NACINOM  // -------------------------USPJESNO !!
+@media (max-width: 768px) {
+    .mobile-justify-content-center {
+        justify-content: center;
+    }
 
-.timeline-horizontal .timeline-horizontal-item::before {
-    content: "";
-    height:1px;
-    width: 100%;
-    background-color: $fadedBorderDarker;
-    display: block;
-    position:relative;
-    top: 27.5px;
-    z-index: -1;
+    .mobile-text-center {
+        text-align: center;
+    }
 
+    .feature-bordered {
+        border: none;
+    }
+    .mobile-pt-5 {
+        padding-top: 24px;
+    }
+}
+
+.feature-bordered {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-left: none;
+    border-right: none;
+}
+
+@media (min-width: 768px) {
+    .feature-bordered .list-group-item {
+        border-top: 0px;
+    }
 }
