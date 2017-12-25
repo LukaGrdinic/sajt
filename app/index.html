@@ -301,14 +301,26 @@
                   <span class="text-muted">(Optional)</span>
                 </h4>
               </a>
-              <a class="list-group-item bg-faded">
+              <div class="list-group-item bg-faded">
                 <div class="col-12 px-0 d-flex justify-content-between align-items-center">
                   <h4 class="mb-0">Departure</h4>
-                  <form class="form-inline">
+                  <!--                   <form class="form-inline">
                     <input class="form-control" placeholder="VIEW PROMO CODE">
-                  </form>
+                  </form> -->
+                  <div class="dropdown dropdown-white">
+                    <a href="#" class="btn dropdown-toggle text-muted" id="dropdownMenuLink-inner" data-toggle="dropdown" aria-haspopup="true"
+                      aria-expanded="false">
+                      VIEW PROMO CODE
+
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink-inner">
+                      <a class="dropdown-item" href="#">First promo code</a>
+                      <a class="dropdown-item" href="#">Second promo code</a>
+                      <a class="dropdown-item" href="#">Third promo code</a>
+                    </div>
+                  </div>
                 </div>
-              </a>
+              </div>
             </div>
           </div>
           <div class="row mt-5">
@@ -378,7 +390,7 @@
         <div class="container">
           <div class="row">
             <div class="list-group-item col-12 col-md-4 mobile-justify-content-center">
-                  <h4 class="mobile-text-center">24/7 Customer Support</h4>
+              <h4 class="mobile-text-center">24/7 Customer Support</h4>
               <p class="text-muted mobile-text-center mb-0">IF you need help by traveling or hosting,
                 <br> contact us at our toll free number:
                 <br> 123 456 789</p>
@@ -470,14 +482,35 @@
         <div class="col-3 py-5 d-flex flex-column">
           <h4 class="pb-5">Language/Currency & Subscribe</h4>
           <div class="d-flex flex-column flexed">
-            <div class="flexed">
-              <btn class="d-block btn btn-outline-secondary">English</btn>
+            <div class="flexed dropdown d-flex align-items-start">
+              <a href="#" class="btn dropdown-toggle text-muted text-left d-flex align-items-center justify-content-between" id="dropdownMenuLink-toc"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                English
+              </a>
+              <div id="dropdown-menu-toc" class="dropdown-menu" aria-labelledby="dropdownMenuLink-toc">
+                <div class="dropdown-item">Crnogorski</div>
+                <div class="dropdown-item">Francais</div>
+                <div class="dropdown-item">Deutsch</div>
+              </div>
+            </div>
+            <div class="flexed dropdown d-flex align-items-start">
+              <a href="#" class="btn dropdown-toggle text-muted text-left d-flex align-items-center justify-content-between" id="dropdownMenuLink-toc"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dollar
+              </a>
+              <div id="dropdown-menu-toc" class="dropdown-menu" aria-labelledby="dropdownMenuLink-toc">
+                <div class="dropdown-item">Euro</div>
+                <div class="dropdown-item">Yen</div>
+                <div class="dropdown-item">Pound</div>
+              </div>
             </div>
             <div class="flexed">
-              <btn class="d-block btn btn-outline-secondary">Dollar</btn>
-            </div>
-            <div class="flexed">
-              <btn class="d-block btn btn-outline-secondary disabled">Subscribe</btn>
+              <div class="list-group d-flex flex-row">
+                <a class="list-group-item flexed px-3 py-2 disabled">
+                  Subscribe
+                </a>
+                <a class="list-group-item bg-danger text-white px-3 py-2">Send</a>
+              </div>
             </div>
           </div>
         </div>

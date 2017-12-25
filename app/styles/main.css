@@ -193,5 +193,18 @@ ul {
 @media (min-width: 768px) {
   .feature-bordered .list-group-item {
     border-top: 0px; } }
+.dropdown-white {
+  background-color: white;
+  border-radius: 5px;
+  border: solid 1px #c6c6c6; }
+
+#dropdownMenuLink-toc {
+  width: 100%;
+  border: solid 1px #c6c6c6; }
+
+#dropdown-menu-toc {
+  position: absolute;
+  top: 40px;
+  width: 100%; }
 
 /*# sourceMappingURL=main.css.map */

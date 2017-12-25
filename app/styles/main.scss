@@ -40,6 +40,7 @@ body {
 h4 {
     font-size: 18px;
     font-weight: 600;
+
     // font-family: serif;
 }
 
@@ -50,7 +51,6 @@ h4 {
 
 // MOJ NACIN IZRADE TIMELINE-A  // -------------------------USPJESNO !!
 //----------------------------------------------------------
-
 
 .timeline-horizontal .timeline-horizontal-item::before {
     content: "";
@@ -96,10 +96,8 @@ h4 {
     border: solid #d9534f 1px;
 }
 
-
 // FLEX KLASE - CUSTOM MADE
 //----------------------------------------------------------
-
 
 .list-inline {
     flex: 1;
@@ -113,7 +111,6 @@ h4 {
     flex: 2;
 }
 
-
 // NESTO DRUGO
 //----------------------------------------------------------
 
@@ -123,7 +120,7 @@ ul {
 
 .inner, .side-info {
     p {
-        color: #636c72 * 0.7;
+        color: #636c72 * 0.7; // Ovo je iz nekog razloga deprecation warning u terminalu
         font-size: 14px;
     }
 }
@@ -146,7 +143,7 @@ ul {
     margin-bottom: -1px;
 }
 
-// BORDER CLASSES - CUSTOM 
+// BORDER CLASSES - CUSTOM
 
 .bb-dashed {
     border-bottom: dashed $fadedBorderLighter 1px;
@@ -250,6 +247,7 @@ ul {
     .feature-bordered {
         border: none;
     }
+
     .mobile-pt-5 {
         padding-top: 24px;
     }
@@ -266,3 +264,21 @@ ul {
         border-top: 0px;
     }
 }
+
+.dropdown-white {
+    background-color: white;
+    border-radius: 5px;
+    border: solid 1px $fadedBorderDarker;
+}
+
+#dropdownMenuLink-toc {
+    width: 100%;
+    border: solid 1px $fadedBorderDarker;
+}
+
+#dropdown-menu-toc {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+}
+
