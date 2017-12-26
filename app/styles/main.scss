@@ -33,6 +33,8 @@ $fadedBorderDarker: #f7f7f7 * 0.8;
 //STYLES
 //----------------------------------------------------------
 
+//BASIC HTML CLASSES
+
 body {
     font-family: sans-serif; /* Odje ce mozda ici serif */
 }
@@ -42,6 +44,10 @@ h4 {
     font-weight: 600;
 
     // font-family: serif;
+}
+
+ul {
+    list-style: none;
 }
 
 .navbar-toggler {
@@ -114,9 +120,7 @@ h4 {
 // NESTO DRUGO
 //----------------------------------------------------------
 
-ul {
-    list-style: none;
-}
+
 
 .inner, .side-info {
     p {
@@ -156,81 +160,6 @@ ul {
 .bl-dashed {
     border-left: dashed $fadedBorderDarker 1px;
 }
-
-// TIMELINE THIRD TIME (IT IS FUNCTIONAL AND LOOKS OK BUT NOT THE SOLUTION I HAVE CHOSEN FOR )
-
-/*
-.timeline {
-    counter-reset: step;
-}
-
-.timeline li {
-    font-size: 18px;
-    font-weight: 600;
-    position: relative;
-    top: -50px;
-
-    &::before {
-        content: counter(step);
-        counter-increment: step;
-        height: 40px;
-        width: 40px;
-        line-height: 40px;
-        display: block;
-        border-radius: 50%;
-        background-color: #d9534f;
-        text-align: center;
-        margin: 0px auto 10px;
-        font-size: 30px;
-        color:white;
-    }
-    &::after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 1px;
-        display: block;
-        background-color: $fadedBorderDarker;
-        top:20px;
-        left:0px;
-        z-index: -2;
-    }
-    & span::before {
-        content: "";
-        height: 50px;
-        width: 50px;
-        line-height: 50px;
-        display: block;
-        background-color: white;
-        border: solid #d9534f 1px;
-        border-radius: 50%;
-        position: relative;
-        top:-82px;
-        margin: 0px auto 0px;
-        z-index: -1;
-    }
-
-    // FIRST CHILD 
-
-    &:first-child span::before {
-        background-color: #d9534f;
-        margin-left:0px;
-        left: -5px;
-    }
-    &:first-child::before {
-        margin-left:0px;
-    }
-
-    // LAST CHILD 
-
-    &:last-child span::before {
-        margin-right:0px;
-        right: -5px;
-    }
-    &:last-child::before {
-        margin-right:0px;
-    }
-} */
 
 // FEATURES KLASA ZA MOBILNE (FLEX)
 //----------------------------------------------------------
@@ -281,4 +210,3 @@ ul {
     top: 40px;
     width: 100%;
 }
-
