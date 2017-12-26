@@ -20,6 +20,9 @@ h4 {
   font-size: 18px;
   font-weight: 600; }
 
+ul {
+  list-style: none; }
+
 .navbar-toggler {
   position: relative;
   align-self: flex-start; }
@@ -73,9 +76,6 @@ h4 {
 .flexed-2 {
   flex: 2; }
 
-ul {
-  list-style: none; }
-
 .inner p, .side-info p {
   color: #454c50;
   font-size: 14px; }
@@ -101,78 +101,6 @@ ul {
 .bl-dashed {
   border-left: dashed #c6c6c6 1px; }
 
-/*
-.timeline {
-    counter-reset: step;
-}
-
-.timeline li {
-    font-size: 18px;
-    font-weight: 600;
-    position: relative;
-    top: -50px;
-
-    &::before {
-        content: counter(step);
-        counter-increment: step;
-        height: 40px;
-        width: 40px;
-        line-height: 40px;
-        display: block;
-        border-radius: 50%;
-        background-color: #d9534f;
-        text-align: center;
-        margin: 0px auto 10px;
-        font-size: 30px;
-        color:white;
-    }
-    &::after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 1px;
-        display: block;
-        background-color: $fadedBorderDarker;
-        top:20px;
-        left:0px;
-        z-index: -2;
-    }
-    & span::before {
-        content: "";
-        height: 50px;
-        width: 50px;
-        line-height: 50px;
-        display: block;
-        background-color: white;
-        border: solid #d9534f 1px;
-        border-radius: 50%;
-        position: relative;
-        top:-82px;
-        margin: 0px auto 0px;
-        z-index: -1;
-    }
-
-    // FIRST CHILD 
-
-    &:first-child span::before {
-        background-color: #d9534f;
-        margin-left:0px;
-        left: -5px;
-    }
-    &:first-child::before {
-        margin-left:0px;
-    }
-
-    // LAST CHILD 
-
-    &:last-child span::before {
-        margin-right:0px;
-        right: -5px;
-    }
-    &:last-child::before {
-        margin-right:0px;
-    }
-} */
 @media (max-width: 768px) {
   .mobile-justify-content-center {
     justify-content: center; }
