@@ -136,8 +136,6 @@ ul {
 // NESTO DRUGO
 //----------------------------------------------------------
 
-
-
 .inner, .side-info {
     p {
         color: #636c72 * 0.7; // Ovo je iz nekog razloga deprecation warning u terminalu
@@ -177,7 +175,14 @@ ul {
     border-left: dashed $fadedBorderDarker 1px;
 }
 
-// FEATURES KLASA ZA MOBILNE (FLEX)
+// LIST - GROUP CUSTOM CLASS 
+
+.smoothBorder {
+    border: 1px solid #000020;
+}
+
+
+//KLASE ZA MOBILNE (FLEX)
 //----------------------------------------------------------
 
 @media (max-width: 768px) {
@@ -233,11 +238,5 @@ ul {
     position: absolute;
     top: 40px;
     width: 100%;
-}
-
-// LIST - GROUP CUSTOM CLASS 
-
-.smoothBorder {
-    border: 1px solid #000020;
 }
 
