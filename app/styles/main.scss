@@ -43,6 +43,18 @@ p {
     margin-bottom: 0px;
 }
 
+a {
+    color: #292b2c;
+    &:hover {
+        color:#292b2c;
+        text-decoration: none;
+    }
+    &:focus {
+        color:#292b2c;
+        text-decoration: none;
+    }
+}
+
 h4 {
     font-size: 18px;
     font-weight: 600;
@@ -183,6 +195,14 @@ ul {
 
     .mobile-pt-5 {
         padding-top: 24px;
+    }
+
+    .mobile-pt-3 {
+        padding-top: 16px;
+    }
+
+    .mobile-d-block {
+        display: block;
     }
 }
 
