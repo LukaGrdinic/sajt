@@ -39,6 +39,10 @@ body {
     font-family: sans-serif; /* Odje ce mozda ici serif */
 }
 
+p {
+    margin-bottom: 0px;
+}
+
 h4 {
     font-size: 18px;
     font-weight: 600;
@@ -210,3 +214,10 @@ ul {
     top: 40px;
     width: 100%;
 }
+
+// LIST - GROUP CUSTOM CLASS 
+
+.smoothBorder {
+    border: 1px solid #000020;
+}
+

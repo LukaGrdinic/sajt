@@ -18,7 +18,7 @@
   <!-- endbuild -->
 
   <!-- build:css styles/main.css -->
-<!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+  <!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
     crossorigin="anonymous"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles/main.css">
@@ -31,7 +31,7 @@
   <header>
 
     <!-- THIS IS THE NAVBAR PART -->
-    <!-- ----------------------------------------------- -->
+    <!-- =============================================== -->
 
     <nav class="navbar navbar-toggleable-md navbar-inverse bg-danger">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -83,7 +83,7 @@
   <main>
 
     <!-- THIS IS THE HOME PART -->
-    <!-- ----------------------------------------------- -->
+    <!-- =============================================== -->
 
     <div class="container">
       <div class="row py-4">
@@ -91,6 +91,7 @@
           <img src="images\trip_logo_pink.png" class="img-fluid" alt="Sorry,cant load the image!">
         </div>
         <div class="col-md-10 d-flex align-items-center hidden-md-down">
+          <!-- THIS SHOULDNT BE HIDDEN MD-DOWN -->
           <ul class="list-inline mb-0 text-right">
             <li class="list-inline-item pr-3">
               <strong>Home</strong>
@@ -109,17 +110,17 @@
     </div>
 
     <!-- THIS IS THE BREADCRUMB PART -->
-    <!-- ----------------------------------------------- -->
+    <!-- =============================================== -->
 
     <div class="container-fluid">
       <div class="bg-faded">
         <div class="container">
-          <div class="row d-flex justify-content-between align-items-center py-3">
-            <div>
+          <div class="row py-3">
+            <div class="col-2 d-flex align-items-center">
               <h4 class="mb-0 pl-4">Review</h4>
             </div>
-            <div class="hidden-md-down">
-              <ol class="breadcrumb mb-0 bg-faded">
+            <div class="col-10 hidden-md-down">
+              <ol class="breadcrumb mb-0 bg-faded d-flex justify-content-end">
                 <li class="breadcrumb-item">Home</li>
                 <li class="breadcrumb-item">Flights</li>
                 <li class="breadcrumb-item">
@@ -133,7 +134,7 @@
     </div>
 
     <!-- THIS IS THE PART WITH THE CIRCLES -->
-    <!-- ----------------------------------------------- -->
+    <!-- =============================================== -->
     <div class="container">
       <div class="row pl-1 pt-5">
         <div class="col-md-12">
@@ -177,8 +178,9 @@
 
       <div class="row">
         <!-- THIS IS THE INNER PART -->
-        <!-- ----------------------------------------------- -->
+        <!-- =============================================== -->
         <div class="col-md-9 inner hidden-md-down">
+          <!-- OVO NE TREBA DA JE SAKRIVENO MD-DOWN, NEGO DA SE NADJE ODGOVARAJUCE RJESENJE, ILI DA JESTE SAKRIVENO, ALI DA POSTOJI POSEBAN ELEMENT KOJI SE VIDI NA MALIM ALI NE NA VELIKIM EKRANIMA -->
           <div class="row mt-5">
             <div class="col-12 list-group d-block">
               <a class="list-group-item">
@@ -189,8 +191,8 @@
                 <div class="container">
                   <div class="row py-3">
                     <div class="col-12 px-3 d-flex justify-content-between">
-                      <p class="mb-0 text-muted font-weight-bold">Departure</p>
-                      <p class="mb-0 text-muted font-weight-bold">Total time: 19h 15m</p>
+                      <p class="text-muted font-weight-bold">Departure</p>
+                      <p class="text-muted font-weight-bold">Total time: 19h 15m</p>
                     </div>
                   </div>
                   <div class="row py-3 d-flex bb-dashed">
@@ -200,7 +202,7 @@
                           <img src="http://via.placeholder.com/55x55">
                         </div>
                         <div class="pt-2 d-flex justify-content-center">
-                          <p class="mb-0">
+                          <p>
                             <small>Delta Air Lines</small>
                           </p>
                         </div>
@@ -211,12 +213,12 @@
                       <div class="row mx-0 flexed">
                         <div class="col-4 br-dashed px-4">
                           <h4>LGA 06:29</h4>
-                          <p class="mb-0">New York, United States</p>
-                          <p class="mb-0">Wed, 17 May 2017</p>
+                          <p>New York, United States</p>
+                          <p>Wed, 17 May 2017</p>
                         </div>
                         <div class="col-4 br-dashed px-4">
                           <h4>7h 54m (1 Stop)</h4>
-                          <p class="mb-0">Philadelphia</p>
+                          <p>Philadelphia</p>
                           <div class="d-flex justify-content-start">
                             <p class="pr-3">Economy</p>
                             <p class="">
@@ -226,8 +228,8 @@
                         </div>
                         <div class="col-4 px-4">
                           <h4>JFK 23:30</h4>
-                          <p class="mb-0">Santa Ana, CA, United States</p>
-                          <p class="mb-0">Thu, 18 May 2017</p>
+                          <p>Santa Ana, CA, United States</p>
+                          <p>Thu, 18 May 2017</p>
                         </div>
                       </div>
                     </div>
@@ -239,7 +241,7 @@
                           <img src="http://via.placeholder.com/55x55">
                         </div>
                         <div class="pt-2 d-flex justify-content-center">
-                          <p class="mb-0">
+                          <p>
                             <small>Air Asia Air Lines</small>
                           </p>
                         </div>
@@ -249,12 +251,12 @@
                       <div class="row mx-0 flexed">
                         <div class="col-4 br-dashed px-4">
                           <h4>EWR 11:00</h4>
-                          <p class="mb-0">Santa Ana, United States</p>
-                          <p class="mb-0">Thu, 18 May 2017</p>
+                          <p>Santa Ana, United States</p>
+                          <p>Thu, 18 May 2017</p>
                         </div>
                         <div class="col-4 br-dashed px-4">
                           <h4>5h 51m (Non-Stop)</h4>
-                          <p class="mb-0">Philadelphia</p>
+                          <p>Philadelphia</p>
                           <div class="d-flex justify-content-start">
                             <p class="pr-3">Economy</p>
                             <p class="">
@@ -264,8 +266,8 @@
                         </div>
                         <div class="col-4 px-4">
                           <h4>LAX 13:51</h4>
-                          <p class="mb-0">New York, United States</p>
-                          <p class="mb-0">Thu, 18 May 2017</p>
+                          <p>New York, United States</p>
+                          <p>Thu, 18 May 2017</p>
                         </div>
                       </div>
                     </div>
@@ -308,20 +310,20 @@
           </div>
         </div>
         <!-- THIS IS THE SIDE PART -->
-        <!-- ----------------------------------------------- -->
+        <!-- =============================================== -->
 
         <div class="col-md-3 side-info">
           <div class="list-group mt-5">
-            <a class="list-group-item">
+            <div class="list-group-item">
               <h4 class="mb-0">Fare details</h4>
-            </a>
-            <a class="list-group-item d-flex justify-content-between align-items-center bg-faded">
-              <p class="mb-0">Adult x 1</p>
-              <p class="mb-0">
+            </div>
+            <div class="list-group-item d-flex justify-content-between align-items-center bg-faded">
+              <p>Adult x 1</p>
+              <p>
                 <strong>$349</strong>
               </p>
-            </a>
-            <a class="row mx-0 list-group-item bg-faded">
+            </div>
+            <div class="row mx-0 list-group-item bg-faded">
               <div class="col-12 px-0">
                 <div class="row">
                   <div class="col-12 d-flex justify-content-between">
@@ -339,49 +341,51 @@
                 </div>
               </div>
 
-            </a>
+            </div>
           </div>
 
           <!-- THIS IS THE SIDE PART LOWER-->
-          <!-- ----------------------------------------------- -->
+          <!-- =============================================== -->
 
           <div class="list-group mt-5">
-            <a class="list-group-item">
-              <h4>Traveltrip extra's</h4>
-            </a>
-            <a class="list-group-item d-flex justify-content-between align-items-center bg-faded">
-              <p class="mb-0">eCash</p>
-              <p class="text-danger mb-0">
+            <div class="list-group-item">
+              <!-- PROMJENA SA A NA DIV? TAKODJE PREISPITATI UPOTREBU UOPSTE LIST-GROUP KLASE-->
+              <h4 class="mb-0">Traveltrip extra's</h4>
+            </div>
+            <div class="list-group-item d-flex justify-content-between align-items-center bg-faded">
+              <p>eCash</p>
+              <p class="text-danger">
                 <strong>$103</strong>
               </p>
-            </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- THIS IS THE FEATURES PART -->
-    <!-- ----------------------------------------------- -->
+    <!-- =============================================== -->
 
     <div class="list-group pt-5">
+      <!-- ODJE TREBA STAVITI BORDERE I SVE PREKO CSS A NE PREKO LIST-GROUPE -->
       <div class="row feature-bordered mx-0">
         <div class="container">
           <div class="row">
             <div class="list-group-item col-12 col-md-4 mobile-justify-content-center">
               <h4 class="mobile-text-center">24/7 Customer Support</h4>
-              <p class="text-muted mobile-text-center mb-0">IF you need help by traveling or hosting,
+              <p class="text-muted mobile-text-center">IF you need help by traveling or hosting,
                 <br> contact us at our toll free number:
                 <br> 123 456 789</p>
             </div>
             <div class="list-group-item col-12 col-md-4 mobile-justify-content-center">
               <h4 class="mobile-text-center">2017 Summer Destinations On Sale</h4>
-              <p class="text-muted mobile-text-center mb-0">For the vast majority of his history, agriculture
+              <p class="text-muted mobile-text-center">For the vast majority of his history, agriculture
                 <br> can be described new products agriculture can
                 <br> be described</p>
             </div>
             <div class="list-group-item col-12 col-md-4 mobile-justify-content-center">
               <h4 class="mobile-text-center">Flat 75% Off On Domestic Hotels</h4>
-              <p class="text-muted mobile-text-center mb-0">Our best ever hotel deals are here! Use
+              <p class="text-muted mobile-text-center">Our best ever hotel deals are here! Use
                 <br> promo code TTHAPPY to get flat 75% off
                 <br> using eCash on hotel bookings through</p>
             </div>
@@ -391,9 +395,10 @@
     </div>
 
     <!-- THIS IS THE TABLE OF CONTENTS PART -->
-    <!-- ----------------------------------------------- -->
+    <!-- =============================================== -->
 
     <div class="container hidden-md-down">
+      <!-- NE MOGU SE SJETIT DAL JE GOGA I ZA OVAJ DIO REKAO DA TREBA PROMIJENIT NESTO -->
       <div class="row">
         <div class="col-4 py-5">
           <div class="row">
@@ -531,18 +536,17 @@
     </div>
 
     <!-- THIS IS THE FOOTER PART -->
-    <!-- ----------------------------------------------- -->
+    <!-- =============================================== -->
 
-    <div class="list-group pb-1">
-      <a class="list-group-item py-3">
-        <div class="container">
+      <!-- ODJE NEMA POTREBE DA STOJI LIST-GROUP I OVI A ELEMENTI -->
+        <div class="container py-3">
           <div class="row">
             <div class="col-12 col-md-5 row">
               <div class="col-12 col-md-4">
                 <img src="images\trip_logo_pink.png" class="img-fluid">
               </div>
               <div class="col-12 col-md-8 d-flex flexed-2 align-items-center pl-5 mobile-pt-5">
-                <p class="mb-0">
+                <p>
                   <i class="fa fa-facebook px-2" aria-hidden="true"></i>
                   <i class="fa fa-twitter px-2" aria-hidden="true"></i>
                   <i class="fa fa-google-plus px-2" aria-hidden="true"></i>
@@ -550,15 +554,13 @@
                 </p>
               </div>
             </div>
-            <div class="col-md-7 d-flex align-items-center justify-content-end mobile-pt-5">
-              <p class="mb-0 text-center">
+            <div class="col-md-7 d-flex align-items-center mobile-pt-5">
+              <p class="flexed text-right">
                 <small>Copyright 2017 Traveltrip. All rights reserved.</small>
               </p>
             </div>
           </div>
         </div>
-      </a>
-    </div>
     </footer>
 
 
@@ -583,7 +585,7 @@
     <script src="/bower_components/bootstrap/js/dist/popover.js"></script>
     <!-- endbuild -->
 
- <!--    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+    <!--    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
       crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
       crossorigin="anonymous"></script>
