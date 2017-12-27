@@ -118,6 +118,22 @@ ul {
     border: solid #d9534f 1px;
 }
 
+@media (max-width:768px){
+    .timeline-horizontal .timeline-horizontal-item::before {
+        content: "";
+        height: 100%;
+        width: 1px;
+        background-color: $fadedBorderDarker;
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top:0px;
+    }
+    .timeline-horizontal .timeline-horizontal-item:last-child::before {
+        display: none;
+    }
+}
+
 // FLEX KLASE - CUSTOM MADE
 //----------------------------------------------------------
 
@@ -189,6 +205,10 @@ ul {
     .mobile-justify-content-center {
         justify-content: center;
     }
+    .mobile-align-items-center {
+        -webkit-box-align: center !important;
+        align-items: center !important;
+    }
 
     .mobile-text-center {
         text-align: center;
@@ -204,6 +224,10 @@ ul {
 
     .mobile-pt-3 {
         padding-top: 16px;
+    }
+
+    .mobile-pb-3 {
+        padding-bottom: 16px;
     }
 
     .mobile-d-block {
