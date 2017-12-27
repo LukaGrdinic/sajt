@@ -151,6 +151,7 @@
     <!-- =============================================== -->
 
     <!-- THE CIRCLES SHOULD BE MORE RESPONSIVE ON MOBILE PHONES -->
+    <!-- MISLIM DA BI I KRUGOVE TREBALO VISE STAVIT U DIV, IZBJECI OVOLIKE FLEX KLASE -->
 
     <div class="container">
       <div class="row pl-1 pt-5">
@@ -158,37 +159,40 @@
           <h3>Book your flight in 3 simple steps!</h3>
         </div>
       </div>
-      <div class="d-flex flex-column">
-        <div class="row text-center pt-5 timeline-horizontal">
-          <div class="col-md-4 d-flex flex-column justify-content-center align-items-start timeline-horizontal-item px-0 mobile-align-items-center mobile-pb-3">
-            <div class="d-flex flex-column mobile-align-items-center">
+      <div class="row text-center pt-5 timeline-horizontal">
+        <div class="col-md-4 timeline-horizontal-item px-0 mobile-pb-3">
+          <div class="row mobile-align-items-center">
+            <div class="col-6 col-md-12">
               <div class="circle">1</div>
-              <div class="pt-3">
-                <h4>Review</h4>
-              </div>
+            </div>
+            <div class="col-6 col-md-12 pt-3 mobile-pt-0">
+              <h4 class="text-left">Review</h4>
             </div>
           </div>
-          <div class="col-md-4 d-flex flex-column justify-content-center align-items-center timeline-horizontal-item px-0 mobile-pb-3">
-            <div class="d-flex flex-column align-items-center">
+        </div>
+        <div class="col-md-4 timeline-horizontal-item px-0 mobile-pb-3">
+          <div class="row mobile-align-items-center">
+            <div class="col-6 col-md-12 d-flex justify-content-center mobile-justify-content-start">
               <div class="circle-outline d-flex justify-content-center align-items-center">
                 <div class="circle-smaller">2</div>
               </div>
-              <div class="pt-3">
-                <h4>Travellers</h4>
-              </div>
+            </div>
+            <div class="col-6 col-md-12 pt-3 mobile-pt-0">
+              <h4 class="text-center mobile-text-left">Travellers</h4>
             </div>
           </div>
-          <div class="col-md-4 d-flex flex-column justify-content-end align-items-end timeline-horizontal-item px-0 mobile-align-items-center">
-            <div class="d-flex flex-column align-items-end mobile-align-items-center">
+        </div>
+        <div class="col-md-4 timeline-horizontal-item px-0">
+          <div class="row mobile-align-items-center">
+            <div class="col-6 col-md-12 d-flex justify-content-end mobile-justify-content-start">
               <div class="circle-outline d-flex justify-content-center align-items-center">
                 <div class="circle-smaller">3</div>
               </div>
-              <div class="pt-3">
-                <h4>Payment</h4>
-              </div>
+            </div>
+            <div class="col-6 col-md-12 pt-3">
+              <h4 class="text-right mobile-text-left">Payment</h4>
             </div>
           </div>
-
         </div>
       </div>
 
@@ -574,7 +578,6 @@
         </div>
       </div>
     </div>
-    </footer>
 
 
     <!-- build:js scripts/vendor.js -->
