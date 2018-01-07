@@ -150,8 +150,7 @@
     <!-- THIS IS THE PART WITH THE CIRCLES -->
     <!-- =============================================== -->
 
-    <!-- THE CIRCLES SHOULD BE MORE RESPONSIVE ON MOBILE PHONES -->
-    <!-- MISLIM DA BI I KRUGOVE TREBALO VISE STAVIT U DIV, IZBJECI OVOLIKE FLEX KLASE -->
+    <!-- I SHOULD CHECK OUT THE TABLET RESPONSIVNESS -->
 
     <div class="container">
       <div class="row pl-1 pt-5">
@@ -162,7 +161,7 @@
       <div class="row text-center pt-5 timeline-horizontal">
         <div class="col-md-4 timeline-horizontal-item px-0 mobile-pb-3">
           <div class="row mobile-align-items-center">
-            <div class="col-6 col-md-12">
+            <div class="col-6 col-md-12 d-flex mobile-justify-content-center">
               <div class="circle">1</div>
             </div>
             <div class="col-6 col-md-12 pt-3 mobile-pt-0">
@@ -172,7 +171,7 @@
         </div>
         <div class="col-md-4 timeline-horizontal-item px-0 mobile-pb-3">
           <div class="row mobile-align-items-center">
-            <div class="col-6 col-md-12 d-flex justify-content-center mobile-justify-content-start">
+            <div class="col-6 col-md-12 d-flex justify-content-center mobile-justify-content-center">
               <div class="circle-outline d-flex justify-content-center align-items-center">
                 <div class="circle-smaller">2</div>
               </div>
@@ -184,7 +183,7 @@
         </div>
         <div class="col-md-4 timeline-horizontal-item px-0">
           <div class="row mobile-align-items-center">
-            <div class="col-6 col-md-12 d-flex justify-content-end mobile-justify-content-start">
+            <div class="col-6 col-md-12 d-flex justify-content-end mobile-justify-content-center">
               <div class="circle-outline d-flex justify-content-center align-items-center">
                 <div class="circle-smaller">3</div>
               </div>
@@ -311,7 +310,7 @@
                       aria-expanded="false">
                       VIEW PROMO CODE
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink-inner">
+                    <div id="promoCodeDropdown" class="dropdown-menu" aria-labelledby="dropdownMenuLink-inner">
                       <a class="dropdown-item" href="#">First promo code</a>
                       <a class="dropdown-item" href="#">Second promo code</a>
                       <a class="dropdown-item" href="#">Third promo code</a>
