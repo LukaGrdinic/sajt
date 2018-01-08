@@ -1,5 +1,6 @@
 // bower:scss
 @import "bower_components/bootstrap/scss/bootstrap.scss";
+
 // endbower
 
 // THIS IS SOME BOWER / YEOMAN SETUP
@@ -45,12 +46,14 @@ p {
 
 a {
     color: #292b2c;
+
     &:hover {
-        color:#292b2c;
+        color: #292b2c;
         text-decoration: none;
     }
+
     &:focus {
-        color:#292b2c;
+        color: #292b2c;
         text-decoration: none;
     }
 }
@@ -118,8 +121,8 @@ ul {
     border: solid #d9534f 1px;
 }
 
-@media (max-width:768px){
-     .timeline-horizontal .timeline-horizontal-item::before {
+@media (max-width: 768px) {
+    .timeline-horizontal .timeline-horizontal-item::before {
         content: "";
         height: 100%;
         width: 1px;
@@ -127,15 +130,14 @@ ul {
         display: block;
         position: absolute;
         z-index: -1;
-        top:0px;
+        top: 0px;
         left: 25%;
     }
+
     .timeline-horizontal .timeline-horizontal-item:last-child::before {
         display: none;
     }
 }
-
-
 
 // FLEX KLASE - CUSTOM MADE
 //----------------------------------------------------------
@@ -194,12 +196,11 @@ ul {
     border-left: dashed $fadedBorderDarker 1px;
 }
 
-// LIST - GROUP CUSTOM CLASS 
+// LIST - GROUP CUSTOM CLASS
 
 .smoothBorder {
     border: 1px solid #000020;
 }
-
 
 //KLASE ZA MOBILNE (FLEX)
 //----------------------------------------------------------
@@ -208,6 +209,7 @@ ul {
     .mobile-justify-content-center {
         justify-content: center !important;
     }
+
     .mobile-justify-content-start {
         justify-content: flex-start !important;
     }
@@ -295,4 +297,26 @@ ul {
 .no-br-right {
     border-top-right-radius: 0px !important;
     border-bottom-right-radius: 0px !important;
+}
+
+.bb-solid {
+    border-bottom: solid 1px $fadedBorderLighter;
+}
+
+.bt-solid {
+    border-top: solid 1px $fadedBorderLighter;
+}
+
+.br-solid {
+    border-right: solid 1px $fadedBorderLighter;
+}
+
+.bl-solid {
+    border-left: solid 1px $fadedBorderLighter;
+}
+
+@media (max-width: 768px) {
+    .mobile-bb-solid {
+        border-bottom: solid 1px $fadedBorderLighter;
+    }
 }
