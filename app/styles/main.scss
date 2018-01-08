@@ -286,3 +286,13 @@ ul {
 #promoCodeDropdown {
     width: 100%;
 }
+
+.no-br-left {
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+
+.no-br-right {
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
