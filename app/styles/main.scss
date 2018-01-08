@@ -1,6 +1,5 @@
 // bower:scss
 @import "bower_components/bootstrap/scss/bootstrap.scss";
-
 // endbower
 
 // THIS IS SOME BOWER / YEOMAN SETUP
@@ -159,7 +158,7 @@ ul {
 
 .inner, .side-info {
     p {
-        color: #636c72 * 0.7; // Ovo je iz nekog razloga deprecation warning u terminalu
+        color: #636c72 * 0.7; // Ovo je iz nekog razloga deprecation warning u terminalu // Mozda ne mogu da mnozim hexadecimal color , mozda mogu samo rbg value
         font-size: 14px;
     }
 }
