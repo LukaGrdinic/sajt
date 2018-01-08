@@ -315,8 +315,12 @@ ul {
     border-left: solid 1px $fadedBorderLighter;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { // DA LI BI MOZDA NA SVAKOM OBRACANJU @MEDIA TREBALO DA STOJI MAX-WIDTH: 767px, DA NE BI NA 768 VEC PRIMJENJIVAO OVO PRAVILO,NEGO NA MANJE EKRANE
     .mobile-bb-solid {
         border-bottom: solid 1px $fadedBorderLighter;
+    }
+    .mobile-bx-0 {
+        border-right: none;
+        border-left: none;
     }
 }
