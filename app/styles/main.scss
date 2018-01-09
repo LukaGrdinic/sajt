@@ -33,7 +33,7 @@ $fadedBorderDarker: #f7f7f7 * 0.8;
 //STYLES
 //----------------------------------------------------------
 
-//BASIC HTML CLASSES
+//BASIC HTML CLASSES (BASE)
 
 body {
     font-family: sans-serif; /* Odje ce mozda ici serif */
@@ -120,7 +120,7 @@ ul {
     border: solid #d9534f 1px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .timeline-horizontal .timeline-horizontal-item::before {
         content: "";
         height: 100%;
@@ -204,7 +204,7 @@ ul {
 //KLASE ZA MOBILNE (FLEX)
 //----------------------------------------------------------
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .mobile-justify-content-center {
         justify-content: center !important;
     }
@@ -261,7 +261,7 @@ ul {
     border-right: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
     .feature-bordered .list-group-item {
         border-top: 0px;
     }
@@ -314,7 +314,7 @@ ul {
     border-left: solid 1px $fadedBorderLighter;
 }
 
-@media (max-width: 768px) { // DA LI BI MOZDA NA SVAKOM OBRACANJU @MEDIA TREBALO DA STOJI MAX-WIDTH: 767px, DA NE BI NA 768 VEC PRIMJENJIVAO OVO PRAVILO,NEGO NA MANJE EKRANE
+@media (max-width: 767px) { // DA LI BI MOZDA NA SVAKOM OBRACANJU @MEDIA TREBALO DA STOJI MAX-WIDTH: 767px, DA NE BI NA 768 VEC PRIMJENJIVAO OVO PRAVILO,NEGO NA MANJE EKRANE
     .mobile-bb-solid {
         border-bottom: solid 1px $fadedBorderLighter;
     }
