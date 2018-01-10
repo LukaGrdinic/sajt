@@ -23,37 +23,15 @@ $fadedBorderDarker: #f7f7f7 * 0.8;
 
 // bower:scss
 @import 'bower_components/bootstrap/scss/bootstrap.scss';
-@import '1-base/_base.scss';
-@import '3-modules/_modules.scss';
+@import '1-base/base.scss';
+@import '2-layouts/layouts.scss';
+@import '3-modules/modules.scss';
 // endbower
 
 // NESTO DRUGO
 //----------------------------------------------------------
 
-.inner, .side-info {
-    p {
-        color: #636c72 * 0.7; // Ovo je iz nekog razloga deprecation warning u terminalu // Mozda ne mogu da mnozim hexadecimal color , mozda mogu samo rbg value
-        font-size: 14px;
-    }
-}
 
-.dropdown > a {
-    color: white;
-    border: none;
-    line-height: 24px;
-
-    &:hover {
-        background-color: transparent;
-    }
-
-    &:focus {
-        background-color: transparent !important;
-    }
-}
-
-.list-group-item:last-child {
-    margin-bottom: -1px;
-}
 
 @media (max-width: 767px) {
     .mobile-bb-solid {
