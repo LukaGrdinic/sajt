@@ -23,13 +23,14 @@ $fadedBorderDarker: #f7f7f7 * 0.8;
 
 // bower:scss
 @import 'bower_components/bootstrap/scss/bootstrap.scss';
-@import '1-base/base.scss';
-@import '2-layouts/layouts.scss';
-@import '3-modules/modules.scss';
 // endbower
 
 // NESTO DRUGO
 //----------------------------------------------------------
+
+@import '1-base/base.scss';
+@import '2-layouts/layouts.scss';
+@import '3-modules/modules.scss';
 
 
 
