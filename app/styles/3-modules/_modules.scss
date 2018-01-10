@@ -1,0 +1,201 @@
+// MOJ NACIN IZRADE TIMELINE-A
+//----------------------------------------------------------
+
+.timeline-horizontal .timeline-horizontal-item::before {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: $fadedBorderDarker;
+    display: block;
+    position: relative;
+    top: 27.5px;
+    z-index: -1;
+}
+
+.circle {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #fff;
+    line-height: 55px;
+    text-align: center;
+    background: #d9534f;
+}
+
+.circle-smaller {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #fff;
+    line-height: 45px;
+    text-align: center;
+    background: #d9534f;
+}
+
+.circle-outline {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    color: #fff;
+    line-height: 55px;
+    text-align: center;
+    background: white;
+    border: solid #d9534f 1px;
+}
+
+@media (max-width: 767px) {
+    .timeline-horizontal .timeline-horizontal-item::before {
+        content: "";
+        height: 100%;
+        width: 1px;
+        background-color: $fadedBorderDarker;
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top: 0px;
+        left: 25%;
+    }
+
+    .timeline-horizontal .timeline-horizontal-item:last-child::before {
+        display: none;
+    }
+}
+
+// FLEX KLASE - CUSTOM MADE
+//----------------------------------------------------------
+
+.list-inline {
+    flex: 1;
+}
+
+.flexed {
+    flex: 1;
+}
+
+.flexed-2 {
+    flex: 2;
+}
+
+// BORDER CLASSES - CUSTOM
+//----------------------------------------------------------
+
+.bb-dashed {
+    border-bottom: dashed $fadedBorderLighter 1px;
+}
+
+.br-dashed {
+    border-right: dashed $fadedBorderDarker 1px;
+}
+
+.bl-dashed {
+    border-left: dashed $fadedBorderDarker 1px;
+}
+
+//KLASE ZA MOBILNE (FLEX)
+//----------------------------------------------------------
+
+@media (max-width: 767px) {
+    .mobile-justify-content-center {
+        justify-content: center !important;
+    }
+
+    .mobile-justify-content-start {
+        justify-content: flex-start !important;
+    }
+
+    .mobile-align-items-center {
+        -webkit-box-align: center !important;
+        align-items: center !important;
+    }
+
+    .mobile-text-center {
+        text-align: center;
+    }
+
+    .mobile-text-left {
+        text-align: left !important;
+    }
+
+    .feature-bordered {
+        border: none;
+    }
+
+    .mobile-pt-5 {
+        padding-top: 24px;
+    }
+
+    .mobile-pt-3 {
+        padding-top: 16px;
+    }
+
+    .mobile-pt-0 {
+        padding-top: 0px;
+    }
+
+    .mobile-pb-3 {
+        padding-bottom: 16px;
+    }
+
+    .mobile-d-block {
+        display: block;
+    }
+
+    .mobile-flex-row {
+        flex-direction: row;
+    }
+}
+
+// DROPDOWN CUSTOM CLASS
+//----------------------------------------------------------
+
+.dropdown-white {
+    background-color: white;
+    border-radius: 5px;
+    border: solid 1px $fadedBorderDarker;
+}
+
+#dropdownMenuLink-toc {
+    width: 100%;
+    border: solid 1px $fadedBorderDarker;
+}
+
+#dropdown-menu-toc {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+}
+
+#promoCodeDropdown {
+    width: 100%;
+}
+
+// BORDERS CUSTOM CLASS
+//----------------------------------------------------------
+
+.no-br-left {
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+
+.no-br-right {
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+
+.bb-solid {
+    border-bottom: solid 1px $fadedBorderLighter;
+}
+
+.bt-solid {
+    border-top: solid 1px $fadedBorderLighter;
+}
+
+.br-solid {
+    border-right: solid 1px $fadedBorderLighter;
+}
+
+.bl-solid {
+    border-left: solid 1px $fadedBorderLighter;
+}
