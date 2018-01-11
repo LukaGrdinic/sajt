@@ -32,14 +32,3 @@ $fadedBorderDarker: #f7f7f7 * 0.8;
 @import '2-layouts/layouts.scss';
 @import '3-modules/modules.scss';
 
-
-
-@media (max-width: 767px) {
-    .mobile-bb-solid {
-        border-bottom: solid 1px $fadedBorderLighter;
-    }
-    .mobile-bx-0 {
-        border-right: none;
-        border-left: none;
-    }
-}

@@ -95,10 +95,20 @@
 
 //KLASE ZA MOBILNE (FLEX)
 //----------------------------------------------------------
+// JA BIH ODJE DA MI ZA TABLETE VAZI SAMO @media AKO MOZE DA IMA I MAX - WIDTH I MIN WIDTH, MOZE LI TO? I KAKO PROMIJENIT ONU POSTOJECU SITUACIJU ?
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .tablet-text-center {
         text-align: center;
+    }
+    .tablet-pr-5 {
+        padding-right: 5px !important;
+    }
+    .tablet-pr-3rem {
+        padding-right: 3rem !important;
+    }
+    .tablet-pl-3rem {
+        padding-left: 3rem !important;
     }
 }
 
@@ -122,6 +132,10 @@
 
     .mobile-text-left {
         text-align: left !important;
+    }
+
+    .mobile-text-right {
+        text-align: right !important;
     }
 
     .feature-bordered {
@@ -204,6 +218,17 @@
 
 .bl-solid {
     border-left: solid 1px $fadedBorderLighter;
+}
+
+
+@media (max-width: 767px) {
+    .mobile-bb-solid {
+        border-bottom: solid 1px $fadedBorderLighter;
+    }
+    .mobile-bx-0 {
+        border-right: none;
+        border-left: none;
+    }
 }
 
 // CHANGES MADE TO BOOTSTRAP
