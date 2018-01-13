@@ -101,12 +101,15 @@
     .tablet-text-center {
         text-align: center;
     }
+
     .tablet-pr-5 {
         padding-right: 5px !important;
     }
+
     .tablet-pr-3rem {
         padding-right: 3rem !important;
     }
+
     .tablet-pl-3rem {
         padding-left: 3rem !important;
     }
@@ -220,11 +223,11 @@
     border-left: solid 1px $fadedBorderLighter;
 }
 
-
 @media (max-width: 767px) {
     .mobile-bb-solid {
         border-bottom: solid 1px $fadedBorderLighter;
     }
+
     .mobile-bx-0 {
         border-right: none;
         border-left: none;
@@ -250,4 +253,12 @@
 
 .list-group-item:last-child {
     margin-bottom: -1px;
+}
+
+@media (min-width: 576px) {
+    .form-inline .form-control {
+        display: inline-block;
+        width: 100%;
+        vertical-align: middle;
+    }
 }
