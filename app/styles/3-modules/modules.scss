@@ -93,89 +93,89 @@
     border-left: dashed $fadedBorderDarker 1px;
 }
 
-//KLASE ZA MOBILNE (FLEX)
+//KLASE ZA MOBILNE (FLEX) // OVO TREBA SVE POBRISATI I ZAMIJENITI SA BOOTSTRAPOVIM KLASAMA
 //----------------------------------------------------------
 // JA BIH ODJE DA MI ZA TABLETE VAZI SAMO @media AKO MOZE DA IMA I MAX - WIDTH I MIN WIDTH, MOZE LI TO? I KAKO PROMIJENIT ONU POSTOJECU SITUACIJU ?
 
 @media (max-width: 991px) {
-    .tablet-text-center {
+    .tablet-text-center { // .text-lg-center
         text-align: center;
     }
 
-    .tablet-px-0 {
+    .tablet-px-0 { // .px-lg-0
         padding-left: 0px;
         padding-right: 0px;
     }
 
-    .tablet-pr-5 {
+    .tablet-pr-5 { // .pr-lg-1
         padding-right: 5px !important;
     }
 
-    .tablet-pr-3rem {
+    .tablet-pr-3rem { // .pr-lg-3
         padding-right: 3rem !important;
     }
 
-    .tablet-pl-3rem {
+    .tablet-pl-3rem { // .pl-lg-3
         padding-left: 3rem !important;
     }
 }
 
 @media (max-width: 767px) {
-    .mobile-justify-content-center {
+    .mobile-justify-content-center { // .justify-content-md-center
         justify-content: center !important;
     }
 
-    .mobile-justify-content-start {
+    .mobile-justify-content-start { // .justify-content-md-start
         justify-content: flex-start !important;
     }
 
-    .mobile-align-items-center {
+    .mobile-align-items-center { // .align-items-md-center
         -webkit-box-align: center !important;
         align-items: center !important;
     }
 
-    .mobile-text-center {
+    .mobile-text-center { // .text-md-center
         text-align: center !important;
     }
 
-    .mobile-text-left {
+    .mobile-text-left { // .text-md-left
         text-align: left !important;
     }
 
-    .mobile-text-right {
+    .mobile-text-right { // .text-md-right
         text-align: right !important;
     }
 
-    .feature-bordered {
+    .feature-bordered { // OVO POGLEDATI MALO BOLJE, AL SE MOZE ISKOMBINOVATI SA border-md-0
         border: none;
     }
 
-    .mobile-px-0 {
+    .mobile-px-0 { // .px-md-0
         padding-left: 0px;
         padding-right: 0px;
     }
 
-    .mobile-pt-5 {
+    .mobile-pt-5 { // .pt-md-5
         padding-top: 24px;
     }
 
-    .mobile-pt-3 {
+    .mobile-pt-3 { // .pt-md-3
         padding-top: 16px;
     }
 
-    .mobile-pt-0 {
+    .mobile-pt-0 { // .pt-md-0
         padding-top: 0px;
     }
 
-    .mobile-pb-3 {
+    .mobile-pb-3 { // .pb-md-3
         padding-bottom: 16px;
     }
 
-    .mobile-d-block {
+    .mobile-d-block { // .d-md-block
         display: block;
     }
 
-    .mobile-flex-row {
+    .mobile-flex-row { // .flex-md-row
         flex-direction: row;
     }
 }
@@ -289,41 +289,3 @@
         border-bottom-left-radius: 0.25rem;
     }
 }
-
-/* .list-group {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    padding-left: 0;
-    margin-bottom: 0;} */ // MISLIM DA OVO SVE NE TREBA
-
-/* .list-group-item:first-child {
-    border-top-right-radius: 0.25rem;
-    border-top-left-radius: 0.25rem;
-} */
-/* .list-group-item:last-child {
-    border-bottom-right-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
-} */
-
-/* .list-group-item {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 0.75rem 1.25rem;
-    margin-bottom: -1px;
-    background-color: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.125);
-} */
