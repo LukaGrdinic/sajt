@@ -219,13 +219,13 @@
         <!-- THIS IS THE INNER PART -->
         <!-- =============================================== -->
 
-        <div class="col-md-9 inner">
+        <div class="col-12 col-lg-9 inner pl-lg-0"> <!-- Odje bi mozda trebalo da ide tablet-px-0 ali onda ispada grdno nesto na malim ekranima i treba rijesit ovo pl-0 -->
           <div class="row mt-5">
-            <div class="col-12 list-group mobile-px-0">
-              <div class="list-group-item">
+            <div class="col-12 tablet-px-0">
+              <div class="gentle-gray-borders">
                 <h4 class="mb-0">Travellers</h4>
               </div>
-              <div class="list-group-item bg-faded">
+              <div class="gentle-gray-borders  bg-faded">
                 <div class="container pl-0">
                   <div class="row">
                     <div class="col-12">
@@ -295,29 +295,29 @@
             </div>
           </div>
           <div class="row pt-5">
-            <div class="col-12 list-group mobile-px-0">
+            <div class="col-12  tablet-px-0">
               <div class="row no-gutters">
                 <div class="col-12">
-                  <div class="list-group-item">
+                  <div class="gentle-gray-borders ">
                     <h4 class="mb-0">Service Requestes
                       <span class="text-muted">(Optional)</span>
                     </h4>
                   </div>
                 </div>
               </div>
-              
+
               <div class="row no-gutters">
                 <div class="col-12">
-                  <div class="list-group-item bg-faded">
+                  <div class="gentle-gray-borders d-flex bg-faded">
                     <div class="row">
                       <div class="col-12 col-md-4 py-2">
-                        <button class="btn btn-secondary mx-2 font-weight-bold">Add Meals +</button>
+                        <button class="btn btn-secondary font-weight-bold">Add Meals +</button>
                       </div>
                       <div class="col-12 col-md-4 py-2">
-                        <button class="btn btn-secondary mx-2 font-weight-bold">Select Seats +</button>
+                        <button class="btn btn-secondary font-weight-bold">Select Seats +</button>
                       </div>
                       <div class="col-12 col-md-4 py-2">
-                        <button class="btn btn-secondary mx-2 font-weight-bold">Select Others +</button>
+                        <button class="btn btn-secondary font-weight-bold">Select Others +</button>
                       </div>
                     </div>
                   </div>
@@ -326,179 +326,8 @@
             </div>
           </div>
           <div class="row mt-5">
-            <div class="col-sm-12 text-center">
+            <div class="col-sm-12 text-center hidden-md-down">
               <button class="btn btn-lg bg-inverse text-white">Continue</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- =============================================== -->
-        <!-- THIS IS THE MOBILE - INNER PART -->
-        <!-- =============================================== -->
-        <div class="col-12 inner hidden-lg-up">
-          <div class="row no-gutters">
-            <div class="col-12 list-group pt-5 text-center px-0">
-              <div class="row list-group-item">
-                <div class="col-12">
-                  <h4 class="mb-0">Review Your Booking</h4>
-                </div>
-              </div>
-              <div class="row list-group-item bg-faded px-0">
-                <!-- MOZDA JE ODJE CAK LJEPSE BEZ OVOG PX-0 -->
-                <div class="col-12 pb-3">
-                  <div class="row text-muted font-weight-bold">
-                    <div class="col-12 pb-1">
-                      <p>Departure</p>
-                    </div>
-                    <div class="col-12">
-                      <p>Total time: 19h 15m</p>
-                    </div>
-                  </div>
-                </div>
-
-                <!--DELTA AIRLINES STARTS HERE -->
-                <!-- =============================================== -->
-
-                <div class="col-12">
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="row">
-                        <div class="col-12 py-3">
-                          <img src="http://via.placeholder.com/55x55" alt="Sorry,cant load the image!">
-                        </div>
-                        <div class="col-12">
-                          <h4>
-                            Delta Air Lines
-                          </h4>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 bb-dashed py-3">
-                      <h4>LGA 06:29</h4>
-                      <p class="d-flex justify-content-center">New York, United States </p>
-                      <p>Wed,17 May 2017</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 py-3 bb-dashed">
-                  <div class="row">
-                    <div class="col-12">
-                      <h4>
-                        7h 54m (1 Stop)
-                      </h4>
-                    </div>
-                    <div class="col-12">
-                      <p class="d-flex justify-content-center">Philadelphia </p>
-                      <div class="d-flex justify-content-between px-4">
-                        <p class="flexed">Economy</p>
-                        <p class="flexed">
-                          <strong>Refundable</strong>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 py-3 bb-dashed">
-                  <div class="row">
-                    <div class="col-12">
-                      <h4>
-                        JFK 23:30
-                      </h4>
-                    </div>
-                    <div class="col-12">
-                      <p class="d-flex justify-content-center">Santa Ana, CA, United States</p>
-                      <p>Thu, 18 May 2017</p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- AIR ASIA AIRLINES STARTS HERE -->
-                <!-- =============================================== -->
-
-                <div class="col-12 py-3">
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="row">
-                        <div class="col-12 py-3">
-                          <img src="http://via.placeholder.com/55x55" alt="Sorry,cant load the image!">
-                        </div>
-                        <div class="col-12">
-                          <h4>Air Asia Air Lines</h4>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 bb-dashed py-3">
-                      <h4>EWR 11:00</h4>
-                      <p class="d-flex justify-content-center">Santa Ana, United States</p>
-                      <p>Thu, 18 May 2017</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 py-3 bb-dashed py-3">
-                  <div class="row">
-                    <div class="col-12">
-                      <h4>
-                        5h 51m (Non-Stop)
-                      </h4>
-                    </div>
-                    <div class="col-12">
-                      <p class="d-flex justify-content-center">Philadelphia </p>
-                      <div class="d-flex justify-content-between px-4">
-                        <p class="flexed">Economy</p>
-                        <p class="flexed">
-                          <strong>Refundable</strong>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 py-3">
-                  <div class="row">
-                    <div class="col-12">
-                      <h4>
-                        LAX 13:51
-                      </h4>
-                    </div>
-                    <div class="col-12">
-                      <p class="d-flex justify-content-center">New York, United States</p>
-                      <p>Thu, 18 May 2017</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- =============================================== -->
-          <!-- THIS IS THE PROMO MOBILE - PROMO CODE PART -->
-          <!-- =============================================== -->
-
-          <div class="row mx-0">
-            <div class="col-12 list-group pt-5 px-0 text-center">
-              <div class="row list-group-item">
-                <div class="col-12">
-                  <h4 class="my-0">Promo Code
-                    <span class="text-muted">(Optional)</span>
-                  </h4>
-                </div>
-              </div>
-              <div class="row list-group-item bg-faded">
-                <div class="col-12">
-                  <h4 class="my-0">Departure</h4>
-                  <div class="dropdown dropdown-white my-3">
-                    <a href="#" class="btn dropdown-toggle text-muted d-block" id="mobile-dropdownMenuLink-inner" data-toggle="dropdown" aria-haspopup="true"
-                      aria-expanded="false">
-                      VIEW PROMO CODE
-                    </a>
-                    <div id="promoCodeDropdown" class="dropdown-menu" aria-labelledby="mobile-dropdownMenuLink-inner">
-                      <a class="dropdown-item" href="#">First promo code</a>
-                      <a class="dropdown-item" href="#">Second promo code</a>
-                      <a class="dropdown-item" href="#">Third promo code</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -507,49 +336,47 @@
         <!-- THIS IS THE SIDE PART -->
         <!-- =============================================== -->
 
-        <div class="col-12 col-lg-3 side-info">
+        <div class="col-12 col-lg-3 side-info pr-0 tablet-px-0">
           <div class="mt-5">
-            <div class="list-group">
 
-              <div class="list-group-item">
-                <h4 class="mb-0">Fare details</h4>
-              </div>
-              <div class="list-group-item d-flex justify-content-between align-items-center bg-faded">
-                <p>Adult x 1</p>
-                <p>
-                  <strong>$349</strong>
-                </p>
-              </div>
-              <div class="row mx-0 list-group-item bg-faded">
-                <div class="col-12 px-0">
-                  <div class="row">
-                    <div class="col-12 d-flex justify-content-between">
-                      <p>Fee and surcharges</p>
-                      <p>
-                        <strong>$120</strong>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12 text-right">
-                      <p class="mb-1">You pay</p>
-                      <h2 class="text-danger">$460</h2>
-                    </div>
+            <div class="gentle-gray-borders ">
+              <h4 class="mb-0">Fare details</h4>
+            </div>
+            <div class="gentle-gray-borders  d-flex justify-content-between align-items-center bg-faded">
+              <p>Adult x 1</p>
+              <p>
+                <strong>$349</strong>
+              </p>
+            </div>
+            <div class="row mx-0 gentle-gray-borders  bg-faded">
+              <div class="col-12 px-0">
+                <div class="row">
+                  <div class="col-12 d-flex justify-content-between">
+                    <p>Fee and surcharges</p>
+                    <p>
+                      <strong>$120</strong>
+                    </p>
                   </div>
                 </div>
-
+                <div class="row">
+                  <div class="col-12 text-right">
+                    <p class="mb-1">You pay</p>
+                    <h2 class="text-danger">$460</h2>
+                  </div>
+                </div>
               </div>
+
             </div>
 
             <!-- =============================================== -->
             <!-- THIS IS THE SIDE PART LOWER-->
             <!-- =============================================== -->
 
-            <div class="list-group mt-5">
-              <div class="list-group-item">
+            <div class=" mt-5">
+              <div class="gentle-gray-borders ">
                 <h4 class="mb-0">Traveltrip extra's</h4>
               </div>
-              <div class="list-group-item d-flex justify-content-between align-items-center bg-faded">
+              <div class="gentle-gray-borders  d-flex justify-content-between align-items-center bg-faded">
                 <p>eCash</p>
                 <p class="text-danger">
                   <strong>$103</strong>
@@ -564,11 +391,9 @@
       <!-- THIS IS THE MOBILE - BUTTON PART -->
       <!-- =============================================== -->
 
-      <div class="container">
-        <div class="row mt-5 hidden-md-up">
-          <div class="col-sm-12 text-center">
-            <button class="btn btn-lg bg-inverse text-white">Continue</button>
-          </div>
+      <div class="row mt-5 hidden-lg-up">
+        <div class="col-sm-12 text-center">
+          <button class="btn btn-lg bg-inverse text-white">Continue</button>
         </div>
       </div>
     </div>
@@ -696,11 +521,11 @@
               </div>
             </div>
             <div class="flexed">
-              <div class="list-group d-flex flex-row">
-                <a class="list-group-item flexed px-3 py-2 no-br-right disabled text-muted">
+              <div class=" d-flex flex-row">
+                <a class="-item flexed px-3 py-2 no-br-right disabled text-muted">
                   Subscribe
                 </a>
-                <a class="list-group-item bg-danger no-br-left text-white px-3 py-2">Send</a>
+                <a class="-item bg-danger no-br-left text-white px-3 py-2">Send</a>
               </div>
             </div>
           </div>
