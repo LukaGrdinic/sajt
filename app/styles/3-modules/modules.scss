@@ -249,6 +249,12 @@
     }
 }
 
+.nav-tabs .nav-link.active {
+    color: #464a4c;
+    background-color: #f7f7f7;
+    border-color: #ddd #ddd transparent;
+}
+
 // REPLACEMENT TO LIST-GROUP THAT KEEPS THE SAME BORDERS
 
 .gentle-gray-borders {
