@@ -241,6 +241,7 @@
     border-top-right-radius: 0.25rem !important;
 }
 
+
 .rounded-left {
     border-bottom-left-radius: 0.25rem !important;
     border-top-left-radius: 0.25rem !important;
@@ -253,6 +254,15 @@
         vertical-align: middle;
     }
 }
+
+@media (min-width: 768px) {
+    .rounded-md-right {
+        border-bottom-right-radius: 0.25rem !important;
+        border-top-right-radius: 0.25rem !important;    
+    }
+}
+
+
 
 .nav-tabs .nav-link.active {
     color: #464a4c;
