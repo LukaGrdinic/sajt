@@ -168,7 +168,7 @@
     </div>
 
     <!-- =============================================== -->
-    <!-- THIS IS THE PART WITH THE CIRCLES -->
+    <!-- THIS IS THE HOTEL LIST VIEW -->
     <!-- =============================================== -->
 
     <div class="container-fluid bg-inverse">
@@ -183,25 +183,40 @@
             <form>
               <div class="row no-gutters">
                 <div class="col-12 col-md-4">
-                  <input type="text" class="form-control py-3 rounded-0 rounded-left border-right-0 mobile-bx-0 hidden-md-down" placeholder="Select City, Location or Hotel Name">
-                  <input type="text" class="form-control py-3 rounded-0 rounded-left border-right-0 mobile-bx-0 hidden-lg-up" placeholder="Select Location or Hotel">
+                  <div class="input-group mobile-py-2">
+                    <input type="text" class="form-control py-3 rounded-0 rounded-left border-0 mobile-bx-0 hidden-md-down" placeholder="Select City, Location or Hotel Name">
+                    <input type="text" class="form-control py-3 rounded-0 rounded-left border-0 mobile-bx-0 hidden-lg-up" placeholder="Select Location or Hotel">
+                    <div class="input-group-addon bg-white border-0 rounded-0">
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="input-group mobile-py-2">
+                    <input type="text" class="form-control py-3 border-0 bl-solid rounded-0 mobile-bx-0" placeholder="Check-In">
+                    <div class="input-group-addon bg-white border-0 rounded-0">
+                      <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+
+                    </div>
+                  </div>
 
                 </div>
                 <div class="col-12 col-md-2">
-                  <input type="text" class="form-control py-3 border-right-0 bl-solid rounded-0 mobile-bx-0" placeholder="Check-In">
-
+                  <div class="input-group mobile-py-2">
+                    <input type="text" class="form-control py-3 border-0 bl-solid rounded-0 mobile-bx-0" placeholder="Check-Out">
+                    <div class="input-group-addon bg-white border-0 rounded-0">
+                      <i class="fa fa-calendar-times-o" aria-hidden="true"></i>
+                    </div>
+                  </div>
                 </div>
                 <div class="col-12 col-md-2">
-                  <input type="text" class="form-control py-3 border-right-0 bl-solid rounded-0 mobile-bx-0" placeholder="Check-Out">
-
+                  <div class="input-group mobile-py-2">
+                    <input type="text" class="form-control py-3 border-0 bl-solid rounded-0 mobile-bx-0 hidden-lg-down" placeholder="2 People in 1 Room">
+                    <input type="text" class="form-control py-3 border-0 bl-solid rounded-0 mobile-bx-0 hidden-xl-up" placeholder="Room for 2">
+                  </div>
                 </div>
-                <div class="col-12 col-md-2">
-                  <input type="text" class="form-control py-3 border-right-0 bl-solid rounded-0 mobile-bx-0 hidden-lg-down" placeholder="2 People in 1 Room">
-                  <input type="text" class="form-control py-3 border-right-0 bl-solid rounded-0 mobile-bx-0 hidden-xl-up" placeholder="Room for 2">
-
-                </div>
-                <div class="col-12 col-md-2">
-                  <button type="submit" class="btn btn-danger form-control py-3 rounded-0 rounded-right">
+                <div class="col-12 col-md-2 mobile-py-2">
+                  <button type="submit" class="btn btn-danger form-control py-3 border-top-0 border-bottom-0 rounded-0 rounded-right">
                     Search
                   </button>
                 </div>
@@ -284,7 +299,8 @@
                   </div>
                   <div class="row no-gutters bg-faded flexed">
                     <div class="col-12 px-3 py-3 d-flex align-items-center">
-                      <p><strong class="text-danger">Flat 50% Off.</strong> Earn 20% in eWallet. Code - TTLAVISH</p>
+                      <p>
+                        <strong class="text-danger">Flat 50% Off.</strong> Earn 20% in eWallet. Code - TTLAVISH</p>
                     </div>
                   </div>
                 </div>

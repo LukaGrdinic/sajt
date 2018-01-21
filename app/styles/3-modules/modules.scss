@@ -126,6 +126,11 @@
         padding-top: 0px;
     }
 
+    .mobile-py-2 { // .pt-md-0
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
     .mobile-pb-3 { // .pb-md-3
         padding-bottom: 16px;
     }
@@ -184,19 +189,19 @@
 }
 
 .bb-solid {
-    border-bottom: solid 1px $fadedBorderLighter;
+    border-bottom: solid 1px $fadedBorderLighter !important;
 }
 
 .bt-solid {
-    border-top: solid 1px $fadedBorderLighter;
+    border-top: solid 1px $fadedBorderLighter !important;
 }
 
 .br-solid {
-    border-right: solid 1px $fadedBorderLighter;
+    border-right: solid 1px $fadedBorderLighter !important;
 }
 
 .bl-solid {
-    border-left: solid 1px $fadedBorderLighter;
+    border-left: solid 1px $fadedBorderLighter !important;
 }
 
 @media (max-width: 767px) {
