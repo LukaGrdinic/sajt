@@ -26,10 +26,10 @@
   <!-- endbuild -->
 
   <script>
-    $(document).ready(function(){
-      var date_input=$('input[name="date"]'); //our date input has the name "date"
-      var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
-      var options={
+    $(document).ready(function () {
+      var date_input = $('input[name="date"]'); //our date input has the name "date"
+      var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
+      var options = {
         format: 'mm/dd/yyyy',
         container: container,
         todayHighlight: true,
@@ -37,7 +37,7 @@
       };
       date_input.datepicker(options);
     })
-</script>
+  </script>
 
 </head>
 
@@ -242,9 +242,9 @@
                 <h4 class="mb-0">Travellers</h4>
               </div>
               <div class="borders-gray-gentle bg-faded">
-                <div class="container pl-0">
+                <div class="container pl-lg-0">
                   <div class="row">
-                    <div class="col-12 col-md-10">
+                    <div class="col-12 col-md-10 tablet-px-0">
                       <div class="row">
                         <div class="col-12">
                           <p class="font-weight-bold py-2">Adult 1</p>
@@ -254,24 +254,34 @@
                         <div class="col-12">
                           <form class="form-inline">
                             <div class="row">
-                              <div class="col-12 col-lg-2">
+                              <div class="col-12 col-lg-2 pr-lg-1">
                                 <select class="form-control my-1 px-1">
                                   <option class="py-1">Title 1</option>
                                   <option class="py-1">Title 2</option>
                                   <option class="py-1">Title 3</option>
                                 </select>
                               </div>
-                              <div class="col-12 col-lg-3">
+                              <div class="col-12 col-lg-3 col-xl-2 px-lg-1">
                                 <input class="form-control my-1 px-1" placeholder="First Name">
                               </div>
-                              <div class="col-12 col-lg-3">
+                              <div class="col-12 col-lg-3 col-xl-2 px-lg-1">
                                 <input class="form-control my-1 px-1" placeholder="Middle Name">
                               </div>
-                              <div class="col-12 col-lg-3">
+                              <div class="col-12 col-lg-4 col-xl-3 px-lg-1">
                                 <input class="form-control my-1 px-1" placeholder="Last Name">
                               </div>
-                              <div class="col-12 col-lg-1 px-lg-0">
-                                <input type="" class="form-control my-1 px-1 dateTimePicker" placeholder="DOB ">
+                              <div class="col-12 col-lg-12 col-xl-2 px-xl-1 d-flex align-items-center">
+                                <div class="bootstrap-iso flexed">
+                                  <div class="form-group ">
+                                    <div class="input-group ">
+                                      <input class="form-control border-right-0 cursor-pointer my-1 " id="date" name="date" placeholder="DOB" type="text" />
+                                      <div class="input-group-addon bg-white my-1">
+                                        <i class="fa fa-calendar">
+                                        </i>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
                                 <!-- Nece da mu stoji samo placeholder -->
                               </div>
                             </div>
@@ -627,39 +637,15 @@
       </div>
     </div>
 
-    <div class="bootstrap-iso">
-      <div class="container-fluid">
-       <div class="row">
-        <div class="col-md-6 col-sm-6 col-xs-12">
-         <form method="post">
-          <div class="form-group ">
-           <label class="control-label " for="date">
-            Date
-           </label>
-           <div class="input-group">
-            <input class="form-control" id="date" name="date" placeholder="DOB" type="text"/>
-            <div class="input-group-addon">
-             <i class="fa fa-calendar">
-             </i>
-            </div>
-           </div>
-          </div>
-          <div class="form-group">
-           <div>
-            <button class="btn btn-primary " name="submit" type="submit">
-             Submit
-            </button>
-           </div>
-          </div>
-         </form>
-        </div>
-       </div>
-      </div>
-     </div>
-     
-     
+    <!-- =============================================== -->
+    <!-- THIS IS THE BEGGINING OF THE HTML PART OF THE PLUGIN -->
+    <!-- =============================================== -->
 
-    
+
+
+
+
+
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
@@ -681,26 +667,27 @@
     <script src="/bower_components/bootstrap/js/dist/popover.js"></script>
     <!-- endbuild -->
 
-         <!-- Extra JavaScript/CSS added manually in "Settings" tab -->
-     <!-- Include jQuery -->
-     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-     
-     <!-- Include Date Range Picker -->
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
-     
-     <script>
-         $(document).ready(function(){
-             var date_input=$('input[name="date"]'); //our date input has the name "date"
-             var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
-             date_input.datepicker({
-                 format: 'mm/dd/yyyy',
-                 container: container,
-                 todayHighlight: true,
-                 autoclose: true,
-             })
-         })
-     </script>
+    <!-- Extra JavaScript/CSS added manually in "Settings" tab -->
+    <!-- Include jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- Include Date Range Picker -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"
+    />
+
+    <script>
+      $(document).ready(function () {
+        var date_input = $('input[name="date"]'); //our date input has the name "date"
+        var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
+        date_input.datepicker({
+          format: 'mm/dd/yyyy',
+          container: container,
+          todayHighlight: true,
+          autoclose: true,
+        })
+      })
+    </script>
 
     <!--    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
       crossorigin="anonymous"></script>
