@@ -150,10 +150,10 @@
       <div class="bg-faded">
         <div class="container">
           <div class="row py-3">
-            <div class="col-2 d-flex align-items-center">
+            <div class="col-12 col-lg-6 d-flex align-items-center">
               <h4 class="mb-0 pl-0">Hotel List View</h4>
             </div>
-            <div class="col-10 hidden-md-down">
+            <div class="col-6 hidden-md-down">
               <ol class="breadcrumb mb-0 bg-faded d-flex justify-content-end">
                 <li class="breadcrumb-item">Home</li>
                 <li class="breadcrumb-item">Hotells</li>
@@ -251,25 +251,32 @@
               <h3>Hotel Search results</h3>
             </div>
           </div>
-          <div class="row py-3">
-            <div class="col-2">
-              <p>SORT BY:</p>
+          <div class="row pt-3 pb-4 hidden-sm-down">
+            <div class="col-12 d-flex">
+              <p class="pr-3">SORT BY:</p>
+              <p class="px-3">RECOMENDED</p>
+              <p class="px-3 bl-solid br-solid">STAR RATING</p>
+              <p class="px-3">PRICE (TAKES EXTRA)</p>
             </div>
-            <div class="col-2 text-center">
-              <p>RECOMENDED</p>
-            </div>
-            <div class="col-2 text-center">
-              <p>STAR RATING</p>
-            </div>
-            <div class="col-3 text-center">
-              <p>PRICE (TAKES EXTRA)</p>
+          </div>
+          <div class="row py-3 hidden-md-up">
+            <div class="col-12">
+              <div class="dropdown">
+                <a class="dropdown-toggle btn btn-danger text-white w-100" id="dropdownSortBy" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">Sort By</a>
+                <div class="dropdown-menu w-100 text-center" aria-labelledby="dropdownSortBy">
+                  <div class="dropdown-menu-item">Recomended</div>
+                  <div class="dropdown-menu-item">Star Rating</div>
+                  <div class="dropdown-menu-item">Price</div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="row">
             <div class="col-12 offerCards">
-              <div class="row mx-0 borders-gray-gentle px-0 py-0">
+              <div class="row mx-0 borders-gray-gentle px-0 py-0 mb-5">
                 <div class="col-12 col-md-4 px-0">
-                  <img class="img-fluid" src="http://via.placeholder.com/350x350">
+                  <img class="w-100" src="http://via.placeholder.com/350x350">
                 </div>
                 <div class="col-12 col-md-8 px-0 align-self-stretch d-flex flex-column">
                   <div class="row no-gutters">
@@ -295,9 +302,9 @@
 
                       </p>
                     </div>
-                    <div class="col-12 col-md-4 text-right px-3 py-5">
-                      <div class="row">
-                        <div class="col-12 d-flex align-items-center">
+                    <div class="col-12 col-md-4 text-center text-md-right px-4 pt-md-5 d-flex flex-column">
+                      <div class="row flexed">
+                        <div class="col-12 d-flex align-items-center justify-content-center justify-content-md-end">
                           <h4 class="mb-0 text-muted px-1">
                             <s>125$</s>
                           </h4>
@@ -306,10 +313,19 @@
                           </h3>
                         </div>
                       </div>
-
+                      <div class="row flexed">
+                        <div class="col-12">
+                          <p>132 reviews</p>
+                        </div>
+                      </div>
+                      <div class="row flexed">
+                        <div class="col-12">
+                          <button class="btn bg-danger text-white">Book Now</button>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="row no-gutters bg-faded flexed">
+                  <div class="row no-gutters bg-faded flexed mt-4 mt-md-0">
                     <div class="col-12 px-3 py-3 d-flex align-items-center">
                       <p>
                         <strong class="text-danger">Flat 50% Off.</strong> Earn 20% in eWallet. Code - TTLAVISH</p>
@@ -317,13 +333,443 @@
                   </div>
                 </div>
               </div>
-              <div class="row"></div>
-              <div class="row"></div>
-              <div class="row"></div>
-              <div class="row"></div>
-              <div class="row"></div>
-              <div class="row"></div>
-              <div class="row"></div>
+
+              <!-- THESE ARE JUST COPIES OF THE ONE ABOVE + SOME CHANGES TO PRICES -->
+              <!-- =============================================================== -->
+              <!-- THIS IS OFFERCARD NUMBER 2 -->
+
+              <div class="row mx-0 borders-gray-gentle px-0 py-0 mb-5">
+                <div class="col-12 col-md-4 px-0">
+                  <img class="w-100" src="http://via.placeholder.com/350x350">
+                </div>
+                <div class="col-12 col-md-8 px-0 align-self-stretch d-flex flex-column">
+                  <div class="row no-gutters">
+                    <div class="col-12 col-md-8 px-3">
+                      <p class="py-2">
+                        <strong>The Byke Old Anchor Beach Resort</strong>
+                      </p>
+                      <p class="py-2">
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-muted" aria-hidden="true"></i>
+                      </p>
+                      <p class="py-2">Lotus by the beach goa</p>
+                      <p class="py-2">Entire home/apt 2 beds 4 guests</p>
+                      <p class="py-2">
+                        <i class="fa fa-bed pr-1" aria-hidden="true"></i>
+                        <i class="fa fa-coffee px-1" aria-hidden="true"></i>
+                        <i class="fa fa-shower px-1" aria-hidden="true"></i>
+                        <i class="fa fa-bicycle px-1" aria-hidden="true"></i>
+                        <i class="fa fa-car text-muted px-1" aria-hidden="true"></i>
+
+                      </p>
+                    </div>
+                    <div class="col-12 col-md-4 text-center text-md-right px-4 pt-md-5 d-flex flex-column">
+                      <div class="row flexed">
+                        <div class="col-12 d-flex align-items-center justify-content-center justify-content-md-end">
+                          <h4 class="mb-0 text-muted px-1">
+                            <s>125$</s>
+                          </h4>
+                          <h3 class="mb-0 text-danger px-1">
+                            <strong>$74</strong>
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="row flexed">
+                        <div class="col-12">
+                          <p>132 reviews</p>
+                        </div>
+                      </div>
+                      <div class="row flexed">
+                        <div class="col-12">
+                          <button class="btn bg-danger text-white">Book Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row no-gutters bg-faded flexed mt-4 mt-md-0">
+                    <div class="col-12 px-3 py-3 d-flex align-items-center">
+                      <p>
+                        <strong class="text-danger">Flat 50% Off.</strong> Earn 20% in eWallet. Code - TTLAVISH</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- THIS IS OFFERCARD NUMBER 3 -->
+
+              <div class="row mx-0 borders-gray-gentle px-0 py-0 mb-5">
+                <div class="col-12 col-md-4 px-0">
+                  <img class="w-100" src="http://via.placeholder.com/350x350">
+                </div>
+                <div class="col-12 col-md-8 px-0 align-self-stretch d-flex flex-column">
+                  <div class="row no-gutters">
+                    <div class="col-12 col-md-8 px-3">
+                      <p class="py-2">
+                        <strong>The Byke Old Anchor Beach Resort</strong>
+                      </p>
+                      <p class="py-2">
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-muted" aria-hidden="true"></i>
+                      </p>
+                      <p class="py-2">Lotus by the beach goa</p>
+                      <p class="py-2">Entire home/apt 2 beds 4 guests</p>
+                      <p class="py-2">
+                        <i class="fa fa-bed pr-1" aria-hidden="true"></i>
+                        <i class="fa fa-coffee px-1" aria-hidden="true"></i>
+                        <i class="fa fa-shower px-1" aria-hidden="true"></i>
+                        <i class="fa fa-bicycle px-1" aria-hidden="true"></i>
+                        <i class="fa fa-car text-muted px-1" aria-hidden="true"></i>
+
+                      </p>
+                    </div>
+                    <div class="col-12 col-md-4 text-center text-md-right px-4 pt-md-5 d-flex flex-column">
+                      <div class="row flexed">
+                        <div class="col-12 d-flex align-items-center justify-content-center justify-content-md-end">
+                          <h4 class="mb-0 text-muted px-1">
+                            <s>125$</s>
+                          </h4>
+                          <h3 class="mb-0 text-danger px-1">
+                            <strong>$74</strong>
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="row flexed">
+                        <div class="col-12">
+                          <p>132 reviews</p>
+                        </div>
+                      </div>
+                      <div class="row flexed">
+                        <div class="col-12">
+                          <button class="btn bg-danger text-white">Book Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row no-gutters bg-faded flexed mt-4 mt-md-0">
+                    <div class="col-12 px-3 py-3 d-flex align-items-center">
+                      <p>
+                        <strong class="text-danger">Flat 50% Off.</strong> Earn 20% in eWallet. Code - TTLAVISH</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- THIS IS OFFERCARD NUMBER 4 -->
+
+              <div class="row mx-0 borders-gray-gentle px-0 py-0 mb-5">
+                <div class="col-12 col-md-4 px-0">
+                  <img class="w-100" src="http://via.placeholder.com/350x350">
+                </div>
+                <div class="col-12 col-md-8 px-0 align-self-stretch d-flex flex-column">
+                  <div class="row no-gutters">
+                    <div class="col-12 col-md-8 px-3">
+                      <p class="py-2">
+                        <strong>The Byke Old Anchor Beach Resort</strong>
+                      </p>
+                      <p class="py-2">
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-muted" aria-hidden="true"></i>
+                      </p>
+                      <p class="py-2">Lotus by the beach goa</p>
+                      <p class="py-2">Entire home/apt 2 beds 4 guests</p>
+                      <p class="py-2">
+                        <i class="fa fa-bed pr-1" aria-hidden="true"></i>
+                        <i class="fa fa-coffee px-1" aria-hidden="true"></i>
+                        <i class="fa fa-shower px-1" aria-hidden="true"></i>
+                        <i class="fa fa-bicycle px-1" aria-hidden="true"></i>
+                        <i class="fa fa-car text-muted px-1" aria-hidden="true"></i>
+
+                      </p>
+                    </div>
+                    <div class="col-12 col-md-4 text-center text-md-right px-4 pt-md-5 d-flex flex-column">
+                      <div class="row flexed">
+                        <div class="col-12 d-flex align-items-center justify-content-center justify-content-md-end">
+                          <h4 class="mb-0 text-muted px-1">
+                            <s>125$</s>
+                          </h4>
+                          <h3 class="mb-0 text-danger px-1">
+                            <strong>$74</strong>
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="row flexed">
+                        <div class="col-12">
+                          <p>132 reviews</p>
+                        </div>
+                      </div>
+                      <div class="row flexed">
+                        <div class="col-12">
+                          <button class="btn bg-danger text-white">Book Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row no-gutters bg-faded flexed mt-4 mt-md-0">
+                    <div class="col-12 px-3 py-3 d-flex align-items-center">
+                      <p>
+                        <strong class="text-danger">Flat 50% Off.</strong> Earn 20% in eWallet. Code - TTLAVISH</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- THIS IS OFFERCARD NUMBER 5 -->
+
+              <div class="row mx-0 borders-gray-gentle px-0 py-0 mb-5 hidden-md-down">
+                <div class="col-12 col-md-4 px-0">
+                  <img class="w-100" src="http://via.placeholder.com/350x350">
+                </div>
+                <div class="col-12 col-md-8 px-0 align-self-stretch d-flex flex-column">
+                  <div class="row no-gutters">
+                    <div class="col-12 col-md-8 px-3">
+                      <p class="py-2">
+                        <strong>The Byke Old Anchor Beach Resort</strong>
+                      </p>
+                      <p class="py-2">
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-muted" aria-hidden="true"></i>
+                      </p>
+                      <p class="py-2">Lotus by the beach goa</p>
+                      <p class="py-2">Entire home/apt 2 beds 4 guests</p>
+                      <p class="py-2">
+                        <i class="fa fa-bed pr-1" aria-hidden="true"></i>
+                        <i class="fa fa-coffee px-1" aria-hidden="true"></i>
+                        <i class="fa fa-shower px-1" aria-hidden="true"></i>
+                        <i class="fa fa-bicycle px-1" aria-hidden="true"></i>
+                        <i class="fa fa-car text-muted px-1" aria-hidden="true"></i>
+
+                      </p>
+                    </div>
+                    <div class="col-12 col-md-4 text-center text-md-right px-4 pt-md-5 d-flex flex-column">
+                      <div class="row flexed">
+                        <div class="col-12 d-flex align-items-center justify-content-center justify-content-md-end">
+                          <h4 class="mb-0 text-muted px-1">
+                            <s>125$</s>
+                          </h4>
+                          <h3 class="mb-0 text-danger px-1">
+                            <strong>$74</strong>
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="row flexed">
+                        <div class="col-12">
+                          <p>132 reviews</p>
+                        </div>
+                      </div>
+                      <div class="row flexed">
+                        <div class="col-12">
+                          <button class="btn bg-danger text-white">Book Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row no-gutters bg-faded flexed mt-4 mt-md-0">
+                    <div class="col-12 px-3 py-3 d-flex align-items-center">
+                      <p>
+                        <strong class="text-danger">Flat 50% Off.</strong> Earn 20% in eWallet. Code - TTLAVISH</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- THIS IS OFFERCARD NUMBER 6 -->
+
+              <div class="row mx-0 borders-gray-gentle px-0 py-0 mb-5 hidden-md-down">
+                <div class="col-12 col-md-4 px-0">
+                  <img class="w-100" src="http://via.placeholder.com/350x350">
+                </div>
+                <div class="col-12 col-md-8 px-0 align-self-stretch d-flex flex-column">
+                  <div class="row no-gutters">
+                    <div class="col-12 col-md-8 px-3">
+                      <p class="py-2">
+                        <strong>The Byke Old Anchor Beach Resort</strong>
+                      </p>
+                      <p class="py-2">
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-muted" aria-hidden="true"></i>
+                      </p>
+                      <p class="py-2">Lotus by the beach goa</p>
+                      <p class="py-2">Entire home/apt 2 beds 4 guests</p>
+                      <p class="py-2">
+                        <i class="fa fa-bed pr-1" aria-hidden="true"></i>
+                        <i class="fa fa-coffee px-1" aria-hidden="true"></i>
+                        <i class="fa fa-shower px-1" aria-hidden="true"></i>
+                        <i class="fa fa-bicycle px-1" aria-hidden="true"></i>
+                        <i class="fa fa-car text-muted px-1" aria-hidden="true"></i>
+
+                      </p>
+                    </div>
+                    <div class="col-12 col-md-4 text-center text-md-right px-4 pt-md-5 d-flex flex-column">
+                      <div class="row flexed">
+                        <div class="col-12 d-flex align-items-center justify-content-center justify-content-md-end">
+                          <h4 class="mb-0 text-muted px-1">
+                            <s>125$</s>
+                          </h4>
+                          <h3 class="mb-0 text-danger px-1">
+                            <strong>$74</strong>
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="row flexed">
+                        <div class="col-12">
+                          <p>132 reviews</p>
+                        </div>
+                      </div>
+                      <div class="row flexed">
+                        <div class="col-12">
+                          <button class="btn bg-danger text-white">Book Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row no-gutters bg-faded flexed mt-4 mt-md-0">
+                    <div class="col-12 px-3 py-3 d-flex align-items-center">
+                      <p>
+                        <strong class="text-danger">Flat 50% Off.</strong> Earn 20% in eWallet. Code - TTLAVISH</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- THIS IS OFFERCARD NUMBER 7 -->
+
+              <div class="row mx-0 borders-gray-gentle px-0 py-0 mb-5 hidden-md-down">
+                <div class="col-12 col-md-4 px-0">
+                  <img class="w-100" src="http://via.placeholder.com/350x350">
+                </div>
+                <div class="col-12 col-md-8 px-0 align-self-stretch d-flex flex-column">
+                  <div class="row no-gutters">
+                    <div class="col-12 col-md-8 px-3">
+                      <p class="py-2">
+                        <strong>The Byke Old Anchor Beach Resort</strong>
+                      </p>
+                      <p class="py-2">
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-muted" aria-hidden="true"></i>
+                      </p>
+                      <p class="py-2">Lotus by the beach goa</p>
+                      <p class="py-2">Entire home/apt 2 beds 4 guests</p>
+                      <p class="py-2">
+                        <i class="fa fa-bed pr-1" aria-hidden="true"></i>
+                        <i class="fa fa-coffee px-1" aria-hidden="true"></i>
+                        <i class="fa fa-shower px-1" aria-hidden="true"></i>
+                        <i class="fa fa-bicycle px-1" aria-hidden="true"></i>
+                        <i class="fa fa-car text-muted px-1" aria-hidden="true"></i>
+
+                      </p>
+                    </div>
+                    <div class="col-12 col-md-4 text-center text-md-right px-4 pt-md-5 d-flex flex-column">
+                      <div class="row flexed">
+                        <div class="col-12 d-flex align-items-center justify-content-center justify-content-md-end">
+                          <h4 class="mb-0 text-muted px-1">
+                            <s>125$</s>
+                          </h4>
+                          <h3 class="mb-0 text-danger px-1">
+                            <strong>$74</strong>
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="row flexed">
+                        <div class="col-12">
+                          <p>132 reviews</p>
+                        </div>
+                      </div>
+                      <div class="row flexed">
+                        <div class="col-12">
+                          <button class="btn bg-danger text-white">Book Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row no-gutters bg-faded flexed mt-4 mt-md-0">
+                    <div class="col-12 px-3 py-3 d-flex align-items-center">
+                      <p>
+                        <strong class="text-danger">Flat 50% Off.</strong> Earn 20% in eWallet. Code - TTLAVISH</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- THIS IS OFFERCARD NUMBER 8 -->
+
+              <div class="row mx-0 borders-gray-gentle px-0 py-0 hidden-md-down">
+                <div class="col-12 col-md-4 px-0">
+                  <img class="w-100" src="http://via.placeholder.com/350x350">
+                </div>
+                <div class="col-12 col-md-8 px-0 align-self-stretch d-flex flex-column">
+                  <div class="row no-gutters">
+                    <div class="col-12 col-md-8 px-3">
+                      <p class="py-2">
+                        <strong>The Byke Old Anchor Beach Resort</strong>
+                      </p>
+                      <p class="py-2">
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-muted" aria-hidden="true"></i>
+                      </p>
+                      <p class="py-2">Lotus by the beach goa</p>
+                      <p class="py-2">Entire home/apt 2 beds 4 guests</p>
+                      <p class="py-2">
+                        <i class="fa fa-bed pr-1" aria-hidden="true"></i>
+                        <i class="fa fa-coffee px-1" aria-hidden="true"></i>
+                        <i class="fa fa-shower px-1" aria-hidden="true"></i>
+                        <i class="fa fa-bicycle px-1" aria-hidden="true"></i>
+                        <i class="fa fa-car text-muted px-1" aria-hidden="true"></i>
+
+                      </p>
+                    </div>
+                    <div class="col-12 col-md-4 text-center text-md-right px-4 pt-md-5 d-flex flex-column">
+                      <div class="row flexed">
+                        <div class="col-12 d-flex align-items-center justify-content-center justify-content-md-end">
+                          <h4 class="mb-0 text-muted px-1">
+                            <s>125$</s>
+                          </h4>
+                          <h3 class="mb-0 text-danger px-1">
+                            <strong>$74</strong>
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="row flexed">
+                        <div class="col-12">
+                          <p>132 reviews</p>
+                        </div>
+                      </div>
+                      <div class="row flexed">
+                        <div class="col-12">
+                          <button class="btn bg-danger text-white">Book Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row no-gutters bg-faded flexed mt-4 mt-md-0">
+                    <div class="col-12 px-3 py-3 d-flex align-items-center">
+                      <p>
+                        <strong class="text-danger">Flat 50% Off.</strong> Earn 20% in eWallet. Code - TTLAVISH</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
