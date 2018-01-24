@@ -315,7 +315,7 @@
           </div>
         </div>
       </div>
-      <div class="row pt-5">
+      <div class="row pt-5 hidden-md-down">
         <div class="col-12 borders-gray-gentle d-flex">
           <div class="flexed">
             <p class="mb-0 text-center">
@@ -344,25 +344,49 @@
           </div>
         </div>
       </div>
+      <div class="row hidden-lg-up">
+        <div class="col-12 px-0 py-3">
+          <div class="dropdown d-flex align-items-center">
+            <a href="#" class="btn dropdown-toggle w-100 text-danger text-center py-3" id="dropdownMenuLink-RoomAndRates" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <strong>Room and Rates</strong>
+            </a>
+            <div class="dropdown-menu w-100 text-center" aria-labelledby="dropdownMenuLink-RoomAndRates">
+              <div class="dropdown-item">Location</div>
+              <div class="dropdown-item">Guest Reviews</div>
+              <div class="dropdown-item">Questions and Answers</div>
+              <div class="dropdown-item">Hotel Policies</div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="row pt-3 borders-gray-gentle">
-        <div class="col-12 col-md-3">
+        <div class="col-12 col-md-3 d-flex justify-content-center">
           <div class="px-3">
             <img class="img-fluid" src="http://via.placeholder.com/200x150">
           </div>
         </div>
         <div class="col-12 col-md-4">
-          <p class="py-2">
+          <p class="text-center text-md-left py-2">
             <strong>30% Off</strong>
           </p>
-          <p>
+          <p class="text-center text-md-left py-2">
             <strong>CLASSIC ROOM NONSMOKING</strong>
           </p>
-          <p class="text-danger py-2">
-            <strong>Room Details</strong>
-          </p>
+          <div class="dropdown">
+            <a href="#" class="btn dropdown-toggle text-danger text-center text-md-left pl-0 py-2 w-100"
+              id="dropdownMenuLink-RoomDetails" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <strong>Room Details</strong>
+            </a>
+            <div class="dropdown-menu w-100 text-center text-md-left" aria-labelledby="dropdownMenuLink-RoomDetails">
+              <div class="dropdown-item">Detail Number 1</div>
+              <div class="dropdown-item">Detail Number 2</div>
+              <div class="dropdown-item">Detail Number 3</div>
+            </div>
+          </div>
         </div>
-        <div class="col-12 col-md-3 d-flex align-items-center">
-          <div>
+        <div class="col-12 col-md-3 d-flex align-items-center justify-content-center justify-content-md-start">
+          <div class="text-center text-md-left">
             <p>
               <strong>Inclusions</strong>
             </p>
@@ -375,11 +399,11 @@
           </div>
         </div>
         <div class="col-12 col-md-2">
-          <h3 class="text-right text-danger">
+          <h3 class="text-center text-md-right text-danger mt-2 pt-md-0">
             <strong>$549</strong>
           </h3>
-          <p class="text-right text-muted">per room, per night</p>
-          <div class="text-right py-2">
+          <p class="text-center text-md-right text-muted">per room, per night</p>
+          <div class="text-center text-md-right py-2">
             <button class="btn btn-danger text-white">Selected</button>
           </div>
         </div>
@@ -394,41 +418,44 @@
             Lorem fugiat elit nisi dolor anim consequat anim sit tempor. Occaecat excepteur irure in duis veniam est amet
             elit nostrud mollit pariatur. Dolor esse in nostrud sunt pariatur reprehenderit non qui. Et dolor cillum eu cupidatat
             velit fugiat tempor id eiusmod quis laborum eiusmod.</p>
-            <p class="py-4">
-              <strong>Room Amenities</strong>
-            </p>
-            <div class="row">
-              <div class="col-3">
-                <ul class="style-arrow-right">
-                  <li>Room Service</li>
-                  <li>Air Conditioning</li>
-                  <li>Balcony / Terrace</li>
-                  <li>Basic Bathroom Amenities</li>
-                  <li>Ceiling Fan</li>
-                  <li>Hairdryer (On Request)</li>
-                </ul>
-              </div>
-              <div class="col-3">
-                <ul class="style-arrow-right">
-                  <li>Window Opens</li>
-                  <li>Make Up / Shaving Mirror</li>
-                  <li>Wardrobe</li>
-                  <li>HD / LED / LCD Satellite TV</li>
-                  <li>Split A.C's</li>
-                  <li>Custom Duvets / Linen</li>
-                </ul>
-              </div>
-              <div class="col-6">
-                <ul class="style-arrow-right">
-                  <li>Luggage Rack</li>
-                  <li>Attached Bathroom</li>
-                  <li>Bedside Table</li>
-                  <li>Clothes Hook in Bathroom</li>
-                  <li>Complete Bedding</li>
-                </ul>
-              </div>
+          <p class="py-4">
+            <strong>Room Amenities</strong>
+          </p>
+          <div class="row">
+            <div class="col-3">
+              <ul class="style-arrow-right">
+                <li>Room Service</li>
+                <li>Air Conditioning</li>
+                <li>Balcony / Terrace</li>
+                <li>Basic Bathroom Amenities</li>
+                <li>Ceiling Fan</li>
+                <li>Hairdryer (On Request)</li>
+              </ul>
             </div>
+            <div class="col-3">
+              <ul class="style-arrow-right">
+                <li>Window Opens</li>
+                <li>Make Up / Shaving Mirror</li>
+                <li>Wardrobe</li>
+                <li>HD / LED / LCD Satellite TV</li>
+                <li>Split A.C's</li>
+                <li>Custom Duvets / Linen</li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul class="style-arrow-right">
+                <li>Luggage Rack</li>
+                <li>Attached Bathroom</li>
+                <li>Bedside Table</li>
+                <li>Clothes Hook in Bathroom</li>
+                <li>Complete Bedding</li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="row">
+
       </div>
     </div>
 
