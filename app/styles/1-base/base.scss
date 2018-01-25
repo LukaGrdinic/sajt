@@ -25,6 +25,11 @@ h4 {
     font-weight: 600;
 }
 
+
+/* .h1, .h2, .h3, .h4, .h5, .h6{
+    margin: 0;
+} */
+
 ul {
     list-style: none;
 }
@@ -32,30 +37,4 @@ ul {
 .navbar-toggler {
     position: relative;
     align-self: flex-start;
-}
-
-
-// WIDTH CUSTOM CLASS
-//----------------------------------------------------------
-
-.width-75 {
-    width: 75px !important;
-}
-.width-100 {
-    width: 100px !important;
-}
-.width-150 {
-    width: 150px !important;
-}
-.width-200 {
-    width: 200px !important;
-}
-.width-250 {
-    width: 250px !important;
-}
-.width-300 {
-    width: 300px !important;
-}
-.width-400 {
-    width: 400px !important;
 }

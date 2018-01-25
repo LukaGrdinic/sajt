@@ -215,8 +215,8 @@
                     <div class="carousel-item active">
                       <img class="d-block w-100" src="http://via.placeholder.com/655x292" alt="First slide">
                       <div class="carousel-caption d-none d-md-block">
-                          <p class="mb-0">Check out this wonderful room with two bathrooms and one big balcony.Enjoy it the best way you can!</p>
-                        </div>
+                        <p class="mb-0">Check out this wonderful room with two bathrooms and one big balcony.Enjoy it the best way you can!</p>
+                      </div>
                     </div>
                     <div class="carousel-item">
                       <img class="d-block w-100" src="http://via.placeholder.com/655x292" alt="Second slide">
@@ -224,7 +224,7 @@
                     <div class="carousel-item">
                       <img class="d-block w-100" src="http://via.placeholder.com/655x292" alt="Third slide">
                     </div>
-                 
+
                   </div>
                   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -235,6 +235,8 @@
                     <span class="sr-only">Next</span>
                   </a>
                 </div>
+      
+
                 <!-- HERE IS BOOTSTRAP -->
               </div>
               <div class="col-12 col-md-4 borders-gray-gentle">
@@ -855,6 +857,34 @@
       </div>
     </div>
 
+              <!-- PLUGIN SLICK HERE -->
+
+<div class="container">
+  <div class="row py-5">
+    <div class="col-12">
+      <div class="slider-for text-center py-3">
+        <div>This is number1</div>
+        <div>This is number2</div>
+        <div>This is number3</div>
+        <div>This is number4</div>
+        <div>This is number5</div>
+        <div>This is number6</div>
+        <div>This is number7</div>
+      </div>
+
+      <div class="slider-nav text-center py-3">
+        <div>This is number1</div>
+        <div>This is number2</div>
+        <div>This is number3</div>
+        <div>This is number4</div>
+        <div>This is number5</div>
+        <div>This is number6</div>
+        <div>This is number7</div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
@@ -876,6 +906,27 @@
     <script src="/bower_components/bootstrap/js/dist/tooltip.js"></script>
     <script src="/bower_components/bootstrap/js/dist/popover.js"></script>
     <!-- endbuild -->
+
+
+    <script type="text/javascript" src="styles/0-plugins/SlickPlugin/slick-1.8.0/slick/slick.min.js"></script>
+
+    <script>
+      $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav'
+      });
+      $('.slider-nav').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true
+      });
+    </script>
 
     <!--    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
       crossorigin="anonymous"></script>
