@@ -309,3 +309,27 @@
 .style-arrow-right {
     list-style: square outside url("../../test/Right-Arrow-Transparent-Background.png");
 }
+
+.flag-danger::after {
+    position: absolute;
+    left:99px;
+    content: "";
+    height: 0;
+    width: 0;
+    border-top: solid #d9534f 12px;
+    border-right: solid white 12px;
+    border-bottom: solid #d9534f 12px;
+    
+}
+
+/* .flag-danger::after {
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    border-top: solid #d9534f 20px;
+    border-right: solid white 8px;
+    border-bottom: solid #d9534f 20px;
+    top: 8px;
+    left: 90.58px;
+} */
