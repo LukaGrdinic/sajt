@@ -22,6 +22,7 @@
     crossorigin="anonymous"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles/main.css">
+
   <!-- endbuild -->
 
 </head>
@@ -30,6 +31,7 @@
 
   <header>
 
+    <!-- =============================================== -->
     <!-- THIS IS THE NAVBAR PART -->
     <!-- =============================================== -->
 
@@ -59,7 +61,7 @@
                   English
                 </a>
 
-                <div class="dropdown-menu mobile-text-center tablet-text-center" aria-labelledby="dropdownMenuLink">
+                <div class="dropdown-menu text-center text-lg-left" aria-labelledby="dropdownMenuLink">
                   <a class="dropdown-item" href="#">Crnogorski</a>
                   <a class="dropdown-item" href="#">Deutsch</a>
                   <a class="dropdown-item" href="#">Francais</a>
@@ -77,7 +79,7 @@
                 <a href="#" class="btn btn-danger dropdown-toggle" id="homeDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
                   aria-expanded="false">Menu</a>
 
-                <div class="dropdown-menu text-center bg-danger border-0" aria-labelledby="homeDropdownMenuLink">
+                <div id="realDropdownMenu" class="dropdown-menu text-center bg-danger border-0" aria-labelledby="homeDropdownMenuLink">
                   <hr class="mt-0">
                   <a class="dropdown-item text-white" href="#">Home</a>
                   <a class="dropdown-item text-white" href="#">Flights</a>
@@ -99,6 +101,7 @@
 
   <main>
 
+    <!-- =============================================== -->
     <!-- THIS IS THE HOME PART -->
     <!-- =============================================== -->
 
@@ -109,30 +112,30 @@
         </div>
         <div class="hidden-sm-down col-md-10 d-flex align-items-center">
           <ul id="homeDropdown" class="list-inline mb-0 text-right">
-            <li class="list-inline-item pr-3 mobile-d-block text-center mobile-pt-3">
+            <li class="list-inline-item pr-3 mobile-d-block text-center ">
               <strong>
                 <a href="#">Home</a>
               </strong>
             </li>
-            <li class="list-inline-item pr-3 mobile-d-block text-center mobile-pt-3 tablet-pr-5">
+            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
               <a href="#">Flights</a>
             </li>
-            <li class="list-inline-item pr-3 mobile-d-block text-center mobile-pt-3 tablet-pr-5">
+            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
               <a href="#">Hotels</a>
             </li>
-            <li class="list-inline-item pr-3 mobile-d-block text-center mobile-pt-3 tablet-pr-5">
+            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
               <a href="#">Homestay</a>
             </li>
-            <li class="list-inline-item pr-3 mobile-d-block text-center mobile-pt-3 tablet-pr-5">
+            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
               <a href="#">Holidays</a>
             </li>
-            <li class="list-inline-item pr-3 mobile-d-block text-center mobile-pt-3 tablet-pr-5">
+            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
               <a href="#">Activity</a>
             </li>
-            <li class="list-inline-item pr-3 mobile-d-block text-center mobile-pt-3 tablet-pr-5">
+            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
               <a href="#">Pages</a>
             </li>
-            <li class="list-inline-item pr-3 mobile-d-block text-center mobile-pt-3 tablet-pr-5">
+            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
               <a href="#">Shortcodes</a>
             </li>
           </ul>
@@ -140,6 +143,7 @@
       </div>
     </div>
 
+    <!-- =============================================== -->
     <!-- THIS IS THE BREADCRUMB PART -->
     <!-- =============================================== -->
 
@@ -147,15 +151,15 @@
       <div class="bg-faded">
         <div class="container">
           <div class="row py-3">
-            <div class="col-2 d-flex align-items-center">
-              <h4 class="mb-0 pl-0">Review</h4>
+            <div class="col-12 col-lg-6 d-flex align-items-center">
+              <p class="mb-0 pl-0">Services</p>
             </div>
-            <div class="col-10 hidden-md-down">
+            <div class="col-6 hidden-md-down">
               <ol class="breadcrumb mb-0 bg-faded d-flex justify-content-end">
                 <li class="breadcrumb-item">Home</li>
-                <li class="breadcrumb-item">Flights</li>
+                <li class="breadcrumb-item">Standard Pages</li>
                 <li class="breadcrumb-item">
-                  <strong>Review</strong>
+                  <strong>Services</strong>
                 </li>
               </ol>
             </div>
@@ -164,644 +168,370 @@
       </div>
     </div>
 
-    <!-- THIS IS THE PART WITH THE CIRCLES -->
+    <!-- =============================================== -->
+    <!-- THIS IS THE SERVICES PART -->
     <!-- =============================================== -->
 
-    <!-- I SHOULD CHECK OUT THE TABLET RESPONSIVNESS -->
-
     <div class="container">
-      <div class="row pl-1 pt-5">
-        <div class="col-md-12">
-          <h3>Book your flight in 3 simple steps!</h3>
+      <div class="row py-5">
+        <div class="col-12">
+          <h4 class="mb-0">
+            Services
+          </h4>
         </div>
-      </div>
-      <div class="row text-center pt-5 timeline-horizontal">
-        <div class="col-md-4 timeline-horizontal-item px-0 mobile-pb-3">
-          <div class="row mobile-align-items-center mx-0">
-            <div class="col-6 col-md-12 d-flex mobile-justify-content-center px-0">
-              <div class="circle">1</div>
-            </div>
-            <div class="col-6 col-md-12 pt-3 mobile-pt-0 px-0">
-              <h4 class="text-left">Review</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 timeline-horizontal-item px-0 mobile-pb-3">
-          <div class="row mobile-align-items-center mx-0">
-            <div class="col-6 col-md-12 d-flex justify-content-center mobile-justify-content-center">
-              <div class="circle-outline d-flex justify-content-center align-items-center">
-                <div class="circle-smaller">2</div>
-              </div>
-            </div>
-            <div class="col-6 col-md-12 pt-3 mobile-pt-0 px-0">
-              <h4 class="text-center mobile-text-left">Travellers</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 timeline-horizontal-item px-0">
-          <div class="row mobile-align-items-center mx-0">
-            <div class="col-6 col-md-12 d-flex justify-content-end mobile-justify-content-center px-0">
-              <div class="circle-outline d-flex justify-content-center align-items-center">
-                <div class="circle-smaller">3</div>
-              </div>
-            </div>
-            <div class="col-6 col-md-12 pt-3 px-0">
-              <h4 class="text-right mobile-text-left">Payment</h4>
-            </div>
-          </div>
-        </div>
-      </div>
 
+      </div>
       <div class="row">
-        <!-- THIS IS THE INNER PART -->
-        <!-- =============================================== -->
-        <div class="col-md-9 inner hidden-md-down">
-          <div class="row mt-5">
-            <div class="col-12 list-group d-block">
-              <a class="list-group-item">
-                <h4 class="mb-0">Review Your Booking
-                </h4>
-              </a>
-              <a class="list-group-item bg-faded d-block">
-                <div class="container">
-                  <div class="row py-3">
-                    <div class="col-12 px-3 d-flex justify-content-between">
-                      <p class="text-muted font-weight-bold">Departure</p>
-                      <p class="text-muted font-weight-bold">Total time: 19h 15m</p>
-                    </div>
-                  </div>
-                  <div class="row py-3 d-flex bb-dashed">
-                    <div class="col-2 px-0">
-                      <div class="d-flex flex-column">
-                        <div class="d-flex justify-content-center">
-                          <img src="http://via.placeholder.com/55x55" alt="Sorry,cant load the image!">
-                        </div>
-                        <div class="pt-2 d-flex justify-content-center">
-                          <p>
-                            <small>Delta Air Lines</small>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-10">
-                      <div class="row mx-0 flexed">
-                        <div class="col-4 br-dashed px-4">
-                          <h4>LGA 06:29</h4>
-                          <p>New York, United States</p>
-                          <p>Wed, 17 May 2017</p>
-                        </div>
-                        <div class="col-4 br-dashed px-4">
-                          <h4>7h 54m (1 Stop)</h4>
-                          <p>Philadelphia</p>
-                          <div class="d-flex justify-content-start">
-                            <p class="flexed pr-2 tablet-pr-3rem ">Economy</p>
-                            <p class="flexed tablet-pl-3rem">
-                              <strong>Refundable</strong>
-                            </p>
-                          </div>
-                        </div>
-                        <div class="col-4 px-4">
-                          <h4>JFK 23:30</h4>
-                          <p>Santa Ana, CA, United States</p>
-                          <p>Thu, 18 May 2017</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row py-3 d-flex">
-                    <div class="col-2 px-0">
-                      <div class="d-flex flex-column">
-                        <div class="d-flex justify-content-center">
-                          <img src="http://via.placeholder.com/55x55" alt="Sorry,cant load the image!">
-                        </div>
-                        <div class="pt-2 d-flex justify-content-center">
-                          <p>
-                            <small>Air Asia Air Lines</small>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-10">
-                      <div class="row mx-0 flexed">
-                        <div class="col-4 br-dashed px-4">
-                          <h4>EWR 11:00</h4>
-                          <p>Santa Ana, United States</p>
-                          <p>Thu, 18 May 2017</p>
-                        </div>
-                        <div class="col-4 br-dashed px-4">
-                          <h4>5h 51m (Non-Stop)</h4>
-                          <p>Philadelphia</p>
-                          <div class="d-flex justify-content-start">
-                            <p class="flexed pr-2 tablet-pr-3rem">Economy</p>
-                            <p class="flexed tablet-pl-3rem">
-                              <strong>Refundable</strong>
-                            </p>
-                          </div>
-                        </div>
-                        <div class="col-4 px-4">
-                          <h4>LAX 13:51</h4>
-                          <p>New York, United States</p>
-                          <p>Thu, 18 May 2017</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="row pt-5">
-            <div class="col-12 list-group d-block">
-              <a class="list-group-item">
-                <h4 class="mb-0">Promo Code
-                  <span class="text-muted">(Optional)</span>
-                </h4>
-              </a>
-              <div class="list-group-item bg-faded">
-                <div class="col-12 px-0 d-flex justify-content-between align-items-center">
-                  <h4 class="mb-0">Departure</h4>
-                  <div class="dropdown dropdown-white">
-                    <a href="#" class="btn dropdown-toggle text-muted" id="dropdownMenuLink-inner" data-toggle="dropdown" aria-haspopup="true"
-                      aria-expanded="false">
-                      VIEW PROMO CODE
-                    </a>
-                    <div id="promoCodeDropdown" class="dropdown-menu" aria-labelledby="dropdownMenuLink-inner">
-                      <a class="dropdown-item" href="#">First promo code</a>
-                      <a class="dropdown-item" href="#">Second promo code</a>
-                      <a class="dropdown-item" href="#">Third promo code</a>
-                    </div>
-                  </div>
-                </div>
+        <div class="col-12 col-md-4 mobile-px-0">
+          <div class="borders-gray-gentle pb-0 px-0">
+            <div class="d-flex justify-content-center align-items-center py-5">
+              <div class="text-danger">
+                <i class="fa fa-television fa-5x" aria-hidden="true"></i>
               </div>
             </div>
-          </div>
-          <div class="row mt-5">
-            <div class="col-sm-12 text-center">
-              <button class="btn btn-lg bg-inverse text-white">Continue</button>
+            <div class="bg-faded px-3 py-3">
+              <p class="pb-2">
+                <strong>Book Flights, Hotels and Holidays</strong>
+              </p>
+              <p>Commodo laboris amet anim in. Incididunt magna et anim nulla Lorem nisi pariatur in qui eiusmod amet occaecat
+                eu. Consequat in irure nisi sint esse veniam excepteur anim fugiat adipisicing nulla proident laborum et.
+              </p>
             </div>
           </div>
         </div>
 
-        <!-- THIS IS THE MOBILE - INNER PART -->
-        <!-- =============================================== -->
-        <div class="col-12 inner hidden-lg-up">
-          <div class="row no-gutters">
-            <div class="col-12 list-group pt-5 text-center px-0">
-              <div class="row list-group-item">
-                <div class="col-12">
-                  <h4 class="mb-0">Review Your Booking</h4>
-                </div>
-              </div>
-              <div class="row list-group-item bg-faded px-0"> <!-- MOZDA JE ODJE CAK LJEPSE BEZ OVOG PX-0 -->
-                <div class="col-12 pb-3">
-                  <div class="row text-muted font-weight-bold">
-                    <div class="col-12 pb-1">
-                      <p>Departure</p>
-                    </div>
-                    <div class="col-12">
-                      <p>Total time: 19h 15m</p>
-                    </div>
-                  </div>
-                </div>
-
-                <!--DELTA AIRLINES STARTS HERE -->
-
-                <div class="col-12">
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="row">
-                        <div class="col-12 py-3">
-                          <img src="http://via.placeholder.com/55x55" alt="Sorry,cant load the image!">
-                        </div>
-                        <div class="col-12">
-                          <h4>
-                            Delta Air Lines
-                          </h4>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 bb-dashed py-3">
-                      <h4>LGA 06:29</h4>
-                      <p class="d-flex justify-content-center">New York, United States </p>
-                      <p>Wed,17 May 2017</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 py-3 bb-dashed">
-                  <div class="row">
-                    <div class="col-12">
-                      <h4>
-                        7h 54m (1 Stop)
-                      </h4>
-                    </div>
-                    <div class="col-12">
-                      <p class="d-flex justify-content-center">Philadelphia </p>
-                      <div class="d-flex justify-content-between px-4">
-                        <p class="flexed">Economy</p>
-                        <p class="flexed">
-                          <strong>Refundable</strong>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 py-3 bb-dashed">
-                  <div class="row">
-                    <div class="col-12">
-                      <h4>
-                        JFK 23:30
-                      </h4>
-                    </div>
-                    <div class="col-12">
-                      <p class="d-flex justify-content-center">Santa Ana, CA, United States</p>
-                      <p>Thu, 18 May 2017</p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- AIR ASIA AIRLINES STARTS HERE -->
-
-                <div class="col-12 py-3">
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="row">
-                        <div class="col-12 py-3">
-                          <img src="http://via.placeholder.com/55x55" alt="Sorry,cant load the image!">
-                        </div>
-                        <div class="col-12">
-                          <h4>Air Asia Air Lines</h4>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 bb-dashed py-3">
-                      <h4>EWR 11:00</h4>
-                      <p class="d-flex justify-content-center">Santa Ana, United States</p>
-                      <p>Thu, 18 May 2017</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 py-3 bb-dashed py-3">
-                  <div class="row">
-                    <div class="col-12">
-                      <h4>
-                        5h 51m (Non-Stop)
-                      </h4>
-                    </div>
-                    <div class="col-12">
-                      <p class="d-flex justify-content-center">Philadelphia </p>
-                      <div class="d-flex justify-content-between px-4">
-                        <p class="flexed">Economy</p>
-                        <p class="flexed">
-                          <strong>Refundable</strong>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 py-3">
-                  <div class="row">
-                    <div class="col-12">
-                      <h4>
-                        LAX 13:51
-                      </h4>
-                    </div>
-                    <div class="col-12">
-                      <p class="d-flex justify-content-center">New York, United States</p>
-                      <p>Thu, 18 May 2017</p>
-                    </div>
-                  </div>
-                </div>
+        <div class="col-12 col-md-4 mobile-px-0">
+          <div class="borders-gray-gentle pb-0 px-0">
+            <div class="d-flex justify-content-center align-items-center py-5">
+              <div class="text-primary">
+                <i class="fa fa-venus-double fa-5x" aria-hidden="true"></i>
               </div>
             </div>
-          </div>
-
-
-          <!-- THIS IS THE PROMO MOBILE - PROMO CODE PART -->
-          <div class="row mx-0">
-            <div class="col-12 list-group pt-5 px-0 text-center">
-              <div class="row list-group-item">
-                <div class="col-12">
-                  <h4 class="my-0">Promo Code
-                    <span class="text-muted">(Optional)</span>
-                  </h4>
-                </div>
-              </div>
-              <div class="row list-group-item bg-faded">
-                <div class="col-12">
-                  <h4 class="my-0">Departure</h4>
-                  <div class="dropdown dropdown-white my-3">
-                    <a href="#" class="btn dropdown-toggle text-muted d-block" id="mobile-dropdownMenuLink-inner" data-toggle="dropdown" aria-haspopup="true"
-                      aria-expanded="false">
-                      VIEW PROMO CODE
-                    </a>
-                    <div id="promoCodeDropdown" class="dropdown-menu" aria-labelledby="mobile-dropdownMenuLink-inner">
-                      <a class="dropdown-item" href="#">First promo code</a>
-                      <a class="dropdown-item" href="#">Second promo code</a>
-                      <a class="dropdown-item" href="#">Third promo code</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="bg-faded px-3 py-3">
+              <p class="pb-2">
+                <strong>Travel Trip for Corporates</strong>
+              </p>
+              <p>Commodo laboris amet anim in. Incididunt magna et anim nulla Lorem nisi pariatur in qui eiusmod amet occaecat
+                eu. Consequat in irure nisi sint esse veniam excepteur anim fugiat adipisicing nulla proident laborum et.
+              </p>
             </div>
           </div>
         </div>
-
-        <!-- THIS IS THE SIDE PART -->
-        <!-- =============================================== -->
-
-        <div class="col-12 col-lg-3 side-info px-0">
-          <div class="mt-5">
-            <div class="list-group">
-
-              <div class="list-group-item">
-                <h4 class="mb-0">Fare details</h4>
-              </div>
-              <div class="list-group-item d-flex justify-content-between align-items-center bg-faded">
-                <p>Adult x 1</p>
-                <p>
-                  <strong>$349</strong>
-                </p>
-              </div>
-              <div class="row mx-0 list-group-item bg-faded">
-                <div class="col-12 px-0">
-                  <div class="row">
-                    <div class="col-12 d-flex justify-content-between">
-                      <p>Fee and surcharges</p>
-                      <p>
-                        <strong>$120</strong>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12 text-right">
-                      <p class="mb-1">You pay</p>
-                      <h2 class="text-danger">$460</h2>
-                    </div>
-                  </div>
-                </div>
-
+        <div class="col-12 col-md-4 mobile-px-0">
+          <div class="borders-gray-gentle pb-0 px-0">
+            <div class="d-flex justify-content-center align-items-center py-5">
+              <div class="text-info">
+                <i class="fa fa-heart-o fa-5x" aria-hidden="true"></i>
               </div>
             </div>
-
-            <!-- THIS IS THE SIDE PART LOWER-->
-            <!-- =============================================== -->
-
-            <div class="list-group mt-5">
-              <div class="list-group-item">
-                <h4 class="mb-0">Traveltrip extra's</h4>
-              </div>
-              <div class="list-group-item d-flex justify-content-between align-items-center bg-faded">
-                <p>eCash</p>
-                <p class="text-danger">
-                  <strong>$103</strong>
-                </p>
-              </div>
+            <div class="bg-faded px-3 py-3">
+              <p class="pb-2">
+                <strong>Travel Trip for Agents</strong>
+              </p>
+              <p>Commodo laboris amet anim in. Incididunt magna et anim nulla Lorem nisi pariatur in qui eiusmod amet occaecat
+                eu. Consequat in irure nisi sint esse veniam excepteur anim fugiat adipisicing nulla proident laborum et.
+              </p>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- THIS IS THE MOBILE - BUTTON PART -->
 
-      <div class="container">
-        <div class="row mt-5 hidden-md-up">
-          <div class="col-sm-12 text-center">
-            <button class="btn btn-lg bg-inverse text-white">Continue</button>
+
+      <div class="row py-md-5">
+        <div class="col-12 col-md-4 mobile-px-0">
+          <div class="borders-gray-gentle pb-0 px-0">
+            <div class="d-flex justify-content-center align-items-center py-5">
+              <div class="text-warning">
+                <i class="fa fa-mobile fa-5x" aria-hidden="true"></i>
+
+              </div>
+            </div>
+            <div class="bg-faded px-3 py-3">
+              <p class="pb-2">
+                <strong>Travel Trip on Mobile</strong>
+              </p>
+              <p>Commodo laboris amet anim in. Incididunt magna et anim nulla Lorem nisi pariatur in qui eiusmod amet occaecat
+                eu. Consequat in irure nisi sint esse veniam excepteur anim fugiat adipisicing nulla proident laborum et.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 mobile-px-0">
+          <div class="borders-gray-gentle pb-0 px-0">
+            <div class="d-flex justify-content-center align-items-center py-5">
+              <div class="text-success">
+                <i class="fa fa-columns fa-5x" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="bg-faded px-3 py-3">
+              <p class="pb-2">
+                <strong>Travel Trip for Guidebooks</strong>
+              </p>
+              <p>Commodo laboris amet anim in. Incididunt magna et anim nulla Lorem nisi pariatur in qui eiusmod amet occaecat
+                eu. Consequat in irure nisi sint esse veniam excepteur anim fugiat adipisicing nulla proident laborum et.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 mobile-px-0">
+          <div class="borders-gray-gentle pb-0 px-0">
+            <div class="d-flex justify-content-center align-items-center py-5">
+              <div class="">
+                <i class="fa fa-star-o fa-5x" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="bg-faded px-3 py-3">
+              <p class="pb-2">
+                <strong>Special Deals</strong>
+              </p>
+              <p>Commodo laboris amet anim in. Incididunt magna et anim nulla Lorem nisi pariatur in qui eiusmod amet occaecat
+                eu. Consequat in irure nisi sint esse veniam excepteur anim fugiat adipisicing nulla proident laborum et.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-      <!-- THIS IS THE FEATURES PART -->
-      <!-- =============================================== -->
+    <!-- =============================================== -->
+    <!-- THIS IS THE FEATURES PART -->
+    <!-- =============================================== -->
 
-      <div class="container-fluid bb-solid bt-solid mt-5 px-0">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-4 br-solid bl-solid mobile-bb-solid mobile-bx-0 py-2">
-                <h4 class="mobile-text-center pt-2">24/7 Customer Support</h4>
-                <p class="text-muted mobile-text-center pb-1">IF you need help by traveling or hosting,
-                  <br> contact us at our toll free number:
-                  <br> 123 456 789</p>
-              </div>
-              <div class="col-12 col-md-4 br-solid mobile-bb-solid mobile-bx-0 py-2">
-                <h4 class="mobile-text-center pt-2">2017 Summer Destinations On Sale</h4>
-                <p class="text-muted mobile-text-center pb-1">For the vast majority of his history, agriculture
-                  <br> can be described new products agriculture can
-                  <br> be described</p>
-              </div>
-              <div class="col-12 col-md-4 br-solid mobile-bx-0 py-2">
-                <h4 class="mobile-text-center pt-2">Flat 75% Off On Domestic Hotels</h4>
-                <p class="text-muted mobile-text-center pb-1">Our best ever hotel deals are here! Use
-                  <br> promo code TTHAPPY to get flat 75% off
-                  <br> using eCash on hotel bookings through</p>
-              </div>
-            </div>
-          </div>
-      </div>
-
-      <!-- THIS IS THE TABLE OF CONTENTS PART -->
-      <!-- =============================================== -->
-
-      <div class="container hidden-md-down">
-        <!-- NE MOGU SE SJETIT DAL JE GOGA I ZA OVAJ DIO REKAO DA TREBA PROMIJENIT NESTO -->
+    <div class="container-fluid bb-solid bt-solid mt-5 px-0">
+      <div class="container">
         <div class="row">
-          <div class="col-4 py-5">
-            <div class="row">
-              <div class="col-6">
-                <h4 class="pb-5">Traveltrip</h4>
-                <ul class=" pl-0">
-                  <li>
-                    <a class="text-muted" href="#">Home</a>
-                  </li>
-                  <li>
-                    <a class="text-muted" href="#">Flights</a>
-                  </li>
-                  <li>
-                    <a class="text-muted" href="#">Hotels</a>
-                  </li>
-                  <li>
-                    <a class="text-muted" href="#">Homestay</a>
-                  </li>
-                  <li>
-                    <a class="text-muted" href="#">Holidays</a>
-                  </li>
-                  <li>
-                    <a class="text-muted" href="#">Activity</a>
-                  </li>
-                  <li>
-                    <a class="text-muted" href="#">Pages</a>
-                  </li>
-                  <li>
-                    <a class="text-muted" href="#">Shortcodes</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-6">
-                <h4 class="pb-5">Discover</h4>
-                <ul class="pl-0">
-                  <li>
-                    <a class="text-muted" href="#">Holidays</a>
-                  </li>
-                  <li>
-                    <a class="text-muted" href="#">Hot Deals</a>
-                  </li>
-                  <li>
-                    <a class="text-muted" href="#">Travel Stories</a>
-                  </li>
-                  <li>
-                    <a class="text-muted" href="#">Travel Guide</a>
-                  </li>
-                  <li>
-                    <a class="text-muted" href="#">Travel Ideas</a>
-                  </li>
-                  <li>
-                    <a class="text-muted" href="#">Travel Insurance</a>
-                  </li>
-                  <li>
-                    <a class="text-muted" href="#">Group Bookings</a>
-                  </li>
-                  <li>
-                    <a class="text-muted" href="#">FAQ</a>
-                  </li>
-                </ul>
-              </div>
+          <div class="col-12 col-md-4 br-solid bl-solid mobile-bb-solid mobile-bx-0 py-2">
+            <h4 class="text-center text-md-left pt-2">24/7 Customer Support</h4>
+            <p class="text-muted text-center text-md-left pb-1">IF you need help by traveling or hosting,
+              <br> contact us at our toll free number:
+              <br> 123 456 789</p>
+          </div>
+          <div class="col-12 col-md-4 br-solid mobile-bb-solid mobile-bx-0 py-2">
+            <h4 class="text-center text-md-left pt-2">2017 Summer Destinations On Sale</h4>
+            <p class="text-muted text-center text-md-left pb-1">For the vast majority of his history, agriculture
+              <br> can be described new products agriculture can
+              <br> be described</p>
+          </div>
+          <div class="col-12 col-md-4 br-solid mobile-bx-0 py-2">
+            <h4 class="text-center text-md-left pt-2">Flat 75% Off On Domestic Hotels</h4>
+            <p class="text-muted text-center text-md-left pb-1">Our best ever hotel deals are here! Use
+              <br> promo code TTHAPPY to get flat 75% off
+              <br> using eCash on hotel bookings through</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =============================================== -->
+    <!-- THIS IS THE TABLE OF CONTENTS PART -->
+    <!-- =============================================== -->
+
+    <div class="container hidden-md-down">
+      <div class="row">
+        <div class="col-4 py-5">
+          <div class="row">
+            <div class="col-6">
+              <h4 class="pb-5">Traveltrip</h4>
+              <ul class=" pl-0">
+                <li>
+                  <a class="text-muted" href="#">Home</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Flights</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Hotels</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Homestay</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Holidays</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Activity</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Pages</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Shortcodes</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <h4 class="pb-5">Discover</h4>
+              <ul class="pl-0">
+                <li>
+                  <a class="text-muted" href="#">Holidays</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Hot Deals</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Travel Stories</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Travel Guide</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Travel Ideas</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Travel Insurance</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Group Bookings</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">FAQ</a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="col-3 py-5 d-flex flex-column">
-            <h4 class="pb-5">Language/Currency & Subscribe</h4>
-            <div class="d-flex flex-column flexed">
-              <div class="flexed dropdown d-flex align-items-start">
-                <a href="#" class="btn dropdown-toggle text-muted text-left d-flex align-items-center justify-content-between" id="dropdownMenuLink-toc"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  English
-                </a>
-                <div id="dropdown-menu-toc" class="dropdown-menu" aria-labelledby="dropdownMenuLink-toc">
-                  <div class="dropdown-item">Crnogorski</div>
-                  <div class="dropdown-item">Francais</div>
-                  <div class="dropdown-item">Deutsch</div>
-                </div>
-              </div>
-              <div class="flexed dropdown d-flex align-items-start">
-                <a href="#" class="btn dropdown-toggle text-muted text-left d-flex align-items-center justify-content-between" id="dropdownMenuLink-toc"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dollar
-                </a>
-                <div id="dropdown-menu-toc" class="dropdown-menu" aria-labelledby="dropdownMenuLink-toc">
-                  <div class="dropdown-item">Euro</div>
-                  <div class="dropdown-item">Yen</div>
-                  <div class="dropdown-item">Pound</div>
-                </div>
-              </div>
-              <div class="flexed">
-                <div class="list-group d-flex flex-row">
-                  <a class="list-group-item flexed px-3 py-2 no-br-right disabled text-muted">
-                    Subscribe
-                  </a>
-                  <a class="list-group-item bg-danger no-br-left text-white px-3 py-2">Send</a>
-                </div>
+        </div>
+        <div class="col-3 py-5 d-flex flex-column">
+          <h4 class="pb-5">Language/Currency & Subscribe</h4>
+          <div class="d-flex flex-column flexed">
+            <div class="flexed dropdown d-flex align-items-start">
+              <a href="#" class="btn dropdown-toggle text-muted text-left d-flex align-items-center justify-content-between" id="dropdownMenuLink-toc"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                English
+              </a>
+              <div id="dropdown-menu-toc" class="dropdown-menu" aria-labelledby="dropdownMenuLink-toc">
+                <div class="dropdown-item">Crnogorski</div>
+                <div class="dropdown-item">Francais</div>
+                <div class="dropdown-item">Deutsch</div>
               </div>
             </div>
-          </div>
-          <div class="col-5 py-5 pl-5 d-flex flex-column">
-            <h4 class="pb-5">Travel News</h4>
-            <div class="row flexed align-items-center">
-              <div class="col-4 d-flex justify-content-center">
-                <div>
-                  <img src="http://via.placeholder.com/75x75" alt="Sorry,cant load the image!">
-                </div>
-              </div>
-              <div class="col-8">
-                <h4>Tokyo</h4>
-                <p>
-                  <small>
-                    <span class="text-muted">Dreamy bed and delicious breakfast
-                      <br> Entire home/apt 1 bed 3 guests Business</span>
-                    <br> 25 Mar. 2011</small>
-                </p>
+            <div class="flexed dropdown d-flex align-items-start">
+              <a href="#" class="btn dropdown-toggle text-muted text-left d-flex align-items-center justify-content-between" id="dropdownMenuLink-toc"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dollar
+              </a>
+              <div id="dropdown-menu-toc" class="dropdown-menu" aria-labelledby="dropdownMenuLink-toc">
+                <div class="dropdown-item">Euro</div>
+                <div class="dropdown-item">Yen</div>
+                <div class="dropdown-item">Pound</div>
               </div>
             </div>
-            <div class="row flexed align-items-center">
-              <div class="col-4 d-flex justify-content-center">
-                <div>
-                  <img src="http://via.placeholder.com/75x75" alt="Sorry,cant load the image!">
-                </div>
-              </div>
-              <div class="col-8">
-                <h4>Singapore</h4>
-                <p>
-                  <small>
-                    <span class="text-muted">Dreamy bed and delicious breakfast
-                      <br> Entire home/apt 1 bed 3 guests Business</span>
-                    <br> 25 Mar. 2011</small>
-                </p>
+            <div class="flexed">
+              <div class="d-flex flex-row">
+                <a class="flexed px-3 py-2 no-br-right disabled text-muted borders-gray-gentle mb-0">
+                  Subscribe
+                </a>
+                <a class="bg-danger no-br-left text-white px-3 py-2 borders-gray-gentle mb-0">Send</a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <!-- THIS IS THE FOOTER PART -->
-      <!-- =============================================== -->
-
-      <div class="container py-3">
-        <div class="row">
-          <div class="col-12 col-md-5">
-            <div class="row">
-              <div class="col-12 col-md-4">
-                <img src="images\trip_logo_pink.png" class="img-fluid" alt="Sorry,cant load the image!">
-              </div>
-              <div class="col-12 col-md-8 flexed-2 d-flex align-items-center mobile-justify-content-center mobile-pt-5">
-                <p>
-                  <i class="fa fa-facebook px-2" aria-hidden="true"></i>
-                  <i class="fa fa-twitter px-2" aria-hidden="true"></i>
-                  <i class="fa fa-google-plus px-2" aria-hidden="true"></i>
-                  <i class="fa fa-pinterest-p px-2" aria-hidden="true"></i>
-                </p>
+        <div class="col-5 py-5 pl-5 d-flex flex-column">
+          <h4 class="pb-5">Travel News</h4>
+          <div class="row flexed align-items-center pb-3">
+            <div class="col-4 d-flex justify-content-center">
+              <div>
+                <img src="http://via.placeholder.com/75x75" alt="Sorry,cant load the image!">
               </div>
             </div>
+            <div class="col-8">
+              <h4>Tokyo</h4>
+              <p>
+                <small>
+                  <span class="text-muted">Dreamy bed and delicious breakfast
+                    <br> Entire home/apt 1 bed 3 guests Business</span>
+                  <br> 25 Mar. 2011</small>
+              </p>
+            </div>
           </div>
-          <div class="col-12 col-md-7 d-flex align-items-center mobile-pt-5">
-            <p class="flexed mobile-text-center text-right">
-              <small>Copyright 2017 Traveltrip. All rights reserved.</small>
-            </p>
+          <div class="row flexed align-items-center pt-3">
+            <div class="col-4 d-flex justify-content-center">
+              <div>
+                <img src="http://via.placeholder.com/75x75" alt="Sorry,cant load the image!">
+              </div>
+            </div>
+            <div class="col-8">
+              <h4>Singapore</h4>
+              <p>
+                <small>
+                  <span class="text-muted">Dreamy bed and delicious breakfast
+                    <br> Entire home/apt 1 bed 3 guests Business</span>
+                  <br> 25 Mar. 2011</small>
+              </p>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- =============================================== -->
+    <!-- THIS IS THE FOOTER PART -->
+    <!-- =============================================== -->
+
+    <div class="container py-3">
+      <div class="row">
+        <div class="col-12 col-md-5">
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <img src="images\trip_logo_pink.png" class="img-fluid" alt="Sorry,cant load the image!">
+            </div>
+            <div class="col-12 col-md-8 flexed-2 d-flex align-items-center mobile-justify-content-center pt-3 pt-md-0">
+              <p>
+                <i class="fa fa-facebook px-2" aria-hidden="true"></i>
+                <i class="fa fa-twitter px-2" aria-hidden="true"></i>
+                <i class="fa fa-google-plus px-2" aria-hidden="true"></i>
+                <i class="fa fa-pinterest-p px-2" aria-hidden="true"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-7 d-flex align-items-center pt-3 pt-md-0">
+          <p class="flexed text-center text-md-right text-right">
+            <small>Copyright 2017 Traveltrip. All rights reserved.</small>
+          </p>
+        </div>
+      </div>
+    </div>
 
 
-      <!-- build:js scripts/vendor.js -->
-      <!-- bower:js -->
-      <script src="/bower_components/jquery/dist/jquery.js"></script>
-      <script src="/bower_components/tether/dist/js/tether.js"></script>
-      <!-- endbower -->
-      <!-- endbuild -->
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/tether/dist/js/tether.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
 
-      <!-- build:js scripts/plugins.js -->
-      <script src="/bower_components/bootstrap/js/dist/util.js"></script>
-      <script src="/bower_components/bootstrap/js/dist/alert.js"></script>
-      <script src="/bower_components/bootstrap/js/dist/button.js"></script>
-      <script src="/bower_components/bootstrap/js/dist/carousel.js"></script>
-      <script src="/bower_components/bootstrap/js/dist/collapse.js"></script>
-      <script src="/bower_components/bootstrap/js/dist/dropdown.js"></script>
-      <script src="/bower_components/bootstrap/js/dist/modal.js"></script>
-      <script src="/bower_components/bootstrap/js/dist/scrollspy.js"></script>
-      <script src="/bower_components/bootstrap/js/dist/tab.js"></script>
-      <script src="/bower_components/bootstrap/js/dist/tooltip.js"></script>
-      <script src="/bower_components/bootstrap/js/dist/popover.js"></script>
-      <!-- endbuild -->
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap/js/dist/util.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/alert.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/button.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/carousel.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/collapse.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/dropdown.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/modal.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/tab.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/tooltip.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/popover.js"></script>
+    <!-- endbuild -->
 
-      <!--    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+    <!--    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
       crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
       crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
       crossorigin="anonymous"></script> -->
 
-      <!-- build:js scripts/main.js -->
-      <script src="scripts/main.js"></script>
-      <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
 </body>
 
 </html>
+
+
+<!-- <div class="row">
+  <div class="col-4"></div>
+  <div class="col-8"></div>
+</div> -->
