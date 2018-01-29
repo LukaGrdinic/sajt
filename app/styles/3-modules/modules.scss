@@ -331,7 +331,7 @@
     position: relative;
 }
 
-.flag-danger::after {
+.flag-danger::after { // THIS IS THE DEFAULT flag-danger
     position: absolute;
     left: 100%;
     top: 0px;
@@ -343,7 +343,60 @@
     border-bottom: solid #d9534f 12px;
 }
 
-
 .clearfixed {
     clear: both;
+}
+
+/* THIS IS WHERE THE TRIANGLE CLASSES ARE */
+
+.triangle-warning-10px::before { // THIS IS THE 10px FLAG
+    position: absolute;
+    left: 0%;
+    top: 140px;
+    content: "";
+    height: 0;
+    width: 0;
+    border-left: solid #f0ad4e 10px;
+    border-top: solid transparent 10px;
+    border-right: solid transparent 10px;
+    border-bottom: solid transparent 10px;
+}
+
+.triangle-danger-10px::before { // THIS IS THE 10px FLAG
+    position: absolute;
+    left: 0%;
+    top: 140px;
+    content: "";
+    height: 0;
+    width: 0;
+    border-left: solid #d9534f 10px;
+    border-top: solid transparent 10px;
+    border-right: solid transparent 10px;
+    border-bottom: solid transparent 10px;
+}
+
+.border-left-danger {
+    border-left: solid 10px #d9534f;
+}
+
+.border-left-warning {
+    border-left: solid 10px #f0ad4e;
+}
+
+/* THIS IS WHERE THE HEIGHT CLASSES ARE */
+
+@media (min-width: 576px) {
+    .height-sm-200 {
+        height: 200px !important;
+    }
+    .triangle-warning-10px::before {
+        top: 90px;
+    }
+    .triangle-danger-10px::before {
+        top:90px;
+    }
+}
+
+.height-300 {
+    height: 300px;
 }
