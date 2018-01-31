@@ -1,0 +1,1396 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>TravelTrip</title>
+
+  <link rel="icon" href="test\0-zvijezda.png" type="image/x-icon">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+    crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+
+  <!-- endbuild -->
+
+</head>
+
+<body>
+
+  <header>
+
+    <!-- =============================================== -->
+    <!-- THIS IS THE NAVBAR PART -->
+    <!-- =============================================== -->
+
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-danger">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="container">
+        <div class="collapse navbar-collapse justify-content-between text-center" id="navbarNav">
+          <div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa fa-phone" aria-hidden="true"></i> 123 456 7890 123</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Support
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown text-white">
+                <a href="#" class="btn btn-danger dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  English
+                </a>
+
+                <div class="dropdown-menu text-center text-lg-left" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Crnogorski</a>
+                  <a class="dropdown-item" href="#">Deutsch</a>
+                  <a class="dropdown-item" href="#">Francais</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Login</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Sign up</a>
+                <!-- #homeDropdown -->
+
+              </li>
+              <li class="nav-item dropdown text-white hidden-md-up">
+                <a href="#" class="btn btn-danger dropdown-toggle" id="homeDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">Menu</a>
+
+                <div id="realDropdownMenu" class="dropdown-menu text-center bg-danger border-0" aria-labelledby="homeDropdownMenuLink">
+                  <hr class="mt-0">
+                  <a class="dropdown-item text-white" href="#">Home</a>
+                  <a class="dropdown-item text-white" href="#">Flights</a>
+                  <a class="dropdown-item text-white" href="#">Hotels</a>
+                  <a class="dropdown-item text-white" href="#">Homestay</a>
+                  <a class="dropdown-item text-white" href="#">Holidays</a>
+                  <a class="dropdown-item text-white" href="#">Activity</a>
+                  <a class="dropdown-item text-white" href="#">Pages</a>
+                  <a class="dropdown-item text-white" href="#">Shortcodes</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <!-- =============================================== -->
+    <!-- THIS IS THE HOME PART -->
+    <!-- =============================================== -->
+
+    <div class="container">
+      <div class="row py-4">
+        <div class="col-12 col-md-2">
+          <img src="images\trip_logo_pink.png" class="img-fluid" alt="Sorry,cant load the image!">
+        </div>
+        <div class="hidden-sm-down col-md-10 d-flex align-items-center">
+          <ul id="homeDropdown" class="list-inline mb-0 text-right">
+            <li class="list-inline-item pr-3 mobile-d-block text-center ">
+              <strong>
+                <a href="#">Home</a>
+              </strong>
+            </li>
+            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
+              <a href="#">Flights</a>
+            </li>
+            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
+              <a href="#">Hotels</a>
+            </li>
+            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
+              <a href="#">Homestay</a>
+            </li>
+            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
+              <a href="#">Holidays</a>
+            </li>
+            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
+              <a href="#">Activity</a>
+            </li>
+            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
+              <a href="#">Pages</a>
+            </li>
+            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
+              <a href="#">Shortcodes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- =============================================== -->
+    <!-- THIS IS THE BREADCRUMB PART -->
+    <!-- =============================================== -->
+
+    <div class="container-fluid">
+      <div class="bg-faded">
+        <div class="container">
+          <div class="row py-3">
+            <div class="col-12 col-lg-6 d-flex align-items-center">
+              <h4 class="mb-0 pl-0">Hotel List View</h4>
+            </div>
+            <div class="col-6 hidden-md-down">
+              <ol class="breadcrumb mb-0 bg-faded d-flex justify-content-end">
+                <li class="breadcrumb-item">Home</li>
+                <li class="breadcrumb-item">Hotells</li>
+                <li class="breadcrumb-item">
+                  <strong>List View</strong>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =============================================== -->
+    <!-- THIS IS THE HOTEL LIST VIEW -->
+    <!-- =============================================== -->
+
+    <div class="container-fluid bg-inverse">
+      <div class="container">
+        <div class="row pl-1 py-2">
+          <div class="col-md-12">
+            <p class="font-weight-bold text-danger">Domestic and International Hotels</p>
+          </div>
+        </div>
+        <div class="row pl-1 pb-4">
+          <div class="col-md-12">
+            <form>
+              <div class="row no-gutters">
+                <div class="col-12 col-md-4">
+                  <div class="input-group mobile-py-2">
+                    <input type="text" class="form-control py-3 rounded-0 rounded-left border-0 mobile-bx-0 hidden-md-down" placeholder="Select City, Location or Hotel Name">
+                    <input type="text" class="form-control py-3 rounded-0 rounded-left border-0 mobile-bx-0 hidden-lg-up" placeholder="Select Location or Hotel">
+                    <div class="input-group-addon bg-white border-0 rounded-0">
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="input-group mobile-py-2">
+                    <input type="text" class="form-control py-3 border-0 bl-solid rounded-0 mobile-bx-0" placeholder="Check-In">
+                    <div class="input-group-addon bg-white border-0 rounded-0">
+                      <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="input-group mobile-py-2">
+                    <input type="text" class="form-control py-3 border-0 bl-solid rounded-0 mobile-bx-0" placeholder="Check-Out">
+                    <div class="input-group-addon bg-white border-0 rounded-0">
+                      <i class="fa fa-calendar-times-o" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="input-group mobile-py-2">
+                    <input type="text" class="form-control py-3 border-0 bl-solid rounded-0 mobile-bx-0 hidden-lg-down" placeholder="2 People in 1 Room">
+                    <input type="text" class="form-control py-3 border-0 bl-solid rounded-0 mobile-bx-0 hidden-xl-up" placeholder="Room for 2">
+                  </div>
+                </div>
+                <div class="col-12 col-md-2 mobile-py-2">
+                  <button type="submit" class="btn btn-danger form-control py-3 border-top-0 border-bottom-0 rounded-0 rounded-md-right">
+                    Search
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container py-3 py-lg-5">
+      <div class="row">
+
+        <!-- =================================== -->
+        <!-- THIS IS THE FILTER PART -->
+        <!-- =================================== -->
+
+        <div class="col-3 hidden-md-down">
+          <div class="borders-gray-gentle">
+            <div class="row">
+              <div class="col-12">
+                <h4 class="mb-0">1932 Hotels found</h4>
+                <p>In Goa</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <p class="mb-0 pt-3">
+                  <strong>SEARCH BY HOTEL NAME</strong>
+                </p>
+                <div class="input-group py-2">
+                  <input type="text" class="form-control border-right-0" placeholder="">
+                  <div class="input-group-addon bg-white">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <p class="py-2">
+                  <strong>Offers</strong>
+                </p>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input mr-1" type="checkbox"> 30% or more
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input mr-1" type="checkbox"> 50% or more
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input mr-1" type="checkbox"> Buy More-Save More Offer
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <p class="py-2">
+                  <strong>Price Range</strong>
+                </p>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input mr-1" type="checkbox"> Up to $79
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input mr-1" type="checkbox"> $99 to $199
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input mr-1" type="checkbox"> $199 to $299
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input mr-1" type="checkbox"> $299 to $399
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input mr-1" type="checkbox"> $399 to $499
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input mr-1" type="checkbox"> $499 to $599
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input mr-1" type="checkbox"> $599 +
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <p class="py-2">
+                  <strong>Hotel Star Rating</strong>
+                </p>
+                <div class="btn-group d-flex">
+                  <div class="flexed btn btn-secondary">
+                    <div class="pb-1">1</div>
+                    <div>
+                      <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                    </div>
+                    <hr>
+                    <div class="pt-1">99</div>
+                  </div>
+                  <div class="flexed btn btn-secondary">
+                    <div class="pb-1">2</div>
+                    <div>
+                      <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                    </div>
+                    <hr>
+                    <div class="pt-1">123</div>
+                  </div>
+                  <div class="flexed btn btn-secondary">
+                    <div class="pb-1">3</div>
+                    <div>
+                      <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                    </div>
+                    <hr>
+                    <div class="pt-1">126</div>
+                  </div>
+                  <div class="flexed btn btn-secondary">
+                    <div class="pb-1">4</div>
+                    <div>
+                      <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                    </div>
+                    <hr>
+                    <div class="pt-1">380</div>
+                  </div>
+                  <div class="flexed btn btn-secondary">
+                    <div class="pb-1">5</div>
+                    <div>
+                      <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                    </div>
+                    <hr>
+                    <div class="pt-1">590</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <p class="py-2">
+                  <strong>Hotel Type</strong>
+                </p>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input mr-1" type="checkbox"> Appartment
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input mr-1" type="checkbox"> Bed and Breakfast
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input mr-1" type="checkbox"> Cottage
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input mr-1" type="checkbox"> Guesthouse
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input mr-1" type="checkbox"> Heritage Hotel
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input mr-1" type="checkbox"> Hostel
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input mr-1" type="checkbox"> Houseboat
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input mr-1" type="checkbox"> Treehouse
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input mr-1" type="checkbox"> Villa
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <p class="mb-0 pt-3">
+                  <strong>Localities</strong>
+                </p>
+                <div class="input-group py-2">
+                  <input type="text" class="form-control border-right-0" placeholder="">
+                  <div class="input-group-addon bg-white">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <p class="py-2">
+                  <strong>Amenities</strong>
+                </p>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input mr-1" type="checkbox"> Front Desk
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input mr-1" type="checkbox"> Room Service
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input mr-1" type="checkbox"> Travel Assistance
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input mr-1" type="checkbox"> Free Internet
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input mr-1" type="checkbox"> Laundry Service
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input mr-1" type="checkbox"> Swimming Pool
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input mr-1" type="checkbox"> Fun Assistance
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input mr-1" type="checkbox"> Spa
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <p class="py-2">
+                  <strong>Show Hotels With</strong>
+                </p>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input mr-1" type="checkbox"> Free Cancelation
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input mr-1" type="checkbox"> Free Breakfast
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input mr-1" type="checkbox"> Free Wifi
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input mr-1" type="checkbox"> Free Wireless Internet
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input mr-1" type="checkbox"> Free Valet Parking
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input mr-1" type="checkbox"> All Meals Included
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 hidden-lg-up">
+          <div class="row">
+            <div class="col-12 col-md-4 py-2">
+              <div class="dropdown">
+                <button class="dropdown-toggle btn btn-outline-danger w-100 text-center" id="dropdownFilters" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">Offers</button>
+                <div class="dropdown-menu w-100 text-center" aria-labelledby="dropdownFilters">
+                  <div class="dropdown-menu-item">30% or more</div>
+                  <div class="dropdown-menu-item">50% or more</div>
+                  <div class="dropdown-menu-item">Buy More-Save More Offer</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 py-2">
+              <div class="dropdown">
+                <button class="dropdown-toggle btn btn-outline-danger w-100 text-center" id="dropdownFilters" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">Price Range</button>
+                <div class="dropdown-menu w-100 text-center" aria-labelledby="dropdownFilters">
+                  <div class="dropdown-menu-item">Up to $79</div>
+                  <div class="dropdown-menu-item">$199 to $299</div>
+                  <div class="dropdown-menu-item">$299 to $399</div>
+                  <div class="dropdown-menu-item">$399 to $499</div>
+                  <div class="dropdown-menu-item">$499 to $599</div>
+                  <div class="dropdown-menu-item">$599 up</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 py-2">
+              <div class="dropdown">
+                <button class="dropdown-toggle btn btn-outline-danger w-100 text-center" id="dropdownFilters" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">Hotel Star Rating</button>
+                <div class="dropdown-menu w-100 text-center" aria-labelledby="dropdownFilters">
+                  <div class="dropdown-menu-item">1 Star</div>
+                  <div class="dropdown-menu-item">2 Stars</div>
+                  <div class="dropdown-menu-item">3 Stars</div>
+                  <div class="dropdown-menu-item">4 Stars</div>
+                  <div class="dropdown-menu-item">5 Stars</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 py-2">
+              <div class="dropdown">
+                <button class="dropdown-toggle btn btn-outline-danger w-100 text-center" id="dropdownFilters" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">Hotel Type</button>
+                <div class="dropdown-menu w-100 text-center" aria-labelledby="dropdownFilters">
+                  <div class="dropdown-menu-item">Apartment</div>
+                  <div class="dropdown-menu-item">Bed and Breakfast</div>
+                  <div class="dropdown-menu-item">Cottage</div>
+                  <div class="dropdown-menu-item">Guesthouse</div>
+                  <div class="dropdown-menu-item">Heritage Hotel</div>
+                  <div class="dropdown-menu-item">Hostel</div>
+                  <div class="dropdown-menu-item">House Boat</div>
+                  <div class="dropdown-menu-item">Tree House</div>
+                  <div class="dropdown-menu-item">Villa</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 py-2">
+              <div class="dropdown">
+                <button class="dropdown-toggle btn btn-outline-danger w-100 text-center" id="dropdownFilters" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">Amenities</button>
+                <div class="dropdown-menu w-100 text-center" aria-labelledby="dropdownFilters">
+                  <div class="dropdown-menu-item">Front Desk</div>
+                  <div class="dropdown-menu-item">Room Service</div>
+                  <div class="dropdown-menu-item">Travel Assistance</div>
+                  <div class="dropdown-menu-item">Free Internet</div>
+                  <div class="dropdown-menu-item">Laundry Service</div>
+                  <div class="dropdown-menu-item">Swimming Pool</div>
+                  <div class="dropdown-menu-item">Fun Assistance</div>
+                  <div class="dropdown-menu-item">Spa</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 py-2">
+              <div class="dropdown">
+                <button class="dropdown-toggle btn btn-outline-danger w-100 text-center" id="dropdownFilters" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">Show Hotels With</button>
+                <div class="dropdown-menu w-100 text-center" aria-labelledby="dropdownFilters">
+                  <div class="dropdown-menu-item">Free Cancelation</div>
+                  <div class="dropdown-menu-item">Free Breakfast</div>
+                  <div class="dropdown-menu-item">Free Wifi</div>
+                  <div class="dropdown-menu-item">Free Wireless Internet</div>
+                  <div class="dropdown-menu-item">Free Valet Parking</div>
+                  <div class="dropdown-menu-item">All Meals Include</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- =================================== -->
+        <!-- THIS IS THE OFFER PART -->
+        <!-- =================================== -->
+
+        <div class="col-12 col-lg-9 pt-3 pt-lg-0">
+          <div class="row">
+            <div class="col-12">
+              <h3>Hotel Search results</h3>
+            </div>
+          </div>
+          <div class="row pt-3 pb-4 hidden-sm-down">
+            <div class="col-12 d-flex">
+              <p class="pr-3">SORT BY:</p>
+              <p class="px-3">RECOMENDED</p>
+              <p class="px-3 bl-solid br-solid">STAR RATING</p>
+              <p class="px-3">PRICE (TAKES EXTRA)</p>
+            </div>
+          </div>
+          <div class="row py-3 hidden-md-up">
+            <div class="col-12">
+              <div class="dropdown">
+                <a class="dropdown-toggle btn btn-danger text-white w-100" id="dropdownSortBy" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">Sort By</a>
+                <div class="dropdown-menu w-100 text-center" aria-labelledby="dropdownSortBy">
+                  <div class="dropdown-menu-item">Recomended</div>
+                  <div class="dropdown-menu-item">Star Rating</div>
+                  <div class="dropdown-menu-item">Price</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 offerCards">
+              <div class="row mx-0 borders-gray-gentle px-0 py-0 mb-5">
+                <div class="col-12 col-md-4 px-0">
+                  <img class="w-100" src="http://via.placeholder.com/350x350">
+                </div>
+                <div class="col-12 col-md-8 px-0 align-self-stretch d-flex flex-column">
+                  <div class="row no-gutters">
+                    <div class="col-12 col-md-8 px-3">
+                      <p class="py-2">
+                        <strong>The Byke Old Anchor Beach Resort</strong>
+                      </p>
+                      <p class="py-2">
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-muted" aria-hidden="true"></i>
+                      </p>
+                      <p class="py-2">Lotus by the beach goa</p>
+                      <p class="py-2">Entire home/apt 2 beds 4 guests</p>
+                      <p class="py-2">
+                        <i class="fa fa-bed pr-1" aria-hidden="true"></i>
+                        <i class="fa fa-coffee px-1" aria-hidden="true"></i>
+                        <i class="fa fa-shower px-1" aria-hidden="true"></i>
+                        <i class="fa fa-bicycle px-1" aria-hidden="true"></i>
+                        <i class="fa fa-car text-muted px-1" aria-hidden="true"></i>
+
+                      </p>
+                    </div>
+                    <div class="col-12 col-md-4 text-center text-md-right px-4 pt-md-5 d-flex flex-column">
+                      <div class="row flexed">
+                        <div class="col-12 d-flex align-items-center justify-content-center justify-content-md-end">
+                          <h4 class="mb-0 text-muted px-1">
+                            <s>125$</s>
+                          </h4>
+                          <h3 class="mb-0 text-danger px-1">
+                            <strong>$74</strong>
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="row flexed">
+                        <div class="col-12">
+                          <p>132 reviews</p>
+                        </div>
+                      </div>
+                      <div class="row flexed">
+                        <div class="col-12">
+                          <button class="btn bg-danger text-white">Book Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row no-gutters bg-faded flexed mt-4 mt-md-0">
+                    <div class="col-12 px-3 py-3 d-flex align-items-center">
+                      <p>
+                        <strong class="text-danger">Flat 50% Off.</strong> Earn 20% in eWallet. Code - TTLAVISH</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- THESE ARE JUST COPIES OF THE ONE ABOVE + SOME CHANGES TO PRICES -->
+              <!-- =============================================================== -->
+              <!-- THIS IS OFFERCARD NUMBER 2 -->
+
+              <div class="row mx-0 borders-gray-gentle px-0 py-0 mb-5">
+                <div class="col-12 col-md-4 px-0">
+                  <img class="w-100" src="http://via.placeholder.com/350x350">
+                </div>
+                <div class="col-12 col-md-8 px-0 align-self-stretch d-flex flex-column">
+                  <div class="row no-gutters">
+                    <div class="col-12 col-md-8 px-3">
+                      <p class="py-2">
+                        <strong>The Byke Old Anchor Beach Resort</strong>
+                      </p>
+                      <p class="py-2">
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-muted" aria-hidden="true"></i>
+                      </p>
+                      <p class="py-2">Lotus by the beach goa</p>
+                      <p class="py-2">Entire home/apt 2 beds 4 guests</p>
+                      <p class="py-2">
+                        <i class="fa fa-bed pr-1" aria-hidden="true"></i>
+                        <i class="fa fa-coffee px-1" aria-hidden="true"></i>
+                        <i class="fa fa-shower px-1" aria-hidden="true"></i>
+                        <i class="fa fa-bicycle px-1" aria-hidden="true"></i>
+                        <i class="fa fa-car text-muted px-1" aria-hidden="true"></i>
+
+                      </p>
+                    </div>
+                    <div class="col-12 col-md-4 text-center text-md-right px-4 pt-md-5 d-flex flex-column">
+                      <div class="row flexed">
+                        <div class="col-12 d-flex align-items-center justify-content-center justify-content-md-end">
+                          <h4 class="mb-0 text-muted px-1">
+                            <s>125$</s>
+                          </h4>
+                          <h3 class="mb-0 text-danger px-1">
+                            <strong>$74</strong>
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="row flexed">
+                        <div class="col-12">
+                          <p>132 reviews</p>
+                        </div>
+                      </div>
+                      <div class="row flexed">
+                        <div class="col-12">
+                          <button class="btn bg-danger text-white">Book Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row no-gutters bg-faded flexed mt-4 mt-md-0">
+                    <div class="col-12 px-3 py-3 d-flex align-items-center">
+                      <p>
+                        <strong class="text-danger">Flat 50% Off.</strong> Earn 20% in eWallet. Code - TTLAVISH</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- THIS IS OFFERCARD NUMBER 3 -->
+
+              <div class="row mx-0 borders-gray-gentle px-0 py-0 mb-5">
+                <div class="col-12 col-md-4 px-0">
+                  <img class="w-100" src="http://via.placeholder.com/350x350">
+                </div>
+                <div class="col-12 col-md-8 px-0 align-self-stretch d-flex flex-column">
+                  <div class="row no-gutters">
+                    <div class="col-12 col-md-8 px-3">
+                      <p class="py-2">
+                        <strong>The Byke Old Anchor Beach Resort</strong>
+                      </p>
+                      <p class="py-2">
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-muted" aria-hidden="true"></i>
+                      </p>
+                      <p class="py-2">Lotus by the beach goa</p>
+                      <p class="py-2">Entire home/apt 2 beds 4 guests</p>
+                      <p class="py-2">
+                        <i class="fa fa-bed pr-1" aria-hidden="true"></i>
+                        <i class="fa fa-coffee px-1" aria-hidden="true"></i>
+                        <i class="fa fa-shower px-1" aria-hidden="true"></i>
+                        <i class="fa fa-bicycle px-1" aria-hidden="true"></i>
+                        <i class="fa fa-car text-muted px-1" aria-hidden="true"></i>
+
+                      </p>
+                    </div>
+                    <div class="col-12 col-md-4 text-center text-md-right px-4 pt-md-5 d-flex flex-column">
+                      <div class="row flexed">
+                        <div class="col-12 d-flex align-items-center justify-content-center justify-content-md-end">
+                          <h4 class="mb-0 text-muted px-1">
+                            <s>125$</s>
+                          </h4>
+                          <h3 class="mb-0 text-danger px-1">
+                            <strong>$74</strong>
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="row flexed">
+                        <div class="col-12">
+                          <p>132 reviews</p>
+                        </div>
+                      </div>
+                      <div class="row flexed">
+                        <div class="col-12">
+                          <button class="btn bg-danger text-white">Book Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row no-gutters bg-faded flexed mt-4 mt-md-0">
+                    <div class="col-12 px-3 py-3 d-flex align-items-center">
+                      <p>
+                        <strong class="text-danger">Flat 50% Off.</strong> Earn 20% in eWallet. Code - TTLAVISH</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- THIS IS OFFERCARD NUMBER 4 -->
+
+              <div class="row mx-0 borders-gray-gentle px-0 py-0 mb-5">
+                <div class="col-12 col-md-4 px-0">
+                  <img class="w-100" src="http://via.placeholder.com/350x350">
+                </div>
+                <div class="col-12 col-md-8 px-0 align-self-stretch d-flex flex-column">
+                  <div class="row no-gutters">
+                    <div class="col-12 col-md-8 px-3">
+                      <p class="py-2">
+                        <strong>The Byke Old Anchor Beach Resort</strong>
+                      </p>
+                      <p class="py-2">
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-muted" aria-hidden="true"></i>
+                      </p>
+                      <p class="py-2">Lotus by the beach goa</p>
+                      <p class="py-2">Entire home/apt 2 beds 4 guests</p>
+                      <p class="py-2">
+                        <i class="fa fa-bed pr-1" aria-hidden="true"></i>
+                        <i class="fa fa-coffee px-1" aria-hidden="true"></i>
+                        <i class="fa fa-shower px-1" aria-hidden="true"></i>
+                        <i class="fa fa-bicycle px-1" aria-hidden="true"></i>
+                        <i class="fa fa-car text-muted px-1" aria-hidden="true"></i>
+
+                      </p>
+                    </div>
+                    <div class="col-12 col-md-4 text-center text-md-right px-4 pt-md-5 d-flex flex-column">
+                      <div class="row flexed">
+                        <div class="col-12 d-flex align-items-center justify-content-center justify-content-md-end">
+                          <h4 class="mb-0 text-muted px-1">
+                            <s>125$</s>
+                          </h4>
+                          <h3 class="mb-0 text-danger px-1">
+                            <strong>$74</strong>
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="row flexed">
+                        <div class="col-12">
+                          <p>132 reviews</p>
+                        </div>
+                      </div>
+                      <div class="row flexed">
+                        <div class="col-12">
+                          <button class="btn bg-danger text-white">Book Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row no-gutters bg-faded flexed mt-4 mt-md-0">
+                    <div class="col-12 px-3 py-3 d-flex align-items-center">
+                      <p>
+                        <strong class="text-danger">Flat 50% Off.</strong> Earn 20% in eWallet. Code - TTLAVISH</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- THIS IS OFFERCARD NUMBER 5 -->
+
+              <div class="row mx-0 borders-gray-gentle px-0 py-0 mb-5 hidden-md-down">
+                <div class="col-12 col-md-4 px-0">
+                  <img class="w-100" src="http://via.placeholder.com/350x350">
+                </div>
+                <div class="col-12 col-md-8 px-0 align-self-stretch d-flex flex-column">
+                  <div class="row no-gutters">
+                    <div class="col-12 col-md-8 px-3">
+                      <p class="py-2">
+                        <strong>The Byke Old Anchor Beach Resort</strong>
+                      </p>
+                      <p class="py-2">
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-muted" aria-hidden="true"></i>
+                      </p>
+                      <p class="py-2">Lotus by the beach goa</p>
+                      <p class="py-2">Entire home/apt 2 beds 4 guests</p>
+                      <p class="py-2">
+                        <i class="fa fa-bed pr-1" aria-hidden="true"></i>
+                        <i class="fa fa-coffee px-1" aria-hidden="true"></i>
+                        <i class="fa fa-shower px-1" aria-hidden="true"></i>
+                        <i class="fa fa-bicycle px-1" aria-hidden="true"></i>
+                        <i class="fa fa-car text-muted px-1" aria-hidden="true"></i>
+
+                      </p>
+                    </div>
+                    <div class="col-12 col-md-4 text-center text-md-right px-4 pt-md-5 d-flex flex-column">
+                      <div class="row flexed">
+                        <div class="col-12 d-flex align-items-center justify-content-center justify-content-md-end">
+                          <h4 class="mb-0 text-muted px-1">
+                            <s>125$</s>
+                          </h4>
+                          <h3 class="mb-0 text-danger px-1">
+                            <strong>$74</strong>
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="row flexed">
+                        <div class="col-12">
+                          <p>132 reviews</p>
+                        </div>
+                      </div>
+                      <div class="row flexed">
+                        <div class="col-12">
+                          <button class="btn bg-danger text-white">Book Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row no-gutters bg-faded flexed mt-4 mt-md-0">
+                    <div class="col-12 px-3 py-3 d-flex align-items-center">
+                      <p>
+                        <strong class="text-danger">Flat 50% Off.</strong> Earn 20% in eWallet. Code - TTLAVISH</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- THIS IS OFFERCARD NUMBER 6 -->
+
+              <div class="row mx-0 borders-gray-gentle px-0 py-0 mb-5 hidden-md-down">
+                <div class="col-12 col-md-4 px-0">
+                  <img class="w-100" src="http://via.placeholder.com/350x350">
+                </div>
+                <div class="col-12 col-md-8 px-0 align-self-stretch d-flex flex-column">
+                  <div class="row no-gutters">
+                    <div class="col-12 col-md-8 px-3">
+                      <p class="py-2">
+                        <strong>The Byke Old Anchor Beach Resort</strong>
+                      </p>
+                      <p class="py-2">
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-muted" aria-hidden="true"></i>
+                      </p>
+                      <p class="py-2">Lotus by the beach goa</p>
+                      <p class="py-2">Entire home/apt 2 beds 4 guests</p>
+                      <p class="py-2">
+                        <i class="fa fa-bed pr-1" aria-hidden="true"></i>
+                        <i class="fa fa-coffee px-1" aria-hidden="true"></i>
+                        <i class="fa fa-shower px-1" aria-hidden="true"></i>
+                        <i class="fa fa-bicycle px-1" aria-hidden="true"></i>
+                        <i class="fa fa-car text-muted px-1" aria-hidden="true"></i>
+
+                      </p>
+                    </div>
+                    <div class="col-12 col-md-4 text-center text-md-right px-4 pt-md-5 d-flex flex-column">
+                      <div class="row flexed">
+                        <div class="col-12 d-flex align-items-center justify-content-center justify-content-md-end">
+                          <h4 class="mb-0 text-muted px-1">
+                            <s>125$</s>
+                          </h4>
+                          <h3 class="mb-0 text-danger px-1">
+                            <strong>$74</strong>
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="row flexed">
+                        <div class="col-12">
+                          <p>132 reviews</p>
+                        </div>
+                      </div>
+                      <div class="row flexed">
+                        <div class="col-12">
+                          <button class="btn bg-danger text-white">Book Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row no-gutters bg-faded flexed mt-4 mt-md-0">
+                    <div class="col-12 px-3 py-3 d-flex align-items-center">
+                      <p>
+                        <strong class="text-danger">Flat 50% Off.</strong> Earn 20% in eWallet. Code - TTLAVISH</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- THIS IS OFFERCARD NUMBER 7 -->
+
+              <div class="row mx-0 borders-gray-gentle px-0 py-0 mb-5 hidden-md-down">
+                <div class="col-12 col-md-4 px-0">
+                  <img class="w-100" src="http://via.placeholder.com/350x350">
+                </div>
+                <div class="col-12 col-md-8 px-0 align-self-stretch d-flex flex-column">
+                  <div class="row no-gutters">
+                    <div class="col-12 col-md-8 px-3">
+                      <p class="py-2">
+                        <strong>The Byke Old Anchor Beach Resort</strong>
+                      </p>
+                      <p class="py-2">
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-muted" aria-hidden="true"></i>
+                      </p>
+                      <p class="py-2">Lotus by the beach goa</p>
+                      <p class="py-2">Entire home/apt 2 beds 4 guests</p>
+                      <p class="py-2">
+                        <i class="fa fa-bed pr-1" aria-hidden="true"></i>
+                        <i class="fa fa-coffee px-1" aria-hidden="true"></i>
+                        <i class="fa fa-shower px-1" aria-hidden="true"></i>
+                        <i class="fa fa-bicycle px-1" aria-hidden="true"></i>
+                        <i class="fa fa-car text-muted px-1" aria-hidden="true"></i>
+
+                      </p>
+                    </div>
+                    <div class="col-12 col-md-4 text-center text-md-right px-4 pt-md-5 d-flex flex-column">
+                      <div class="row flexed">
+                        <div class="col-12 d-flex align-items-center justify-content-center justify-content-md-end">
+                          <h4 class="mb-0 text-muted px-1">
+                            <s>125$</s>
+                          </h4>
+                          <h3 class="mb-0 text-danger px-1">
+                            <strong>$74</strong>
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="row flexed">
+                        <div class="col-12">
+                          <p>132 reviews</p>
+                        </div>
+                      </div>
+                      <div class="row flexed">
+                        <div class="col-12">
+                          <button class="btn bg-danger text-white">Book Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row no-gutters bg-faded flexed mt-4 mt-md-0">
+                    <div class="col-12 px-3 py-3 d-flex align-items-center">
+                      <p>
+                        <strong class="text-danger">Flat 50% Off.</strong> Earn 20% in eWallet. Code - TTLAVISH</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- THIS IS OFFERCARD NUMBER 8 -->
+
+              <div class="row mx-0 borders-gray-gentle px-0 py-0 hidden-md-down">
+                <div class="col-12 col-md-4 px-0">
+                  <img class="w-100" src="http://via.placeholder.com/350x350">
+                </div>
+                <div class="col-12 col-md-8 px-0 align-self-stretch d-flex flex-column">
+                  <div class="row no-gutters">
+                    <div class="col-12 col-md-8 px-3">
+                      <p class="py-2">
+                        <strong>The Byke Old Anchor Beach Resort</strong>
+                      </p>
+                      <p class="py-2">
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-star text-muted" aria-hidden="true"></i>
+                      </p>
+                      <p class="py-2">Lotus by the beach goa</p>
+                      <p class="py-2">Entire home/apt 2 beds 4 guests</p>
+                      <p class="py-2">
+                        <i class="fa fa-bed pr-1" aria-hidden="true"></i>
+                        <i class="fa fa-coffee px-1" aria-hidden="true"></i>
+                        <i class="fa fa-shower px-1" aria-hidden="true"></i>
+                        <i class="fa fa-bicycle px-1" aria-hidden="true"></i>
+                        <i class="fa fa-car text-muted px-1" aria-hidden="true"></i>
+
+                      </p>
+                    </div>
+                    <div class="col-12 col-md-4 text-center text-md-right px-4 pt-md-5 d-flex flex-column">
+                      <div class="row flexed">
+                        <div class="col-12 d-flex align-items-center justify-content-center justify-content-md-end">
+                          <h4 class="mb-0 text-muted px-1">
+                            <s>125$</s>
+                          </h4>
+                          <h3 class="mb-0 text-danger px-1">
+                            <strong>$74</strong>
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="row flexed">
+                        <div class="col-12">
+                          <p>132 reviews</p>
+                        </div>
+                      </div>
+                      <div class="row flexed">
+                        <div class="col-12">
+                          <button class="btn bg-danger text-white">Book Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row no-gutters bg-faded flexed mt-4 mt-md-0">
+                    <div class="col-12 px-3 py-3 d-flex align-items-center">
+                      <p>
+                        <strong class="text-danger">Flat 50% Off.</strong> Earn 20% in eWallet. Code - TTLAVISH</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =============================================== -->
+    <!-- THIS IS THE FEATURES PART -->
+    <!-- =============================================== -->
+
+    <div class="container-fluid bb-solid bt-solid mt-5 px-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 br-solid bl-solid mobile-bb-solid mobile-bx-0 py-2">
+            <h4 class="text-center text-md-left pt-2">24/7 Customer Support</h4>
+            <p class="text-muted text-center text-md-left pb-1">IF you need help by traveling or hosting,
+              <br> contact us at our toll free number:
+              <br> 123 456 789</p>
+          </div>
+          <div class="col-12 col-md-4 br-solid mobile-bb-solid mobile-bx-0 py-2">
+            <h4 class="text-center text-md-left pt-2">2017 Summer Destinations On Sale</h4>
+            <p class="text-muted text-center text-md-left pb-1">For the vast majority of his history, agriculture
+              <br> can be described new products agriculture can
+              <br> be described</p>
+          </div>
+          <div class="col-12 col-md-4 br-solid mobile-bx-0 py-2">
+            <h4 class="text-center text-md-left pt-2">Flat 75% Off On Domestic Hotels</h4>
+            <p class="text-muted text-center text-md-left pb-1">Our best ever hotel deals are here! Use
+              <br> promo code TTHAPPY to get flat 75% off
+              <br> using eCash on hotel bookings through</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =============================================== -->
+    <!-- THIS IS THE TABLE OF CONTENTS PART -->
+    <!-- =============================================== -->
+
+    <div class="container hidden-md-down">
+      <div class="row">
+        <div class="col-4 py-5">
+          <div class="row">
+            <div class="col-6">
+              <h4 class="pb-5">Traveltrip</h4>
+              <ul class=" pl-0">
+                <li>
+                  <a class="text-muted" href="#">Home</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Flights</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Hotels</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Homestay</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Holidays</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Activity</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Pages</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Shortcodes</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <h4 class="pb-5">Discover</h4>
+              <ul class="pl-0">
+                <li>
+                  <a class="text-muted" href="#">Holidays</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Hot Deals</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Travel Stories</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Travel Guide</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Travel Ideas</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Travel Insurance</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Group Bookings</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">FAQ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 py-5 d-flex flex-column">
+          <h4 class="pb-5">Language/Currency & Subscribe</h4>
+          <div class="d-flex flex-column flexed">
+            <div class="flexed dropdown d-flex align-items-start">
+              <a href="#" class="btn dropdown-toggle text-muted text-left d-flex align-items-center justify-content-between" id="dropdownMenuLink-toc"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                English
+              </a>
+              <div id="dropdown-menu-toc" class="dropdown-menu" aria-labelledby="dropdownMenuLink-toc">
+                <div class="dropdown-item">Crnogorski</div>
+                <div class="dropdown-item">Francais</div>
+                <div class="dropdown-item">Deutsch</div>
+              </div>
+            </div>
+            <div class="flexed dropdown d-flex align-items-start">
+              <a href="#" class="btn dropdown-toggle text-muted text-left d-flex align-items-center justify-content-between" id="dropdownMenuLink-toc"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dollar
+              </a>
+              <div id="dropdown-menu-toc" class="dropdown-menu" aria-labelledby="dropdownMenuLink-toc">
+                <div class="dropdown-item">Euro</div>
+                <div class="dropdown-item">Yen</div>
+                <div class="dropdown-item">Pound</div>
+              </div>
+            </div>
+            <div class="flexed">
+              <div class="d-flex flex-row">
+                <a class="flexed px-3 py-2 no-br-right disabled text-muted borders-gray-gentle mb-0">
+                  Subscribe
+                </a>
+                <a class="bg-danger no-br-left text-white px-3 py-2 borders-gray-gentle mb-0">Send</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-5 py-5 pl-5 d-flex flex-column">
+          <h4 class="pb-5">Travel News</h4>
+          <div class="row flexed align-items-center pb-3">
+            <div class="col-4 d-flex justify-content-center">
+              <div>
+                <img src="http://via.placeholder.com/75x75" alt="Sorry,cant load the image!">
+              </div>
+            </div>
+            <div class="col-8">
+              <h4>Tokyo</h4>
+              <p>
+                <small>
+                  <span class="text-muted">Dreamy bed and delicious breakfast
+                    <br> Entire home/apt 1 bed 3 guests Business</span>
+                  <br> 25 Mar. 2011</small>
+              </p>
+            </div>
+          </div>
+          <div class="row flexed align-items-center pt-3">
+            <div class="col-4 d-flex justify-content-center">
+              <div>
+                <img src="http://via.placeholder.com/75x75" alt="Sorry,cant load the image!">
+              </div>
+            </div>
+            <div class="col-8">
+              <h4>Singapore</h4>
+              <p>
+                <small>
+                  <span class="text-muted">Dreamy bed and delicious breakfast
+                    <br> Entire home/apt 1 bed 3 guests Business</span>
+                  <br> 25 Mar. 2011</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =============================================== -->
+    <!-- THIS IS THE FOOTER PART -->
+    <!-- =============================================== -->
+
+    <div class="container py-3">
+      <div class="row">
+        <div class="col-12 col-md-5">
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <img src="images\trip_logo_pink.png" class="img-fluid" alt="Sorry,cant load the image!">
+            </div>
+            <div class="col-12 col-md-8 flexed-2 d-flex align-items-center mobile-justify-content-center pt-3 pt-md-0">
+              <p>
+                <i class="fa fa-facebook px-2" aria-hidden="true"></i>
+                <i class="fa fa-twitter px-2" aria-hidden="true"></i>
+                <i class="fa fa-google-plus px-2" aria-hidden="true"></i>
+                <i class="fa fa-pinterest-p px-2" aria-hidden="true"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-7 d-flex align-items-center pt-3 pt-md-0">
+          <p class="flexed text-center text-md-right text-right">
+            <small>Copyright 2017 Traveltrip. All rights reserved.</small>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-6">Something </div>
+        <div class="col-6"></div>
+      </div>
+    </div>
+
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/tether/dist/js/tether.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap/js/dist/util.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/alert.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/button.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/carousel.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/collapse.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/dropdown.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/modal.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/tab.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/tooltip.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/popover.js"></script>
+    <!-- endbuild -->
+
+    <!--    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+      crossorigin="anonymous"></script> -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>
+
+
+<!-- <div class="row">
+  <div class="col-4"></div>
+  <div class="col-8"></div>
+</div> -->

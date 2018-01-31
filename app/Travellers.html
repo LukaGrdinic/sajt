@@ -22,6 +22,7 @@
     crossorigin="anonymous"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles/main.css">
+
   <!-- endbuild -->
 
 </head>
@@ -158,7 +159,7 @@
                 <li class="breadcrumb-item">Home</li>
                 <li class="breadcrumb-item">Flights</li>
                 <li class="breadcrumb-item">
-                  <strong>Review</strong>
+                  <strong>Travellers</strong>
                 </li>
               </ol>
             </div>
@@ -219,96 +220,102 @@
         <!-- THIS IS THE INNER PART -->
         <!-- =============================================== -->
 
-        <div class="col-md-9 inner hidden-md-down pl-md-0">
+        <div class="col-12 col-lg-9 inner pl-lg-0">
+          <!-- Odje bi mozda trebalo da ide tablet-px-0 ali onda ispada grdno nesto na malim ekranima i treba rijesit ovo pl-0 -->
           <div class="row mt-5">
-            <div class="col-12  d-block">
+            <div class="col-12 tablet-px-0">
               <div class="borders-gray-gentle">
-                <h4 class="mb-0">Review Your Booking
-                </h4>
+                <h4 class="mb-0">Travellers</h4>
               </div>
-              <div class="borders-gray-gentle bg-faded d-block">
-                <div class="container">
-                  <div class="row py-3">
-                    <div class="col-12 px-3 d-flex justify-content-between">
-                      <p class="text-muted font-weight-bold">Departure</p>
-                      <p class="text-muted font-weight-bold">Total time: 19h 15m</p>
+              <div class="borders-gray-gentle bg-faded">
+                <div class="container pl-lg-0">
+                  <div class="row">
+                    <div class="col-12 col-md-10 tablet-px-0">
+                      <div class="row">
+                        <div class="col-12">
+                          <p class="font-weight-bold py-2">Adult 1</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <form class="form-inline">
+                            <div class="row">
+                              <div class="col-12 col-lg-2 pr-lg-1">
+                                <select class="form-control my-1 px-1">
+                                  <option class="py-1">Title 1</option>
+                                  <option class="py-1">Title 2</option>
+                                  <option class="py-1">Title 3</option>
+                                </select>
+                              </div>
+                              <div class="col-12 col-lg-3 col-xl-2 px-lg-1">
+                                <input class="form-control my-1 px-1" placeholder="First Name">
+                              </div>
+                              <div class="col-12 col-lg-3 col-xl-2 px-lg-1">
+                                <input class="form-control my-1 px-1" placeholder="Middle Name">
+                              </div>
+                              <div class="col-12 col-lg-4 col-xl-3 px-lg-1">
+                                <input class="form-control my-1 px-1" placeholder="Last Name">
+                              </div>
+                              <div class="col-12 col-lg-12 col-xl-2 px-xl-1 d-flex align-items-center">
+                                <div class="bootstrap-iso flexed">
+                                  <div class="form-group ">
+                                    <div class="input-group ">
+                                      <input class="form-control border-right-0 cursor-pointer my-1" id="date" name="date" placeholder="DOB" type="text" />
+                                      <div class="input-group-addon bg-white my-1">
+                                        <i class="fa fa-calendar">
+                                        </i>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <p class="font-weight-bold py-2">Contact Details</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <form class="form-inline">
+                            <div class="row">
+                              <div class="col-12 col-lg-5 pr-lg-1">
+                                <input class="form-control my-1" placeholder="Email">
+                              </div>
+                              <div class="col-12 col-lg-2 px-lg-1">
+                                <select class="form-control my-1 px-1">
+                                  <option class="py-1">+91</option>
+                                  <option class="py-1">+92</option>
+                                  <option class="py-1">+93</option>
+                                </select>
+                              </div>
+                              <div class="col-12 col-lg-5 px-lg-1">
+                                <input class="form-control my-1" placeholder="Mobile Number">
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
                     </div>
+                    <div class="col-12 col-md-2"></div>
                   </div>
-                  <div class="row py-3 d-flex bb-dashed">
-                    <div class="col-2 px-0">
-                      <div class="d-flex flex-column">
-                        <div class="d-flex justify-content-center">
-                          <img src="http://via.placeholder.com/55x55" alt="Sorry,cant load the image!">
-                        </div>
-                        <div class="pt-2 d-flex justify-content-center">
-                          <p>
-                            <small>Delta Air Lines</small>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-10">
-                      <div class="row mx-0 flexed">
-                        <div class="col-4 br-dashed px-4">
-                          <h4>LGA 06:29</h4>
-                          <p>New York, United States</p>
-                          <p>Wed, 17 May 2017</p>
-                        </div>
-                        <div class="col-4 br-dashed px-4">
-                          <h4>7h 54m (1 Stop)</h4>
-                          <p>Philadelphia</p>
-                          <div class="d-flex justify-content-start">
-                            <p class="flexed pr-3 pr-lg-2">Economy</p> 
-                            <p class="flexed ">
-                              <strong>Refundable</strong>
-                            </p>
-                          </div>
-                        </div>
-                        <div class="col-4 px-4">
-                          <h4>JFK 23:30</h4>
-                          <p>Santa Ana, CA, United States</p>
-                          <p>Thu, 18 May 2017</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row py-3 d-flex">
-                    <div class="col-2 px-0">
-                      <div class="d-flex flex-column">
-                        <div class="d-flex justify-content-center">
-                          <img src="http://via.placeholder.com/55x55" alt="Sorry,cant load the image!">
-                        </div>
-                        <div class="pt-2 d-flex justify-content-center">
-                          <p>
-                            <small>Air Asia Air Lines</small>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-10">
-                      <div class="row mx-0 flexed">
-                        <div class="col-4 br-dashed px-4">
-                          <h4>EWR 11:00</h4>
-                          <p>Santa Ana, United States</p>
-                          <p>Thu, 18 May 2017</p>
-                        </div>
-                        <div class="col-4 br-dashed px-4">
-                          <h4>5h 51m (Non-Stop)</h4>
-                          <p>Philadelphia</p>
-                          <div class="d-flex justify-content-start">
-                            <p class="flexed pr-3 pr-lg-2">Economy</p>
-                            <p class="flexed ">
-                              <strong>Refundable</strong>
-                            </p>
-                          </div>
-                        </div>
-                        <div class="col-4 px-4">
-                          <h4>LAX 13:51</h4>
-                          <p>New York, United States</p>
-                          <p>Thu, 18 May 2017</p>
-                        </div>
-                      </div>
+                  <div class="row pt-3">
+                    <div class="col-12 mx-2">
+                      <p class="lead my-2">Please note:</p>
+                      <p class="lead">
+                        -Culpa ea quis exercitation pariatur exercitation laborum commodo est amet exercitation irure voluptate amet.
+                        <br> -Culpa ea quis exercitation pariatur exercitation laborum commodo est amet exercitation irure voluptate
+                        amet.
+                        <br> -Dolore fugiat excepteur incididunt aute elit id laborum. Mollit cupidatat commodo proident cupidatat
+                        tempor magna amet velit nulla adipisicing. Culpa nulla sint magna ad eu eu commodo aliqua. Commodo
+                        veniam aliquip sit voluptate nostrud enim consequat velit exercitation cupidatat dolore aute et ipsum.
+                        Est minim exercitation aute sunt culpa id adipisicing esse in. Cupidatat dolore minim veniam ea.
+                        <br> -Culpa ea quis exercitation pariatur exercitation laborum commodo est amet exercitation irure voluptate
+                        amet.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -316,204 +323,39 @@
             </div>
           </div>
           <div class="row pt-5">
-            <div class="col-12  d-block">
-              <div class="borders-gray-gentle">
-                <h4 class="mb-0">Promo Code
-                  <span class="text-muted">(Optional)</span>
-                </h4>
+            <div class="col-12  tablet-px-0">
+              <div class="row no-gutters">
+                <div class="col-12">
+                  <div class="borders-gray-gentle ">
+                    <h4 class="mb-0">Service Requestes
+                      <span class="text-muted">(Optional)</span>
+                    </h4>
+                  </div>
+                </div>
               </div>
-              <div class="borders-gray-gentle bg-faded">
-                <div class="col-12 px-0 d-flex justify-content-between align-items-center">
-                  <h4 class="mb-0">Departure</h4>
-                  <div class="dropdown dropdown-white">
-                    <a href="#" class="btn dropdown-toggle text-muted" id="dropdownMenuLink-inner" data-toggle="dropdown" aria-haspopup="true"
-                      aria-expanded="false">
-                      VIEW PROMO CODE
-                    </a>
-                    <div id="promoCodeDropdown" class="dropdown-menu" aria-labelledby="dropdownMenuLink-inner">
-                      <a class="dropdown-item" href="#">First promo code</a>
-                      <a class="dropdown-item" href="#">Second promo code</a>
-                      <a class="dropdown-item" href="#">Third promo code</a>
+
+              <div class="row no-gutters">
+                <div class="col-12">
+                  <div class="borders-gray-gentle d-flex bg-faded">
+                    <div class="row">
+                      <div class="col-12 col-md-4 py-2 text-center">
+                        <button class="btn btn-secondary font-weight-bold">Add Meals +</button>
+                      </div>
+                      <div class="col-12 col-md-4 py-2 text-center">
+                        <button class="btn btn-secondary font-weight-bold">Select Seats +</button>
+                      </div>
+                      <div class="col-12 col-md-4 py-2 text-center">
+                        <button class="btn btn-secondary font-weight-bold">Select Others +</button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row mt-5">
+          <div class="row mt-5 hidden-md-down">
             <div class="col-sm-12 text-center">
               <button class="btn btn-lg bg-inverse text-white">Continue</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- =============================================== -->
-        <!-- THIS IS THE MOBILE - INNER PART -->
-        <!-- =============================================== -->
-        <div class="col-12 inner hidden-lg-up">
-          <div class="row no-gutters">
-            <div class="col-12  pt-5 text-center px-0">
-              <div class="row borders-gray-gentle">
-                <div class="col-12">
-                  <h4 class="mb-0">Review Your Booking</h4>
-                </div>
-              </div>
-              <div class="row borders-gray-gentle bg-faded px-0">
-                <!-- MOZDA JE ODJE CAK LJEPSE BEZ OVOG PX-0 -->
-                <div class="col-12 pb-3">
-                  <div class="row text-muted font-weight-bold">
-                    <div class="col-12 pb-1">
-                      <p>Departure</p>
-                    </div>
-                    <div class="col-12">
-                      <p>Total time: 19h 15m</p>
-                    </div>
-                  </div>
-                </div>
-
-                <!--DELTA AIRLINES STARTS HERE -->
-                <!-- =============================================== -->
-
-                <div class="col-12">
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="row">
-                        <div class="col-12 py-3">
-                          <img src="http://via.placeholder.com/55x55" alt="Sorry,cant load the image!">
-                        </div>
-                        <div class="col-12">
-                          <h4>
-                            Delta Air Lines
-                          </h4>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 bb-dashed py-3">
-                      <h4>LGA 06:29</h4>
-                      <p class="d-flex justify-content-center">New York, United States </p>
-                      <p>Wed,17 May 2017</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 py-3 bb-dashed">
-                  <div class="row">
-                    <div class="col-12">
-                      <h4>
-                        7h 54m (1 Stop)
-                      </h4>
-                    </div>
-                    <div class="col-12">
-                      <p class="d-flex justify-content-center">Philadelphia </p>
-                      <div class="d-flex justify-content-between px-4">
-                        <p class="flexed">Economy</p>
-                        <p class="flexed">
-                          <strong>Refundable</strong>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 py-3 bb-dashed">
-                  <div class="row">
-                    <div class="col-12">
-                      <h4>
-                        JFK 23:30
-                      </h4>
-                    </div>
-                    <div class="col-12">
-                      <p class="d-flex justify-content-center">Santa Ana, CA, United States</p>
-                      <p>Thu, 18 May 2017</p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- AIR ASIA AIRLINES STARTS HERE -->
-                <!-- =============================================== -->
-
-                <div class="col-12 py-3">
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="row">
-                        <div class="col-12 py-3">
-                          <img src="http://via.placeholder.com/55x55" alt="Sorry,cant load the image!">
-                        </div>
-                        <div class="col-12">
-                          <h4>Air Asia Air Lines</h4>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 bb-dashed py-3">
-                      <h4>EWR 11:00</h4>
-                      <p class="d-flex justify-content-center">Santa Ana, United States</p>
-                      <p>Thu, 18 May 2017</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 py-3 bb-dashed py-3">
-                  <div class="row">
-                    <div class="col-12">
-                      <h4>
-                        5h 51m (Non-Stop)
-                      </h4>
-                    </div>
-                    <div class="col-12">
-                      <p class="d-flex justify-content-center">Philadelphia </p>
-                      <div class="d-flex justify-content-between px-4">
-                        <p class="flexed">Economy</p>
-                        <p class="flexed">
-                          <strong>Refundable</strong>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 py-3">
-                  <div class="row">
-                    <div class="col-12">
-                      <h4>
-                        LAX 13:51
-                      </h4>
-                    </div>
-                    <div class="col-12">
-                      <p class="d-flex justify-content-center">New York, United States</p>
-                      <p>Thu, 18 May 2017</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- =============================================== -->
-          <!-- THIS IS THE PROMO MOBILE - PROMO CODE PART -->
-          <!-- =============================================== -->
-
-          <div class="row mx-0">
-            <div class="col-12  pt-5 px-0 text-center">
-              <div class="row borders-gray-gentle">
-                <div class="col-12">
-                  <h4 class="my-0">Promo Code
-                    <span class="text-muted">(Optional)</span>
-                  </h4>
-                </div>
-              </div>
-              <div class="row borders-gray-gentle bg-faded">
-                <div class="col-12">
-                  <h4 class="my-0">Departure</h4>
-                  <div class="dropdown dropdown-white my-3">
-                    <a href="#" class="btn dropdown-toggle text-muted d-block" id="mobile-dropdownMenuLink-inner" data-toggle="dropdown" aria-haspopup="true"
-                      aria-expanded="false">
-                      VIEW PROMO CODE
-                    </a>
-                    <div id="promoCodeDropdown" class="dropdown-menu" aria-labelledby="mobile-dropdownMenuLink-inner">
-                      <a class="dropdown-item" href="#">First promo code</a>
-                      <a class="dropdown-item" href="#">Second promo code</a>
-                      <a class="dropdown-item" href="#">Third promo code</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -522,52 +364,48 @@
         <!-- THIS IS THE SIDE PART -->
         <!-- =============================================== -->
 
-        <div class="col-12 col-lg-3 side-info pr-lg-0 tablet-px-0">
-          <!-- ODJE CAK FUNKCIONISE KAKO TREBA TABLET-PX-0, NE ZNAM KAKO BIH GA ZAMIJENIO SA BOOTSTRAP -md KLASAMA -->
-          <div class="mt-5">
-            <div class="borders-gray-gentle">
-              <h4 class="mb-0">Fare details</h4>
+        <div class="col-12 col-lg-3 side-info pr-0 tablet-px-0 mt-5">
+          <div class="borders-gray-gentle ">
+            <h4 class="mb-0">Fare details</h4>
+          </div>
+          <div class="borders-gray-gentle  d-flex justify-content-between align-items-center bg-faded">
+            <p>Adult x 1</p>
+            <p>
+              <strong>$349</strong>
+            </p>
+          </div>
+          <div class="row mx-0 borders-gray-gentle  bg-faded">
+            <div class="col-12 px-0">
+              <div class="row">
+                <div class="col-12 d-flex justify-content-between">
+                  <p>Fee and surcharges</p>
+                  <p>
+                    <strong>$120</strong>
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 text-right">
+                  <p class="mb-1">You pay</p>
+                  <h2 class="text-danger">$460</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- =============================================== -->
+          <!-- THIS IS THE SIDE PART LOWER-->
+          <!-- =============================================== -->
+
+          <div class=" mt-5">
+            <div class="borders-gray-gentle ">
+              <h4 class="mb-0">Traveltrip extra's</h4>
             </div>
             <div class="borders-gray-gentle d-flex justify-content-between align-items-center bg-faded">
-              <p>Adult x 1</p>
-              <p>
-                <strong>$349</strong>
+              <p>eCash</p>
+              <p class="text-danger">
+                <strong>$103</strong>
               </p>
-            </div>
-            <div class="row mx-0 borders-gray-gentle bg-faded">
-              <div class="col-12 px-0">
-                <div class="row">
-                  <div class="col-12 d-flex justify-content-between">
-                    <p>Fee and surcharges</p>
-                    <p>
-                      <strong>$120</strong>
-                    </p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-12 text-right">
-                    <p class="mb-1">You pay</p>
-                    <h2 class="text-danger">$460</h2>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-            <!-- =============================================== -->
-            <!-- THIS IS THE SIDE PART LOWER-->
-            <!-- =============================================== -->
-
-            <div class=" mt-5">
-              <div class="borders-gray-gentle">
-                <h4 class="mb-0">Traveltrip extra's</h4>
-              </div>
-              <div class="borders-gray-gentle d-flex justify-content-between align-items-center bg-faded">
-                <p>eCash</p>
-                <p class="text-danger">
-                  <strong>$103</strong>
-                </p>
-              </div>
             </div>
           </div>
         </div>
@@ -577,11 +415,9 @@
       <!-- THIS IS THE MOBILE - BUTTON PART -->
       <!-- =============================================== -->
 
-      <div class="container">
-        <div class="row mt-5 hidden-md-up">
-          <div class="col-sm-12 text-center">
-            <button class="btn btn-lg bg-inverse text-white">Continue</button>
-          </div>
+      <div class="row mt-5 hidden-lg-up">
+        <div class="col-sm-12 text-center">
+          <button class="btn btn-lg bg-inverse text-white">Continue</button>
         </div>
       </div>
     </div>
@@ -709,11 +545,11 @@
               </div>
             </div>
             <div class="flexed">
-              <div class=" d-flex flex-row">
-                <a class="borders-gray-gentle flexed px-3 py-2 no-br-right disabled text-muted">
+              <div class="d-flex flex-row">
+                <a class="flexed px-3 py-2 no-br-right disabled text-muted borders-gray-gentle mb-0">
                   Subscribe
                 </a>
-                <a class="borders-gray-gentle bg-danger no-br-left text-white px-3 py-2">Send</a>
+                <a class="bg-danger no-br-left text-white px-3 py-2 borders-gray-gentle mb-0">Send</a>
               </div>
             </div>
           </div>
@@ -778,12 +614,20 @@
           </div>
         </div>
         <div class="col-12 col-md-7 d-flex align-items-center pt-3 pt-md-0">
-          <p class="flexed text-center text-md-right">
+          <p class="flexed text-center text-md-right text-right">
             <small>Copyright 2017 Traveltrip. All rights reserved.</small>
           </p>
         </div>
       </div>
     </div>
+
+    <!-- =============================================== -->
+    <!-- THIS IS THE BEGGINING OF THE HTML PART OF THE PLUGIN -->
+    <!-- =============================================== -->
+
+
+
+
 
 
     <!-- build:js scripts/vendor.js -->
@@ -806,6 +650,28 @@
     <script src="/bower_components/bootstrap/js/dist/tooltip.js"></script>
     <script src="/bower_components/bootstrap/js/dist/popover.js"></script>
     <!-- endbuild -->
+
+    <!-- Extra JavaScript/CSS added manually in "Settings" tab -->
+    <!-- Include jQuery -->
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script> --> <!-- OVAJ JE NEPOTREBAN JQUERRY JER SAM VEC IMPORTOVAO GORE NEKI JQUERRY -->
+
+    <!-- Include Date Range Picker -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"
+    />
+
+    <script>
+      $(document).ready(function () {
+        var date_input = $('input[name="date"]'); //our date input has the name "date"
+        var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
+        date_input.datepicker({
+          format: 'mm/dd/yyyy',
+          container: container,
+          todayHighlight: true,
+          autoclose: true,
+        })
+      })
+    </script>
 
     <!--    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
       crossorigin="anonymous"></script>

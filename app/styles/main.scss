@@ -1,180 +1,38 @@
-// bower:scss
-@import "bower_components/bootstrap/scss/bootstrap.scss";
-// endbower
+// THIS IS SOME BOWER / YEOMAN SETUP
 
 .browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
 }
 
-/* Space out content a bit */
-body {
-   /* Ovo je prilagodjeno sajtu */
-  padding-bottom: 1.5rem;
-}
+// SASS CONFIG
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
+//VARIABLES
+//----------------------------------------------------------
 
-/* Custom page header */
-.header {
-  padding-bottom: 1rem;
-  border-bottom: .05rem solid #e5e5e5;
-}
+$fadedBorderLighter: #f7f7f7 * 0.9;
+$fadedBorderDarker: #f7f7f7 * 0.8;
 
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 2rem;
-  margin-bottom: 0;
-  line-height: 3rem;
-}
+//STYLES
+//----------------------------------------------------------
 
-/* Custom page footer */
-.footer {
-  padding-top: 1.5rem;
-  color: #777;
-  border-top: .05rem solid #e5e5e5;
-}
+//IMPORTS
+//----------------------------------------------------------
 
-/* Customize container */
-@media (min-width: 48em) {
-  .container {
-  }
-}
-.container-narrow > hr {
-  margin: 2rem 0;
-}
+// bower:scss
+@import 'bower_components/bootstrap/scss/bootstrap.scss';
+// endbower
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: .05rem solid #e5e5e5;
-}
-.jumbotron .btn {
-  padding: .75rem 1.5rem;
-  font-size: 1.5rem;
-}
+// NESTO DRUGO
+//----------------------------------------------------------
 
-/* Supporting marketing content */
-.marketing {
-  margin: 3rem 0;
-}
-.marketing p + h4 {
-  margin-top: 1.5rem;
-}
+@import '1-base/base.scss';
+@import '2-layouts/layouts.scss';
+@import '3-modules/modules.scss';
+@import '4-shame/shame.scss';
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 48em) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 2rem;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
-}
 
-/* Ovdje sam ja dodao sta me je interesovalo,kako bih prilagodio sajtu */
-.row {
-  margin-bottom: 1rem;
-}
+@import '0-plugins/SlickPlugin/slick-1.8.0/slick/slick.css';
 
-[class*="col-"] {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border: 1px solid rgba(86,61,124,.2);
-  background-color: rgba(86,61,124,.15);
-}
-
-h3 {
-  margin-top: 2rem;
-}
-
-hr {
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-
-.row .row {
-  margin-bottom: 0;
-  margin-top: 1rem;
-}
-
-.jumbotron .container {
-  max-width: 40rem;
-}
-
-.container h1 {
-  font-weight: 100;
-  padding-top: 2rem;
-}
-
-.jumbotron {
-  background-color: white;
-  .btn {
-    font-size: 16px;
-  }
-}
-
-footer {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.card {
-  width: 33.333%;
-  padding: 12px;
-  border: 0px;
-}
-
-.navbar {
-  [class*="col-"] {
-    background-color: transparent;
-    border: none;
-    }
-  a {
-      text-decoration: none;      
-    }
-}
-
-#Albumstuff {
-  font-size:20px;
-}
-
-header .navbar .container {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.jumbotron .container p .btn {
-  padding: 6px 12px;
-}
-
-.album {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: #f7f7f7;
-}
-
-main {
-  padding: auto 100px;
-}
-
-footer .container {
-  padding-bottom: 1.5rem;
-}

@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>TravelTrip</title>
+
+  <link rel="icon" href="test\0-zvijezda.png" type="image/x-icon">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+    crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+
+  <!-- endbuild -->
+
+</head>
+
+<body>
+
+  <header>
+
+    <!-- =============================================== -->
+    <!-- THIS IS THE NAVBAR PART -->
+    <!-- =============================================== -->
+
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-danger">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="container">
+        <div class="collapse navbar-collapse justify-content-between text-center" id="navbarNav">
+          <div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa fa-phone" aria-hidden="true"></i> 123 456 7890 123</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Support
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown text-white">
+                <a href="#" class="btn btn-danger dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  English
+                </a>
+
+                <div class="dropdown-menu text-center text-lg-left" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Crnogorski</a>
+                  <a class="dropdown-item" href="#">Deutsch</a>
+                  <a class="dropdown-item" href="#">Francais</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Login</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Sign up</a>
+                <!-- #homeDropdown -->
+
+              </li>
+              <li class="nav-item dropdown text-white hidden-md-up">
+                <a href="#" class="btn btn-danger dropdown-toggle" id="homeDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">Menu</a>
+
+                <div id="realDropdownMenu" class="dropdown-menu text-center bg-danger border-0" aria-labelledby="homeDropdownMenuLink">
+                  <hr class="mt-0">
+                  <a class="dropdown-item text-white" href="#">Home</a>
+                  <a class="dropdown-item text-white" href="#">Flights</a>
+                  <a class="dropdown-item text-white" href="#">Hotels</a>
+                  <a class="dropdown-item text-white" href="#">Homestay</a>
+                  <a class="dropdown-item text-white" href="#">Holidays</a>
+                  <a class="dropdown-item text-white" href="#">Activity</a>
+                  <a class="dropdown-item text-white" href="#">Pages</a>
+                  <a class="dropdown-item text-white" href="#">Shortcodes</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <!-- =============================================== -->
+    <!-- THIS IS THE HOME PART -->
+    <!-- =============================================== -->
+
+    <div class="container">
+      <div class="row py-4">
+        <div class="col-12 col-md-2">
+          <img src="images\trip_logo_pink.png" class="img-fluid" alt="Sorry,cant load the image!">
+        </div>
+        <div class="hidden-sm-down col-md-10 d-flex align-items-center">
+          <ul id="homeDropdown" class="list-inline mb-0 text-right">
+            <li class="list-inline-item pr-3 mobile-d-block text-center ">
+              <strong>
+                <a href="#">Home</a>
+              </strong>
+            </li>
+            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
+              <a href="#">Flights</a>
+            </li>
+            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
+              <a href="#">Hotels</a>
+            </li>
+            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
+              <a href="#">Homestay</a>
+            </li>
+            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
+              <a href="#">Holidays</a>
+            </li>
+            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
+              <a href="#">Activity</a>
+            </li>
+            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
+              <a href="#">Pages</a>
+            </li>
+            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
+              <a href="#">Shortcodes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- =============================================== -->
+    <!-- THIS IS THE BREADCRUMB PART -->
+    <!-- =============================================== -->
+
+    <div class="container-fluid">
+      <div class="bg-faded">
+        <div class="container">
+          <div class="row py-3">
+            <div class="col-12 col-lg-6 d-flex align-items-center">
+              <p class="mb-0 pl-0">Contact Us 2</p>
+            </div>
+            <div class="col-6 hidden-md-down">
+              <ol class="breadcrumb mb-0 bg-faded d-flex justify-content-end">
+                <li class="breadcrumb-item">Home</li>
+                <li class="breadcrumb-item">Standard Pages</li>
+                <li class="breadcrumb-item">
+                  <strong>Contact Us 2</strong>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="row pt-5 pb-3">
+        <div class="col-12">
+          <h3>Contact Us Style 2</h3>
+        </div>
+      </div>
+      <div class="row pt-5 pb-3">
+        <div class="col-12 borders-gray-gentle px-0 py-0">
+          <div class="row no-gutters">
+            <div class="col-12">This is where the picture goes</div>
+          </div>
+          <div class="row no-gutters">
+            <div class="col-5">
+              This is where the form goes
+            </div>
+            <div class="col-7">
+              <p class="py-3">
+                <strong>Company</strong>
+              </p>
+              <p>Ea do eiusmod consequat dolore fugiat enim sunt duis. Irure consectetur ullamco cillum commodo cupidatat Lorem
+                aliquip nisi. Amet proident cillum laborum cupidatat ut amet deserunt commodo tempor sit labore.</p>
+                <p class="py-3">
+                  <strong>Adress</strong>
+                </p>
+                <p>906 New Hampshire Avenue Northwest</p>
+                <p>#100 Washington DC</p>
+                <p>20037 United States of America</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- =============================================== -->
+    <!-- THIS IS THE FEATURES PART -->
+    <!-- =============================================== -->
+
+    <div class="container-fluid bb-solid bt-solid mt-5 px-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 br-solid bl-solid mobile-bb-solid mobile-bx-0 py-2">
+            <h4 class="text-center text-md-left pt-2">24/7 Customer Support</h4>
+            <p class="text-muted text-center text-md-left pb-1">IF you need help by traveling or hosting,
+              <br> contact us at our toll free number:
+              <br> 123 456 789</p>
+          </div>
+          <div class="col-12 col-md-4 br-solid mobile-bb-solid mobile-bx-0 py-2">
+            <h4 class="text-center text-md-left pt-2">2017 Summer Destinations On Sale</h4>
+            <p class="text-muted text-center text-md-left pb-1">For the vast majority of his history, agriculture
+              <br> can be described new products agriculture can
+              <br> be described</p>
+          </div>
+          <div class="col-12 col-md-4 br-solid mobile-bx-0 py-2">
+            <h4 class="text-center text-md-left pt-2">Flat 75% Off On Domestic Hotels</h4>
+            <p class="text-muted text-center text-md-left pb-1">Our best ever hotel deals are here! Use
+              <br> promo code TTHAPPY to get flat 75% off
+              <br> using eCash on hotel bookings through</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =============================================== -->
+    <!-- THIS IS THE TABLE OF CONTENTS PART -->
+    <!-- =============================================== -->
+
+    <div class="container hidden-md-down">
+      <div class="row">
+        <div class="col-4 py-5">
+          <div class="row">
+            <div class="col-6">
+              <h4 class="pb-5">Traveltrip</h4>
+              <ul class=" pl-0">
+                <li>
+                  <a class="text-muted" href="#">Home</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Flights</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Hotels</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Homestay</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Holidays</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Activity</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Pages</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Shortcodes</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <h4 class="pb-5">Discover</h4>
+              <ul class="pl-0">
+                <li>
+                  <a class="text-muted" href="#">Holidays</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Hot Deals</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Travel Stories</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Travel Guide</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Travel Ideas</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Travel Insurance</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">Group Bookings</a>
+                </li>
+                <li>
+                  <a class="text-muted" href="#">FAQ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 py-5 d-flex flex-column">
+          <h4 class="pb-5">Language/Currency & Subscribe</h4>
+          <div class="d-flex flex-column flexed">
+            <div class="flexed dropdown d-flex align-items-start">
+              <a href="#" class="btn dropdown-toggle text-muted text-left d-flex align-items-center justify-content-between" id="dropdownMenuLink-toc"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                English
+              </a>
+              <div id="dropdown-menu-toc" class="dropdown-menu" aria-labelledby="dropdownMenuLink-toc">
+                <div class="dropdown-item">Crnogorski</div>
+                <div class="dropdown-item">Francais</div>
+                <div class="dropdown-item">Deutsch</div>
+              </div>
+            </div>
+            <div class="flexed dropdown d-flex align-items-start">
+              <a href="#" class="btn dropdown-toggle text-muted text-left d-flex align-items-center justify-content-between" id="dropdownMenuLink-toc"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dollar
+              </a>
+              <div id="dropdown-menu-toc" class="dropdown-menu" aria-labelledby="dropdownMenuLink-toc">
+                <div class="dropdown-item">Euro</div>
+                <div class="dropdown-item">Yen</div>
+                <div class="dropdown-item">Pound</div>
+              </div>
+            </div>
+            <div class="flexed">
+              <div class="d-flex flex-row">
+                <a class="flexed px-3 py-2 no-br-right disabled text-muted borders-gray-gentle mb-0">
+                  Subscribe
+                </a>
+                <a class="bg-danger no-br-left text-white px-3 py-2 borders-gray-gentle mb-0">Send</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-5 py-5 pl-5 d-flex flex-column">
+          <h4 class="pb-5">Travel News</h4>
+          <div class="row flexed align-items-center pb-3">
+            <div class="col-4 d-flex justify-content-center">
+              <div>
+                <img src="http://via.placeholder.com/75x75" alt="Sorry,cant load the image!">
+              </div>
+            </div>
+            <div class="col-8">
+              <h4>Tokyo</h4>
+              <p>
+                <small>
+                  <span class="text-muted">Dreamy bed and delicious breakfast
+                    <br> Entire home/apt 1 bed 3 guests Business</span>
+                  <br> 25 Mar. 2011</small>
+              </p>
+            </div>
+          </div>
+          <div class="row flexed align-items-center pt-3">
+            <div class="col-4 d-flex justify-content-center">
+              <div>
+                <img src="http://via.placeholder.com/75x75" alt="Sorry,cant load the image!">
+              </div>
+            </div>
+            <div class="col-8">
+              <h4>Singapore</h4>
+              <p>
+                <small>
+                  <span class="text-muted">Dreamy bed and delicious breakfast
+                    <br> Entire home/apt 1 bed 3 guests Business</span>
+                  <br> 25 Mar. 2011</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =============================================== -->
+    <!-- THIS IS THE FOOTER PART -->
+    <!-- =============================================== -->
+
+    <div class="container py-3">
+      <div class="row">
+        <div class="col-12 col-md-5">
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <img src="images\trip_logo_pink.png" class="img-fluid" alt="Sorry,cant load the image!">
+            </div>
+            <div class="col-12 col-md-8 flexed-2 d-flex align-items-center mobile-justify-content-center pt-3 pt-md-0">
+              <p>
+                <i class="fa fa-facebook px-2" aria-hidden="true"></i>
+                <i class="fa fa-twitter px-2" aria-hidden="true"></i>
+                <i class="fa fa-google-plus px-2" aria-hidden="true"></i>
+                <i class="fa fa-pinterest-p px-2" aria-hidden="true"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-7 d-flex align-items-center pt-3 pt-md-0">
+          <p class="flexed text-center text-md-right text-right">
+            <small>Copyright 2017 Traveltrip. All rights reserved.</small>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/tether/dist/js/tether.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap/js/dist/util.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/alert.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/button.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/carousel.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/collapse.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/dropdown.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/modal.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/tab.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/tooltip.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/popover.js"></script>
+    <!-- endbuild -->
+
+    <!--    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+      crossorigin="anonymous"></script> -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

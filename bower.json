@@ -2,6 +2,6 @@
   "name": "sajt",
   "private": true,
   "dependencies": {
-    "bootstrap": "4.0.0-beta"
+    "bootstrap": "bootstrap#v4.0.0-alpha.6"
   }
 }
