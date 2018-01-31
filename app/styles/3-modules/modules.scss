@@ -352,7 +352,7 @@
 .triangle-warning-10px::before { // THIS IS THE 10px FLAG
     position: absolute;
     left: 0%;
-    top: 140px;
+    top: calc(50% - 10px);
     content: "";
     height: 0;
     width: 0;
@@ -365,7 +365,7 @@
 .triangle-danger-10px::before { // THIS IS THE 10px FLAG
     position: absolute;
     left: 0%;
-    top: 140px;
+    top: calc(50% - 10px);
     content: "";
     height: 0;
     width: 0;
@@ -391,20 +391,4 @@
 
 .width-40 {
     width: 40px;
-}
-
-@media (min-width: 576px) {
-    .height-sm-200 {
-        height: 200px !important;
-    }
-    .triangle-warning-10px::before {
-        top: 90px;
-    }
-    .triangle-danger-10px::before {
-        top:90px;
-    }
-}
-
-.height-300 {
-    height: 300px;
 }
