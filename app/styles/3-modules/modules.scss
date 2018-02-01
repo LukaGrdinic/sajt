@@ -388,7 +388,17 @@
 .height-40 {
     height: 40px;
 }
+.height-300 {
+    height: 300px;
+}
 
 .width-40 {
     width: 40px;
+}
+
+.adjusted {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-100%, -50%);
 }
