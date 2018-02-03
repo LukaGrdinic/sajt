@@ -20,7 +20,9 @@
   <!-- build:css styles/main.css -->
   <!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
     crossorigin="anonymous"> -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- OVAJ SAM FONT AWESOME ISKLJUCIO DA BIH UNIO ONAJ NOVI -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
   <link rel="stylesheet" href="styles/main.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
@@ -272,48 +274,97 @@
                     <div class="col-12 pt-3">
                       <div class="row">
                         <div class="col-3 d-flex align-items-center justify-content-end">
-                          <p>Email ID:</p>
+                          <p>Mobile Number:</p>
                         </div>
                         <div class="col-7">
-                          <input type="text" class="form-control">
+                          <div class="input-group">
+                            <input type="text" class="form-control">
+                            <input type="text" class="form-control w-50">
+                          </div>
 
                         </div>
                       </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 pt-3">
                       <div class="row">
-                        <div class="col-3 d-flex align-items-center justify-content-end">
-                          <p>Email ID:</p>
+                        <div class="col-3 d-flex justify-content-end align-items-center">
+                          <p>Address: </p>
                         </div>
                         <div class="col-7">
-                          <input type="text" class="form-control">
-
+                          <div>
+                            <input type="text" class="form-control" placeholder="Address">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row pt-3">
+                        <div class="col-7 offset-md-3">
+                          <div class="row">
+                            <div class="col-6 d-flex align-items-center">
+                              <input type="text" class="form-control" placeholder="City">
+                            </div>
+                            <div class="col-6">
+                              <div class="dropdown">
+                                <a href="#" class="btn dropdown-toggle text-muted text-left py-2" id="dropdownMenuLink-selectCountry" data-toggle="dropdown"
+                                  aria-haspopup="true" aria-expanded="false">
+                                  Select country
+                                </a>
+                                <div id="dropdown-menu-selectCountry" class="dropdown-menu" aria-labelledby="dropdownMenuLink-selectCountry">
+                                  <div class="dropdown-item">Montenegro</div>
+                                  <div class="dropdown-item">France</div>
+                                  <div class="dropdown-item">Germany</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="row pt-3">
+                                <div class="col-6">
+                                  <input type="text" class="form-control" placeholder="Pincode">
+                                </div>
+                                <div class="col-6">
+                                  <div class="dropdown">
+                                    <a href="#" class="btn dropdown-toggle text-muted text-left py-2" id="dropdownMenuLink-selectCountry" data-toggle="dropdown"
+                                      aria-haspopup="true" aria-expanded="false">
+                                      Select State
+                                    </a>
+                                    <div id="dropdown-menu-selectCountry" class="dropdown-menu" aria-labelledby="dropdownMenuLink-selectCountry">
+                                      <div class="dropdown-item">First State</div>
+                                      <div class="dropdown-item">Second State</div>
+                                      <div class="dropdown-item">Third State</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row pt-3">
+                        <div class="col-3">
+                          <p class="text-right">My Subscriptions: </p>
+                        </div>
+                        <div class="col-7 d-flex align-items-center">
+                          <input type="checkbox">
+                          <p class="pl-2 text-muted">SMS Alerts</p>
+                          <input class="ml-4" type="checkbox">
+                          <p class="pl-2 text-muted">Low Fare Alerts</p>
+                        </div>
+                      </div>
+                      <div class="row pt-2">
+                        <div class="col-9 offset-md-3 d-flex align-items-center">
+                            <input type="checkbox">
+                            <p class="pl-2 text-muted">
+                              <small>I would like to be kept informed of special promotions and offers by TravelTrip</small>
+                            </p>
+                        </div>
+                      </div>
+                      <div class="row pt-3 pb-3">
+                        <div class="col-7 offset-md-3">
+                          <button class="btn btn-danger px-5">
+                            <strong>Save Updates</strong>
+                          </button>
                         </div>
                       </div>
                     </div>
-                    <div class="col-12">
-                      <div class="row">
-                        <div class="col-3 d-flex align-items-center justify-content-end">
-                          <p>Email ID:</p>
-                        </div>
-                        <div class="col-7">
-                          <input type="text" class="form-control">
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="row">
-                        <div class="col-3 d-flex align-items-center justify-content-end">
-                          <p>Email ID:</p>
-                        </div>
-                        <div class="col-7">
-                          <input type="text" class="form-control">
-
-                        </div>
-                      </div>
-                    </div>
-
                   </div>
                 </form>
               </div>
@@ -346,19 +397,19 @@
                 </p>
                 <div class="d-flex justify-content-between">
                   <div class="width-40 height-40 bg-faded rounded-circle text-center py-2 px-2">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fab fa-facebook-f"></i>
                   </div>
                   <div class="width-40 height-40 bg-faded rounded-circle text-center py-2 px-2">
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fab fa-twitter"></i>
                   </div>
                   <div class="width-40 height-40 bg-danger rounded-circle text-center py-2 px-2">
-                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    <i class="fab fa-google-plus-g"></i>
                   </div>
                   <div class="width-40 height-40 bg-faded rounded-circle text-center py-2 px-2">
-                    <i class="fa fa-behance" aria-hidden="true"></i>
+                    <i class="fab fa-behance"></i>
                   </div>
                   <div class="width-40 height-40 bg-faded rounded-circle text-center py-2 px-2">
-                    <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                    <i class="fab fa-pinterest-p"></i>
                   </div>
                 </div>
               </div>
