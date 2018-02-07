@@ -20,7 +20,8 @@
   <!-- build:css styles/main.css -->
   <!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
     crossorigin="anonymous"> -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
 
@@ -28,13 +29,17 @@
 
 <body>
 
+  <div class="p-absol top-0">
+    <img src="test\Road6.jpg" class="w-100">
+  </div>
+
   <header>
 
     <!-- =============================================== -->
     <!-- THIS IS THE NAVBAR PART -->
     <!-- =============================================== -->
 
-    <nav class="navbar navbar-toggleable-md navbar-inverse bg-danger">
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse-transparent">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
         aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -56,7 +61,7 @@
           <div>
             <ul class="navbar-nav">
               <li class="nav-item dropdown text-white">
-                <a href="#" class="btn btn-danger dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a href="#" class="btn dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   English
                 </a>
 
@@ -98,75 +103,133 @@
 
   </header>
 
-  <main>
 
-    <!-- =============================================== -->
-    <!-- THIS IS THE HOME PART -->
-    <!-- =============================================== -->
+  <!-- =============================================== -->
+  <!-- THIS IS THE HOME PART -->
+  <!-- =============================================== -->
 
-    <div class="container">
-      <div class="row py-4">
-        <div class="col-12 col-md-2">
-          <img src="images\trip_logo_pink.png" class="img-fluid" alt="Sorry,cant load the image!">
-        </div>
-        <div class="hidden-sm-down col-md-10 d-flex align-items-center">
-          <ul id="homeDropdown" class="list-inline mb-0 text-right">
-            <li class="list-inline-item pr-3 mobile-d-block text-center ">
-              <strong>
-                <a href="#">Home</a>
-              </strong>
-            </li>
-            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
-              <a href="#">Flights</a>
-            </li>
-            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
-              <a href="#">Hotels</a>
-            </li>
-            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
-              <a href="#">Homestay</a>
-            </li>
-            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
-              <a href="#">Holidays</a>
-            </li>
-            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
-              <a href="#">Activity</a>
-            </li>
-            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
-              <a href="#">Pages</a>
-            </li>
-            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
-              <a href="#">Shortcodes</a>
-            </li>
-          </ul>
-        </div>
+  <div class="container">
+    <div class="row pt-4 pb-5">
+      <div class="col-12 col-md-2">
+        <img src="images\trip_logo_pink.png" class="img-fluid" alt="Sorry,cant load the image!">
+      </div>
+      <div class="hidden-sm-down col-md-10 d-flex align-items-center">
+        <ul id="homeDropdown" class="list-inline mb-0 text-right">
+          <li class="list-inline-item pr-3 mobile-d-block text-center">
+            <strong>
+              <a class=" text-white" href="#">Home</a>
+            </strong>
+          </li>
+          <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
+            <a class=" text-white" href="#">Flights</a>
+          </li>
+          <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
+            <a class=" text-white" href="#">Hotels</a>
+          </li>
+          <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
+            <a class=" text-white" href="#">Homestay</a>
+          </li>
+          <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
+            <a class=" text-white" href="#">Holidays</a>
+          </li>
+          <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
+            <a class=" text-white" href="#">Activity</a>
+          </li>
+          <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
+            <a class=" text-white" href="#">Pages</a>
+          </li>
+          <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
+            <a class=" text-white" href="#">Shortcodes</a>
+          </li>
+        </ul>
       </div>
     </div>
 
     <!-- =============================================== -->
-    <!-- THIS IS THE BREADCRUMB PART -->
+    <!-- THIS IS THE MAIN NAVIGATOR OF EVERYTHING-->
     <!-- =============================================== -->
 
-    <div class="container-fluid">
-      <div class="bg-faded">
-        <div class="container">
-          <div class="row py-3">
-            <div class="col-2 d-flex align-items-center">
-              <h4 class="mb-0 pl-0">FLIGHTS PAGE</h4>
-            </div>
-            <div class="col-10 hidden-md-down">
-              <ol class="breadcrumb mb-0 bg-faded d-flex justify-content-end">
-                <li class="breadcrumb-item">Home</li>
-                <li class="breadcrumb-item">Flights</li>
-                <li class="breadcrumb-item">
-                  <strong>Review</strong>
-                </li>
-              </ol>
-            </div>
+    <div class="row pt-5 pb-0">
+      <div class="col-12">
+        <div class="w-50">
+          <div class="row no-gutters text-center font-weight-bold">
+            <div class="col-12 col-md-2 hover-bb-danger pb-1">FLIGHTS</div>
+            <div class="col-12 col-md-2 hover-bb-danger pb-1">HOTELS</div>
+            <div class="col-12 col-md-2 hover-bb-danger pb-1">HOMESTAY</div>
+            <div class="col-12 col-md-2 hover-bb-danger pb-1">HOLIDAYS</div>
+            <div class="col-12 col-md-2 hover-bb-danger pb-1 tag-new-danger">ACTIVITY</div>
           </div>
         </div>
       </div>
     </div>
+    <div class="row pt-4 pb-2 px-3 bg-inverse-transparent-dark rounded">
+      <div class="col-12">
+        <div class="row">
+          <div class="col-4 d-flex text-white font-weight-bold">
+            <p class="text-danger pb-2">One Way</p>
+            <p class="pl-3 pb-2">Round Trip</p>
+            <p class="pl-3 pb-2">MultiCity</p>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-12 col-md-2">
+            <div class="input-group mobile-py-2">
+              <input type="text" class="form-control py-3 rounded-0 rounded-left border-0 mobile-bx-0" placeholder="Select Origin">
+            </div>
+          </div>
+          <div class="col-12 col-md-2">
+            <div class="input-group mobile-py-2">
+              <input type="text" class="form-control py-3 border-0 bl-solid rounded-0 mobile-bx-0" placeholder="Select Destination">
+            </div>
+          </div>
+          <div class="col-12 col-md-2">
+            <div class="input-group mobile-py-2">
+              <input type="text" class="form-control py-3 border-0 bl-solid rounded-0 mobile-bx-0" placeholder="Depart Date">
+              <div class="input-group-addon bg-white border-0 rounded-0">
+                <i class="far fa-calendar"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-2">
+            <div class="input-group mobile-py-2">
+              <input type="text" class="form-control py-3 border-0 bl-solid rounded-0 mobile-bx-0" placeholder="Return Date">
+              <div class="input-group-addon bg-white border-0 rounded-0">
+                <i class="far fa-calendar"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-2 d-flex align-items-center">
+            <div class="dropdown w-100 align-self-stretch d-flex align-items-center align-items-stretch">
+              <a href="#" class="dropdown-toggle text-muted d-flex align-items-center justify-content-between bg-white border-bottom-0 border-top-0 rounded-0 px-3"
+                id="dropdownMenuLink-toc" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                1 Traveller
+              </a>
+              <div id="" class="dropdown-menu pt-2 w-min-20 mt-3 triangle-top-white" aria-labelledby="dropdownMenuLink-toc">
+                <div class="dropdown-item ">Different stuff</div>
+                <div class="dropdown-item">Different stuff</div>
+                <div class="dropdown-item">Different stuff</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-2 mobile-py-2">
+            <button type="submit" class="btn btn-danger form-control py-3 border-top-0 border-bottom-0 rounded-0 rounded-md-right">
+              Search
+            </button>
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col-12">
+            <p class="text-white">
+              <i class="fas fa-plane"></i>
+              Non Stop Flights
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <main>
 
     <!-- =============================================== -->
     <!-- THIS IS THE FEATURES PART -->
@@ -366,6 +429,7 @@
         </div>
       </div>
     </div>
+
 
 
     <!-- build:js scripts/vendor.js -->
