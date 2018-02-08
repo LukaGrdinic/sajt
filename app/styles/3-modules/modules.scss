@@ -352,6 +352,25 @@
     list-style: square outside url("../../test/Right-Arrow-Transparent-Background.png");
 }
 
+.style-circle-danger::before {
+    left:24px;
+    position: absolute;
+    content: "";
+    padding: 6px 6px;
+    background-color:#d9534f;
+    border-radius: 50%;
+    border: 1px solid #464a4c;
+}
+.style-circle-white::before {
+    left:24px;
+    position: absolute;
+    content: "";
+    padding: 6px 6px;
+    background-color:white;
+    border-radius: 50%;
+    border: 1px solid #464a4c;
+}
+
 .p-rel {
     position: relative;
 }
@@ -472,4 +491,9 @@
     border-top: solid transparent 16px;
     border-right: solid transparent 8px;
     border-bottom: solid  white 16px;
+}
+
+.bg-img-road {
+    background-image: url("../test/Road6-1440x900.jpg");
+    background-repeat: no-repeat;
 }
