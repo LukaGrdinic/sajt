@@ -439,9 +439,15 @@
 .height-300 {
     height: 300px;
 }
+.height-200 {
+    height: 200px;
+}
 
 .width-40 {
     width: 40px;
+}
+.width-350 {
+    width: 350px;
 }
 
 .adjusted {
@@ -497,3 +503,15 @@
     background-image: url("../test/Road6-1440x900.jpg");
     background-repeat: no-repeat;
 }
+
+// THIS IS THE COLLAPSED AND EXPANDED PLUS MINUS TRICK 
+.myexpanded .hidden-myexpanded{
+    display: none;
+}
+.collapsed .hidden-collapsed{
+    display: none;
+}
+.myexpanded.collapsed .hidden-myexpanded{
+    display: block;
+}
+
