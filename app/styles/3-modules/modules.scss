@@ -378,6 +378,10 @@
     position: absolute;
 }
 
+.absol-right {
+    right: 0px;
+}
+
 
 .flag-danger::after { // THIS IS THE DEFAULT flag-danger
     position: absolute;
@@ -502,16 +506,22 @@
 .bg-img-road {
     background-image: url("../test/Road6-1440x900.jpg");
     background-repeat: no-repeat;
+    background-size: 100% auto;
 }
 
 // THIS IS THE COLLAPSED AND EXPANDED PLUS MINUS TRICK 
-.myexpanded .hidden-myexpanded{
-    display: none;
-}
+
 .collapsed .hidden-collapsed{
     display: none;
 }
-.myexpanded.collapsed .hidden-myexpanded{
+.hidden-collapsed {
     display: block;
 }
+.hidden-myexpanded {
+    display:none;
+}
+.collapsed .hidden-myexpanded {
+    display: block;
+}
+
 
