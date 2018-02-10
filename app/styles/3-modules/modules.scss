@@ -443,6 +443,9 @@
 .height-300 {
     height: 300px;
 }
+.height-380 {
+    height: 380px;
+}
 .height-200 {
     height: 200px;
 }
@@ -524,4 +527,9 @@
     display: block;
 }
 
-
+.myCaption {
+    position: absolute;
+    top: 75%;
+    width: 100%;
+    text-align: center;
+}
