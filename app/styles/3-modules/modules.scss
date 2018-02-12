@@ -234,12 +234,15 @@
     border-left: solid 1px $fadedBorderLighter !important;
 }
 
-.hover-bb-danger:hover {
-    padding-bottom: 2px !important;
-    border-bottom: 2px solid #d9534f;
-    cursor: pointer;
-}
 
+
+@media (min-width: 767px) {
+    .hover-bb-danger:hover {
+        padding-bottom: 2px !important;
+        border-bottom: 2px solid #d9534f;
+        cursor: pointer;
+    }
+}
 @media (max-width: 767px) {
     .mobile-bb-solid {
         border-bottom: solid 1px $fadedBorderLighter;
@@ -323,6 +326,23 @@
     padding: 0.75rem 1.25rem;
     margin-bottom: -1px;
     border: 1px solid rgba(0, 0, 0, 0.125);
+
+    &:first-child {
+        border-top-right-radius: 0.25rem;
+        border-top-left-radius: 0.25rem;
+    }
+
+    &:last-child {
+        border-bottom-right-radius: 0.25rem;
+        border-bottom-left-radius: 0.25rem;
+    }
+}
+
+.borders-black-gentle {
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: -1px;
+    border: 1px solid black;
 
     &:first-child {
         border-top-right-radius: 0.25rem;
@@ -467,6 +487,12 @@
 .bg-inverse-transparent {
     background: rgba(41,43,44, 0.65);
 }
+
+@media (max-width:768px) {
+    .bg-inverse-transparent {
+    background: rgba(41,43,44, 0.85);
+    } 
+}
 .bg-inverse-transparent-dark {
     background: rgba(41,43,44, 0.85);
 }
@@ -480,12 +506,18 @@
         display: inline-block;
         position:absolute;
         padding: 0px 8px;
-        /* top: 0px; */
         content: "NEW";
         font-size: 12px;
         background-color: #d9534f;
         color: white;
         transform: translate(-100%, -100%)
+    }
+}
+
+@media (max-width: 1200px) {
+    .tag-new-danger::after {
+        /* top: calc(50% - 2px); */ // MOZEMO NA OVAJ NACIN DA NAPRAVIMO DA NEW OZNAKA IDE ODMA PO SREDINI PORED SLOVA
+        transform: translate(0%,100%)
     }
 }
 
@@ -506,10 +538,14 @@
     border-bottom: solid  white 16px;
 }
 
-.bg-img-road {
-    background-image: url("../test/Road6-1440x900.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
+
+
+@media (min-width: 768px) {
+    .bg-img-road {
+        background-image: url("../test/Road6-1440x900.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
 }
 
 // THIS IS THE COLLAPSED AND EXPANDED PLUS MINUS TRICK 
@@ -532,4 +568,28 @@
     top: 75%;
     width: 100%;
     text-align: center;
+}
+
+// THESE ARE THE ARROWS FOR THE SLICK PLUGIN
+
+.prev {
+    cursor: pointer;
+}
+.next {
+    cursor: pointer;
+}
+
+.next-offers {
+    cursor: pointer;
+}
+.prev-offers {
+    cursor: pointer;
+}
+
+.translated-up {
+    transform: translate(0%,-100%)
+}
+
+.w-auto {
+    width: auto;
 }

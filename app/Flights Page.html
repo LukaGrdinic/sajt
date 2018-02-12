@@ -83,19 +83,18 @@
 
                 </li>
                 <li class="nav-item dropdown text-white hidden-md-up">
-                  <a href="#" class="btn btn-danger dropdown-toggle" id="homeDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">Menu</a>
+                  <a href="#" class="btn dropdown-toggle" id="homeDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
 
-                  <div id="realDropdownMenu" class="dropdown-menu text-center bg-danger border-0" aria-labelledby="homeDropdownMenuLink">
+                  <div id="realDropdownMenu" class="dropdown-menu text-center border-0" aria-labelledby="homeDropdownMenuLink">
                     <hr class="mt-0">
-                    <a class="dropdown-item text-white" href="#">Home</a>
-                    <a class="dropdown-item text-white" href="#">Flights</a>
-                    <a class="dropdown-item text-white" href="#">Hotels</a>
-                    <a class="dropdown-item text-white" href="#">Homestay</a>
-                    <a class="dropdown-item text-white" href="#">Holidays</a>
-                    <a class="dropdown-item text-white" href="#">Activity</a>
-                    <a class="dropdown-item text-white" href="#">Pages</a>
-                    <a class="dropdown-item text-white" href="#">Shortcodes</a>
+                    <a class="dropdown-item " href="#">Home</a>
+                    <a class="dropdown-item " href="#">Flights</a>
+                    <a class="dropdown-item " href="#">Hotels</a>
+                    <a class="dropdown-item " href="#">Homestay</a>
+                    <a class="dropdown-item " href="#">Holidays</a>
+                    <a class="dropdown-item " href="#">Activity</a>
+                    <a class="dropdown-item " href="#">Pages</a>
+                    <a class="dropdown-item " href="#">Shortcodes</a>
                   </div>
                 </li>
               </ul>
@@ -152,18 +151,19 @@
       <!-- THIS IS THE MAIN NAVIGATOR OF EVERYTHING-->
       <!-- =============================================== -->
 
-      <div class="row pt-5 pb-0">
-        <div class="col-12">
-          <div class="w-50">
+      <div class="row pt-md-5 pb-0">
+        <div class=" col-12 col-md-6">
+          <div class="w-md-50">
             <div class="row no-gutters text-center font-weight-bold">
-              <div class="col-12 col-md-2 hover-bb-danger pb-1">FLIGHTS</div>
-              <div class="col-12 col-md-2 hover-bb-danger pb-1">HOTELS</div>
-              <div class="col-12 col-md-2 hover-bb-danger pb-1">HOMESTAY</div>
-              <div class="col-12 col-md-2 hover-bb-danger pb-1">HOLIDAYS</div>
-              <div class="col-12 col-md-2 hover-bb-danger pb-1 tag-new-danger">ACTIVITY</div>
+              <div class="col-12 col-md-4 col-xl-2 hover-bb-danger pb-1">FLIGHTS</div>
+              <div class="col-12 col-md-4 col-xl-2 hover-bb-danger pb-1">HOTELS</div>
+              <div class="col-12 col-md-4 col-xl-2 hover-bb-danger pb-1">HOMESTAY</div>
+              <div class="col-12 col-md-4 col-xl-2 hover-bb-danger pb-1">HOLIDAYS</div>
+              <div class="col-12 col-md-4 col-xl-2 hover-bb-danger pb-1 tag-new-danger">ACTIVITY</div>
             </div>
           </div>
         </div>
+        <div class="col-12 col-md-6"></div>
       </div>
       <div class="row pt-4 pb-2 px-3 bg-inverse-transparent-dark rounded">
         <div class="col-12">
@@ -177,12 +177,14 @@
           <div class="row no-gutters">
             <div class="col-12 col-md-2">
               <div class="input-group mobile-py-2">
-                <input type="text" class="form-control py-3 rounded-0 rounded-left border-0 mobile-bx-0" placeholder="Select Origin">
+                <input type="text" class="form-control py-3 rounded-0 rounded-left border-0 mobile-bx-0 hidden-lg-up" placeholder="Origin">
+                <input type="text" class="form-control py-3 rounded-0 rounded-left border-0 mobile-bx-0 hidden-md-down" placeholder="Select Origin">
               </div>
             </div>
             <div class="col-12 col-md-2">
               <div class="input-group mobile-py-2">
-                <input type="text" class="form-control py-3 border-0 bl-solid rounded-0 mobile-bx-0" placeholder="Select Destination">
+                <input type="text" class="form-control py-3 border-0 bl-solid rounded-0 mobile-bx-0 hidden-xl-up" placeholder="Destination">
+                <input type="text" class="form-control py-3 border-0 bl-solid rounded-0 mobile-bx-0 hidden-lg-down" placeholder="Select Destination">
               </div>
             </div>
             <div class="col-12 col-md-2">
@@ -202,12 +204,14 @@
               </div>
             </div>
             <div class="col-12 col-md-2 d-flex align-items-center">
-              <div class="dropdown w-100 align-self-stretch d-flex align-items-center align-items-stretch">
-                <a href="#" class="dropdown-toggle text-muted d-flex align-items-center justify-content-between bg-white border-bottom-0 border-top-0 rounded-0 px-3"
-                  id="dropdownMenuLink-toc" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="dropdown w-100 align-self-stretch d-flex align-items-center align-items-stretch mobile-py-2">
+                <a href="#" class="dropdown-toggle text-muted d-flex align-items-center justify-content-between bg-white
+                 border-bottom-0 border-top-0 rounded-0 py-3 py-md-0 px-3" id="dropdownMenuLink-toc" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
                   1 Traveller
                 </a>
-                <div id="" class="dropdown-menu pt-2 w-min-20 mt-3 triangle-top-white" aria-labelledby="dropdownMenuLink-toc">
+                <!-- MISLIM DA BI OVAJ ELEMENT TREBALO PROMIJENIT, IMA 100 KLASA -->
+                <div id="" class="dropdown-menu pt-2 w-min-20 mt-3 triangle-top-white w-100" aria-labelledby="dropdownMenuLink-toc">
                   <div class="dropdown-item d-flex justify-content-between align-items-center">
                     <p class="py-2">
                       <strong>2 Adults</strong>
@@ -271,22 +275,106 @@
           </div>
         </div>
       </div>
-      <div class="w-100 py-5"></div>
-      <div class="w-100 py-5"></div>
+      <div class="w-100 py-5 hidden-md-down"></div>
+
+      
     </div>
   </div>
+
+  
 
   <!-- THIS IS THE PART UNDER THE PICTURE -->
   <!-- ================================== -->
 
   <div class="container">
-    <div class="row py-5">
+    <!-- THIS IS THE SLICK-OFFERS PART -->
+    <div class="row mx-0 translated-up hidden-md-down">
+        <div class="col-1 d-flex align-items-center justify-content-end">
+          <div class="slick-arrow">
+            <btn class="prev-offers py-0">
+              <i class="fas fa-chevron-left text-white"></i>
+            </btn>
+          </div>
+        </div>
+        <div class="col-10 bg-inverse">
+          <div class="slick-offers d-flex justify-content-center align-items-center">
+            <div class="slick-item ">
+              <div class="py-2 px-2">
+                <div class="px-0 py-0 text-center text-white">
+                  <p>
+                    <strong>Summer SPL - Up to 80% Off</strong>
+                  </p>
+                  <p>
+                    <small>On Domestic Hotels</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slick-item">
+              <div class="py-2 px-2 ">
+                <div class="px-0 py-0 text-center text-white">
+                  <p>
+                    <strong>Exclusive Offer and Freebies</strong>
+                  </p>
+                  <p>
+                    <small>On Domestic Hotels</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slick-item">
+              <div class="py-2 px-2 ">
+                <div class="px-0 py-0 text-center text-white">
+                  <p>
+                    <strong>Save Up to $480</strong>
+                  </p>
+                  <p>
+                    <small>On Domestic Holidays</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slick-item">
+              <div class="py-2 px-2">
+                <div class="px-0 py-0 text-center text-white">
+                  <p>
+                    <strong>Save Up to $180</strong>
+                  </p>
+                  <p>
+                    <small>On International Flights</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slick-item">
+              <div class="py-2 px-2">
+                <div class="px-0 py-0 text-center text-white">
+                  <p>
+                    <strong>Special Discounts for Elderly</strong>
+                  </p>
+                  <p>
+                    <small>On Spas</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1 d-flex align-items-center justify-content-start">
+          <div class="slick-arrow">
+            <btn class="next-offers py-0">
+              <i class="fas fa-chevron-right text-white"></i>
+            </btn>
+          </div>
+        </div>
+      </div>
+    <div class="row pb-5 pt-md-5 pt-lg-0">
       <div class="col-12">
         <h3>Featured Flight Deals</h3>
       </div>
     </div>
     <div class="row">
-      <div class="col-12 col-md-4 px-1 d-flex justify-content-center">
+      <div class="col-12 col-md-6 col-lg-4 pb-3 pb-lg-0 px-1 d-flex justify-content-center">
         <div class="borders-gray-gentle px-0 pt-0 width-350">
           <div>
             <img class="w-100 height-200" src="test/Vacation1.jpg">
@@ -315,7 +403,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-4 px-1 d-flex justify-content-center">
+      <div class="col-12 col-md-6 col-lg-4 pb-3 pb-lg-0 px-1 d-flex justify-content-center">
         <div class="borders-gray-gentle px-0 pt-0 width-350">
           <div>
             <img class="w-100 height-200" src="test/Vacation4.jpg">
@@ -344,7 +432,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-4 px-1 d-flex justify-content-center">
+      <div class="col-12 col-md-6 col-lg-4 pb-3 pb-lg-0 px-1 d-flex justify-content-center">
         <div class="borders-gray-gentle px-0 pt-0 width-350">
           <div>
             <img class="w-100 height-200" src="test/Vacation3.jpg">
@@ -373,11 +461,7 @@
           </div>
         </div>
       </div>
-
-
-    </div>
-    <div class="row py-5">
-      <div class="col-12 col-md-4 px-1 d-flex justify-content-center">
+      <div class="col-12 col-md-6 col-lg-4 pb-3 pb-lg-0 px-1 d-flex justify-content-center">
         <div class="borders-gray-gentle px-0 pt-0 width-350">
           <div>
             <img class="w-100 height-200" src="test/Vacation2.jpg">
@@ -406,7 +490,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-4 px-1 d-flex justify-content-center">
+      <div class="col-12 col-md-6 col-lg-4 pb-3 pb-lg-0 px-1 d-flex justify-content-center">
         <div class="borders-gray-gentle px-0 pt-0 width-350">
           <div>
             <img class="w-100 height-200" src="test/Vacation5.jpg">
@@ -435,7 +519,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-4 px-1 d-flex justify-content-center">
+      <div class="col-12 col-md-6 col-lg-4 pb-3 pb-lg-0 px-1 d-flex justify-content-center">
         <div class="borders-gray-gentle px-0 pt-0 width-350">
           <div>
             <img class="w-100 height-200" src="test/Vacation13.jpg">
@@ -466,7 +550,7 @@
       </div>
 
 
-    </div>
+  </div>
     <div class="row">
       <div class="col-6">
         <div class="py-3">
@@ -686,7 +770,7 @@
       <div class="col-md-3">
         <div class="borders-gray-gentle px-0 py-0 p-rel">
           <div>
-            <img class="w-100 height-380" src="test/BeachArea.jpg">
+            <img class="img-fluid height-380" src="test/BeachArea.jpg">
           </div>
           <h4 class="myCaption text-white">
             BEACH AREA
@@ -1054,10 +1138,10 @@
             </div>
             <div class="col-12 col-md-8 flexed-2 d-flex align-items-center mobile-justify-content-center pt-3 pt-md-0">
               <p>
-                <i class="fa fa-facebook px-2" aria-hidden="true"></i>
-                <i class="fa fa-twitter px-2" aria-hidden="true"></i>
-                <i class="fa fa-google-plus px-2" aria-hidden="true"></i>
-                <i class="fa fa-pinterest-p px-2" aria-hidden="true"></i>
+                <i class="fab fa-facebook-f mx-2"></i>
+                <i class="fab fa-twitter mx-2"></i>
+                <i class="fab fa-google-plus-g mx-2"></i>
+                <i class="fab fa-pinterest-p mx-2"></i>
               </p>
             </div>
           </div>
@@ -1103,6 +1187,39 @@
         arrows: true,
         prevArrow: 'btn.prev',
         nextArrow: 'btn.next',
+        responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        infinite: true,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+      });
+
+      $('.slick-offers').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: 'btn.prev-offers',
+        nextArrow: 'btn.next-offers'
       });
     </script>
 
