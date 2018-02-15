@@ -293,71 +293,206 @@
     <!-- =============================================== -->
 
     <div class="container">
-      <div class="row py-3">
-        <div class="col-1 d-flex align-items-center">
-          <h4 class="mb-0">FILTER: </h4>
-        </div>
-        <div class="col-2">
-          <div class="dropdown">
-            <a href="#" class="btn dropdown-toggle text-default  text-left d-flex align-items-center justify-content-between" id="dropdownMenuLink-toc"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="far fa-clock"></i>
-              TIME
-            </a>
-            <div id="dropdown-menu-toc" class="dropdown-menu w-min-20" aria-labelledby="dropdownMenuLink-toc">
-              <div class="dropdown-item">
-                <p>
-                  <strong>Depart Time</strong>
-                </p>
-                <div class="row mx-0 py-3">
-                  <div class="col-6 text-center">
+      <div class="row py-3 no-gutters">
+        <div class="col-4">
+          <div class="row no-gutters">
+            <!-- FIRST THREE ITEMS GO HERE -->
+            <div class="col-4 d-flex align-items-center">
+              <h4 class="mb-0">FILTER: </h4>
+            </div>
+            <div class="col-4">
+              <div class="dropdown dropdown-stay">
+                <a href="#" class="btn dropdown-toggle text-default  text-left d-flex align-items-center justify-content-between" id="dropdownMenuLink-toc"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="far fa-clock"></i>
+                  <span>TIME</span>
+                </a>
+                <div id="dropdown-menu-toc" class="dropdown-menu w-min-20 " aria-labelledby="dropdownMenuLink-toc">
+                  <div class="dropdown-item">
                     <p>
-                      <i class="fas fa-cloud fa-3x"></i>
+                      <strong>Depart Time</strong>
                     </p>
-                    <p class="pt-2 text-muted">BEFORE 11 AM </p>
-                  </div>
-                  <div class="col-6 text-center">
+                    <div class="row mx-0 py-3">
+                      <div class="col-6 text-center">
+                        <p>
+                          <i class="fas fa-cloud fa-3x"></i>
+                        </p>
+                        <p class="pt-2 text-muted">BEFORE 11 AM </p>
+                      </div>
+                      <div class="col-6 text-center">
+                        <p>
+                          <i class="fas fa-asterisk fa-3x"></i>
+                        </p>
+                        <p class="pt-2 text-muted">11 AM - 5 PM</p>
+                      </div>
+                    </div>
                     <p>
-                      <i class="fas fa-asterisk fa-3x"></i>
+                      <strong>Return Time</strong>
                     </p>
-                    <p class="pt-2 text-muted">11 AM - 5 PM</p>
+                    <div class="row mx-0 py-3">
+                      <div class="col-6 text-center">
+                        <p>
+                          <i class="fas fa-cloud fa-3x"></i>
+                        </p>
+                        <p class="pt-2 text-muted">BEFORE 11 AM </p>
+                      </div>
+                      <div class="col-6 text-center">
+                        <p>
+                          <i class="fas fa-asterisk fa-3x"></i>
+                        </p>
+                        <p class="pt-2 text-muted">11 AM - 5 PM</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <p>
-                  <strong>Return Time</strong>
-                </p>
-                <div class="row mx-0 py-3">
-                  <div class="col-6 text-center">
-                    <p>
-                      <i class="fas fa-cloud fa-3x"></i>
-                    </p>
-                    <p class="pt-2 text-muted">BEFORE 11 AM </p>
-                  </div>
-                  <div class="col-6 text-center">
-                    <p>
-                      <i class="fas fa-asterisk fa-3x"></i>
-                    </p>
-                    <p class="pt-2 text-muted">11 AM - 5 PM</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="dropdown dropdown-stay">
+                <a href="#" class="btn dropdown-toggle text-default  text-left d-flex align-items-center justify-content-between" id="dropdownMenuLink-toc"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>STOPS</span>
+                </a>
+                <div id="dropdown-menu-toc" class="dropdown-menu w-min-20 " aria-labelledby="dropdownMenuLink-toc">
+                  <div class="dropdown-item">
+                    <div class="form-check d-flex flex-column pt-3 px-3">
+                      <label class="form-check-label pt-2">
+                        <input type="checkbox" class="form-check-input"> All Stop
+                      </label>
+                      <div class="pt-2 d-flex justify-content-between">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input"> Non Stop (30 Flights)
+                        </label>
+                        <p class="text-danger">$390</p>
+                      </div>
+                      <div class="pt-2 d-flex justify-content-between">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input"> 1 Stop (4 Flights)
+                        </label>
+                        <p class="text-danger">$250</p>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="px-3">
+                      <p class="">Onward Flight Duration</p>
+                      <p class="">Onward Flight Duration</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-2">
-          STOPS
-        </div>
-        <div class="col-2">
-          AIRLINES
-        </div>
-        <div class="col-2">
-          AIRPORTS
-        </div>
-        <div class="col-1">
-          PRICE
-        </div>
-        <div class="col-2">
-          REFUNDABLE
+        <div class="col-8">
+          <div class="row no-gutters">
+            <!-- SECOND FOUR ITEMS GO HERE -->
+            <div class="col-3">
+              <div class="dropdown dropdown-stay">
+                <a href="#" class="btn dropdown-toggle text-default  text-left d-flex align-items-center justify-content-between" id="dropdownMenuLink-toc"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-plane"></i>
+                  <span>AIRLINES</span>
+                </a>
+                <div id="dropdown-menu-toc" class="dropdown-menu w-min-20 " aria-labelledby="dropdownMenuLink-toc">
+                  <div class="dropdown-item">
+                    <div class="form-check d-flex flex-column pt-3 px-3">
+                      <div class="pt-1 d-flex justify-content-between">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input"> 1 Stop (4 Flights)
+                        </label>
+                        <p class="text-danger">$250</p>
+                      </div>
+                      <div class="pt-1 d-flex justify-content-between">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input"> 12 Stops (21 Flights)
+                        </label>
+                        <p class="text-danger">$1250</p>
+                      </div>
+                      <div class="pt-1 d-flex justify-content-between">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input"> 14 Stops (22 Flights)
+                        </label>
+                        <p class="text-danger">$1450</p>
+                      </div>
+                      <div class="pt-1 d-flex justify-content-between">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input"> 3 Stop (12 Flights)
+                        </label>
+                        <p class="text-danger">$150</p>
+                      </div>
+                      <div class="pt-1 d-flex justify-content-between">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input"> 1 Stop (4 Flights)
+                        </label>
+                        <p class="text-danger">$240</p>
+                      </div>
+                      <div class="pt-1 d-flex justify-content-between">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input"> 3 Stops (10 Flights)
+                        </label>
+                        <p class="text-danger">$365</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="dropdown dropdown-stay">
+                <a href="#" class="btn dropdown-toggle text-default  text-left d-flex align-items-center justify-content-between" id="dropdownMenuLink-toc"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="far fa-building"></i>
+                  <span>AIRPORTS</span>
+                </a>
+                <div id="dropdown-menu-toc" class="dropdown-menu w-min-20 " aria-labelledby="dropdownMenuLink-toc">
+                  <div class="dropdown-item">
+                    <div class="form-check d-flex flex-column pt-3 px-3">
+                      <label class="form-check-label py-1">
+                        <input type="checkbox" class="form-check-input"> Denver International Airport
+                      </label>
+                      <label class="form-check-label py-1">
+                        <input type="checkbox" class="form-check-input"> Dallas/Fort Worth International
+                      </label>
+                      <label class="form-check-label py-1">
+                        <input type="checkbox" class="form-check-input"> Logan International Airport
+                      </label>
+                      <label class="form-check-label py-1">
+                        <input type="checkbox" class="form-check-input"> Boston AirLines
+                      </label>
+                      <label class="form-check-label py-1">
+                        <input type="checkbox" class="form-check-input"> Minneapolis - St. Paul Intl
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="dropdown dropdown-stay">
+                <a href="#" class="btn dropdown-toggle text-default  text-left d-flex align-items-center justify-content-between" id="dropdownMenuLink-toc"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-dollar-sign"></i>
+                  <span>PRICE</span>
+                </a>
+                <div id="dropdown-menu-toc" class="dropdown-menu w-min-20 " aria-labelledby="dropdownMenuLink-toc">
+                  <div class="dropdown-item">
+                    <p class="py-3"><strong>Price</strong></p>
+                    <div class="w-100"> 
+                      <input type="range" min="1" max="1000" value="500" class="rangeslider" id="myRange">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 d-flex justify-content-between align-items-center px-2">
+              <label class="switch mb-0">
+                <input type="checkbox">
+                <span class="slider"></span>
+              </label>
+              <p>REFUNDABLE</p>
+            </div>
+          </div>
         </div>
       </div>
       <div class="row pt-3">
@@ -1122,10 +1257,10 @@
             </div>
             <div class="col-12 col-md-8 flexed-2 d-flex align-items-center mobile-justify-content-center pt-3 pt-md-0">
               <p>
-                <i class="fa fa-facebook px-2" aria-hidden="true"></i>
-                <i class="fa fa-twitter px-2" aria-hidden="true"></i>
-                <i class="fa fa-google-plus px-2" aria-hidden="true"></i>
-                <i class="fa fa-pinterest-p px-2" aria-hidden="true"></i>
+                <i class="fab fa-facebook-f mx-2"></i>
+                <i class="fab fa-twitter mx-2"></i>
+                <i class="fab fa-google-plus-g mx-2"></i>
+                <i class="fab fa-pinterest-p mx-2"></i>
               </p>
             </div>
           </div>
@@ -1135,6 +1270,12 @@
             <small>Copyright 2017 Traveltrip. All rights reserved.</small>
           </p>
         </div>
+      </div>
+    </div>
+
+    <div class="container py-3">
+      <div class="rangeslidecontainer"> <!--  MISLIM DA MI OVAJ ELEMENT I OVA KLASA UOPSTE NISU POTREBNI -->
+        <input type="range" min="1" max="1000" value="500" class="rangeslider" id="myRange">
       </div>
     </div>
 
@@ -1158,6 +1299,34 @@
     <script src="/bower_components/bootstrap/js/dist/tooltip.js"></script>
     <script src="/bower_components/bootstrap/js/dist/popover.js"></script>
     <!-- endbuild -->
+
+    <script>
+
+      var rightThing = document.getElementsByClassName("dropdown-stay")
+      window.addEventListener("click", function (e) {
+        console.log(e.target);
+      });
+
+      // THIS IS THE ATTEMPT TO KEEP THE DROPDOWN OPEN
+
+      $('.dropdown.dropdown-stay').on({
+        "shown.bs.dropdown": function () { this.closable = true; },
+        "click": function (e) {
+          // MY ADDITION
+          /* console.log(e.target);
+          /* debugger; */
+          if (rightThing[0].contains(e.target)) {
+            this.closable = false;
+          }
+          else if (!rightThing[0].contains(e.target)) { // On iz nekog razloga ne javlja nista u konzoli
+            console.log("Does not contain");
+            this.closable = true;
+          }
+        },
+        "hide.bs.dropdown": function () { return this.closable; }
+      });
+
+    </script>
 
     <!--    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
       crossorigin="anonymous"></script>
