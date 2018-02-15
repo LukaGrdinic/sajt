@@ -23,7 +23,7 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
   <link rel="stylesheet" href="styles/main.css">
-
+  <link href="styles\0-plugins\noUISlider\nouislider.min.css" rel="stylesheet">
   <!-- endbuild -->
 
 </head>
@@ -375,8 +375,10 @@
                     </div>
                     <hr>
                     <div class="px-3">
-                      <p class="">Onward Flight Duration</p>
-                      <p class="">Onward Flight Duration</p>
+                      <p class="py-3">Onward Flight Duration</p>
+                      <div class="doubleslider1"></div>
+                      <p class="py-3">Onward Flight Duration</p>
+                      <div></div>
                     </div>
                   </div>
                 </div>
@@ -477,9 +479,14 @@
                 </a>
                 <div id="dropdown-menu-toc" class="dropdown-menu w-min-20 " aria-labelledby="dropdownMenuLink-toc">
                   <div class="dropdown-item">
-                    <p class="py-3"><strong>Price</strong></p>
-                    <div class="w-100"> 
+                    <p class="py-3">
+                      <strong>Price</strong>
+                    </p>
+                    <div class="w-100">
                       <input type="range" min="1" max="1000" value="500" class="rangeslider" id="myRange">
+                    </div>
+                    <div class="py-3">
+                      <p id="priceResult" class="text-danger">$99</p>
                     </div>
                   </div>
                 </div>
@@ -1273,12 +1280,6 @@
       </div>
     </div>
 
-    <div class="container py-3">
-      <div class="rangeslidecontainer"> <!--  MISLIM DA MI OVAJ ELEMENT I OVA KLASA UOPSTE NISU POTREBNI -->
-        <input type="range" min="1" max="1000" value="500" class="rangeslider" id="myRange">
-      </div>
-    </div>
-
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
@@ -1300,14 +1301,20 @@
     <script src="/bower_components/bootstrap/js/dist/popover.js"></script>
     <!-- endbuild -->
 
+    <script src="styles\0-plugins\noUISlider\nouislider.min.js"></script>
+    <!-- THIS IS THE RANGE SLIDER WITH TWO HANDLES -->
+
     <script>
+
+      /* THIS IS THE ATTEMPT TO KEEP THE BOOTSRAP DROPDOWN OPEN */
+      /* ============================================= */
 
       var rightThing = document.getElementsByClassName("dropdown-stay")
       window.addEventListener("click", function (e) {
         console.log(e.target);
       });
 
-      // THIS IS THE ATTEMPT TO KEEP THE DROPDOWN OPEN
+      // THIS IS THE BOOTSTRAP CLASSES CODE
 
       $('.dropdown.dropdown-stay').on({
         "shown.bs.dropdown": function () { this.closable = true; },
@@ -1326,6 +1333,29 @@
         "hide.bs.dropdown": function () { return this.closable; }
       });
 
+      /* priceResult */
+
+      var priceResult = document.getElementById("priceResult");
+      var currentPrice = document.getElementById("myRange");
+
+      priceResult.innerHTML = "$" + currentPrice.value;
+
+      currentPrice.oninput = function () {
+        priceResult.innerHTML = "$" + currentPrice.value;
+      }
+
+      /* noUISlider */
+      // THIS IS THE MAIN THING THAT I SHOULD IMPLEMENT IN CODE, DIV WITH CLASS doubleslider
+      var doubleslider = document.getElementsByClassName('doubleslider1')[0];
+
+      noUiSlider.create(doubleslider, {
+        start: [20, 80],
+        connect: true,
+        range: {
+          'min': 0,
+          'max': 100
+        }
+      });
     </script>
 
     <!--    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"

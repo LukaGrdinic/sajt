@@ -697,3 +697,24 @@ input:checked + .slider:before {
     border-radius: 50%;
     cursor: pointer; /* Cursor on hover */
 }
+
+/* VARIATIONS OF THE NOUISLIDER */
+
+.noUi-connect {
+    background-color: #d9534f !important;
+}
+
+.noUi-horizontal .noUi-handle {
+    height: 30px !important;
+    width: 30px !important;
+    top: -10px !important;
+    border-radius: 50% !important;
+}
+
+.noUi-handle:after, .noUi-handle:before {
+    display: none !important;
+}
+
+.noUi-horizontal {
+    height: 12px !important;
+}
