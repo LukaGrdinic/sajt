@@ -1280,6 +1280,34 @@
       </div>
     </div>
 
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-12 text-center">
+          <div class="myDropdown mx-auto p-rel">
+            <btn onclick="toggleMenu()" class="myDropdownLink text-danger px-5 py-1">
+              <a>Click me</a>
+            </btn>
+            <div class="myDropdownMenu">
+              <div class="d-inline-block bg-faded px-5 py-3 borders-gray">
+                <div class="py-2">This is the menu header</div>
+                <div>This is the menu item</div>
+                <div>This is the menu item</div>
+                <div>This is the menu item</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row py-5">
+        <div class="col-12">
+          <p>This is some content under the dropdown</p>
+          <p>Deserunt dolor cupidatat incididunt culpa Lorem nostrud voluptate eiusmod exercitation ut est. Proident culpa culpa
+            dolore cupidatat. Do quis consectetur mollit tempor ea dolor ut elit. Reprehenderit in sit commodo incididunt
+            magna aliquip commodo esse. Laboris amet ad consequat ad est.</p>
+        </div>
+      </div>
+    </div>
+
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
@@ -1306,12 +1334,39 @@
 
     <script>
 
+      /* THIS IS THE WAY TO KEEP THE DROPDOWN OPEN */
+      /* ============================================= */
+
+      var myDropdown = document.getElementsByClassName("myDropdown")[0];
+      var myDropdownMenu = document.getElementsByClassName("myDropdownMenu")[0];
+
+      function toggleMenu() {
+        myDropdown.classList.toggle("showing");
+      }
+
+      window.onclick = function (e) {
+        if (myDropdown.contains(e.target)) {
+          if (myDropdown.classList.contains("showing")) {
+            myDropdownMenu.style.display = "block";
+          }
+          else {
+            myDropdownMenu.style.display = "none";
+          }
+        }
+        else {
+          myDropdownMenu.style.display = "none";
+          myDropdown.classList.remove("showing");
+        }
+      }
+
       /* THIS IS THE ATTEMPT TO KEEP THE BOOTSRAP DROPDOWN OPEN */
       /* ============================================= */
 
+
+      // TRYING TO GET INFO WITH EVENT LISTENER
       var rightThing = document.getElementsByClassName("dropdown-stay")
       window.addEventListener("click", function (e) {
-        console.log(e.target);
+        /* console.log(e.target); */
       });
 
       // THIS IS THE BOOTSTRAP CLASSES CODE
@@ -1333,6 +1388,7 @@
         "hide.bs.dropdown": function () { return this.closable; }
       });
 
+      /* THIS IS RANGE SLIDER WITH VALUE OUTPUT */
       /* priceResult */
 
       var priceResult = document.getElementById("priceResult");
@@ -1344,8 +1400,8 @@
         priceResult.innerHTML = "$" + currentPrice.value;
       }
 
+      // THIS IS THE RANGE SLIDER WITH TWO HANDLES
       /* noUISlider */
-      // THIS IS THE MAIN THING THAT I SHOULD IMPLEMENT IN CODE, DIV WITH CLASS doubleslider
       var doubleslider = document.getElementsByClassName('doubleslider1')[0];
 
       noUiSlider.create(doubleslider, {
@@ -1356,6 +1412,7 @@
           'max': 100
         }
       });
+
     </script>
 
     <!--    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"

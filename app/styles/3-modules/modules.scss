@@ -718,3 +718,27 @@ input:checked + .slider:before {
 .noUi-horizontal {
     height: 12px !important;
 }
+
+.myDropdown {
+
+}
+
+.myDropdownLink {
+    cursor: pointer;
+    display: inline-block;
+    height:35px;
+    border: solid 1px gray;
+}
+
+.myDropdownMenu {
+    z-index: 1000;
+    position: absolute;
+    left: 50%;
+    top:35px;
+    transform: translate(-50%);
+    display: none; // This is the oen to show and hide
+}
+
+.borders-gray {
+    border: solid 1px gray;
+}
