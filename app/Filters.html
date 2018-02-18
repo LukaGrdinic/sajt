@@ -1282,13 +1282,26 @@
 
     <div class="container">
       <div class="row py-5">
-        <div class="col-12 text-center">
-          <div class="myDropdown mx-auto p-rel">
-            <btn class="myDropdownLink text-danger px-5 py-1">
+        <div class="col-12">
+          <div class="myDropdown">
+            <btn class="myDropdownLink text-danger">
               Click me
             </btn>
-            <div class="myDropdownMenu">
-              <div class="d-inline-block bg-faded px-5 py-3 borders-gray">
+            <div class="myDropdownMenu ">
+              <div class="d-inline-block">
+                <div class="py-2">This is the menu header</div>
+                <div>This is the menu item</div>
+                <div>This is the menu item</div>
+                <div>This is the menu item</div>
+              </div>
+            </div>
+          </div>
+          <div class="myDropdown">
+            <btn class="myDropdownLink text-danger">
+              Click me
+            </btn>
+            <div class="myDropdownMenu ">
+              <div class="d-inline-block">
                 <div class="py-2">This is the menu header</div>
                 <div>This is the menu item</div>
                 <div>This is the menu item</div>
@@ -1299,13 +1312,13 @@
         </div>
       </div>
       <div class="row py-5">
-        <div class="col-12 text-center">
-          <div class="myDropdown mx-auto p-rel">
-            <btn class="myDropdownLink text-danger px-5 py-1">
+        <div class="col-12">
+          <div class="myDropdown">
+            <btn class="myDropdownLink text-danger">
               Click me
             </btn>
-            <div class="myDropdownMenu">
-              <div class="d-inline-block bg-faded px-5 py-3 borders-gray">
+            <div class="myDropdownMenu ">
+              <div class="d-inline-block">
                 <div class="py-2">This is the menu header</div>
                 <div>This is the menu item</div>
                 <div>This is the menu item</div>
@@ -1315,6 +1328,7 @@
           </div>
         </div>
       </div>
+      
       <div class="row py-5">
         <div class="col-12">
           <p>This is some content under the dropdown</p>
@@ -1380,6 +1394,7 @@
           else { // IF THE MENU SHOULD NOT BE SHOWING
             for (let i = 0; i < myDropdown.length; i++) {
               myDropdownMenu[i].style.display = "none";
+              myDropdownMenu[i].parentNode.classList.remove("showing");
             }
           }
         } // IF WE CLICK SOMEWHERE ELSE
@@ -1408,7 +1423,7 @@
 
       // THIS IS THE RANGE SLIDER WITH TWO HANDLES
       /* noUISlider */
-      
+
       var doubleslider = document.getElementsByClassName('doubleslider1')[0];
 
       noUiSlider.create(doubleslider, {
