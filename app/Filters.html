@@ -1284,8 +1284,25 @@
       <div class="row py-5">
         <div class="col-12 text-center">
           <div class="myDropdown mx-auto p-rel">
-            <btn onclick="toggleMenu()" class="myDropdownLink text-danger px-5 py-1">
-              <a>Click me</a>
+            <btn class="myDropdownLink text-danger px-5 py-1">
+              Click me
+            </btn>
+            <div class="myDropdownMenu">
+              <div class="d-inline-block bg-faded px-5 py-3 borders-gray">
+                <div class="py-2">This is the menu header</div>
+                <div>This is the menu item</div>
+                <div>This is the menu item</div>
+                <div>This is the menu item</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row py-5">
+        <div class="col-12 text-center">
+          <div class="myDropdown mx-auto p-rel">
+            <btn class="myDropdownLink text-danger px-5 py-1">
+              Click me
             </btn>
             <div class="myDropdownMenu">
               <div class="d-inline-block bg-faded px-5 py-3 borders-gray">
@@ -1337,56 +1354,45 @@
       /* THIS IS THE WAY TO KEEP THE DROPDOWN OPEN */
       /* ============================================= */
 
-      var myDropdown = document.getElementsByClassName("myDropdown")[0];
-      var myDropdownMenu = document.getElementsByClassName("myDropdownMenu")[0];
+      /* var myDropdowns = document.getElementsByClassName("myDropdown"); */
+      var myDropdown = document.getElementsByClassName("myDropdown");
+      var myDropdownMenu = document.getElementsByClassName("myDropdownMenu");
 
-      function toggleMenu() {
-        myDropdown.classList.toggle("showing");
-      }
-
-      window.onclick = function (e) {
-        if (myDropdown.contains(e.target)) {
-          if (myDropdown.classList.contains("showing")) {
-            myDropdownMenu.style.display = "block";
-          }
-          else {
-            myDropdownMenu.style.display = "none";
-          }
-        }
-        else {
-          myDropdownMenu.style.display = "none";
-          myDropdown.classList.remove("showing");
-        }
-      }
-
-      /* THIS IS THE ATTEMPT TO KEEP THE BOOTSRAP DROPDOWN OPEN */
-      /* ============================================= */
-
-
-      // TRYING TO GET INFO WITH EVENT LISTENER
-      var rightThing = document.getElementsByClassName("dropdown-stay")
+      // U OVOM DIJELU DEFINISEMO DA LI JE DROPDOWN SHOWING ILI NE,
       window.addEventListener("click", function (e) {
-        /* console.log(e.target); */
+        if (e.target.classList.contains("myDropdownLink")) {
+          console.log("You clicked myDropdownLink type of button");
+          e.target.parentNode.classList.toggle("showing");
+        }
       });
 
-      // THIS IS THE BOOTSTRAP CLASSES CODE
+      // U OVOM DIJELU DEFINISEMO DA LI CE SE PRIKAZATI I KOJI DROPDOWN I KAD CE NESTATI
+      window.onclick = function (e) {
+        if (e.target.classList.contains("myDropdownLink")) { // IF THE RIGHT BUTTON IS CLICKED
 
-      $('.dropdown.dropdown-stay').on({
-        "shown.bs.dropdown": function () { this.closable = true; },
-        "click": function (e) {
-          // MY ADDITION
-          /* console.log(e.target);
-          /* debugger; */
-          if (rightThing[0].contains(e.target)) {
-            this.closable = false;
+          if (e.target.parentNode.classList.contains("showing")) { // IF THE MENU SHOULD BE SHOWING
+            for (let i = 0; i < myDropdown.length; i++) {
+              if (e.target.parentNode.contains(myDropdownMenu[i])) {
+                myDropdownMenu[i].style.display = "block";
+              }
+            }
           }
-          else if (!rightThing[0].contains(e.target)) { // On iz nekog razloga ne javlja nista u konzoli
-            console.log("Does not contain");
-            this.closable = true;
+          else { // IF THE MENU SHOULD NOT BE SHOWING
+            for (let i = 0; i < myDropdown.length; i++) {
+              myDropdownMenu[i].style.display = "none";
+            }
           }
-        },
-        "hide.bs.dropdown": function () { return this.closable; }
-      });
+        } // IF WE CLICK SOMEWHERE ELSE
+        else {
+          // IF CLICKED ONLY OUTSIDE OF DROPDOWN MENU, NOTHING IS SHOWING
+          for (let i = 0; i < myDropdown.length; i++) {
+            if (!myDropdownMenu[i].contains(e.target)) {
+              myDropdownMenu[i].style.display = "none";
+              myDropdownMenu[i].parentNode.classList.remove("showing");
+            }
+          }
+        }
+      }
 
       /* THIS IS RANGE SLIDER WITH VALUE OUTPUT */
       /* priceResult */
@@ -1402,6 +1408,7 @@
 
       // THIS IS THE RANGE SLIDER WITH TWO HANDLES
       /* noUISlider */
+      
       var doubleslider = document.getElementsByClassName('doubleslider1')[0];
 
       noUiSlider.create(doubleslider, {
