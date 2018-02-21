@@ -130,8 +130,8 @@
     }
 
     .mobile-px-0 { // .pt-md-0
-        padding-left: 0px;
-        padding-right: 0px;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
     }
 
     .mobile-pt-0 { // .pt-md-0
@@ -523,10 +523,9 @@
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
     .tag-new-danger::after {
-        /* top: calc(50% - 2px); */ // MOZEMO NA OVAJ NACIN DA NAPRAVIMO DA NEW OZNAKA IDE ODMA PO SREDINI PORED SLOVA
-        transform: translate(0%,100%)
+        transform: translate(0%, -30%)
     }
 }
 
@@ -709,6 +708,7 @@ input:checked + .slider:before {
     width: 30px !important;
     top: -10px !important;
     border-radius: 50% !important;
+    outline: none;
 }
 
 .noUi-handle:after, .noUi-handle:before {
@@ -720,28 +720,49 @@ input:checked + .slider:before {
 }
 
 .myDropdown {
-    display: inline-block;
-    position: static;
-    
+    display: inline-flex; 
+    position: relative;
+    z-index: 1000;
 }
 
 .myDropdownLink {
     font-size: 16px;
     padding: 16px;
     cursor: pointer;
-    border: solid 1px rgba(0, 0, 0, 0.15);
-    border-radius: 0.25rem;
+    z-index: 1000;
 }
 
 .myDropdownMenu {
     background: white;
-    top: 37px;
+    top: 72px;
     margin-top: 0px;
     padding: 16px 16px;
     z-index: 1000;
     position: absolute;
+// TRYING TO MAKE IT ACT LIKE A MODAL WINDOW
+
     min-width: 320px;
     display: none;
     border: solid 1px rgba(0, 0, 0, 0.15);
     border-radius: 0.25rem;
 }
+
+.bg-modal { 
+    background: rgba(0, 0, 0, 0.50)!important;
+    z-index: 3; // MISLIM DA ODJE TREBAJU NEKE PREPRAVKE
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+.z-10 {
+    z-index: 10;
+    position: relative;
+}
+
+.z-100 {
+    z-index: 100;
+    position: relative;
+}
+
