@@ -21,7 +21,8 @@
   <!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
     crossorigin="anonymous"> -->
   <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
-  <script defer src="test\fontAwesome\fontawesome-free-5.0.6\svg-with-js\js\fontawesome-all.js"></script> <!-- ODJE SAM DODAO SCRIPTU KOJU SAM DOWNLOADOVAO,ZA FONTAWESOME 5.0.6 -->
+  <script defer src="test\fontAwesome\fontawesome-free-5.0.6\svg-with-js\js\fontawesome-all.js"></script>
+  <!-- ODJE SAM DODAO SCRIPTU KOJU SAM DOWNLOADOVAO,ZA FONTAWESOME 5.0.6 -->
 
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
   <link rel="stylesheet" href="styles/main.css">
@@ -183,7 +184,7 @@
         <div class="row pt-4 pb-2 px-3 rounded">
           <div class="col-12">
             <div class="row">
-              <div class="col-4 d-flex text-white font-weight-bold">
+              <div class="col-12 col-lg-4 d-flex text-white font-weight-bold">
                 <p class="text-danger pb-2">One Way</p>
                 <p class="pl-3 pb-2">Round Trip</p>
                 <p class="pl-3 pb-2">MultiCity</p>
@@ -204,7 +205,9 @@
               </div>
               <div class="col-12 col-md-2">
                 <div class="input-group mobile-py-2">
-                  <input type="text" class="form-control py-3 border-0 bl-solid rounded-0 mobile-bx-0" placeholder="Depart Date">
+                  <input type="text" class="form-control py-3 border-0 bl-solid rounded-0 mobile-bx-0 hidden-md-up" placeholder="Depart Date">
+                  <input type="text" class="form-control py-3 border-0 bl-solid rounded-0 mobile-bx-0 hidden-sm-down hidden-lg-up px-2" placeholder="Depart">
+                  <input type="text" class="form-control py-3 border-0 bl-solid rounded-0 mobile-bx-0 hidden-md-down" placeholder="Depart Date">
                   <div class="input-group-addon bg-white border-0 rounded-0">
                     <i class="far fa-calendar"></i>
                   </div>
@@ -212,7 +215,9 @@
               </div>
               <div class="col-12 col-md-2">
                 <div class="input-group mobile-py-2">
-                  <input type="text" class="form-control py-3 border-0 bl-solid rounded-0 mobile-bx-0" placeholder="Return Date">
+                  <input type="text" class="form-control py-3 border-0 bl-solid rounded-0 mobile-bx-0 hidden-md-up" placeholder="Return Date">
+                  <input type="text" class="form-control py-3 border-0 bl-solid rounded-0 mobile-bx-0 hidden-sm-down hidden-lg-up" placeholder="Return">
+                  <input type="text" class="form-control py-3 border-0 bl-solid rounded-0 mobile-bx-0 hidden-md-down" placeholder="Return Date">
                   <div class="input-group-addon bg-white border-0 rounded-0">
                     <i class="far fa-calendar"></i>
                   </div>
@@ -221,7 +226,7 @@
               <div class="col-12 col-md-2 d-flex align-items-center">
                 <div class="dropdown w-100 align-self-stretch d-flex align-items-center align-items-stretch mobile-py-2">
                   <a href="#" class="dropdown-toggle text-muted d-flex align-items-center justify-content-between bg-white
-                   border-bottom-0 border-top-0 rounded-0 py-3 py-md-0 px-3" id="dropdownMenuLink-toc" data-toggle="dropdown"
+                   border-bottom-0 border-top-0 rounded-0 py-3 py-md-0 px-2 px-lg-3" id="dropdownMenuLink-toc" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     1 Traveller
                   </a>
@@ -266,10 +271,19 @@
                         </button>
                       </div>
                     </div>
-                    <div class="dropdown-item p-rel">
-                      <div class="style-circle-white d-flex align-items-center pl-4">Economy</div>
-                      <div class="style-circle-danger d-flex align-items-center pl-4">Premium Economy</div>
-                      <div class="style-circle-white d-flex align-items-center pl-4">Business</div>
+                    <div class="dropdown-item no-highlight p-rel">
+                      <label class="label-check-circle">
+                        <input type="checkbox">Economy
+                        <span class="checkmark-circle"></span>
+                      </label>
+                      <label class="label-check-circle">
+                        <input type="checkbox">Premium Economy
+                        <span class="checkmark-circle"></span>
+                      </label>
+                      <label class="label-check-circle">
+                        <input type="checkbox">Business
+                        <span class="checkmark-circle"></span>
+                      </label>
                     </div>
                   </div>
                 </div>
@@ -300,20 +314,21 @@
     <div class="z-10 bg-white">
       <div class="container">
         <div class="row py-3 no-gutters">
-          <div class="col-4">
+          <div class="col-12 col-lg-4">
             <div class="row no-gutters">
               <!-- FIRST THREE ITEMS GO HERE -->
-              <div class="col-4 d-flex align-items-center">
+              <div class="col-3 d-flex align-items-center">
                 <h4 class="mb-0">FILTER: </h4>
               </div>
-              <div class="col-4 d-flex align-items-center justify-content-center">
-                <div class="myDropdown">
-                  <btn class="myDropdownLink">
+              <div class="col-12 col-md-4 text-center">
+                <div class="myDropdown d-block">
+                  <btn class="myDropdownLink d-flex align-items-center justify-content-between">
+                    <!-- NISAM ZNAO DA MOZE BTN DA STOJI -->
                     <i class="far fa-clock"></i>
                     TIME
                     <i class="fas fa-chevron-down"></i>
                   </btn>
-                  <div class="myDropdownMenu">
+                  <div class="myDropdownMenu text-left">
                     <div class="d-inline-block">
                       <p>
                         <strong>Depart Time</strong>
@@ -353,14 +368,14 @@
                   </div>
                 </div>
               </div>
-              <div class="col-4 d-flex align-items-center justify-content-center">
-                <div class="myDropdown">
-                  <btn class="myDropdownLink">
+              <div class="col-12 col-md-5 text-center">
+                <div class="myDropdown d-block">
+                  <btn class="myDropdownLink d-flex align-items-center justify-content-between">
                     <i class="fas fa-map-marker-alt"></i>
                     STOPS
                     <i class="fas fa-chevron-down"></i>
                   </btn>
-                  <div class="myDropdownMenu">
+                  <div class="myDropdownMenu text-left">
                     <div class="form-check d-flex flex-column px-3">
                       <label class="form-check-label pt-2">
                         <input type="checkbox" class="form-check-input"> All Stop
@@ -382,27 +397,29 @@
                     <div class="px-3">
                       <p class="py-3">Onward Flight Duration</p>
                       <div class="doubleslider1"></div>
-                      <div id="flightStops1" class="py-3">5h 51m</div> <!-- TREBA NAMJESTIT DA FUNKCIONISE NA POMJERANJE SLIDERA -->
+                      <div id="flightStops1" class="py-3">5h 51m</div>
+                      <!-- TREBA NAMJESTIT DA FUNKCIONISE NA POMJERANJE SLIDERA -->
                       <p class="py-3">Onward Flight Duration</p>
                       <div class="doubleslider2"></div>
-                      <div id="flightStops2" class="py-3">5h 51m</div> <!-- TREBA NAMJESTIT DA FUNKCIONISE NA POMJERANJE SLIDERA -->
+                      <div id="flightStops2" class="py-3">5h 51m</div>
+                      <!-- TREBA NAMJESTIT DA FUNKCIONISE NA POMJERANJE SLIDERA -->
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-8">
+          <div class="col-12 col-lg-8">
             <div class="row no-gutters">
               <!-- SECOND FOUR ITEMS GO HERE -->
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                <div class="myDropdown">
-                  <btn class="myDropdownLink">
+              <div class="col-12 col-md-3 text-center">
+                <div class="myDropdown d-block">
+                  <btn class="myDropdownLink d-flex align-items-center justify-content-between">
                     <i class="fas fa-plane"></i>
                     AIRLINES
                     <i class="fas fa-chevron-down"></i>
                   </btn>
-                  <div class="myDropdownMenu">
+                  <div class="myDropdownMenu text-left">
                     <div class="form-check d-flex flex-column pt-3 px-3">
                       <div class="pt-1 d-flex justify-content-between">
                         <label class="form-check-label">
@@ -444,14 +461,14 @@
                   </div>
                 </div>
               </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                <div class="myDropdown">
-                  <btn class="myDropdownLink">
+              <div class="col-12 col-md-3 text-center">
+                <div class="myDropdown d-block">
+                  <btn class="myDropdownLink d-flex align-items-center justify-content-between">
                     <i class="far fa-building"></i>
                     AIRPORTS
                     <i class="fas fa-chevron-down"></i>
                   </btn>
-                  <div class="myDropdownMenu">
+                  <div class="myDropdownMenu text-left">
                     <div class="form-check d-flex flex-column pt-3 px-3">
                       <label class="form-check-label py-1">
                         <input type="checkbox" class="form-check-input"> Denver International Airport
@@ -472,14 +489,14 @@
                   </div>
                 </div>
               </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                <div class="myDropdown">
-                  <btn class="myDropdownLink">
+              <div class="col-12 col-md-3 text-center">
+                <div class="myDropdown d-block">
+                  <btn class="myDropdownLink d-flex align-items-center justify-content-between ">
                     <i class="fas fa-dollar-sign"></i>
                     PRICE
                     <i class="fas fa-chevron-down"></i>
                   </btn>
-                  <div class="myDropdownMenu">
+                  <div class="myDropdownMenu text-left">
                     <p class="py-3">
                       <strong>Price</strong>
                     </p>
@@ -492,12 +509,13 @@
                   </div>
                 </div>
               </div>
-              <div class="col-3 d-flex justify-content-between align-items-center px-2">
+              <div class="col-12 col-md-3 d-flex justify-content-md-between align-items-center px-2 text-center">
                 <label class="switch mb-0">
                   <input type="checkbox">
                   <span class="slider"></span>
                 </label>
-                <p>REFUNDABLE</p>
+                <p class="hidden-xl-up">REFUND</p>
+                <p class="hidden-lg-down">REFUNDABLE</p>
               </div>
             </div>
           </div>
@@ -507,7 +525,7 @@
     <div class="container">
       <!--  bg-modal -->
       <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 mobile-px-0">
           <div>
             <div class="borders-gray-gentle px-0 bg-faded">
               <div class="row mx-0">
@@ -578,151 +596,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 pt-3 pt-md-0">
-          <div>
-            <div class="borders-gray-gentle px-0 bg-faded">
-              <div class="row mx-0">
-                <div class="col-12 col-lg-3 px-1 text-center my-auto">
-                  <div class="width-40 mx-auto ">
-                    <img class="img-fluid" src="http://via.placeholder.com/150x150">
-                  </div>
-                  <p>
-                    <small>Delta Air Lines</small>
-                  </p>
-                </div>
-                <div class="col-4 col-lg-2 px-1 text-center d-flex align-items-center justify-content-center">
-                  <div>
-                    <p>14:50</p>
-                    <p>
-                      <small>USA</small>
-                    </p>
-                  </div>
-                </div>
-                <div class="col-4 col-lg-2 px-1 text-center d-flex align-items-center justify-content-center">
-                  <div>
-                    <p>1h 40m</p>
-                    <p>
-                      <small>(Non-Stop)</small>
-                    </p>
-                  </div>
-                </div>
-                <div class="col-4 col-lg-2 px-1 text-center d-flex align-items-center justify-content-center">
-                  <div>
-                    <p>16:30</p>
-                    <p>
-                      <small>AUS</small>
-                    </p>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-3 text-center d-flex align-items-center justify-content-center py-2 py-lg-0">
-                  <div class="">
-                    <div>
-                      <button class="btn btn-danger w-100">
-                        <h4 class="mb-0">$124</h4>
-                      </button>
-                    </div>
-                    <p>
-                      <small>EMI $99/month</small>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="borders-gray-gentle">
-            <div class="d-flex align-items-center justify-content-between">
-              <p>
-                <small>FLIGHT DETAILS</small>
-              </p>
-              <p>
-                <i class="far fa-sun"></i>
-                <i class="far fa-moon text-muted"></i>
-                <i class="fas fa-tint"></i>
-                <i class="fas fa-bed"></i>
-                <i class="fas fa-car text-muted"></i>
-              </p>
-              <p>
-                <small>REFUNDABLE
-                  <strong>$5 eCash</strong>
-                </small>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row pt-3">
-        <div class="col-12 col-md-6">
-          <div>
-            <div class="borders-gray-gentle px-0 bg-faded">
-              <div class="row mx-0">
-                <div class="col-12 col-lg-3 px-1 text-center my-auto">
-                  <div class="width-40 mx-auto ">
-                    <img class="img-fluid" src="http://via.placeholder.com/150x150">
-                  </div>
-                  <p>
-                    <small>Delta Air Lines</small>
-                  </p>
-                </div>
-                <div class="col-4 col-lg-2 px-1 text-center d-flex align-items-center justify-content-center">
-                  <div>
-                    <p>14:50</p>
-                    <p>
-                      <small>USA</small>
-                    </p>
-                  </div>
-                </div>
-                <div class="col-4 col-lg-2 px-1 text-center d-flex align-items-center justify-content-center">
-                  <div>
-                    <p>1h 40m</p>
-                    <p>
-                      <small>(Non-Stop)</small>
-                    </p>
-                  </div>
-                </div>
-                <div class="col-4 col-lg-2 px-1 text-center d-flex align-items-center justify-content-center">
-                  <div>
-                    <p>16:30</p>
-                    <p>
-                      <small>AUS</small>
-                    </p>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-3 text-center d-flex align-items-center justify-content-center py-2 py-lg-0">
-                  <div class="">
-                    <div>
-                      <button class="btn btn-danger w-100">
-                        <h4 class="mb-0">$124</h4>
-                      </button>
-                    </div>
-                    <p>
-                      <small>EMI $99/month</small>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="borders-gray-gentle">
-            <div class="d-flex align-items-center justify-content-between">
-              <p>
-                <small>FLIGHT DETAILS</small>
-              </p>
-              <p>
-                <i class="far fa-sun"></i>
-                <i class="far fa-moon text-muted"></i>
-                <i class="fas fa-tint"></i>
-                <i class="fas fa-bed"></i>
-                <i class="fas fa-car text-muted"></i>
-              </p>
-              <p>
-                <small>REFUNDABLE
-                  <strong>$5 eCash</strong>
-                </small>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 pt-3 pt-md-0">
+        <div class="col-12 col-md-6 pt-3 pt-md-0 mobile-px-0">
           <div>
             <div class="borders-gray-gentle px-0 bg-faded">
               <div class="row mx-0">
@@ -795,7 +669,7 @@
         </div>
       </div>
       <div class="row pt-3">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 mobile-px-0">
           <div>
             <div class="borders-gray-gentle px-0 bg-faded">
               <div class="row mx-0">
@@ -866,7 +740,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 pt-3 pt-md-0">
+        <div class="col-12 col-md-6 pt-3 pt-md-0 mobile-px-0">
           <div>
             <div class="borders-gray-gentle px-0 bg-faded">
               <div class="row mx-0">
@@ -939,7 +813,7 @@
         </div>
       </div>
       <div class="row pt-3">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 mobile-px-0">
           <div>
             <div class="borders-gray-gentle px-0 bg-faded">
               <div class="row mx-0">
@@ -1010,7 +884,151 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 pt-3 pt-md-0">
+        <div class="col-12 col-md-6 pt-3 pt-md-0 mobile-px-0">
+          <div>
+            <div class="borders-gray-gentle px-0 bg-faded">
+              <div class="row mx-0">
+                <div class="col-12 col-lg-3 px-1 text-center my-auto">
+                  <div class="width-40 mx-auto ">
+                    <img class="img-fluid" src="http://via.placeholder.com/150x150">
+                  </div>
+                  <p>
+                    <small>Delta Air Lines</small>
+                  </p>
+                </div>
+                <div class="col-4 col-lg-2 px-1 text-center d-flex align-items-center justify-content-center">
+                  <div>
+                    <p>14:50</p>
+                    <p>
+                      <small>USA</small>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-4 col-lg-2 px-1 text-center d-flex align-items-center justify-content-center">
+                  <div>
+                    <p>1h 40m</p>
+                    <p>
+                      <small>(Non-Stop)</small>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-4 col-lg-2 px-1 text-center d-flex align-items-center justify-content-center">
+                  <div>
+                    <p>16:30</p>
+                    <p>
+                      <small>AUS</small>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 text-center d-flex align-items-center justify-content-center py-2 py-lg-0">
+                  <div class="">
+                    <div>
+                      <button class="btn btn-danger w-100">
+                        <h4 class="mb-0">$124</h4>
+                      </button>
+                    </div>
+                    <p>
+                      <small>EMI $99/month</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="borders-gray-gentle">
+            <div class="d-flex align-items-center justify-content-between">
+              <p>
+                <small>FLIGHT DETAILS</small>
+              </p>
+              <p>
+                <i class="far fa-sun"></i>
+                <i class="far fa-moon text-muted"></i>
+                <i class="fas fa-tint"></i>
+                <i class="fas fa-bed"></i>
+                <i class="fas fa-car text-muted"></i>
+              </p>
+              <p>
+                <small>REFUNDABLE
+                  <strong>$5 eCash</strong>
+                </small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-3">
+        <div class="col-12 col-md-6 mobile-px-0">
+          <div>
+            <div class="borders-gray-gentle px-0 bg-faded">
+              <div class="row mx-0">
+                <div class="col-12 col-lg-3 px-1 text-center my-auto">
+                  <div class="width-40 mx-auto ">
+                    <img class="img-fluid" src="http://via.placeholder.com/150x150">
+                  </div>
+                  <p>
+                    <small>Delta Air Lines</small>
+                  </p>
+                </div>
+                <div class="col-4 col-lg-2 px-1 text-center d-flex align-items-center justify-content-center">
+                  <div>
+                    <p>14:50</p>
+                    <p>
+                      <small>USA</small>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-4 col-lg-2 px-1 text-center d-flex align-items-center justify-content-center">
+                  <div>
+                    <p>1h 40m</p>
+                    <p>
+                      <small>(Non-Stop)</small>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-4 col-lg-2 px-1 text-center d-flex align-items-center justify-content-center">
+                  <div>
+                    <p>16:30</p>
+                    <p>
+                      <small>AUS</small>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 text-center d-flex align-items-center justify-content-center py-2 py-lg-0">
+                  <div class="">
+                    <div>
+                      <button class="btn btn-danger w-100">
+                        <h4 class="mb-0">$124</h4>
+                      </button>
+                    </div>
+                    <p>
+                      <small>EMI $99/month</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="borders-gray-gentle">
+            <div class="d-flex align-items-center justify-content-between">
+              <p>
+                <small>FLIGHT DETAILS</small>
+              </p>
+              <p>
+                <i class="far fa-sun"></i>
+                <i class="far fa-moon text-muted"></i>
+                <i class="fas fa-tint"></i>
+                <i class="fas fa-bed"></i>
+                <i class="fas fa-car text-muted"></i>
+              </p>
+              <p>
+                <small>REFUNDABLE
+                  <strong>$5 eCash</strong>
+                </small>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 pt-3 pt-md-0 mobile-px-0">
           <div>
             <div class="borders-gray-gentle px-0 bg-faded">
               <div class="row mx-0">
