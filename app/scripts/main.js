@@ -1,3 +1,4 @@
 console.log('\'Allo \'Allo!');
 
-import fontawesome from '@fortawesome/fontawesome'
+/* import fontawesome from '@fortawesome/fontawesome' */
+

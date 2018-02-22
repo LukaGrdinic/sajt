@@ -133,6 +133,10 @@
         padding-left: 0px !important;
         padding-right: 0px !important;
     }
+    .mobile-px-1 { // .pt-md-0
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
 
     .mobile-pt-0 { // .pt-md-0
         padding-top: 0px;
@@ -530,7 +534,13 @@
 }
 
 .w-min-20 {
-    min-width: 20rem !important;
+    min-width: 320px !important;
+}
+
+@media (max-width: 768px) {
+    .w-min-20 {
+        min-width: 0px !important; // OVO JE NEKO RJESENJE KOJE MOZDA NIJE SAVRSENO, TACNO JE AL NEKAKO NIJE KONKRETNO
+    }  
 }
 
 .triangle-top-white::after {
@@ -766,3 +776,42 @@ input:checked + .slider:before {
     position: relative;
 }
 
+.label-check-circle {
+    position: relative;
+    display: block;
+    padding-left:25px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    -webkit-user-select: none; // OVO NISAM SIGURAN CEMU SLUZI
+    user-select: none; // OVO NISAM SIGURAN CEMU SLUZI
+}
+
+.label-check-circle input {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 10;
+    top: 0px;
+    left: 0px;
+    height: 25px;
+    width: 25px;
+    &:checked ~ .checkmark-circle {
+        background-color: #d9534f;
+    }
+}
+
+.checkmark-circle {
+    position: absolute;
+    cursor: pointer;
+    top: calc(50% - 7.5px);
+    left: 0px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    background-color: white;
+}
+
+.dropdown-item.no-highlight.active, .dropdown-item.no-highlight:active {
+    background-color: initial;
+}
