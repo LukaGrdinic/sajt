@@ -8,7 +8,6 @@
   <title>TravelTrip</title>
 
   <link rel="icon" href="test\0-zvijezda.png" type="image/x-icon">
-
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
 
@@ -110,31 +109,31 @@
           <img src="images\trip_logo_pink.png" class="img-fluid" alt="Sorry,cant load the image!">
         </div>
         <div class="hidden-sm-down col-md-10 d-flex align-items-center">
-          <ul id="homeDropdown" class="list-inline mb-0 text-right">
-            <li class="list-inline-item pr-3 mobile-d-block text-center ">
+          <ul id="homeDropdown" class="list-inline mb-0 text-right flexed">
+            <li class="list-inline-item pr-3  text-center ">
               <strong>
                 <a href="#">Home</a>
               </strong>
             </li>
-            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
+            <li class="list-inline-item pr-3  text-center tablet-px-0">
               <a href="#">Flights</a>
             </li>
-            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
+            <li class="list-inline-item pr-3  text-center tablet-px-0">
               <a href="#">Hotels</a>
             </li>
-            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
+            <li class="list-inline-item pr-3  text-center tablet-px-0">
               <a href="#">Homestay</a>
             </li>
-            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
+            <li class="list-inline-item pr-3  text-center tablet-px-0">
               <a href="#">Holidays</a>
             </li>
-            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
+            <li class="list-inline-item pr-3  text-center tablet-px-0">
               <a href="#">Activity</a>
             </li>
-            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
+            <li class="list-inline-item pr-3  text-center tablet-px-0">
               <a href="#">Pages</a>
             </li>
-            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
+            <li class="list-inline-item pr-3  text-center tablet-px-0">
               <a href="#">Shortcodes</a>
             </li>
           </ul>
@@ -178,36 +177,36 @@
         </div>
       </div>
       <div class="row text-center pt-5 timeline-horizontal">
-        <div class="col-md-4 timeline-horizontal-item px-0 mobile-pb-3">
-          <div class="row mobile-align-items-center mx-0">
-            <div class="col-6 col-md-12 d-flex mobile-justify-content-center px-0">
+        <div class="col-md-4 timeline-horizontal-item px-0 pb-3 pb-md-0">
+          <div class="row align-items-center mx-0">
+            <div class="col-6 col-md-12 d-flex justify-content-center justify-content-md-start px-0">
               <div class="circle">1</div>
             </div>
-            <div class="col-6 col-md-12 pt-3 mobile-pt-0 px-0">
+            <div class="col-6 col-md-12 pt-md-3 px-0">
               <h4 class="text-left">Review</h4>
             </div>
           </div>
         </div>
-        <div class="col-md-4 timeline-horizontal-item px-0 mobile-pb-3">
-          <div class="row mobile-align-items-center mx-0">
-            <div class="col-6 col-md-12 d-flex justify-content-center mobile-justify-content-center">
+        <div class="col-md-4 timeline-horizontal-item px-0 pb-3 pb-md-0">
+          <div class="row align-items-center mx-0">
+            <div class="col-6 col-md-12 d-flex justify-content-center">
               <div class="circle-outline d-flex justify-content-center align-items-center">
                 <div class="circle-smaller">2</div>
               </div>
             </div>
-            <div class="col-6 col-md-12 pt-3 mobile-pt-0 px-0">
+            <div class="col-6 col-md-12 pt-md-3 px-0">
               <h4 class="text-left text-md-center">Travellers</h4>
             </div>
           </div>
         </div>
         <div class="col-md-4 timeline-horizontal-item px-0">
-          <div class="row mobile-align-items-center mx-0">
-            <div class="col-6 col-md-12 d-flex justify-content-end mobile-justify-content-center px-0">
+          <div class="row align-items-center mx-0">
+            <div class="col-6 col-md-12 d-flex justify-content-center justify-content-md-end px-0">
               <div class="circle-outline d-flex justify-content-center align-items-center">
                 <div class="circle-smaller">3</div>
               </div>
             </div>
-            <div class="col-6 col-md-12 pt-3 px-0">
+            <div class="col-6 col-md-12 pt-md-3 px-0">
               <h4 class="text-left text-md-right">Payment</h4>
             </div>
           </div>
@@ -222,101 +221,132 @@
         <div class="col-12 col-lg-9 inner pl-lg-0">
           <!-- Odje bi mozda trebalo da ide tablet-px-0 ali onda ispada grdno nesto na malim ekranima i treba rijesit ovo pl-0 -->
           <div class="row mt-5">
-            <div class="col-12 tablet-px-0">
-              <div class="row mx-0">
-                <div class="col-12 px-0">
-                  <div class="borders-gray-gentle mb-0 rounded-0 text-center text-md-left">
-                    <h4 class="mb-0">Payment Method</h4>
+            <div class="col-12">
+              <div class="row mx-lg-0">
+                <div class="col-12 borders-wrapper-graytransp">
+                  <h4 class="mb-0">Payment method</h4>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 tablet-px-0">
+
+                  <!-- ODJE POCINJU BOOTSTRAPOVI TABOVI -->
+
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs text-center" role="tablist">
+                    <li class="nav-item flexed">
+                      <a class="nav-link active py-4 text-muted" data-toggle="tab" href="#home" role="tab">
+                        <strong>Credit Card</strong>
+                      </a>
+                    </li>
+                    <li class="nav-item flexed">
+                      <a class="nav-link py-4 text-muted" data-toggle="tab" href="#profile" role="tab">
+                        <strong>Debit Card</strong>
+                      </a>
+                    </li>
+                    <li class="nav-item flexed">
+                      <a class="nav-link py-4 text-muted" data-toggle="tab" href="#messages" role="tab">
+                        <strong>Net Banking</strong>
+                      </a>
+                    </li>
+                  </ul>
+
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="home" role="tabpanel">
+                      <div class="row mx-0">
+                        <div class="col-12 bg-faded borders-wrapper-graytransp border-top-0 rounded-0">
+                          <form>
+                            <div class="row">
+                              <div class="col-12 py-2">
+                                <h4 class="mb-0">Credit Card Number</h4>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 py-2 d-flex">
+                                <div>
+                                  <input class="form-control" type="text" placeholder="Enter Your Card Number">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 py-2">
+                                <h4 class="mb-0">Cardholder Name
+                                  <small class="text-muted">(Please enter the same name which is written on your card)</small>
+                                </h4>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 col-md-4 d-flex align-items-center py-2 py-md-0">
+                                <div>
+                                  <input class="form-control" type="text" placeholder="Enter Your Card Number">
+                                </div>
+                              </div>
+                              <div class="col-12 col-md-4">
+                                <div class="row">
+                                  <div class="col-3 px-1 py-2 py-md-0">
+                                    <img class="img-fluid" src="test\Visa-icon.png" alt="Oops!">
+                                  </div>
+                                  <div class="col-3 px-1 py-2 py-md-0">
+                                    <img class="img-fluid" src="test\Master_Card_Payment_Icon.ico" alt="Oops!">
+                                  </div>
+                                  <div class="col-3 px-1 py-2 py-md-0">
+                                    <img class="img-fluid" src="test\American_Express-Payment_Icon.png" alt="Oops!">
+                                  </div>
+                                  <div class="col-3 px-1 py-2 py-md-0">
+                                    <img class="img-fluid" src="test\Diners_Club.svg">
+                                    <!-- ODJE NAMJERNO OSTAVLJAM .SVG FILE DA BI POKAZAO DA SE MOZE KAO IMG IMPORTOVATI , 
+                                              A CAK I IZGLEDA LJEPSE U OVOM SVG FILE-u NEGO U ONOM PNG-->
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 py-2">
+                                <h4 class="mb-0">Expiry Date</h4>
+                              </div>
+                            </div>
+                            <div class="row pb-4">
+                              <div class="col-12 py-2">
+                                <form>
+                                  <div class="row">
+                                    <div class="col-12 col-md-2 py-2 py-md-0">
+                                      <input class="form-control" type="text" placeholder="Month">
+                                    </div>
+                                    <div class="col-12 col-md-2 py-2 py-md-0">
+                                      <input class="form-control" type="text" placeholder="Year">
+                                    </div>
+                                    <div class="col-12 col-md-2 py-2 py-md-0">
+                                      <input class="form-control" type="text" placeholder="CVV">
+                                    </div>
+                                    <div class="col-12 col-md-6 d-flex align-items-center py-2 py-md-0">
+                                      <p class="lead">3 digit CVV Number</p>
+                                    </div>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane" id="profile" role="tabpanel">
+                      <div class="row mx-0">
+                        <div class="col-12 bg-faded borders-wrapper-graytransp border-top-0 rounded-0">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane" id="messages" role="tabpanel">
+                      <div class="row mx-0">
+                        <div class="col-12 bg-faded borders-wrapper-graytransp border-top-0 rounded-0">
+
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="row mx-0 text-center">
-                <div class="col-12 col-lg-4 py-4 bg-faded borders-gray-gentle mobile-bx-0 mb-0 border-bottom-0 border-top-0 rounded-0 border-fix">
-                  <h4 class="mb-0 text-muted">Credit Card</h4>
-                </div>
-                <div class="col-12 col-lg-4 py-4 borders-gray-gentle mobile-bx-0 mb-0 border-top-0 rounded-0 border-fix border-left-0">
-                  <h4 class="mb-0 text-muted">Debit Card</h4>
-                </div>
-                <div class="col-12 col-lg-4 py-4 borders-gray-gentle mobile-bx-0 mb-0 border-top-0 rounded-0 border-fix border-left-0">
-                  <h4 class="mb-0 text-muted">Net Banking</h4>
-                </div>
-              </div>
-              <div class="row mx-0">
-                <div class="col-12 bg-faded borders-gray-gentle border-top-0 rounded-0">
-                  <form>
-                    <div class="row">
-                      <div class="col-12 py-2">
-                        <h4 class="mb-0">Credit Card Number</h4>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-12 py-2 d-flex">
-                        <div>
-                          <input class="form-control" type="text" placeholder="Enter Your Card Number">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-12 py-2">
-                        <h4 class="mb-0">Cardholder Name
-                          <small class="text-muted">(Please enter the same name which is written on your card)</small>
-                        </h4>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-12 col-md-4 d-flex align-items-center py-2 py-md-0">
-                        <div>
-                          <input class="form-control" type="text" placeholder="Enter Your Card Number">
-                        </div>
-                      </div>
-                      <div class="col-12 col-md-4">
-                        <div class="row">
-                          <div class="col-3 px-1 py-2 py-md-0">
-                            <img class="img-fluid" src="test\Visa-icon.png" alt="Oops!">
-                          </div>
-                          <div class="col-3 px-1 py-2 py-md-0">
-                            <img class="img-fluid" src="test\Master_Card_Payment_Icon.ico" alt="Oops!">
-                          </div>
-                          <div class="col-3 px-1 py-2 py-md-0">
-                            <img class="img-fluid" src="test\American_Express-Payment_Icon.png" alt="Oops!">
-                          </div>
-                          <div class="col-3 px-1 py-2 py-md-0">
-                            <img class="img-fluid" src="test\Diners_Club.svg">
-                            <!-- ODJE NAMJERNO OSTAVLJAM .SVG FILE DA BI POKAZAO DA SE MOZE KAO IMG IMPORTOVATI , 
-                              A CAK I IZGLEDA LJEPSE U OVOM SVG FILE-u NEGO U ONOM PNG-->
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-12 py-2">
-                        <h4 class="mb-0">Expiry Date</h4>
-                      </div>
-                    </div>
-                    <div class="row pb-4">
-                      <div class="col-12 py-2">
-                        <form>
-                          <div class="row">
-                            <div class="col-12 col-md-2 py-2 py-md-0">
-                              <input class="form-control" type="text" placeholder="Month">
-                            </div>
-                            <div class="col-12 col-md-2 py-2 py-md-0">
-                              <input class="form-control" type="text" placeholder="Year">
-                            </div>
-                            <div class="col-12 col-md-2 py-2 py-md-0">
-                              <input class="form-control" type="text" placeholder="CVV">
-                            </div>
-                            <div class="col-12 col-md-6 d-flex align-items-center py-2 py-md-0">
-                              <p class="lead">3 digit CVV Number</p>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-
             </div>
           </div>
 
@@ -332,16 +362,16 @@
         <!-- =============================================== -->
 
         <div class="col-12 col-lg-3 side-info pr-0 tablet-px-0 mt-5">
-          <div class="borders-gray-gentle ">
+          <div class="borders-wrapper-graytransp ">
             <h4 class="mb-0">Fare details</h4>
           </div>
-          <div class="borders-gray-gentle  d-flex justify-content-between align-items-center bg-faded">
+          <div class="borders-wrapper-graytransp  d-flex justify-content-between align-items-center bg-faded">
             <p>Adult x 1</p>
             <p>
               <strong>$349</strong>
             </p>
           </div>
-          <div class="row mx-0 borders-gray-gentle  bg-faded">
+          <div class="row mx-0 borders-wrapper-graytransp  bg-faded">
             <div class="col-12 px-0">
               <div class="row">
                 <div class="col-12 d-flex justify-content-between">
@@ -365,10 +395,10 @@
           <!-- =============================================== -->
 
           <div class=" mt-5">
-            <div class="borders-gray-gentle ">
+            <div class="borders-wrapper-graytransp ">
               <h4 class="mb-0">Traveltrip extra's</h4>
             </div>
-            <div class="borders-gray-gentle d-flex justify-content-between align-items-center bg-faded">
+            <div class="borders-wrapper-graytransp d-flex justify-content-between align-items-center bg-faded">
               <p>eCash</p>
               <p class="text-danger">
                 <strong>$103</strong>
@@ -393,22 +423,22 @@
     <!-- THIS IS THE FEATURES PART -->
     <!-- =============================================== -->
 
-    <div class="container-fluid bb-solid bt-solid mt-5 px-0">
+    <div class="container-fluid border-bottom-solid-lightgray border-top-solid-lightgray mt-5 px-0">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-4 br-solid bl-solid mobile-bb-solid mobile-bx-0 py-2">
+          <div class="col-12 col-md-4 border-right-solid-lightgray border-left-solid-lightgray mobile-bb-solid mobile-border-x-0 py-2">
             <h4 class="text-center text-md-left pt-2">24/7 Customer Support</h4>
             <p class="text-muted text-center text-md-left pb-1">IF you need help by traveling or hosting,
               <br> contact us at our toll free number:
               <br> 123 456 789</p>
           </div>
-          <div class="col-12 col-md-4 br-solid mobile-bb-solid mobile-bx-0 py-2">
+          <div class="col-12 col-md-4 border-right-solid-lightgray mobile-bb-solid mobile-border-x-0 py-2">
             <h4 class="text-center text-md-left pt-2">2017 Summer Destinations On Sale</h4>
             <p class="text-muted text-center text-md-left pb-1">For the vast majority of his history, agriculture
               <br> can be described new products agriculture can
               <br> be described</p>
           </div>
-          <div class="col-12 col-md-4 br-solid mobile-bx-0 py-2">
+          <div class="col-12 col-md-4 border-right-solid-lightgray mobile-border-x-0 py-2">
             <h4 class="text-center text-md-left pt-2">Flat 75% Off On Domestic Hotels</h4>
             <p class="text-muted text-center text-md-left pb-1">Our best ever hotel deals are here! Use
               <br> promo code TTHAPPY to get flat 75% off
@@ -512,13 +542,11 @@
               </div>
             </div>
             <div class="flexed">
-              <div class="d-flex flex-row">
-                <a class="flexed px-3 py-2 no-br-right disabled text-muted borders-gray-gentle mb-0">
-                  Subscribe
-                </a>
-                <a class="bg-danger no-br-left text-white px-3 py-2 borders-gray-gentle mb-0">Send</a>
+              <div class="btn-group w-100 d-flex">
+                <button type="button" class="btn btn-secondary flexed text-muted text-left px-3 lh-md">Subscribe</button>
+                <button type="button" class="btn btn-danger px-3 lh-md">Send</button>
               </div>
-            </div>
+          </div>
           </div>
         </div>
         <div class="col-5 py-5 pl-5 d-flex flex-column">
@@ -570,7 +598,7 @@
             <div class="col-12 col-md-4">
               <img src="images\trip_logo_pink.png" class="img-fluid" alt="Sorry,cant load the image!">
             </div>
-            <div class="col-12 col-md-8 flexed-2 d-flex align-items-center mobile-justify-content-center pt-3 pt-md-0">
+            <div class="col-12 col-md-8 flexed-2 d-flex align-items-center justify-content-center justify-content-md-start pt-3 pt-md-0">
               <p>
                 <i class="fa fa-facebook px-2" aria-hidden="true"></i>
                 <i class="fa fa-twitter px-2" aria-hidden="true"></i>

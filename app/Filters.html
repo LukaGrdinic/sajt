@@ -40,7 +40,7 @@
     <!-- THIS IS THE NAVBAR PART -->
     <!-- =============================================== -->
 
-    <nav class="navbar navbar-toggleable-md navbar-inverse bg-danger z-10">
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-danger z-100 p-rel">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
         aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -65,8 +65,7 @@
                 <a href="#" class="btn btn-danger dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   English
                 </a>
-
-                <div class="dropdown-menu text-center text-lg-left" aria-labelledby="dropdownMenuLink">
+                <div class="dropdown-menu z-100 text-center text-lg-left" aria-labelledby="dropdownMenuLink">
                   <a class="dropdown-item" href="#">Crnogorski</a>
                   <a class="dropdown-item" href="#">Deutsch</a>
                   <a class="dropdown-item" href="#">Francais</a>
@@ -109,39 +108,42 @@
     <!-- =============================================== -->
     <!-- THIS IS THE HOME PART -->
     <!-- =============================================== -->
-    <!--  -->
-    <div class="z-10 bg-white">
+
+    <div class="z-10 p-rel bg-white">
       <div class="container">
         <div class="row py-4">
-          <div class="col-12 col-md-2">
+          <div class="col-6 offset-3 col-sm-4 offset-sm-4 offset-md-0 col-md-2">
             <img src="images\trip_logo_pink.png" class="img-fluid" alt="Sorry,cant load the image!">
           </div>
+          <!-- <div class="col-12 col-md-2">
+            <img src="images\trip_logo_pink.png" class="img-fluid" alt="Sorry,cant load the image!">
+          </div> -->
           <div class="hidden-sm-down col-md-10 d-flex align-items-center">
-            <ul id="homeDropdown" class="list-inline mb-0 text-right">
-              <li class="list-inline-item pr-3 mobile-d-block text-center ">
+            <ul id="homeDropdown" class="list-inline mb-0 text-right flexed">
+              <li class="list-inline-item pr-3  text-center ">
                 <strong>
                   <a href="#">Home</a>
                 </strong>
               </li>
-              <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
+              <li class="list-inline-item pr-3  text-center tablet-px-0">
                 <a href="#">Flights</a>
               </li>
-              <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
+              <li class="list-inline-item pr-3  text-center tablet-px-0">
                 <a href="#">Hotels</a>
               </li>
-              <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
+              <li class="list-inline-item pr-3  text-center tablet-px-0">
                 <a href="#">Homestay</a>
               </li>
-              <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
+              <li class="list-inline-item pr-3  text-center tablet-px-0">
                 <a href="#">Holidays</a>
               </li>
-              <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
+              <li class="list-inline-item pr-3  text-center tablet-px-0">
                 <a href="#">Activity</a>
               </li>
-              <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
+              <li class="list-inline-item pr-3  text-center tablet-px-0">
                 <a href="#">Pages</a>
               </li>
-              <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
+              <li class="list-inline-item pr-3  text-center tablet-px-0">
                 <a href="#">Shortcodes</a>
               </li>
             </ul>
@@ -154,7 +156,7 @@
     <!-- THIS IS THE BREADCRUMB PART -->
     <!-- =============================================== -->
 
-    <div class="container-fluid px-0 z-10">
+    <div class="container-fluid px-0 z-10 p-rel">
       <div class="bg-faded">
         <div class="container">
           <div class="row py-3">
@@ -179,7 +181,7 @@
     <!-- THIS IS THE SEARCH INPUT PART -->
     <!-- =============================================== -->
 
-    <div class="bg-inverse z-100">
+    <div class="bg-inverse z-100 p-rel">
       <div class="container">
         <div class="row pt-4 pb-2 px-3 rounded">
           <div class="col-12">
@@ -192,47 +194,47 @@
             </div>
             <div class="row no-gutters">
               <div class="col-12 col-md-2">
-                <div class="input-group mobile-py-2">
-                  <input type="text" class="form-control py-3 rounded-0 rounded-left border-0 mobile-bx-0 hidden-lg-up" placeholder="Origin">
-                  <input type="text" class="form-control py-3 rounded-0 rounded-left border-0 mobile-bx-0 hidden-md-down" placeholder="Select Origin">
+                <div class="input-group mb-1 mb-md-0">
+                  <input type="text" class="form-control py-3 rounded-0 rounded-left border-0 mobile-border-x-0 hidden-lg-up" placeholder="Origin">
+                  <input type="text" class="form-control py-3 rounded-0 rounded-left border-0 mobile-border-x-0 hidden-md-down" placeholder="Select Origin">
                 </div>
               </div>
               <div class="col-12 col-md-2">
-                <div class="input-group mobile-py-2">
-                  <input type="text" class="form-control py-3 border-0 bl-solid rounded-0 mobile-bx-0 hidden-xl-up" placeholder="Destination">
-                  <input type="text" class="form-control py-3 border-0 bl-solid rounded-0 mobile-bx-0 hidden-lg-down" placeholder="Select Destination">
+                <div class="input-group mb-1 mb-md-0">
+                  <input type="text" class="form-control py-3 border-0 border-left-solid-lightgray rounded-0 mobile-border-x-0 hidden-xl-up" placeholder="Destination">
+                  <input type="text" class="form-control py-3 border-0 border-left-solid-lightgray rounded-0 mobile-border-x-0 hidden-lg-down" placeholder="Select Destination">
                 </div>
               </div>
               <div class="col-12 col-md-2">
-                <div class="input-group mobile-py-2">
-                  <input type="text" class="form-control py-3 border-0 bl-solid rounded-0 mobile-bx-0 hidden-md-up" placeholder="Depart Date">
-                  <input type="text" class="form-control py-3 border-0 bl-solid rounded-0 mobile-bx-0 hidden-sm-down hidden-lg-up px-2" placeholder="Depart">
-                  <input type="text" class="form-control py-3 border-0 bl-solid rounded-0 mobile-bx-0 hidden-md-down" placeholder="Depart Date">
+                <div class="input-group mb-1 mb-md-0">
+                  <input type="text" class="form-control py-3 border-0 border-left-solid-lightgray rounded-0 mobile-border-x-0 hidden-md-up" placeholder="Depart Date">
+                  <input type="text" class="form-control py-3 border-0 border-left-solid-lightgray rounded-0 mobile-border-x-0 hidden-sm-down hidden-lg-up px-2" placeholder="Depart">
+                  <input type="text" class="form-control py-3 border-0 border-left-solid-lightgray rounded-0 mobile-border-x-0 hidden-md-down" placeholder="Depart Date">
                   <div class="input-group-addon bg-white border-0 rounded-0">
                     <i class="far fa-calendar"></i>
                   </div>
                 </div>
               </div>
               <div class="col-12 col-md-2">
-                <div class="input-group mobile-py-2">
-                  <input type="text" class="form-control py-3 border-0 bl-solid rounded-0 mobile-bx-0 hidden-md-up" placeholder="Return Date">
-                  <input type="text" class="form-control py-3 border-0 bl-solid rounded-0 mobile-bx-0 hidden-sm-down hidden-lg-up" placeholder="Return">
-                  <input type="text" class="form-control py-3 border-0 bl-solid rounded-0 mobile-bx-0 hidden-md-down" placeholder="Return Date">
+                <div class="input-group mb-1 mb-md-0">
+                  <input type="text" class="form-control py-3 border-0 border-left-solid-lightgray rounded-0 mobile-border-x-0 hidden-md-up" placeholder="Return Date">
+                  <input type="text" class="form-control py-3 border-0 border-left-solid-lightgray rounded-0 mobile-border-x-0 hidden-sm-down hidden-lg-up" placeholder="Return">
+                  <input type="text" class="form-control py-3 border-0 border-left-solid-lightgray rounded-0 mobile-border-x-0 hidden-md-down" placeholder="Return Date">
                   <div class="input-group-addon bg-white border-0 rounded-0">
                     <i class="far fa-calendar"></i>
                   </div>
                 </div>
               </div>
               <div class="col-12 col-md-2 d-flex align-items-center">
-                <div class="dropdown w-100 align-self-stretch d-flex align-items-center align-items-stretch mobile-py-2">
+                <div class="dropdown w-100 align-self-stretch d-flex align-items-center align-items-stretch mb-1 mb-md-0">
                   <a href="#" class="dropdown-toggle text-muted d-flex align-items-center justify-content-between bg-white
                    border-bottom-0 border-top-0 rounded-0 py-3 py-md-0 px-2 px-lg-3" id="dropdownMenuLink-toc" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     1 Traveller
                   </a>
                   <!-- MISLIM DA BI OVAJ ELEMENT TREBALO PROMIJENIT, IMA 100 KLASA -->
-                  <div id="" class="dropdown-menu pt-2 w-min-20 mt-3 triangle-top-white w-100 bg-white" aria-labelledby="dropdownMenuLink-toc">
-                    <div class="dropdown-item d-flex justify-content-between align-items-center">
+                  <div id="" class="dropdown-menu pt-2 w-min-320 mt-3 triangle-top-white w-100 bg-white" aria-labelledby="dropdownMenuLink-toc">
+                    <div class="dropdown-item d-flex justify-content-between align-items-center mobile-px-1">
                       <p class="py-2">
                         <strong>2 Adults</strong>
                       </p>
@@ -245,7 +247,7 @@
                         </button>
                       </div>
                     </div>
-                    <div class="dropdown-item d-flex justify-content-between align-items-center">
+                    <div class="dropdown-item d-flex justify-content-between align-items-center mobile-px-1">
                       <p class="py-2">
                         <strong>0 Child 2-12 YRS</strong>
                       </p>
@@ -258,7 +260,7 @@
                         </button>
                       </div>
                     </div>
-                    <div class="dropdown-item d-flex justify-content-between align-items-center">
+                    <div class="dropdown-item d-flex justify-content-between align-items-center mobile-px-1">
                       <p class="py-2">
                         <strong>0 InfantBelow 2 YRS</strong>
                       </p>
@@ -288,7 +290,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-2 mobile-py-2">
+              <div class="col-12 col-md-2 mb-1 mb-md-0">
                 <button type="submit" class="btn btn-danger form-control py-3 border-top-0 border-bottom-0 rounded-0 rounded-md-right">
                   Search
                 </button>
@@ -311,7 +313,7 @@
     <!-- THIS IS THE FILTERS PART -->
     <!-- =============================================== -->
 
-    <div class="z-10 bg-white">
+    <div class="z-10 p-rel bg-white">
       <div class="container">
         <div class="row py-3 no-gutters">
           <div class="col-12 col-lg-4">
@@ -397,11 +399,17 @@
                     <div class="px-3">
                       <p class="py-3">Onward Flight Duration</p>
                       <div class="doubleslider1"></div>
-                      <div id="flightStops1" class="py-3">5h 51m</div>
+                      <div class="d-flex justify-content-between">
+                        <div id="flightStops1" class="py-3">5h 51m</div>
+                        <div id="flightStops1" class="py-3">9h 45m</div>
+                      </div>
                       <!-- TREBA NAMJESTIT DA FUNKCIONISE NA POMJERANJE SLIDERA -->
                       <p class="py-3">Onward Flight Duration</p>
                       <div class="doubleslider2"></div>
-                      <div id="flightStops2" class="py-3">5h 51m</div>
+                      <div class="d-flex justify-content-between">
+                        <div id="flightStops1" class="py-3">5h 51m</div>
+                        <div id="flightStops1" class="py-3">9h 45m</div>
+                      </div>
                       <!-- TREBA NAMJESTIT DA FUNKCIONISE NA POMJERANJE SLIDERA -->
                     </div>
                   </div>
@@ -523,11 +531,11 @@
       </div>
     </div>
     <div class="container">
-      <!--  bg-modal -->
+      <!--  bg-shaded -->
       <div class="row">
         <div class="col-12 col-md-6 mobile-px-0">
           <div>
-            <div class="borders-gray-gentle px-0 bg-faded">
+            <div class="borders-wrapper-graytransp px-0 bg-faded">
               <div class="row mx-0">
                 <div class="col-12 col-lg-3 px-1 text-center my-auto">
                   <div class="width-40 mx-auto ">
@@ -576,7 +584,7 @@
               </div>
             </div>
           </div>
-          <div class="borders-gray-gentle">
+          <div class="borders-wrapper-graytransp">
             <div class="d-flex align-items-center justify-content-between">
               <p>
                 <small>FLIGHT DETAILS</small>
@@ -598,7 +606,7 @@
         </div>
         <div class="col-12 col-md-6 pt-3 pt-md-0 mobile-px-0">
           <div>
-            <div class="borders-gray-gentle px-0 bg-faded">
+            <div class="borders-wrapper-graytransp px-0 bg-faded">
               <div class="row mx-0">
                 <div class="col-12 col-lg-3 px-1 text-center my-auto">
                   <div class="width-40 mx-auto ">
@@ -647,7 +655,7 @@
               </div>
             </div>
           </div>
-          <div class="borders-gray-gentle">
+          <div class="borders-wrapper-graytransp">
             <div class="d-flex align-items-center justify-content-between">
               <p>
                 <small>FLIGHT DETAILS</small>
@@ -671,7 +679,7 @@
       <div class="row pt-3">
         <div class="col-12 col-md-6 mobile-px-0">
           <div>
-            <div class="borders-gray-gentle px-0 bg-faded">
+            <div class="borders-wrapper-graytransp px-0 bg-faded">
               <div class="row mx-0">
                 <div class="col-12 col-lg-3 px-1 text-center my-auto">
                   <div class="width-40 mx-auto ">
@@ -720,7 +728,7 @@
               </div>
             </div>
           </div>
-          <div class="borders-gray-gentle">
+          <div class="borders-wrapper-graytransp">
             <div class="d-flex align-items-center justify-content-between">
               <p>
                 <small>FLIGHT DETAILS</small>
@@ -742,7 +750,7 @@
         </div>
         <div class="col-12 col-md-6 pt-3 pt-md-0 mobile-px-0">
           <div>
-            <div class="borders-gray-gentle px-0 bg-faded">
+            <div class="borders-wrapper-graytransp px-0 bg-faded">
               <div class="row mx-0">
                 <div class="col-12 col-lg-3 px-1 text-center my-auto">
                   <div class="width-40 mx-auto ">
@@ -791,7 +799,7 @@
               </div>
             </div>
           </div>
-          <div class="borders-gray-gentle">
+          <div class="borders-wrapper-graytransp">
             <div class="d-flex align-items-center justify-content-between">
               <p>
                 <small>FLIGHT DETAILS</small>
@@ -815,7 +823,7 @@
       <div class="row pt-3">
         <div class="col-12 col-md-6 mobile-px-0">
           <div>
-            <div class="borders-gray-gentle px-0 bg-faded">
+            <div class="borders-wrapper-graytransp px-0 bg-faded">
               <div class="row mx-0">
                 <div class="col-12 col-lg-3 px-1 text-center my-auto">
                   <div class="width-40 mx-auto ">
@@ -864,7 +872,7 @@
               </div>
             </div>
           </div>
-          <div class="borders-gray-gentle">
+          <div class="borders-wrapper-graytransp">
             <div class="d-flex align-items-center justify-content-between">
               <p>
                 <small>FLIGHT DETAILS</small>
@@ -886,7 +894,7 @@
         </div>
         <div class="col-12 col-md-6 pt-3 pt-md-0 mobile-px-0">
           <div>
-            <div class="borders-gray-gentle px-0 bg-faded">
+            <div class="borders-wrapper-graytransp px-0 bg-faded">
               <div class="row mx-0">
                 <div class="col-12 col-lg-3 px-1 text-center my-auto">
                   <div class="width-40 mx-auto ">
@@ -935,7 +943,7 @@
               </div>
             </div>
           </div>
-          <div class="borders-gray-gentle">
+          <div class="borders-wrapper-graytransp">
             <div class="d-flex align-items-center justify-content-between">
               <p>
                 <small>FLIGHT DETAILS</small>
@@ -959,7 +967,7 @@
       <div class="row pt-3">
         <div class="col-12 col-md-6 mobile-px-0">
           <div>
-            <div class="borders-gray-gentle px-0 bg-faded">
+            <div class="borders-wrapper-graytransp px-0 bg-faded">
               <div class="row mx-0">
                 <div class="col-12 col-lg-3 px-1 text-center my-auto">
                   <div class="width-40 mx-auto ">
@@ -1008,7 +1016,7 @@
               </div>
             </div>
           </div>
-          <div class="borders-gray-gentle">
+          <div class="borders-wrapper-graytransp">
             <div class="d-flex align-items-center justify-content-between">
               <p>
                 <small>FLIGHT DETAILS</small>
@@ -1030,7 +1038,7 @@
         </div>
         <div class="col-12 col-md-6 pt-3 pt-md-0 mobile-px-0">
           <div>
-            <div class="borders-gray-gentle px-0 bg-faded">
+            <div class="borders-wrapper-graytransp px-0 bg-faded">
               <div class="row mx-0">
                 <div class="col-12 col-lg-3 px-1 text-center my-auto">
                   <div class="width-40 mx-auto ">
@@ -1079,7 +1087,7 @@
               </div>
             </div>
           </div>
-          <div class="borders-gray-gentle">
+          <div class="borders-wrapper-graytransp">
             <div class="d-flex align-items-center justify-content-between">
               <p>
                 <small>FLIGHT DETAILS</small>
@@ -1107,22 +1115,22 @@
     <!-- THIS IS THE FEATURES PART -->
     <!-- =============================================== -->
 
-    <div class="container-fluid bb-solid bt-solid mt-5 px-0">
+    <div class="container-fluid border-bottom-solid-lightgray border-top-solid-lightgray mt-5 px-0">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-4 br-solid bl-solid mobile-bb-solid mobile-bx-0 py-2">
+          <div class="col-12 col-md-4 border-right-solid-lightgray border-left-solid-lightgray mobile-bb-solid mobile-border-x-0 py-2">
             <h4 class="text-center text-md-left pt-2">24/7 Customer Support</h4>
             <p class="text-muted text-center text-md-left pb-1">IF you need help by traveling or hosting,
               <br> contact us at our toll free number:
               <br> 123 456 789</p>
           </div>
-          <div class="col-12 col-md-4 br-solid mobile-bb-solid mobile-bx-0 py-2">
+          <div class="col-12 col-md-4 border-right-solid-lightgray mobile-bb-solid mobile-border-x-0 py-2">
             <h4 class="text-center text-md-left pt-2">2017 Summer Destinations On Sale</h4>
             <p class="text-muted text-center text-md-left pb-1">For the vast majority of his history, agriculture
               <br> can be described new products agriculture can
               <br> be described</p>
           </div>
-          <div class="col-12 col-md-4 br-solid mobile-bx-0 py-2">
+          <div class="col-12 col-md-4 border-right-solid-lightgray mobile-border-x-0 py-2">
             <h4 class="text-center text-md-left pt-2">Flat 75% Off On Domestic Hotels</h4>
             <p class="text-muted text-center text-md-left pb-1">Our best ever hotel deals are here! Use
               <br> promo code TTHAPPY to get flat 75% off
@@ -1226,13 +1234,11 @@
               </div>
             </div>
             <div class="flexed">
-              <div class="d-flex flex-row">
-                <a class="flexed px-3 py-2 no-br-right disabled text-muted borders-gray-gentle mb-0">
-                  Subscribe
-                </a>
-                <a class="bg-danger no-br-left text-white px-3 py-2 borders-gray-gentle mb-0">Send</a>
+              <div class="btn-group w-100 d-flex">
+                <button type="button" class="btn btn-secondary flexed text-muted text-left px-3 lh-md">Subscribe</button>
+                <button type="button" class="btn btn-danger px-3 lh-md">Send</button>
               </div>
-            </div>
+          </div>
           </div>
         </div>
         <div class="col-5 py-5 pl-5 d-flex flex-column">
@@ -1281,10 +1287,10 @@
       <div class="row">
         <div class="col-12 col-md-5">
           <div class="row">
-            <div class="col-12 col-md-4">
+            <div class="col-6 offset-3 col-sm-4 offset-sm-4 offset-md-0">
               <img src="images\trip_logo_pink.png" class="img-fluid" alt="Sorry,cant load the image!">
             </div>
-            <div class="col-12 col-md-8 flexed-2 d-flex align-items-center mobile-justify-content-center pt-3 pt-md-0">
+            <div class="col-12 col-md-8 d-flex align-items-center justify-content-center justify-content-md-start pt-3 pt-md-0">
               <p>
                 <i class="fab fa-facebook-f mx-2"></i>
                 <i class="fab fa-twitter mx-2"></i>
@@ -1356,7 +1362,7 @@
             for (let i = 0; i < myDropdown.length; i++) {
               if (e.target.parentNode.contains(myDropdownMenu[i])) {
                 myDropdownMenu[i].style.display = "block";
-                myFilters[0].classList.add("bg-modal"); // ADDING GRAY BACKGROUND WHEN DROPDOWNMEMU IS SHOWING
+                myFilters[0].classList.add("bg-shaded"); // ADDING GRAY BACKGROUND WHEN DROPDOWNMEMU IS SHOWING
               }
             }
           }
@@ -1365,7 +1371,7 @@
             for (let i = 0; i < myDropdown.length; i++) {
               myDropdownMenu[i].style.display = "none";
               myDropdownMenu[i].parentNode.classList.remove("showing");
-              myFilters[0].classList.remove("bg-modal"); // REMOVING GRAY BACKGROUND WHEN DROPDOWNMEMU IS SHOWING
+              myFilters[0].classList.remove("bg-shaded"); // REMOVING GRAY BACKGROUND WHEN DROPDOWNMEMU IS SHOWING
             }
           }
         }
@@ -1376,7 +1382,7 @@
             if (!myDropdownMenu[i].contains(e.target)) {
               myDropdownMenu[i].style.display = "none";
               myDropdownMenu[i].parentNode.classList.remove("showing");
-              myFilters[0].classList.remove("bg-modal"); // REMOVING GRAY BACKGROUND WHEN CLICKING OUTSIDE OF DROPDOWNMENU
+              myFilters[0].classList.remove("bg-shaded"); // REMOVING GRAY BACKGROUND WHEN CLICKING OUTSIDE OF DROPDOWNMENU
             }
           }
         }

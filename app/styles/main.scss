@@ -12,9 +12,12 @@
 //VARIABLES
 //----------------------------------------------------------
 
-$fadedBorderLighter: #f7f7f7 * 0.9;
-$fadedBorderDarker: #f7f7f7 * 0.8;
+$dangerColor: #d9534f;
 
+$grayLightColor: #f7f7f7 * 0.9;
+$grayDarkColor: #f7f7f7 * 0.8;
+
+$grayTransparentColor: rgba(0, 0, 0, 0.125);
 //STYLES
 //----------------------------------------------------------
 
@@ -31,16 +34,8 @@ $fadedBorderDarker: #f7f7f7 * 0.8;
 @import '1-base/base.scss';
 @import '2-layouts/layouts.scss';
 @import '3-modules/modules.scss';
-@import '4-shame/shame.scss';
+/* @import '4-states/states.scss'; */
+@import '5-shame/shame.scss';
 
 
 @import '0-plugins/SlickPlugin/slick-1.8.0/slick/slick.css';
-
-/* import fontawesome from '@fortawesome/fontawesome'
-import faUser from '@fortawesome/fontawesome-free-solid/faUser'
-import faCircle from '@fortawesome/fontawesome-free-regular/faCircle'
-import faFacebook from '@fortawesome/fontawesome-free-brands/faFacebook'
-
-fontawesome.library.add(faUser)
-fontawesome.library.add(faCircle)
-fontawesome.library.add(faFacebook) */

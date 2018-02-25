@@ -1,11 +1,11 @@
-// MOJ NACIN IZRADE TIMELINE-A
+//  TIMELINE
 //----------------------------------------------------------
 
 .timeline-horizontal .timeline-horizontal-item::before {
     content: "";
     height: 1px;
     width: 100%;
-    background-color: $fadedBorderDarker;
+    background-color: $grayDarkColor;
     display: block;
     position: relative;
     top: 27.5px;
@@ -20,7 +20,7 @@
     color: #fff;
     line-height: 55px;
     text-align: center;
-    background: #d9534f;
+    background: $dangerColor;
 }
 
 .circle-smaller {
@@ -31,7 +31,7 @@
     color: #fff;
     line-height: 45px;
     text-align: center;
-    background: #d9534f;
+    background: $dangerColor;
 }
 
 .circle-outline {
@@ -42,7 +42,7 @@
     line-height: 55px;
     text-align: center;
     background: white;
-    border: solid #d9534f 1px;
+    border: solid $dangerColor 1px;
 }
 
 @media (max-width: 767px) {
@@ -50,7 +50,7 @@
         content: "";
         height: 100%;
         width: 1px;
-        background-color: $fadedBorderDarker;
+        background-color: $grayDarkColor;
         display: block;
         position: absolute;
         z-index: -1;
@@ -63,23 +63,15 @@
     }
 }
 
-// FLEX KLASE - CUSTOM MADE
+// FLEX CLASSES- CUSTOM 
 //----------------------------------------------------------
-
-.list-inline {
-    flex: 1;
-}
 
 .flexed {
     flex: 1 !important;
 }
 
-.flexed-5part {
-    flex: 1;
-}
-
 .flexed-2 {
-    flex: 2;
+    flex: 2 !important;
 }
 
 .flexed-10 {
@@ -89,247 +81,67 @@
 // BORDER CLASSES - CUSTOM
 //----------------------------------------------------------
 
-.bb-dashed {
-    border-bottom: dashed $fadedBorderLighter 1px;
+.border-bottom-dashed-gray { 
+    border-bottom: dashed gray 1px;
 }
 
-.br-dashed {
-    border-right: dashed $fadedBorderDarker 1px;
+.border-right-dashed-darkgray {
+    border-right: dashed $gray 1px;
 }
 
-.bl-dashed {
-    border-left: dashed $fadedBorderDarker 1px;
+.border-left-dashed-darkgray {
+    border-left: dashed $gray 1px;
 }
 
-//KLASE ZA MOBILNE (FLEX) // 
-//----------------------------------------------------------
-
-@media (max-width: 991px) {
-    .tablet-px-0 { // OVAJ JE REGULARAN
-        padding-left: 0px !important;
-        padding-right: 0px !important;
-    }
+.border-top-solid-lightgray { 
+    border-top: solid 1px $grayLightColor !important;
 }
 
-/* OVO TREBA SVE POBRISATI I ZAMIJENITI SA BOOTSTRAPOVIM KLASAMA
- */
-//----------------------------------------------------------
-
-@media (max-width: 767px) {
-    .mobile-justify-content-center { // .justify-content-md-center
-        justify-content: center !important;
-    }
-
-    .mobile-justify-content-start { // .justify-content-md-start
-        justify-content: flex-start !important;
-    }
-
-    .mobile-align-items-center { // .align-items-md-center
-        -webkit-box-align: center !important;
-        align-items: center !important;
-    }
-
-    .mobile-px-0 { // .pt-md-0
-        padding-left: 0px !important;
-        padding-right: 0px !important;
-    }
-    .mobile-px-1 { // .pt-md-0
-        padding-left: 1rem !important;
-        padding-right: 1rem !important;
-    }
-
-    .mobile-pt-0 { // .pt-md-0
-        padding-top: 0px;
-    }
-
-    .mobile-py-2 { // .pt-md-0
-        padding-top: 2px;
-        padding-bottom: 2px;
-    }
-
-    .mobile-pb-3 { // .pb-md-3
-        padding-bottom: 16px;
-    }
-
-    .mobile-d-block { // .d-md-block
-        display: block;
-    }
-
-    .mobile-flex-row { // .flex-md-row
-        flex-direction: row;
-    }
+.border-bottom-solid-lightgray  { 
+    border-bottom: solid 1px $grayLightColor !important;
 }
 
-// DROPDOWN CUSTOM CLASS
-//----------------------------------------------------------
-
-.dropdown-white {
-    background-color: white;
-    border-radius: 5px;
-    border: solid 1px $fadedBorderDarker;
+.border-right-solid-lightgray {
+    border-right: solid 1px $grayLightColor !important;
 }
 
-#dropdownMenuLink-toc {
-    width: 100%;
-    border: solid 1px $fadedBorderDarker;
+.border-left-solid-lightgray {
+    border-left: solid 1px $grayLightColor !important;
 }
 
-#dropdown-menu-toc {
-    position: absolute;
-    top: 40px;
-    width: 100%;
+.border-left-danger { // MOZDA BI MOGLO BORDER-LEFT-SOLID-DANGER
+    border-left: solid 10px $dangerColor;
 }
 
-#dropdownMenuLink-selectCountry {
-    width: 100%;
-    border: solid 1px $fadedBorderDarker;
-    &::after {
-        position: absolute;
-        left:100%;
-        top: 50%;
-        margin-left: 0px;
-        transform: translate(-200%);
-    }
+.border-left-warning { // MOZDA BI MOGLO BORDER-LEFT-SOLID-WARNING
+    border-left: solid 10px #f0ad4e;
 }
-
-#dropdown-menu-selectCountry {
-    position: absolute;
-    top: 40px;
-    width: 100%;
-}
-
-#promoCodeDropdown {
-    width: 100%;
-}
-
-// DATETIME PICKER CUSTOM CLASS
-
-.dateTimePicker {
-    box-sizing: content-box;
-    height: 20px;
-}
-
-// BORDERS CUSTOM CLASS
-//----------------------------------------------------------
-
-.no-br-left {
-    border-top-left-radius: 0px !important;
-    border-bottom-left-radius: 0px !important;
-}
-
-.no-br-right {
-    border-top-right-radius: 0px !important;
-    border-bottom-right-radius: 0px !important;
-}
-
-.bb-solid {
-    border-bottom: solid 1px $fadedBorderLighter !important;
-}
-
-.bt-solid {
-    border-top: solid 1px $fadedBorderLighter !important;
-}
-
-.br-solid {
-    border-right: solid 1px $fadedBorderLighter !important;
-}
-
-.bl-solid {
-    border-left: solid 1px $fadedBorderLighter !important;
-}
-
-
 
 @media (min-width: 767px) {
-    .hover-bb-danger:hover {
+    .hover-bb-danger:hover { // DA LI JE LOSE DA JA OVDJE STAVIM .hover-border-bottom-solid-danger
         padding-bottom: 2px !important;
-        border-bottom: 2px solid #d9534f;
+        border-bottom: 2px solid $dangerColor;
         cursor: pointer;
     }
 }
 @media (max-width: 767px) {
-    .mobile-bb-solid {
-        border-bottom: solid 1px $fadedBorderLighter;
+    .mobile-bb-solid { // DA LI JE LOSE DA JA OVDJE STAVIM .hover-border-bottom-solid-lightgray
+        border-bottom: solid 1px $grayLightColor;
     }
 
-    .mobile-bx-0 {
+    .mobile-border-x-0 {
         border-right: none !important;
         border-left: none  !important;
     }
 }
 
-// CHANGES MADE TO BOOTSTRAP
-//----------------------------------------------------------
+// BORDERS MODULES
 
-.dropdown > a {
-    color: white;
-    border: none;
-    line-height: 24px;
-
-    &:hover {
-        background-color: transparent;
-    }
-
-    &:focus {
-        background-color: transparent !important;
-    }
-}
-
-.rounded-0 {
-    border-radius: 0 !important;
-}
-
-.rounded-right {
-    border-bottom-right-radius: 0.25rem !important;
-    border-top-right-radius: 0.25rem !important;
-}
-
-.rounded-left {
-    border-bottom-left-radius: 0.25rem !important;
-    border-top-left-radius: 0.25rem !important;
-}
-
-@media (min-width: 576px) {
-    .form-inline .form-control {
-        display: inline-block;
-        width: 100%;
-        vertical-align: middle;
-    }
-}
-
-@media (min-width: 768px) {
-    .rounded-md-right {
-        border-bottom-right-radius: 0.25rem !important;
-        border-top-right-radius: 0.25rem !important;
-    }
-}
-
-@media (min-width: 1200px) {
-    .w-xl-25 {
-        width: 25% !important;
-    }
-}
-
-.nav-tabs .nav-link.active {
-    color: #464a4c;
-    background-color: #f7f7f7;
-    border-color: #ddd #ddd transparent;
-}
-
-.btn-group .btn {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-
-
-// REPLACEMENT TO LIST-GROUP THAT KEEPS THE SAME BORDERS - SHOULD BE CALLED BORDERS-GRAY-GENTLE-WRAPPER
-
-.borders-gray-gentle {
+.borders-wrapper-graytransp {
     align-items: center;
     padding: 0.75rem 1.25rem;
     margin-bottom: -1px;
-    border: 1px solid rgba(0, 0, 0, 0.125);
+    border: 1px solid $grayTransparentColor;
 
     &:first-child {
         border-top-right-radius: 0.25rem;
@@ -342,7 +154,7 @@
     }
 }
 
-.borders-black-gentle {
+.borders-wrapper-black { //OVO TEK TREBA DA SE ISKORISTI NA FLIGHTSPAGE-U
     align-items: center;
     padding: 0.75rem 1.25rem;
     margin-bottom: -1px;
@@ -359,73 +171,183 @@
     }
 }
 
+// PADDING ZA TABLETE I MOBILNE  //
+//----------------------------------------------------------
+
+/* TABLETI */
+
+@media (max-width: 991px) {
+    .tablet-px-0 {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}
+
+/* MOBILNI */
+
+@media (max-width: 767px) {
+
+    .mobile-px-0 { 
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .mobile-px-1 {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+}
+
+// DROPDOWN CUSTOM CLASS
+//----------------------------------------------------------
+
+// MISLIM DA BI TREBALO PROMIJENIT SVE OVE KLASE SA ID-evima, MISLIM DA CAK ID-EVI NISU NEOPHODNI DA BI BOOTSTRAP DROPDOWN FUNKCIONISAO
+// MOZDA SU SAMO NEOPHODNI ID-jevi TAMO DJE JE DATA-TARGET:#tralalala ILI TAKO NESTO
+
+#dropdownMenuLink-toc { // PROMIJENITI NAMING OVOG ID-A I MOZDA NAPRAVITI PROMJENU, DA SE NE VODI PREMA #DROPDOWNU NEGO PREMA KLASI NEKAKO 
+    width: 100%;
+    border: solid 1px $grayDarkColor;
+}
+
+#dropdown-menu-toc { // PROMIJENITI NAMING OVOG ID-A I MOZDA NAPRAVITI PROMJENU, DA SE NE VODI PREMA #DROPDOWNU NEGO PREMA KLASI NEKAKO
+    position: absolute;
+    top: 40px;
+    width: 100%;
+}
+
+// LINE HEIGHT CUSTOM CLASS
+//----------------------------------------------------------
+
+.lh-md {
+    line-height: 1.5 !important;
+}
+
+// CHANGES MADE TO BOOTSTRAP CLASSES
+//----------------------------------------------------------
+
+// PRONACI NACIN DA PREKO FINDA I REGEXA NADJEM .h1 .h2 .h3 klase...
+
+.dropdown > a { // U SUSTINI NIJE DOBRA OVA KLASA.
+    color: white;
+    border: none;
+    line-height: 24px; // POMENUTI OVU TACKU GOGI !!!
+
+    &:hover {
+        background-color: transparent;
+    }
+
+    &:focus {
+        background-color: transparent !important;
+    }
+}
+
+/* SVIM OVIM KLASAMA SAM SAMO DODAO IMPORTANT JER MI JE TO LOGICNIJE RJESENJE NEGO DA NEMA IMPORTANTA */
+
+.rounded-0 {
+    border-radius: 0 !important;
+}
+.rounded-top {
+    border-top-left-radius: 0.25rem !important;
+    border-top-right-radius: 0.25rem !important;
+}
+.rounded-bottom {
+    border-bottom-left-radius: 0.25rem !important;
+    border-bottom-right-radius: 0.25rem !important;
+}
+.rounded-right {
+    border-bottom-right-radius: 0.25rem !important;
+    border-top-right-radius: 0.25rem !important;
+}
+.rounded-left {
+    border-bottom-left-radius: 0.25rem !important;
+    border-top-left-radius: 0.25rem !important;
+}
+
+@media (min-width: 576px) {
+    .form-inline .form-control {
+        display: inline-block;
+        width: 100%;
+        vertical-align: middle;
+    }
+}
+@media (min-width: 768px) { // MOZDA OVA KLASA NIJE CHANGES MADE TO BOOTSTRAP
+    .rounded-md-right {
+        border-bottom-right-radius: 0.25rem !important;
+        border-top-right-radius: 0.25rem !important;
+    }
+}
+@media (min-width: 1200px) { // MOZDA OVA KLASA NIJE CHANGES MADE TO BOOTSTRAP
+    .w-xl-25 {
+        width: 25% !important;
+    }
+}
+
+.nav-tabs .nav-link.active { // STA AKO OCU OPET NAV TABOVE NEDJE, ALI NECU DA JE OVAKVO PONASANJE
+    color: #464a4c;
+    background-color: #f7f7f7;
+    border-color: #ddd #ddd transparent;
+}
+
+.btn-group .btn {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+// BACKGROUNDS
+
 .bg-transparent {
-    background: transparent;
+    background: transparent; // DA LI I ODJE DA STAVIM !IMPORTANT - MISLIM DA NE TREBA
 }
 
 .bg-white {
     background: white !important;
 }
 
+.bg-inverse-transparent {
+    background: rgba(41,43,44, 0.65); // PROKOMENTARISATI SA GOGOM OVAJ DIO SA BG-INVERSE-TRANSPARENT
+}
 
-.cursor-pointer:hover {
+@media (max-width:767px) {
+    .bg-inverse-transparent {
+    background: rgba(41,43,44, 0.85);
+    } 
+}
+.bg-inverse-transparent-dark {
+    background: rgba(41,43,44, 0.85);
+}
+
+@media (min-width: 768px) {
+    .bg-img-road {
+        background-image: url("../test/Road6-1440x900.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+}
+
+// TEXT DECORATIONS STYLES
+
+.cursor-pointer:hover { 
     cursor: pointer;
 }
 
-.style-arrow-right {
-    list-style: square outside url("../../test/Right-Arrow-Transparent-Background.png");
+.style-chevron-right {
+    list-style: square outside url("../../test/Right-Arrow-Transparent-Background.png"); // MISLIM DA NIJE NAJBOLJE RJESENJE
 }
 
-.style-circle-danger::before {
-    left:24px;
-    position: absolute;
-    content: "";
-    padding: 6px 6px;
-    background-color:#d9534f;
-    border-radius: 50%;
-    border: 1px solid #464a4c;
-}
-.style-circle-white::before {
-    left:24px;
-    position: absolute;
-    content: "";
-    padding: 6px 6px;
-    background-color:white;
-    border-radius: 50%;
-    border: 1px solid #464a4c;
-}
+/* THIS IS WHERE THE TRIANGLE CLASSES ARE */
 
-.p-rel {
-    position: relative;
-}
-.p-absol {
-    position: absolute;
-}
-
-.absol-right {
-    right: 0px;
-}
-
-
-.flag-danger::after { // THIS IS THE DEFAULT flag-danger
+.triangle-left-white::after {
     position: absolute;
     left: 100%;
     top: 0px;
     content: "";
     height: 0;
     width: 0;
-    border-top: solid #d9534f 12px;
+    border-top: solid $dangerColor 12px;
     border-right: solid white 12px;
-    border-bottom: solid #d9534f 12px;
+    border-bottom: solid $dangerColor 12px;
 }
 
-.clearfixed {
-    clear: both;
-}
-
-/* THIS IS WHERE THE TRIANGLE CLASSES ARE */
-
-.triangle-warning-10px::before { // THIS IS THE 10px FLAG
+.triangle-right-warning::before {
     position: absolute;
     left: 0%;
     top: calc(50% - 10px);
@@ -438,109 +360,17 @@
     border-bottom: solid transparent 10px;
 }
 
-.triangle-danger-10px::before { // THIS IS THE 10px FLAG
+.triangle-right-danger::before {
     position: absolute;
     left: 0%;
     top: calc(50% - 10px);
     content: "";
     height: 0;
     width: 0;
-    border-left: solid #d9534f 10px;
+    border-left: solid $dangerColor 10px;
     border-top: solid transparent 10px;
     border-right: solid transparent 10px;
     border-bottom: solid transparent 10px;
-}
-
-.border-left-danger {
-    border-left: solid 10px #d9534f;
-}
-
-.border-left-warning {
-    border-left: solid 10px #f0ad4e;
-}
-
-/* THIS IS WHERE THE HEIGHT CLASSES ARE */
-
-.height-40 {
-    height: 40px;
-}
-.height-300 {
-    height: 300px;
-}
-.height-350 {
-    height: 350px;
-}
-.height-380 {
-    height: 380px;
-}
-.height-200 {
-    height: 200px;
-}
-
-.width-40 {
-    width: 40px;
-}
-.width-220 {
-    width: 220px;
-}
-.width-250 {
-    width: 250px;
-}
-.width-350 {
-    width: 350px;
-}
-
-.adjusted {
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -100%);
-}
-
-.bg-inverse-transparent {
-    background: rgba(41,43,44, 0.65);
-}
-
-@media (max-width:768px) {
-    .bg-inverse-transparent {
-    background: rgba(41,43,44, 0.85);
-    } 
-}
-.bg-inverse-transparent-dark {
-    background: rgba(41,43,44, 0.85);
-}
-
-.top-0 {
-    top: 0px;
-}
-
-.tag-new-danger {
-    &::after {
-        display: inline-block;
-        position:absolute;
-        padding: 0px 8px;
-        content: "NEW";
-        font-size: 12px;
-        background-color: #d9534f;
-        color: white;
-        transform: translate(-100%, -100%)
-    }
-}
-
-@media (max-width: 768px) {
-    .tag-new-danger::after {
-        transform: translate(0%, -30%)
-    }
-}
-
-.w-min-20 {
-    min-width: 320px !important;
-}
-
-@media (max-width: 768px) {
-    .w-min-20 {
-        min-width: 0px !important; // OVO JE NEKO RJESENJE KOJE MOZDA NIJE SAVRSENO, TACNO JE AL NEKAKO NIJE KONKRETNO
-    }  
 }
 
 .triangle-top-white::after {
@@ -556,14 +386,146 @@
     border-bottom: solid  white 16px;
 }
 
-
-
-@media (min-width: 768px) {
-    .bg-img-road {
-        background-image: url("../test/Road6-1440x900.jpg");
-        background-repeat: no-repeat;
-        background-size: 100% auto;
+.tag-new-danger {
+    &::after {
+        display: inline-block;
+        position:absolute;
+        padding: 0px 8px;
+        content: "NEW";
+        font-size: 12px;
+        background-color: $dangerColor;
+        color: white;
+        transform: translate(-100%, -100%)
     }
+}
+
+@media (max-width: 768px) {
+    .tag-new-danger::after {
+        transform: translate(0%, -30%)
+    }
+}
+
+// CHEKBOXES - CUSTOM CLASSES
+
+.label-check-circle {
+    position: relative;
+    display: block;
+    padding-left:25px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    -webkit-user-select: none; 
+    user-select: none; 
+}
+
+.label-check-circle input {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 10;
+    top: 0px;
+    left: 0px;
+    height: 25px;
+    width: 25px;
+    &:checked ~ .checkmark-circle {
+        background-color: $dangerColor;
+    }
+}
+
+.checkmark-circle {
+    position: absolute;
+    cursor: pointer;
+    top: calc(50% - 7.5px);
+    left: 0px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    background-color: white;
+}
+
+// POSITIONING 
+
+.p-rel {
+    position: relative;
+}
+.p-absol {
+    position: absolute;
+}
+
+.top-0 {
+    top: 0px;
+}
+
+.right-0 { // RIGHT-0
+    right: 0px;
+}
+
+.clearfixed { // MISLIM DA POSTOJI KLASA clearfix U BOOTSTRAPU
+    clear: both;
+}
+
+.centered { // PROMIJENITI OVU KLASU MOZDA OVO TREBA U SHAME
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -100%);
+}
+
+// HEIGHT CLASSES - MOZDA BI TREBALO ODJE DA IDE !IMPORTANT
+
+.height-40 {
+    height: 40px;
+}
+.height-200 {
+    height: 200px;
+}
+.height-300 {
+    height: 300px;
+}
+.height-350 {
+    height: 350px;
+}
+.height-380 {
+    height: 380px;
+}
+
+// WIDTH CLASSES
+
+.w-auto { // PROVJERITI DJE JE OVA KLASA ISKORISCENA I DA LI IMA POTREBE ZA NJOM
+    width: auto;
+}
+
+.width-40 { // OVE KLASE PROKOMENTARISATI SA GOGOM - VALJALO BI UPISAT width-40px, ALI JE GLUPO UPISIVAT PIXELE U KLASE...
+    width: 40px;
+}
+.width-220 {
+    width: 220px;
+}
+.width-250 {
+    width: 250px;
+}
+.width-350 {
+    width: 350px;
+}
+
+.w-min-320 { // PROMIJENITI U w-min-320px ILI NESTO TAKO
+    min-width: 320px !important;
+}
+
+@media (max-width: 768px) {
+    .w-min-320 {
+        min-width: 0px !important; // OVO JE NEKO RJESENJE KOJE MOZDA NIJE SAVRSENO, TACNO JE AL NEKAKO NIJE KONKRETNO
+    }  
+}
+
+// Z-INDEX CLASSES
+
+.z-10 {
+    z-index: 10;
+}
+
+.z-100 {
+    z-index: 100;
 }
 
 // THIS IS THE COLLAPSED AND EXPANDED PLUS MINUS TRICK 
@@ -581,14 +543,18 @@
     display: block;
 }
 
-.myCaption {
+// THIS IS THE CAPTION - COULD BE CHANGED WITH BOOTSTRAP CLASS MAYBE
+
+.caption-bottom {
     position: absolute;
     top: 75%;
     width: 100%;
     text-align: center;
 }
 
-// THESE ARE THE ARROWS FOR THE SLICK PLUGIN
+// SLICK PLUGIN ARROWS ADJUSTMENT
+
+/* PREV BUTTONS IN SLICK PLUGIN WHICH ARE BLACK */
 
 .prev {
     cursor: pointer;
@@ -597,6 +563,8 @@
     cursor: pointer;
 }
 
+/* PREV BUTTONS IN SLICK PLUGIN WHICH ARE WHITE */
+
 .next-offers {
     cursor: pointer;
 }
@@ -604,20 +572,7 @@
     cursor: pointer;
 }
 
-.translated-up {
-    transform: translate(0%,-100%)
-}
-
-.w-auto {
-    width: auto;
-}
-
-.text-default {
-    color: #292b2c !important;
-}
-
-
-// THIS IS THE SWITCH CSS 
+// SWITCH CSS 
 
 .switch {
     position: relative;
@@ -662,7 +617,7 @@ input:checked + .slider {
   }
 
 input:checked + .slider:before {
-    background-color: #d9534f;
+    background-color: $dangerColor;
   }
 
 input:checked + .slider:before {
@@ -671,19 +626,18 @@ input:checked + .slider:before {
     transform: translateX(26px);
   }
 
-  // THIS IS THE RANGE SLIDER CSS
+//  RANGE SLIDER CSS (UGLAVNOM KOPIRAN SA W3SCHOOLS)
 
-  .rangeslidecontainer {
+.rangeslidecontainer {
     width: 100%; /* Width of the outside container */ // MISLIM DA MI OVAJ ELEMENT I OVA KLASA UOPSTE NISU POTREBNI
 }
 
 /* The slider itself */
 .rangeslider {
     -webkit-appearance: none;  /* Override default CSS styles */
-    /* appearance: none; */ // MENI ODJE KAZE DA JE OVO APPEARANCE UNKNOWN SCSS PROPERTY
     width: 100%; /* Full-width */
     height: 5px; /* Specified height */
-    background: #d9534f; /* Danger background */
+    background: $dangerColor; /* Danger background */
     outline: none; /* Remove outline */
     opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
     -webkit-transition: .2s; /* 0.2 seconds transition on hover */
@@ -707,10 +661,10 @@ input:checked + .slider:before {
     cursor: pointer; /* Cursor on hover */
 }
 
-/* VARIATIONS OF THE NOUISLIDER */
+/* NOUISLIDER-VARIATIONS */
 
 .noUi-connect {
-    background-color: #d9534f !important;
+    background-color: $dangerColor !important; // DA LI JE OVO U REDU OVAKO MIJENJATI KLASU? JER JOJ PRAKTICNO MIJENJAM DEFAULT VRIJEDNOST, MOZDA TREBA DODATI -danger U KLASI ILI TAKO NESTO
 }
 
 .noUi-horizontal .noUi-handle {
@@ -729,10 +683,13 @@ input:checked + .slider:before {
     height: 12px !important;
 }
 
+// MYDROPDOWN CUSTOM CLASSES //SIGURNO TREBA MIJENJATI IME, DA NIJE "MY"DROPDOWN
+
 .myDropdown {
     display: inline-flex; 
     position: relative;
-    z-index: 1000;
+    -webkit-user-select: none; 
+    user-select: none;
 }
 
 .myDropdownLink {
@@ -748,11 +705,8 @@ input:checked + .slider:before {
     top: 72px;
     margin-top: 0px;
     padding: 16px 16px;
-    z-index: 1010; // ZASTO OVO NE FUNKCIONISE?
+    z-index: 1010; // VJEROVATNO NE TREBA 1010 NEGO MOZE I 1000
     position: absolute;
-
-// TRYING TO MAKE IT ACT LIKE A MODAL WINDOW
-
     min-width: 320px;
     display: none;
     border: solid 1px rgba(0, 0, 0, 0.15);
@@ -761,64 +715,18 @@ input:checked + .slider:before {
 
 @media (max-width: 768px) {
     .myDropdownMenu {
-        min-width: 100px;
+        min-width: 100px; // PROVJERITI JEL OVO DOBRO RJESENJE
         width: 100%;
     }
 }
 
-.bg-modal { 
+.bg-shaded { 
     background: rgba(0, 0, 0, 0.50)!important;
     z-index: 3; // MISLIM DA ODJE TREBAJU NEKE PREPRAVKE
     overflow: auto;
     height: 100%;
     width: 100%;
     position: fixed;
-}
-
-.z-10 {
-    z-index: 10;
-    position: relative;
-}
-
-.z-100 {
-    z-index: 100;
-    position: relative;
-}
-
-.label-check-circle {
-    position: relative;
-    display: block;
-    padding-left:25px;
-    margin-bottom: 0px;
-    cursor: pointer;
-    -webkit-user-select: none; // OVO NISAM SIGURAN CEMU SLUZI
-    user-select: none; // OVO NISAM SIGURAN CEMU SLUZI
-}
-
-.label-check-circle input {
-    position: absolute;
-    cursor: pointer;
-    opacity: 0;
-    z-index: 10;
-    top: 0px;
-    left: 0px;
-    height: 25px;
-    width: 25px;
-    &:checked ~ .checkmark-circle {
-        background-color: #d9534f;
-    }
-}
-
-.checkmark-circle {
-    position: absolute;
-    cursor: pointer;
-    top: calc(50% - 7.5px);
-    left: 0px;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    border: 1px solid gray;
-    background-color: white;
 }
 
 .dropdown-item.no-highlight.active, .dropdown-item.no-highlight:active {
