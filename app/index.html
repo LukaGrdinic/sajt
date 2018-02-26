@@ -20,7 +20,8 @@
   <!-- build:css styles/main.css -->
   <!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
     crossorigin="anonymous"> -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <script defer src="test\fontAwesome\fontawesome-free-5.0.6\svg-with-js\js\fontawesome-all.js"></script>
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
 
@@ -28,584 +29,952 @@
 
 <body>
 
-  <header>
+  <div class="bg-img-road">
+    <header>
 
-    <!-- =============================================== -->
-    <!-- THIS IS THE NAVBAR PART -->
-    <!-- =============================================== -->
+      <!-- =============================================== -->
+      <!-- THIS IS THE NAVBAR PART -->
+      <!-- =============================================== -->
 
-    <nav class="navbar navbar-toggleable-md navbar-inverse bg-danger">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="container">
-        <div class="collapse navbar-collapse justify-content-between text-center" id="navbarNav">
-          <div>
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="fa fa-phone" aria-hidden="true"></i> 123 456 7890 123</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Support
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <ul class="navbar-nav">
-              <li class="nav-item dropdown text-white">
-                <a href="#" class="btn btn-danger dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  English
-                </a>
+      <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse-transparent">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+          <div class="collapse navbar-collapse justify-content-between text-center" id="navbarNav">
+            <div>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="fa fa-phone" aria-hidden="true"></i> 123 456 7890 123</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Support
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown text-white">
+                  <a href="#" class="btn dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    English
+                  </a>
 
-                <div class="dropdown-menu text-center text-lg-left" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#">Crnogorski</a>
-                  <a class="dropdown-item" href="#">Deutsch</a>
-                  <a class="dropdown-item" href="#">Francais</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Login</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Sign up</a>
-                <!-- #homeDropdown -->
+                  <div class="dropdown-menu text-center text-lg-left" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Crnogorski</a>
+                    <a class="dropdown-item" href="#">Deutsch</a>
+                    <a class="dropdown-item" href="#">Francais</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Sign up</a>
+                  <!-- #homeDropdown -->
 
-              </li>
-              <li class="nav-item dropdown text-white hidden-md-up">
-                <a href="#" class="btn btn-danger dropdown-toggle" id="homeDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false">Menu</a>
+                </li>
+                <li class="nav-item dropdown text-white hidden-md-up">
+                  <a href="#" class="btn dropdown-toggle" id="homeDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
 
-                <div id="realDropdownMenu" class="dropdown-menu text-center bg-danger border-0" aria-labelledby="homeDropdownMenuLink">
-                  <hr class="mt-0">
-                  <a class="dropdown-item text-white" href="#">Home</a>
-                  <a class="dropdown-item text-white" href="#">Flights</a>
-                  <a class="dropdown-item text-white" href="#">Hotels</a>
-                  <a class="dropdown-item text-white" href="#">Homestay</a>
-                  <a class="dropdown-item text-white" href="#">Holidays</a>
-                  <a class="dropdown-item text-white" href="#">Activity</a>
-                  <a class="dropdown-item text-white" href="#">Pages</a>
-                  <a class="dropdown-item text-white" href="#">Shortcodes</a>
-                </div>
-              </li>
-            </ul>
+                  <div id="realDropdownMenu" class="dropdown-menu text-center border-0 bg-transparent" aria-labelledby="homeDropdownMenuLink">
+                    <hr class="mt-0">
+                    <a class="dropdown-item text-white" href="#">Home</a>
+                    <a class="dropdown-item text-white" href="#">Flights</a>
+                    <a class="dropdown-item text-white" href="#">Hotels</a>
+                    <a class="dropdown-item text-white" href="#">Homestay</a>
+                    <a class="dropdown-item text-white" href="#">Holidays</a>
+                    <a class="dropdown-item text-white" href="#">Activity</a>
+                    <a class="dropdown-item text-white" href="#">Pages</a>
+                    <a class="dropdown-item text-white" href="#">Shortcodes</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
 
-  </header>
+    </header>
 
-  <main>
 
     <!-- =============================================== -->
     <!-- THIS IS THE HOME PART -->
     <!-- =============================================== -->
 
     <div class="container">
-      <div class="row py-4">
-        <div class="col-12 col-md-2">
+      <div class="row pt-4 pb-2 pb-md-5">
+        <div class="col-6 offset-3 col-sm-4 offset-sm-4 offset-md-0 col-md-2">
           <img src="images\trip_logo_pink.png" class="img-fluid" alt="Sorry,cant load the image!">
         </div>
         <div class="hidden-sm-down col-md-10 d-flex align-items-center">
-          <ul id="homeDropdown" class="list-inline mb-0 text-right">
-            <li class="list-inline-item pr-3 mobile-d-block text-center ">
+          <ul id="homeDropdown" class="list-inline mb-0 text-right flexed">
+            <li class="list-inline-item pr-3  text-center">
               <strong>
-                <a href="#">Home</a>
+                <a class=" text-white" href="#">Home</a>
               </strong>
             </li>
-            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
-              <a href="#">Flights</a>
+            <li class="list-inline-item pr-3  text-center tablet-px-0">
+              <a class=" text-white" href="#">Flights</a>
             </li>
-            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
-              <a href="#">Hotels</a>
+            <li class="list-inline-item pr-3  text-center tablet-px-0">
+              <a class=" text-white" href="#">Hotels</a>
             </li>
-            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
-              <a href="#">Homestay</a>
+            <li class="list-inline-item pr-3  text-center tablet-px-0">
+              <a class=" text-white" href="#">Homestay</a>
             </li>
-            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
-              <a href="#">Holidays</a>
+            <li class="list-inline-item pr-3  text-center tablet-px-0">
+              <a class=" text-white" href="#">Holidays</a>
             </li>
-            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
-              <a href="#">Activity</a>
+            <li class="list-inline-item pr-3  text-center tablet-px-0">
+              <a class=" text-white" href="#">Activity</a>
             </li>
-            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
-              <a href="#">Pages</a>
+            <li class="list-inline-item pr-3  text-center tablet-px-0">
+              <a class=" text-white" href="#">Pages</a>
             </li>
-            <li class="list-inline-item pr-3 mobile-d-block text-center tablet-px-0">
-              <a href="#">Shortcodes</a>
+            <li class="list-inline-item pr-3  text-center tablet-px-0">
+              <a class=" text-white" href="#">Shortcodes</a>
             </li>
           </ul>
         </div>
       </div>
-    </div>
 
-    <!-- =============================================== -->
-    <!-- THIS IS THE BREADCRUMB PART -->
-    <!-- =============================================== -->
+      <!-- =============================================== -->
+      <!-- THIS IS THE MAIN NAVIGATOR OF EVERYTHING -->
+      <!-- =============================================== -->
 
-    <div class="container-fluid">
-      <div class="bg-faded">
-        <div class="container">
-          <div class="row py-3">
-            <div class="col-2 d-flex align-items-center">
-              <h4 class="mb-0 pl-0">Review</h4>
-            </div>
-            <div class="col-10 hidden-md-down">
-              <ol class="breadcrumb mb-0 bg-faded d-flex justify-content-end">
-                <li class="breadcrumb-item">Home</li>
-                <li class="breadcrumb-item">Flights</li>
-                <li class="breadcrumb-item">
-                  <strong>Review</strong>
-                </li>
-              </ol>
+      <div class="row pt-md-5 pb-0">
+        <div class="col-12 col-xl-6">
+          <div class="w-md-50">
+            <div class="row no-gutters text-center font-weight-bold">
+              <div class="col-12 col-md-2 hover-bb-danger pb-1">FLIGHTS</div>
+              <div class="col-12 col-md-2 hover-bb-danger pb-1">HOTELS</div>
+              <div class="col-12 col-md-2 hover-bb-danger pb-1">HOMESTAY</div>
+              <div class="col-12 col-md-2 hover-bb-danger pb-1">HOLIDAYS</div>
+              <div class="col-12 col-md-2 hover-bb-danger pb-1 tag-new-danger">ACTIVITY</div>
             </div>
           </div>
         </div>
+        <!-- <div class="col-12 col-md-6"></div> -->
       </div>
-    </div>
-
-    <!-- =============================================== -->
-    <!-- THIS IS THE PART WITH THE CIRCLES -->
-    <!-- =============================================== -->
-
-    <div class="container">
-      <div class="row pl-1 pt-5">
-        <div class="col-md-12">
-          <h3>Book your flight in 3 simple steps!</h3>
-        </div>
-      </div>
-      <div class="row text-center pt-5 timeline-horizontal">
-        <div class="col-md-4 timeline-horizontal-item px-0 mobile-pb-3">
-          <div class="row mobile-align-items-center mx-0">
-            <div class="col-6 col-md-12 d-flex mobile-justify-content-center px-0">
-              <div class="circle">1</div>
-            </div>
-            <div class="col-6 col-md-12 pt-3 mobile-pt-0 px-0">
-              <h4 class="text-left">Review</h4>
+      <div class="row pt-4 pb-2 px-3 bg-inverse-transparent-dark rounded">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12 col-lg-4 d-flex text-white font-weight-bold">
+              <p class="text-danger pb-2">One Way</p>
+              <p class="pl-3 pb-2">Round Trip</p>
+              <p class="pl-3 pb-2">MultiCity</p>
             </div>
           </div>
-        </div>
-        <div class="col-md-4 timeline-horizontal-item px-0 mobile-pb-3">
-          <div class="row mobile-align-items-center mx-0">
-            <div class="col-6 col-md-12 d-flex justify-content-center mobile-justify-content-center">
-              <div class="circle-outline d-flex justify-content-center align-items-center">
-                <div class="circle-smaller">2</div>
-              </div>
-            </div>
-            <div class="col-6 col-md-12 pt-3 mobile-pt-0 px-0">
-              <h4 class="text-left text-md-center">Travellers</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 timeline-horizontal-item px-0">
-          <div class="row mobile-align-items-center mx-0">
-            <div class="col-6 col-md-12 d-flex justify-content-end mobile-justify-content-center px-0">
-              <div class="circle-outline d-flex justify-content-center align-items-center">
-                <div class="circle-smaller">3</div>
-              </div>
-            </div>
-            <div class="col-6 col-md-12 pt-3 px-0">
-              <h4 class="text-left text-md-right">Payment</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <!-- =============================================== -->
-        <!-- THIS IS THE INNER PART -->
-        <!-- =============================================== -->
-
-        <div class="col-md-9 inner hidden-md-down pl-md-0">
-          <div class="row mt-5">
-            <div class="col-12  d-block">
-              <div class="borders-gray-gentle">
-                <h4 class="mb-0">Review Your Booking
-                </h4>
-              </div>
-              <div class="borders-gray-gentle bg-faded d-block">
-                <div class="container">
-                  <div class="row py-3">
-                    <div class="col-12 px-3 d-flex justify-content-between">
-                      <p class="text-muted font-weight-bold">Departure</p>
-                      <p class="text-muted font-weight-bold">Total time: 19h 15m</p>
-                    </div>
-                  </div>
-                  <div class="row py-3 d-flex bb-dashed">
-                    <div class="col-2 px-0">
-                      <div class="d-flex flex-column">
-                        <div class="d-flex justify-content-center">
-                          <img src="http://via.placeholder.com/55x55" alt="Sorry,cant load the image!">
-                        </div>
-                        <div class="pt-2 d-flex justify-content-center">
-                          <p>
-                            <small>Delta Air Lines</small>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-10">
-                      <div class="row mx-0 flexed">
-                        <div class="col-4 br-dashed px-4">
-                          <h4>LGA 06:29</h4>
-                          <p>New York, United States</p>
-                          <p>Wed, 17 May 2017</p>
-                        </div>
-                        <div class="col-4 br-dashed px-4">
-                          <h4>7h 54m (1 Stop)</h4>
-                          <p>Philadelphia</p>
-                          <div class="d-flex justify-content-start">
-                            <p class="flexed pr-3 pr-lg-2">Economy</p> 
-                            <p class="flexed ">
-                              <strong>Refundable</strong>
-                            </p>
-                          </div>
-                        </div>
-                        <div class="col-4 px-4">
-                          <h4>JFK 23:30</h4>
-                          <p>Santa Ana, CA, United States</p>
-                          <p>Thu, 18 May 2017</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row py-3 d-flex">
-                    <div class="col-2 px-0">
-                      <div class="d-flex flex-column">
-                        <div class="d-flex justify-content-center">
-                          <img src="http://via.placeholder.com/55x55" alt="Sorry,cant load the image!">
-                        </div>
-                        <div class="pt-2 d-flex justify-content-center">
-                          <p>
-                            <small>Air Asia Air Lines</small>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-10">
-                      <div class="row mx-0 flexed">
-                        <div class="col-4 br-dashed px-4">
-                          <h4>EWR 11:00</h4>
-                          <p>Santa Ana, United States</p>
-                          <p>Thu, 18 May 2017</p>
-                        </div>
-                        <div class="col-4 br-dashed px-4">
-                          <h4>5h 51m (Non-Stop)</h4>
-                          <p>Philadelphia</p>
-                          <div class="d-flex justify-content-start">
-                            <p class="flexed pr-3 pr-lg-2">Economy</p>
-                            <p class="flexed ">
-                              <strong>Refundable</strong>
-                            </p>
-                          </div>
-                        </div>
-                        <div class="col-4 px-4">
-                          <h4>LAX 13:51</h4>
-                          <p>New York, United States</p>
-                          <p>Thu, 18 May 2017</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row pt-5">
-            <div class="col-12  d-block">
-              <div class="borders-gray-gentle">
-                <h4 class="mb-0">Promo Code
-                  <span class="text-muted">(Optional)</span>
-                </h4>
-              </div>
-              <div class="borders-gray-gentle bg-faded">
-                <div class="col-12 px-0 d-flex justify-content-between align-items-center">
-                  <h4 class="mb-0">Departure</h4>
-                  <div class="dropdown dropdown-white">
-                    <a href="#" class="btn dropdown-toggle text-muted" id="dropdownMenuLink-inner" data-toggle="dropdown" aria-haspopup="true"
-                      aria-expanded="false">
-                      VIEW PROMO CODE
-                    </a>
-                    <div id="promoCodeDropdown" class="dropdown-menu" aria-labelledby="dropdownMenuLink-inner">
-                      <a class="dropdown-item" href="#">First promo code</a>
-                      <a class="dropdown-item" href="#">Second promo code</a>
-                      <a class="dropdown-item" href="#">Third promo code</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row mt-5">
-            <div class="col-sm-12 text-center">
-              <button class="btn btn-lg bg-inverse text-white">Continue</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- =============================================== -->
-        <!-- THIS IS THE MOBILE - INNER PART -->
-        <!-- =============================================== -->
-        <div class="col-12 inner hidden-lg-up">
           <div class="row no-gutters">
-            <div class="col-12  pt-5 text-center px-0">
-              <div class="row borders-gray-gentle">
-                <div class="col-12">
-                  <h4 class="mb-0">Review Your Booking</h4>
+            <div class="col-12 col-md-2">
+              <div class="input-group mb-1 mb-md-0">
+                <input type="text" class="form-control py-3 rounded-0 rounded-left border-0 mobile-border-x-0 hidden-lg-up" placeholder="Origin">
+                <input type="text" class="form-control py-3 rounded-0 rounded-left border-0 mobile-border-x-0 hidden-md-down" placeholder="Select Origin">
+              </div>
+            </div>
+            <div class="col-12 col-md-2">
+              <div class="input-group mb-1 mb-md-0">
+                <input type="text" class="form-control py-3 border-0 border-left-solid-lightgray rounded-0 mobile-border-x-0 hidden-xl-up" placeholder="Destination">
+                <input type="text" class="form-control py-3 border-0 border-left-solid-lightgray rounded-0 mobile-border-x-0 hidden-lg-down" placeholder="Select Destination">
+              </div>
+            </div>
+            <div class="col-12 col-md-2">
+              <div class="input-group mb-1 mb-md-0">
+                <input type="text" class="form-control py-3 border-0 border-left-solid-lightgray rounded-0 mobile-border-x-0 hidden-md-up" placeholder="Depart Date">
+                <input type="text" class="form-control py-3 border-0 border-left-solid-lightgray rounded-0 mobile-border-x-0 hidden-sm-down hidden-lg-up px-2" placeholder="Depart">
+                <input type="text" class="form-control py-3 border-0 border-left-solid-lightgray rounded-0 mobile-border-x-0 hidden-md-down" placeholder="Depart Date">
+                <div class="input-group-addon bg-white border-0 rounded-0">
+                  <i class="far fa-calendar"></i>
                 </div>
               </div>
-              <div class="row borders-gray-gentle bg-faded px-0">
-                <!-- MOZDA JE ODJE CAK LJEPSE BEZ OVOG PX-0 -->
-                <div class="col-12 pb-3">
-                  <div class="row text-muted font-weight-bold">
-                    <div class="col-12 pb-1">
-                      <p>Departure</p>
-                    </div>
-                    <div class="col-12">
-                      <p>Total time: 19h 15m</p>
+            </div>
+            <div class="col-12 col-md-2">
+              <div class="input-group mb-1 mb-md-0">
+                <input type="text" class="form-control py-3 border-0 border-left-solid-lightgray rounded-0 mobile-border-x-0 hidden-md-up" placeholder="Return Date">
+                <input type="text" class="form-control py-3 border-0 border-left-solid-lightgray rounded-0 mobile-border-x-0 hidden-sm-down hidden-lg-up" placeholder="Return">
+                <input type="text" class="form-control py-3 border-0 border-left-solid-lightgray rounded-0 mobile-border-x-0 hidden-md-down" placeholder="Return Date">
+                <div class="input-group-addon bg-white border-0 rounded-0">
+                  <i class="far fa-calendar"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-2 d-flex align-items-center">
+              <div class="dropdown w-100 align-self-stretch d-flex align-items-center align-items-stretch mb-1 mb-md-0">
+                <a href="#" class="dropdown-toggle text-muted d-flex align-items-center justify-content-between bg-white
+                 border-bottom-0 border-top-0 rounded-0 py-3 py-md-0 px-2 px-lg-3" id="dropdownMenuLink-toc" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  1 Traveller
+                </a>
+                <!-- MISLIM DA BI OVAJ ELEMENT TREBALO PROMIJENIT, IMA 100 KLASA -->
+                <div id="" class="dropdown-menu pt-2 w-min-320 mt-3 triangle-top-white w-100" aria-labelledby="dropdownMenuLink-toc">
+                  <div class="dropdown-item d-flex justify-content-between align-items-center mobile-px-1">
+                    <p class="py-2">
+                      <strong>2 Adults</strong>
+                    </p>
+                    <div class="btn-group py-2">
+                      <button class="btn btn-secondary px-2 py-1 text-muted">
+                        <i class="fas fa-minus"></i>
+                      </button>
+                      <button class="btn btn-secondary px-2 py-1 text-muted">
+                        <i class="fas fa-plus"></i>
+                      </button>
                     </div>
                   </div>
-                </div>
-
-                <!--DELTA AIRLINES STARTS HERE -->
-                <!-- =============================================== -->
-
-                <div class="col-12">
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="row">
-                        <div class="col-12 py-3">
-                          <img src="http://via.placeholder.com/55x55" alt="Sorry,cant load the image!">
-                        </div>
-                        <div class="col-12">
-                          <h4>
-                            Delta Air Lines
-                          </h4>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 bb-dashed py-3">
-                      <h4>LGA 06:29</h4>
-                      <p class="d-flex justify-content-center">New York, United States </p>
-                      <p>Wed,17 May 2017</p>
+                  <div class="dropdown-item d-flex justify-content-between align-items-center mobile-px-1">
+                    <p class="py-2">
+                      <strong>0 Child 2-12 YRS</strong>
+                    </p>
+                    <div class="btn-group py-2">
+                      <button class="btn btn-secondary px-2 py-1 text-muted">
+                        <i class="fas fa-minus"></i>
+                      </button>
+                      <button class="btn btn-secondary px-2 py-1 text-muted">
+                        <i class="fas fa-plus"></i>
+                      </button>
                     </div>
                   </div>
-                </div>
-                <div class="col-12 py-3 bb-dashed">
-                  <div class="row">
-                    <div class="col-12">
-                      <h4>
-                        7h 54m (1 Stop)
-                      </h4>
-                    </div>
-                    <div class="col-12">
-                      <p class="d-flex justify-content-center">Philadelphia </p>
-                      <div class="d-flex justify-content-between px-4">
-                        <p class="flexed">Economy</p>
-                        <p class="flexed">
-                          <strong>Refundable</strong>
-                        </p>
-                      </div>
+                  <div class="dropdown-item d-flex justify-content-between align-items-center mobile-px-1">
+                    <p class="py-2">
+                      <strong>0 InfantBelow 2 YRS</strong>
+                    </p>
+                    <div class="btn-group py-2">
+                      <button class="btn btn-secondary px-2 py-1 text-muted">
+                        <i class="fas fa-minus"></i>
+                      </button>
+                      <button class="btn btn-secondary px-2 py-1 text-muted">
+                        <i class="fas fa-plus"></i>
+                      </button>
                     </div>
                   </div>
-                </div>
-                <div class="col-12 py-3 bb-dashed">
-                  <div class="row">
-                    <div class="col-12">
-                      <h4>
-                        JFK 23:30
-                      </h4>
-                    </div>
-                    <div class="col-12">
-                      <p class="d-flex justify-content-center">Santa Ana, CA, United States</p>
-                      <p>Thu, 18 May 2017</p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- AIR ASIA AIRLINES STARTS HERE -->
-                <!-- =============================================== -->
-
-                <div class="col-12 py-3">
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="row">
-                        <div class="col-12 py-3">
-                          <img src="http://via.placeholder.com/55x55" alt="Sorry,cant load the image!">
-                        </div>
-                        <div class="col-12">
-                          <h4>Air Asia Air Lines</h4>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 bb-dashed py-3">
-                      <h4>EWR 11:00</h4>
-                      <p class="d-flex justify-content-center">Santa Ana, United States</p>
-                      <p>Thu, 18 May 2017</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 py-3 bb-dashed py-3">
-                  <div class="row">
-                    <div class="col-12">
-                      <h4>
-                        5h 51m (Non-Stop)
-                      </h4>
-                    </div>
-                    <div class="col-12">
-                      <p class="d-flex justify-content-center">Philadelphia </p>
-                      <div class="d-flex justify-content-between px-4">
-                        <p class="flexed">Economy</p>
-                        <p class="flexed">
-                          <strong>Refundable</strong>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 py-3">
-                  <div class="row">
-                    <div class="col-12">
-                      <h4>
-                        LAX 13:51
-                      </h4>
-                    </div>
-                    <div class="col-12">
-                      <p class="d-flex justify-content-center">New York, United States</p>
-                      <p>Thu, 18 May 2017</p>
-                    </div>
+                  <div class="dropdown-item no-highlight p-rel">
+                    <label class="label-check-circle">
+                      <input type="checkbox">Economy
+                      <span class="checkmark-circle"></span>
+                    </label>
+                    <label class="label-check-circle">
+                      <input type="checkbox">Premium Economy
+                      <span class="checkmark-circle"></span>
+                    </label>
+                    <label class="label-check-circle">
+                      <input type="checkbox">Business
+                      <span class="checkmark-circle"></span>
+                    </label>
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="col-12 col-md-2 mb-1 mb-md-0">
+              <button type="submit" class="btn btn-danger form-control py-3 border-top-0 border-bottom-0 rounded-0 rounded-md-right">
+                Search
+              </button>
             </div>
           </div>
-
-
-          <!-- =============================================== -->
-          <!-- THIS IS THE PROMO MOBILE - PROMO CODE PART -->
-          <!-- =============================================== -->
-
-          <div class="row mx-0">
-            <div class="col-12  pt-5 px-0 text-center">
-              <div class="row borders-gray-gentle">
-                <div class="col-12">
-                  <h4 class="my-0">Promo Code
-                    <span class="text-muted">(Optional)</span>
-                  </h4>
-                </div>
-              </div>
-              <div class="row borders-gray-gentle bg-faded">
-                <div class="col-12">
-                  <h4 class="my-0">Departure</h4>
-                  <div class="dropdown dropdown-white my-3">
-                    <a href="#" class="btn dropdown-toggle text-muted d-block" id="mobile-dropdownMenuLink-inner" data-toggle="dropdown" aria-haspopup="true"
-                      aria-expanded="false">
-                      VIEW PROMO CODE
-                    </a>
-                    <div id="promoCodeDropdown" class="dropdown-menu" aria-labelledby="mobile-dropdownMenuLink-inner">
-                      <a class="dropdown-item" href="#">First promo code</a>
-                      <a class="dropdown-item" href="#">Second promo code</a>
-                      <a class="dropdown-item" href="#">Third promo code</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- =============================================== -->
-        <!-- THIS IS THE SIDE PART -->
-        <!-- =============================================== -->
-
-        <div class="col-12 col-lg-3 side-info pr-lg-0 tablet-px-0">
-          <!-- ODJE CAK FUNKCIONISE KAKO TREBA TABLET-PX-0, NE ZNAM KAKO BIH GA ZAMIJENIO SA BOOTSTRAP -md KLASAMA -->
-          <div class="mt-5">
-            <div class="borders-gray-gentle">
-              <h4 class="mb-0">Fare details</h4>
-            </div>
-            <div class="borders-gray-gentle d-flex justify-content-between align-items-center bg-faded">
-              <p>Adult x 1</p>
-              <p>
-                <strong>$349</strong>
+          <div class="row pt-2">
+            <div class="col-12">
+              <p class="text-white">
+                <i class="fas fa-plane"></i>
+                Non Stop Flights
               </p>
             </div>
-            <div class="row mx-0 borders-gray-gentle bg-faded">
-              <div class="col-12 px-0">
-                <div class="row">
-                  <div class="col-12 d-flex justify-content-between">
-                    <p>Fee and surcharges</p>
-                    <p>
-                      <strong>$120</strong>
-                    </p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-12 text-right">
-                    <p class="mb-1">You pay</p>
-                    <h2 class="text-danger">$460</h2>
-                  </div>
-                </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-100 py-5 hidden-md-down"></div>
+      <div class="w-100 py-3 hidden-md-down"></div>
+    </div>
+    <div class="row mx-0 hidden-md-down myAdjustment">
+      <div class="col-1 d-flex align-items-center justify-content-end">
+        <div class="slick-arrow">
+          <btn class="prev-offers py-0">
+            <i class="fas fa-chevron-left text-white"></i>
+          </btn>
+        </div>
+      </div>
+      <div class="col-10 bg-inverse">
+        <div class="slick-offers d-flex justify-content-center align-items-center">
+          <div class="slick-item ">
+            <div class="py-2 px-2">
+              <div class="px-0 py-0 text-center text-white">
+                <p>
+                  <strong>Summer SPL - Up to 80% Off</strong>
+                </p>
+                <p>
+                  <small>On Domestic Hotels</small>
+                </p>
               </div>
-
             </div>
-
-            <!-- =============================================== -->
-            <!-- THIS IS THE SIDE PART LOWER-->
-            <!-- =============================================== -->
-
-            <div class=" mt-5">
-              <div class="borders-gray-gentle">
-                <h4 class="mb-0">Traveltrip extra's</h4>
+          </div>
+          <div class="slick-item">
+            <div class="py-2 px-2 ">
+              <div class="px-0 py-0 text-center text-white">
+                <p>
+                  <strong>Exclusive Offer and Freebies</strong>
+                </p>
+                <p>
+                  <small>On Domestic Hotels</small>
+                </p>
               </div>
-              <div class="borders-gray-gentle d-flex justify-content-between align-items-center bg-faded">
-                <p>eCash</p>
-                <p class="text-danger">
-                  <strong>$103</strong>
+            </div>
+          </div>
+          <div class="slick-item">
+            <div class="py-2 px-2 ">
+              <div class="px-0 py-0 text-center text-white">
+                <p>
+                  <strong>Save Up to $480</strong>
+                </p>
+                <p>
+                  <small>On Domestic Holidays</small>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="slick-item">
+            <div class="py-2 px-2">
+              <div class="px-0 py-0 text-center text-white">
+                <p>
+                  <strong>Save Up to $180</strong>
+                </p>
+                <p>
+                  <small>On International Flights</small>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="slick-item">
+            <div class="py-2 px-2">
+              <div class="px-0 py-0 text-center text-white">
+                <p>
+                  <strong>Special Discounts for Elderly</strong>
+                </p>
+                <p>
+                  <small>On Spas</small>
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="col-1 d-flex align-items-center justify-content-start">
+        <div class="slick-arrow">
+          <btn class="next-offers py-0">
+            <i class="fas fa-chevron-right text-white"></i>
+          </btn>
+        </div>
+      </div>
+    </div>
+  </div>
 
-      <!-- =============================================== -->
-      <!-- THIS IS THE MOBILE - BUTTON PART -->
-      <!-- =============================================== -->
+  <!-- THIS IS THE PART UNDER THE PICTURE -->
+  <!-- ================================== -->
 
-      <div class="container">
-        <div class="row mt-5 hidden-md-up">
-          <div class="col-sm-12 text-center">
-            <button class="btn btn-lg bg-inverse text-white">Continue</button>
+  <div class="container">
+    <!-- THIS IS THE SLICK-OFFERS PART -->
+    <div class="row pb-3 pt-3 pt-md-5 pt-lg-3">
+      <div class="col-12">
+        <h3 class="text-center text-md-left">Featured Flight Deals</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4 pb-3 pb-lg-0 px-1 d-flex justify-content-center pb-0 pb-lg-3 mobile-px-0">
+        <div class="borders-wrapper-graytransp px-0 pt-0 width-350 ">
+          <div>
+            <img class="w-100 height-200" src="test/Vacation1.jpg">
+          </div>
+          <div>
+            <div class="row mx-0 pt-3">
+              <div class="col-6">
+                <p>
+                  30% Off On Netbanking
+                </p>
+                <div class="py-3">
+                  <p>Validity</p>
+                  <p>
+                    <i class="far fa-calendar"></i>
+                    19 Oct '17</p>
+                </div>
+              </div>
+              <div class="col-6 d-flex flex-column justify-content-between">
+                <p class="d-flex justify-content-center">Up to
+                  <span class="text-danger h4 px-1">$44</span> Off</p>
+                <button class="btn btn-danger mb-3">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 pb-3 pb-lg-0 px-1 d-flex justify-content-center pb-0 pb-lg-3 mobile-px-0">
+        <div class="borders-wrapper-graytransp px-0 pt-0 width-350">
+          <div>
+            <img class="w-100 height-200" src="test/Vacation4.jpg">
+          </div>
+          <div>
+            <div class="row mx-0 pt-3">
+              <div class="col-6">
+                <p>
+                  30% Off On Netbanking
+                </p>
+                <div class="py-3">
+                  <p>Validity</p>
+                  <p>
+                    <i class="far fa-calendar"></i>
+                    19 Oct '17</p>
+                </div>
+              </div>
+              <div class="col-6 d-flex flex-column justify-content-between">
+                <p class="d-flex justify-content-center">Up to
+                  <span class="text-danger h4 px-1">$44</span> Off</p>
+                <button class="btn btn-danger mb-3">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 pb-3 pb-lg-0 px-1 d-flex justify-content-center pb-0 pb-lg-3 mobile-px-0">
+        <div class="borders-wrapper-graytransp px-0 pt-0 width-350">
+          <div>
+            <img class="w-100 height-200" src="test/Vacation3.jpg">
+          </div>
+          <div>
+            <div class="row mx-0 pt-3">
+              <div class="col-6">
+                <p>
+                  30% Off On Netbanking
+                </p>
+                <div class="py-3">
+                  <p>Validity</p>
+                  <p>
+                    <i class="far fa-calendar"></i>
+                    19 Oct '17</p>
+                </div>
+              </div>
+              <div class="col-6 d-flex flex-column justify-content-between">
+                <p class="d-flex justify-content-center">Up to
+                  <span class="text-danger h4 px-1">$44</span> Off</p>
+                <button class="btn btn-danger mb-3">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 pb-3 pb-lg-0 px-1 d-flex justify-content-center mobile-px-0">
+        <div class="borders-wrapper-graytransp px-0 pt-0 width-350">
+          <div>
+            <img class="w-100 height-200" src="test/Vacation2.jpg">
+          </div>
+          <div>
+            <div class="row mx-0 pt-3">
+              <div class="col-6">
+                <p>
+                  30% Off On Netbanking
+                </p>
+                <div class="py-3">
+                  <p>Validity</p>
+                  <p>
+                    <i class="far fa-calendar"></i>
+                    19 Oct '17</p>
+                </div>
+              </div>
+              <div class="col-6 d-flex flex-column justify-content-between">
+                <p class="d-flex justify-content-center">Up to
+                  <span class="text-danger h4 px-1">$44</span> Off</p>
+                <button class="btn btn-danger mb-3">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 pb-3 pb-lg-0 px-1 d-flex justify-content-center mobile-px-0">
+        <div class="borders-wrapper-graytransp px-0 pt-0 width-350">
+          <div>
+            <img class="w-100 height-200" src="test/Vacation5.jpg">
+          </div>
+          <div>
+            <div class="row mx-0 pt-3">
+              <div class="col-6">
+                <p>
+                  30% Off On Netbanking
+                </p>
+                <div class="py-3">
+                  <p>Validity</p>
+                  <p>
+                    <i class="far fa-calendar"></i>
+                    19 Oct '17</p>
+                </div>
+              </div>
+              <div class="col-6 d-flex flex-column justify-content-between">
+                <p class="d-flex justify-content-center">Up to
+                  <span class="text-danger h4 px-1">$44</span> Off</p>
+                <button class="btn btn-danger mb-3">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 pb-3 pb-lg-0 px-1 d-flex justify-content-center mobile-px-0">
+        <div class="borders-wrapper-graytransp px-0 pt-0 width-350">
+          <div>
+            <img class="w-100 height-200" src="test/Vacation13.jpg">
+          </div>
+          <div>
+            <div class="row mx-0 pt-3">
+              <div class="col-6">
+                <p>
+                  30% Off On Netbanking
+                </p>
+                <div class="py-3">
+                  <p>Validity</p>
+                  <p>
+                    <i class="far fa-calendar"></i>
+                    19 Oct '17</p>
+                </div>
+              </div>
+              <div class="col-6 d-flex flex-column justify-content-between">
+                <p class="d-flex justify-content-center">Up to
+                  <span class="text-danger h4 px-1">$44</span> Off</p>
+                <button class="btn btn-danger mb-3">
+                  View Details
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="row">
+      <div class="col-12 col-lg-6 mobile-px-0">
+        <div class="py-3">
+          <h3 class="">Before you fly</h3>
+        </div>
+        <div class="pb-3">
+          <div class="borders-wrapper-graytransp px-0 py-0">
+            <img class="img-fluid" src="test/suitcases.jpg">
+          </div>
+          <div>
+            <div id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="card">
+                <div class="card-header" role="tab" id="headingOne">
+                  <h5 class="mb-0">
+                    <a class=" d-block d-flex justify-content-between" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true"
+                      aria-controls="collapseOne">
+                      Book Your Bags in Advance
+                      <span>
+                        <i class="fas fa-plus hidden-myexpanded"></i>
+                        <i class="fas fa-minus hidden-collapsed"></i>
+                      </span>
+                    </a>
+                  </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="card-block">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                    tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil
+                    anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                    excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                    you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" role="tab" id="headingTwo">
+                  <h5 class="mb-0">
+                    <a class="collapsed d-flex justify-content-between" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+                      aria-controls="collapseTwo">
+                      Special Meal Requests
+                      <span>
+                        <i class="fas fa-plus hidden-myexpanded"></i>
+                        <i class="fas fa-minus hidden-collapsed"></i>
+                      </span>
+                    </a>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="card-block">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                    tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil
+                    anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                    excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                    you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" role="tab" id="headingThree">
+                  <h5 class="mb-0">
+                    <a class="collapsed d-flex justify-content-between" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
+                      aria-expanded="false" aria-controls="collapseThree">
+                      Check Your Flight Status
+                      <span>
+                        <i class="fas fa-plus hidden-myexpanded"></i>
+                        <i class="fas fa-minus hidden-collapsed"></i>
+                      </span>
+                    </a>
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                  <div class="card-block">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                    tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil
+                    anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                    excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                    you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="row">
+          <div class="col-12">
+            <div class="py-3">
+              <h3 class="">Get Travel Insurance</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mobile-px-0">
+            <div class="borders-wrapper-graytransp">
+              <div class="p-rel pb-4">
+                <div class="p-absol right-0">
+                  <p>
+                    <small>MONTHLY</small>
+                  </p>
+                  <h4 class="text-danger text-center">
+                    $25
+                  </h4>
+                </div>
+                <div class=" text-center">
+                  <div class="pt-3">
+                    <i class="text-danger far fa-user fa-3x"></i>
+                  </div>
+                  <p class="pt-3 pb-1">
+                    <strong>INDIVIDUAL</strong>
+                  </p>
+                  <p>For Individuals</p>
+                </div>
+                <hr>
+                <p>If you would like a nice individual trip,just apply for it. There is a bunch of choices</p>
+                <ul class="style-chevron-right pl-3 py-3 my-0">
+                  <li>
+                    <strong>ONLINE BOOKING</strong>
+                  </li>
+                  <li>
+                    <strong>CREATE PROFILE</strong>
+                  </li>
+                  <li>
+                    <strong>MANAGE BOOKINGS</strong>
+                  </li>
+                  <li>
+                    <strong>MAP SEARCH</strong>
+                  </li>
+                  <li>
+                    <strong>GROUP BOOKINGS</strong>
+                  </li>
+                </ul>
+                <button class="btn btn-danger w-100 px-0">SELECT THIS PLAN</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mobile-px-0">
+            <div class="borders-wrapper-graytransp">
+              <div class="p-rel pb-4">
+                <div class="p-absol right-0">
+                  <p>
+                    <small>MONTHLY</small>
+                  </p>
+                  <h4 class="text-danger text-center">
+                    $50
+                  </h4>
+                </div>
+                <div class=" text-center">
+                  <div class="pt-3">
+                    <i class="text-danger fas fa-venus-double fa-3x"></i>
+                  </div>
+                  <p class="pt-3 pb-1">
+                    <strong>GROUPS</strong>
+                  </p>
+                  <p>For Groups</p>
+                </div>
+                <hr>
+                <p>If you would like a nice individual trip,just apply for it. There is a bunch of choices</p>
+                <ul class="style-chevron-right pl-3 py-3 my-0">
+                  <li>
+                    <strong>ONLINE BOOKING</strong>
+                  </li>
+                  <li>
+                    <strong>CREATE PROFILE</strong>
+                  </li>
+                  <li>
+                    <strong>MANAGE BOOKINGS</strong>
+                  </li>
+                  <li>
+                    <strong>MAP SEARCH</strong>
+                  </li>
+                  <li>
+                    <strong>GROUP BOOKINGS</strong>
+                  </li>
+                </ul>
+                <button class="btn btn-danger w-100 px-0">SELECT THIS PLAN</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row pt-5 hidden-md-down">
+      <div class="col-12 ">
+        <h3>Top Routes</h3>
+      </div>
+    </div>
+    <div class="row pt-3 hidden-md-down">
+      <div class="hidden-md-down col-lg-3">
+        <div class="borders-wrapper-graytransp px-0 py-0 p-rel width-220 mx-auto">
+          <div>
+            <img class="w-100 height-350" src="test/Honeymoon.jpg">
+          </div>
+          <h4 class="caption-bottom text-white">
+            HONEYMOON
+            <br> START AT $200
+          </h4>
+        </div>
+      </div>
+      <div class="hidden-md-down col-lg-3">
+        <div class="borders-wrapper-graytransp px-0 py-0 p-rel width-220 mx-auto">
+          <div>
+            <img class="w-100 height-350" src="test/HillStation.jpg">
+          </div>
+          <h4 class="caption-bottom text-white">
+            HILL STATIONS
+            <br> START AT $349
+          </h4>
+        </div>
+      </div>
+      <div class="hidden-md-down col-lg-3">
+        <div class="borders-wrapper-graytransp px-0 py-0 p-rel width-220 mx-auto">
+          <div>
+            <img class="w-100 height-350" src="test/BeachArea.jpg">
+          </div>
+          <h4 class="caption-bottom text-white">
+            BEACH AREA
+            <br> START AT $159
+          </h4>
+        </div>
+      </div>
+      <div class="hidden-md-down col-lg-3">
+        <div class="borders-wrapper-graytransp px-0 py-0 p-rel width-220 mx-auto">
+          <div>
+            <img class="w-100 height-350" src="test/Adventure.jpg">
+          </div>
+          <h4 class="caption-bottom text-white">
+            ADVENTURE
+            <br> START AT $449
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="row pt-5 pb-3">
+      <div class="col-12">
+        <h4 class="">Top Country to Visit</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-0">
+    <div class="col-1 d-flex align-items-center justify-content-end mobile-px-0">
+      <div class="slick-arrow">
+        <btn class="prev py-0">
+          <i class="fas fa-chevron-left"></i>
+        </btn>
+      </div>
+    </div>
+    <div class="col-10">
+      <div class="multiple-items d-flex justify-content-center align-items-center">
+        <div class="slick-item">
+          <div class="px-2 py-2">
+            <div class="borders-wrapper-graytransp px-0 py-0 text-center">
+              <div>
+                <img class="w-100" src="test\LosAngeles2.jpg" alt="Sorry,couldn't load the picture!">
+              </div>
+              <div class="py-2">
+                <p>
+                  <strong>Los Angeles</strong>
+                </p>
+                <p>(154 REVIEWS)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slick-item">
+          <div class="px-2 py-2">
+            <div class="borders-wrapper-graytransp px-0 py-0 text-center">
+              <div>
+                <img class="w-100" src="test\London1.jpg" alt="Sorry,couldn't load the picture!">
+              </div>
+              <div class="py-2">
+                <p>
+                  <strong>London</strong>
+                </p>
+                <p>(204 REVIEWS)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slick-item">
+          <div class="px-2 py-2">
+            <div class="borders-wrapper-graytransp px-0 py-0 text-center">
+              <div>
+                <img class="w-100" src="test\Tokyo2.jpg" alt="Sorry,couldn't load the picture!">
+              </div>
+              <div class="py-2">
+                <p>
+                  <strong>Tokyo</strong>
+                </p>
+                <p>(120 REVIEWS)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slick-item">
+          <div class="px-2 py-2">
+            <div class="borders-wrapper-graytransp px-0 py-0 text-center">
+              <div>
+                <img class="w-100" src="test\Paris5.jpg" alt="Sorry,couldn't load the picture!">
+              </div>
+              <div class="py-2">
+                <p>
+                  <strong>Paris</strong>
+                </p>
+                <p>(390 REVIEWS)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slick-item">
+          <div class="px-2 py-2">
+            <div class="borders-wrapper-graytransp px-0 py-0 text-center">
+              <div>
+                <img class="w-100" src="test\SanFrancisco3.jpg" alt="Sorry,couldn't load the picture!">
+              </div>
+              <div class="py-2">
+                <p>
+                  <strong>San Francisco</strong>
+                </p>
+                <p>(178 REVIEWS)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slick-item">
+          <div class="px-2 py-2">
+            <div class="borders-wrapper-graytransp px-0 py-0 text-center">
+              <div>
+                <img class="w-100" src="test\Florence4.jpg" alt="Sorry,couldn't load the picture!">
+              </div>
+              <div class="py-2">
+                <p>
+                  <strong>Florence</strong>
+                </p>
+                <p>(99 REVIEWS)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slick-item">
+          <div class="px-2 py-2">
+            <div class="borders-wrapper-graytransp px-0 py-0 text-center">
+              <div>
+                <img class="w-100" src="test\Rio1.jpg" alt="Sorry,couldn't load the picture!">
+              </div>
+              <div class="py-2">
+                <p>
+                  <strong>Rio de Janeiro</strong>
+                </p>
+                <p>(87 REVIEWS)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slick-item">
+          <div class="px-2 py-2">
+            <div class="borders-wrapper-graytransp px-0 py-0 text-center">
+              <div>
+                <img class="w-100" src="test\Moscow4.jpg" alt="Sorry,couldn't load the picture!">
+              </div>
+              <div class="py-2">
+                <p>
+                  <strong>Moscow</strong>
+                </p>
+                <p>(119 REVIEWS)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slick-item">
+          <div class="px-2 py-2">
+            <div class="borders-wrapper-graytransp px-0 py-0 text-center">
+              <div>
+                <img class="w-100" src="test\Lisboa3.jpg" alt="Sorry,couldn't load the picture!">
+              </div>
+              <div class="py-2">
+                <p>
+                  <strong>Lisabon</strong>
+                </p>
+                <p>(154 REVIEWS)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-1 d-flex align-items-center justify-content-start mobile-px-0">
+      <div class="slick-arrow">
+        <btn class="next py-0">
+          <i class="fas fa-chevron-right"></i>
+        </btn>
+      </div>
+    </div>
+  </div>
+
+  <main>
 
     <!-- =============================================== -->
     <!-- THIS IS THE FEATURES PART -->
     <!-- =============================================== -->
 
-    <div class="container-fluid bb-solid bt-solid mt-5 px-0">
+    <div class="container-fluid border-bottom-solid-lightgray border-top-solid-lightgray mt-5 px-0">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-4 br-solid bl-solid mobile-bb-solid mobile-bx-0 py-2">
+          <div class="col-12 col-md-4 border-right-solid-lightgray border-left-solid-lightgray mobile-bb-solid mobile-border-x-0 py-2">
             <h4 class="text-center text-md-left pt-2">24/7 Customer Support</h4>
             <p class="text-muted text-center text-md-left pb-1">IF you need help by traveling or hosting,
               <br> contact us at our toll free number:
               <br> 123 456 789</p>
           </div>
-          <div class="col-12 col-md-4 br-solid mobile-bb-solid mobile-bx-0 py-2">
+          <div class="col-12 col-md-4 border-right-solid-lightgray mobile-bb-solid mobile-border-x-0 py-2">
             <h4 class="text-center text-md-left pt-2">2017 Summer Destinations On Sale</h4>
             <p class="text-muted text-center text-md-left pb-1">For the vast majority of his history, agriculture
               <br> can be described new products agriculture can
               <br> be described</p>
           </div>
-          <div class="col-12 col-md-4 br-solid mobile-bx-0 py-2">
+          <div class="col-12 col-md-4 border-right-solid-lightgray mobile-border-x-0 py-2">
             <h4 class="text-center text-md-left pt-2">Flat 75% Off On Domestic Hotels</h4>
             <p class="text-muted text-center text-md-left pb-1">Our best ever hotel deals are here! Use
               <br> promo code TTHAPPY to get flat 75% off
@@ -709,13 +1078,11 @@
               </div>
             </div>
             <div class="flexed">
-              <div class=" d-flex flex-row">
-                <a class="borders-gray-gentle flexed px-3 py-2 no-br-right disabled text-muted">
-                  Subscribe
-                </a>
-                <a class="borders-gray-gentle bg-danger no-br-left text-white px-3 py-2">Send</a>
+              <div class="btn-group w-100 d-flex">
+                <button type="button" class="btn btn-secondary flexed text-muted text-left px-3 lh-md">Subscribe</button>
+                <button type="button" class="btn btn-danger px-3 lh-md">Send</button>
               </div>
-            </div>
+          </div>
           </div>
         </div>
         <div class="col-5 py-5 pl-5 d-flex flex-column">
@@ -764,15 +1131,15 @@
       <div class="row">
         <div class="col-12 col-md-5">
           <div class="row">
-            <div class="col-12 col-md-4">
+            <div class="col-6 offset-3 col-sm-4 offset-sm-4 offset-md-0">
               <img src="images\trip_logo_pink.png" class="img-fluid" alt="Sorry,cant load the image!">
             </div>
-            <div class="col-12 col-md-8 flexed-2 d-flex align-items-center mobile-justify-content-center pt-3 pt-md-0">
+            <div class="col-12 col-md-8 d-flex align-items-center justify-content-center justify-content-md-start pt-3 pt-md-0">
               <p>
-                <i class="fa fa-facebook px-2" aria-hidden="true"></i>
-                <i class="fa fa-twitter px-2" aria-hidden="true"></i>
-                <i class="fa fa-google-plus px-2" aria-hidden="true"></i>
-                <i class="fa fa-pinterest-p px-2" aria-hidden="true"></i>
+                <i class="fab fa-facebook-f mx-2"></i>
+                <i class="fab fa-twitter mx-2"></i>
+                <i class="fab fa-google-plus-g mx-2"></i>
+                <i class="fab fa-pinterest-p mx-2"></i>
               </p>
             </div>
           </div>
@@ -784,6 +1151,7 @@
         </div>
       </div>
     </div>
+
 
 
     <!-- build:js scripts/vendor.js -->
@@ -806,6 +1174,76 @@
     <script src="/bower_components/bootstrap/js/dist/tooltip.js"></script>
     <script src="/bower_components/bootstrap/js/dist/popover.js"></script>
     <!-- endbuild -->
+
+    <script type="text/javascript" src="styles/0-plugins/SlickPlugin/slick-1.8.0/slick/slick.min.js"></script>
+
+    <script>
+      $('.multiple-items').slick({
+        infinite: true,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: 'btn.prev',
+        nextArrow: 'btn.next',
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 1,
+              infinite: true,
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+
+      $('.slick-offers').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: 'btn.prev-offers',
+        nextArrow: 'btn.next-offers',
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              infinite: true,
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    </script>
 
     <!--    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
       crossorigin="anonymous"></script>
