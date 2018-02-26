@@ -107,7 +107,7 @@
 
     <div class="container">
       <div class="row py-4">
-        <div class="col-12 col-md-2">
+        <div class="col-6 offset-3 col-sm-4 offset-sm-4 offset-md-0 col-md-2">
           <img src="images\trip_logo_pink.png" class="img-fluid" alt="Sorry,cant load the image!">
         </div>
         <div class="hidden-sm-down col-md-10 d-flex align-items-center">
@@ -147,12 +147,12 @@
     <!-- THIS IS THE BREADCRUMB PART -->
     <!-- =============================================== -->
 
-    <div class="container-fluid">
+    <div class="container-fluid px-0">
       <div class="bg-faded">
         <div class="container">
           <div class="row py-3">
             <div class="col-12 col-lg-6 d-flex align-items-center">
-              <h4 class="mb-0 pl-0">Room and Rates</h4>
+              <h4 class="pl-0">Room and Rates</h4>
             </div>
             <div class="col-6 hidden-md-down">
               <ol class="breadcrumb mb-0 bg-faded d-flex justify-content-end">
@@ -183,7 +183,7 @@
           <div class="wrapper-50 mobile-px-0">
             <div class="row">
               <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start align-items-center">
-                <h4 class="mb-0 text-center text-md-left">InterContinental VIENNA</h4>
+                <h4 class="text-center text-md-left">InterContinental VIENNA</h4>
               </div>
               <div class="col-12 col-md-6 text-center text-md-right">
                 <p class="py-2">
@@ -203,7 +203,7 @@
               </div>
             </div>
             <div class="row py-3">
-              <div class="col-12 col-md-8 d-flex">
+              <div class="col-12 col-md-8">
 
                 <!-- PLUGIN SLICK HERE -->
 
@@ -262,7 +262,7 @@
                   </div>
 
                   <div class="row bg-faded mx-0 py-2">
-                    <div class="col-1 d-flex justify-content-center align-items-center">
+                    <div class="col-1 d-flex justify-content-center align-items-center mobile-px-0 z-100"> <!-- OVO Z-100 JE HAK ODJE -->
                       <btn class="prev text-white bg-danger py-3 px-2">
                         <i class="fa fa-chevron-left" aria-hidden="true"></i>
                       </btn>
@@ -320,7 +320,7 @@
                       </div>
 
                     </div>
-                    <div class="col-1 d-flex justify-content-center align-items-center">
+                    <div class="col-1 d-flex justify-content-center align-items-center mobile-px-0 z-100"> <!-- OVO Z-100 JE HAK ODJE -->
                       <btn class="next text-white bg-danger py-3 px-2">
                         <i class="fa fa-chevron-right" aria-hidden="true"></i>
                       </btn>
@@ -415,27 +415,27 @@
       <div class="row pt-5 hidden-md-down">
         <div class="col-12 borders-wrapper-graytransp d-flex">
           <div class="flexed">
-            <p class="mb-0 text-center">
+            <p class="text-center">
               <strong>Room and Rates</strong>
             </p>
           </div>
           <div class="flexed">
-            <p class="mb-0 text-center">
+            <p class="text-center">
               <strong>Location</strong>
             </p>
           </div>
           <div class="flexed">
-            <p class="mb-0 text-center">
+            <p class="text-center">
               <strong>Guest Reviews</strong>
             </p>
           </div>
           <div class="flexed">
-            <p class="mb-0 text-center">
+            <p class="text-center">
               <strong>Questions and Answers</strong>
             </p>
           </div>
           <div class="flexed">
-            <p class="mb-0 text-center">
+            <p class="text-center">
               <strong>Hotel Policies</strong>
             </p>
           </div>
@@ -925,10 +925,10 @@
       <div class="row">
         <div class="col-12 col-md-5">
           <div class="row">
-            <div class="col-12 col-md-4">
+            <div class="col-6 offset-3 col-sm-4 offset-sm-4 offset-md-0">
               <img src="images\trip_logo_pink.png" class="img-fluid" alt="Sorry,cant load the image!">
             </div>
-            <div class="col-12 col-md-8 flexed-2 d-flex align-items-center justify-content-center justify-content-md-start pt-3 pt-md-0">
+            <div class="col-12 col-md-8 d-flex align-items-center justify-content-center justify-content-md-start pt-3 pt-md-0">
               <p>
                 <i class="fa fa-facebook px-2" aria-hidden="true"></i>
                 <i class="fa fa-twitter px-2" aria-hidden="true"></i>
@@ -945,9 +945,6 @@
         </div>
       </div>
     </div>
-
-
-
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
@@ -986,7 +983,6 @@
         slidesToScroll: 1,
         asNavFor: '.slider-for',
         arrows: true,
-        /* appendArrows: $('.slider-nav'), */
         prevArrow: 'btn.prev',
         nextArrow: 'btn.next',
         dots: false,
@@ -994,6 +990,13 @@
         focusOnSelect: true,
         autoplay: true,
         responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1
+            }
+          },
           {
             breakpoint: 992,
             settings: {

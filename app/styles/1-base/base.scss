@@ -17,13 +17,13 @@ h3 {
 } // OVO BI TREBALO DA MAKNE SVE MB-0 KLASE IZ H3
 
 a {
-    color: #292b2c;
+    color: $defaultTextColor;
     &:hover {
-        color: #292b2c; // MOZDA BI TREBALO INITIAL ILI INHERIT
+        color: $defaultTextColor; // MOZDA BI TREBALO INITIAL ILI INHERIT
         text-decoration: none;
     }
     &:focus {
-        color: #292b2c;
+        color: $defaultTextColor;
         text-decoration: none;
     }
 }

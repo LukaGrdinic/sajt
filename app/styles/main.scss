@@ -11,8 +11,8 @@
 
 //VARIABLES
 //----------------------------------------------------------
-
-$dangerColor: #d9534f;
+$defaultTextColor: #292b2c;
+$color-danger: #d9534f;
 
 $grayLightColor: #f7f7f7 * 0.9;
 $grayDarkColor: #f7f7f7 * 0.8;
@@ -31,6 +31,7 @@ $grayTransparentColor: rgba(0, 0, 0, 0.125);
 // NESTO DRUGO
 //----------------------------------------------------------
 
+@import '0-plugins/plugin-fixes.scss';
 @import '1-base/base.scss';
 @import '2-layouts/layouts.scss';
 @import '3-modules/modules.scss';

@@ -20,7 +20,7 @@
     color: #fff;
     line-height: 55px;
     text-align: center;
-    background: $dangerColor;
+    background: $color-danger;
 }
 
 .circle-smaller {
@@ -31,7 +31,7 @@
     color: #fff;
     line-height: 45px;
     text-align: center;
-    background: $dangerColor;
+    background: $color-danger;
 }
 
 .circle-outline {
@@ -42,7 +42,7 @@
     line-height: 55px;
     text-align: center;
     background: white;
-    border: solid $dangerColor 1px;
+    border: solid $color-danger 1px;
 }
 
 @media (max-width: 767px) {
@@ -110,7 +110,7 @@
 }
 
 .border-left-danger { // MOZDA BI MOGLO BORDER-LEFT-SOLID-DANGER
-    border-left: solid 10px $dangerColor;
+    border-left: solid 10px $color-danger;
 }
 
 .border-left-warning { // MOZDA BI MOGLO BORDER-LEFT-SOLID-WARNING
@@ -118,9 +118,9 @@
 }
 
 @media (min-width: 767px) {
-    .hover-bb-danger:hover { // DA LI JE LOSE DA JA OVDJE STAVIM .hover-border-bottom-solid-danger
+    .hover-bb-danger:hover { // BOLJE BI BILO DA SE PARENT ELEMENTU ILI MENIJU DA NEKA KLASA A NE OVAKO
         padding-bottom: 2px !important;
-        border-bottom: 2px solid $dangerColor;
+        border-bottom: 2px solid $color-danger;
         cursor: pointer;
     }
 }
@@ -135,9 +135,16 @@
     }
 }
 
+@media (max-width: 575px) {
+    .sm-mobile-border-x-0 { // PROKOMENTARISATI SA GOGOM I NAMING I SAMU POTREBU KLASE
+        border-right: none !important;
+        border-left: none  !important;
+    }
+}
+
 // BORDERS MODULES
 
-.borders-wrapper-graytransp {
+.borders-wrapper-graytransp { // wrapper-gray
     align-items: center;
     padding: 0.75rem 1.25rem;
     margin-bottom: -1px;
@@ -154,7 +161,7 @@
     }
 }
 
-.borders-wrapper-black { //OVO TEK TREBA DA SE ISKORISTI NA FLIGHTSPAGE-U
+.borders-wrapper-black { //OVO TEK TREBA DA SE ISKORISTI NA FLIGHTSPAGE-U // wrapper-black
     align-items: center;
     padding: 0.75rem 1.25rem;
     margin-bottom: -1px;
@@ -203,12 +210,12 @@
 // MISLIM DA BI TREBALO PROMIJENIT SVE OVE KLASE SA ID-evima, MISLIM DA CAK ID-EVI NISU NEOPHODNI DA BI BOOTSTRAP DROPDOWN FUNKCIONISAO
 // MOZDA SU SAMO NEOPHODNI ID-jevi TAMO DJE JE DATA-TARGET:#tralalala ILI TAKO NESTO
 
-#dropdownMenuLink-toc { // PROMIJENITI NAMING OVOG ID-A I MOZDA NAPRAVITI PROMJENU, DA SE NE VODI PREMA #DROPDOWNU NEGO PREMA KLASI NEKAKO 
+#dropdownMenuLink-toc { // MIJENJATI POMOCU BOOTSTRAP KLASA 
     width: 100%;
     border: solid 1px $grayDarkColor;
 }
 
-#dropdown-menu-toc { // PROMIJENITI NAMING OVOG ID-A I MOZDA NAPRAVITI PROMJENU, DA SE NE VODI PREMA #DROPDOWNU NEGO PREMA KLASI NEKAKO
+#dropdown-menu-toc { // MIJENJATI POMOCU BOOTSTRAP KLASA
     position: absolute;
     top: 40px;
     width: 100%;
@@ -223,8 +230,6 @@
 
 // CHANGES MADE TO BOOTSTRAP CLASSES
 //----------------------------------------------------------
-
-// PRONACI NACIN DA PREKO FINDA I REGEXA NADJEM .h1 .h2 .h3 klase...
 
 .dropdown > a { // U SUSTINI NIJE DOBRA OVA KLASA.
     color: white;
@@ -269,13 +274,13 @@
         vertical-align: middle;
     }
 }
-@media (min-width: 768px) { // MOZDA OVA KLASA NIJE CHANGES MADE TO BOOTSTRAP
+@media (min-width: 768px) { 
     .rounded-md-right {
         border-bottom-right-radius: 0.25rem !important;
         border-top-right-radius: 0.25rem !important;
     }
 }
-@media (min-width: 1200px) { // MOZDA OVA KLASA NIJE CHANGES MADE TO BOOTSTRAP
+@media (min-width: 1200px) { 
     .w-xl-25 {
         width: 25% !important;
     }
@@ -303,7 +308,7 @@
 }
 
 .bg-inverse-transparent {
-    background: rgba(41,43,44, 0.65); // PROKOMENTARISATI SA GOGOM OVAJ DIO SA BG-INVERSE-TRANSPARENT
+    background: rgba(41,43,44, 0.65); // bg-black-transparent
 }
 
 @media (max-width:767px) {
@@ -325,7 +330,7 @@
 
 // TEXT DECORATIONS STYLES
 
-.cursor-pointer:hover { 
+.cursor-pointer:hover { // DODATI FATHER ELEMENTU CURSOR: POINTER
     cursor: pointer;
 }
 
@@ -342,9 +347,9 @@
     content: "";
     height: 0;
     width: 0;
-    border-top: solid $dangerColor 12px;
+    border-top: solid $color-danger 12px;
     border-right: solid white 12px;
-    border-bottom: solid $dangerColor 12px;
+    border-bottom: solid $color-danger 12px;
 }
 
 .triangle-right-warning::before {
@@ -367,7 +372,7 @@
     content: "";
     height: 0;
     width: 0;
-    border-left: solid $dangerColor 10px;
+    border-left: solid $color-danger 10px;
     border-top: solid transparent 10px;
     border-right: solid transparent 10px;
     border-bottom: solid transparent 10px;
@@ -386,14 +391,14 @@
     border-bottom: solid  white 16px;
 }
 
-.tag-new-danger {
+.tag-new-danger { // badge badge-danger
     &::after {
         display: inline-block;
         position:absolute;
         padding: 0px 8px;
         content: "NEW";
         font-size: 12px;
-        background-color: $dangerColor;
+        background-color: $color-danger;
         color: white;
         transform: translate(-100%, -100%)
     }
@@ -427,7 +432,7 @@
     height: 25px;
     width: 25px;
     &:checked ~ .checkmark-circle {
-        background-color: $dangerColor;
+        background-color: $color-danger;
     }
 }
 
@@ -443,6 +448,12 @@
     background-color: white;
 }
 
+// INPUT GROUPS CUSTOM CLASSES
+
+.input-group input:focus { //
+    border-color: rgba(0, 0, 0, 0.15) ;
+}
+
 // POSITIONING 
 
 .p-rel {
@@ -456,12 +467,8 @@
     top: 0px;
 }
 
-.right-0 { // RIGHT-0
+.right-0 { 
     right: 0px;
-}
-
-.clearfixed { // MISLIM DA POSTOJI KLASA clearfix U BOOTSTRAPU
-    clear: both;
 }
 
 .centered { // PROMIJENITI OVU KLASU MOZDA OVO TREBA U SHAME
@@ -473,7 +480,7 @@
 
 // HEIGHT CLASSES - MOZDA BI TREBALO ODJE DA IDE !IMPORTANT
 
-.height-40 {
+.height-40 { // h-40
     height: 40px;
 }
 .height-200 {
@@ -495,7 +502,7 @@
     width: auto;
 }
 
-.width-40 { // OVE KLASE PROKOMENTARISATI SA GOGOM - VALJALO BI UPISAT width-40px, ALI JE GLUPO UPISIVAT PIXELE U KLASE...
+.width-40 { // 
     width: 40px;
 }
 .width-220 {
@@ -508,13 +515,13 @@
     width: 350px;
 }
 
-.w-min-320 { // PROMIJENITI U w-min-320px ILI NESTO TAKO
+.w-min-320 { // PREKO FATHERA
     min-width: 320px !important;
 }
 
 @media (max-width: 768px) {
     .w-min-320 {
-        min-width: 0px !important; // OVO JE NEKO RJESENJE KOJE MOZDA NIJE SAVRSENO, TACNO JE AL NEKAKO NIJE KONKRETNO
+        min-width: 0 !important; // PREKO FATHERA
     }  
 }
 
@@ -530,7 +537,7 @@
 
 // THIS IS THE COLLAPSED AND EXPANDED PLUS MINUS TRICK 
 
-.collapsed .hidden-collapsed{
+.collapsed .hidden-collapsed{ // 
     display: none;
 }
 .hidden-collapsed {
@@ -617,7 +624,7 @@ input:checked + .slider {
   }
 
 input:checked + .slider:before {
-    background-color: $dangerColor;
+    background-color: $color-danger;
   }
 
 input:checked + .slider:before {
@@ -637,7 +644,7 @@ input:checked + .slider:before {
     -webkit-appearance: none;  /* Override default CSS styles */
     width: 100%; /* Full-width */
     height: 5px; /* Specified height */
-    background: $dangerColor; /* Danger background */
+    background: $color-danger; /* Danger background */
     outline: none; /* Remove outline */
     opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
     -webkit-transition: .2s; /* 0.2 seconds transition on hover */
@@ -664,7 +671,7 @@ input:checked + .slider:before {
 /* NOUISLIDER-VARIATIONS */
 
 .noUi-connect {
-    background-color: $dangerColor !important; // DA LI JE OVO U REDU OVAKO MIJENJATI KLASU? JER JOJ PRAKTICNO MIJENJAM DEFAULT VRIJEDNOST, MOZDA TREBA DODATI -danger U KLASI ILI TAKO NESTO
+    background-color: $color-danger !important; // DA LI JE OVO U REDU OVAKO MIJENJATI KLASU? JER JOJ PRAKTICNO MIJENJAM DEFAULT VRIJEDNOST, MOZDA TREBA DODATI -danger U KLASI ILI TAKO NESTO
 }
 
 .noUi-horizontal .noUi-handle {
@@ -720,7 +727,7 @@ input:checked + .slider:before {
     }
 }
 
-.bg-shaded { 
+.bg-shaded {
     background: rgba(0, 0, 0, 0.50)!important;
     z-index: 3; // MISLIM DA ODJE TREBAJU NEKE PREPRAVKE
     overflow: auto;
